@@ -15,6 +15,8 @@ import { TopImgBtmText1Component } from './component/top-img-btm-text1/top-img-b
 import { CardCarouselComponent } from './component/card-carousel/card-carousel.component';
 import { ButtonCmp1Component } from './component/button-cmp1/button-cmp1.component';
 import { ProfileCardComponent } from './component/profile-card/profile-card.component';
+import { LeftImg1Component } from './component/left-img1/left-img1.component';
+import { AccordianDropdwnComponent } from './component/accordian-dropdwn/accordian-dropdwn.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,9 @@ import { ProfileCardComponent } from './component/profile-card/profile-card.comp
     TopImgBtmText1Component,
     CardCarouselComponent,
     ButtonCmp1Component,
-    ProfileCardComponent
+    ProfileCardComponent,
+    LeftImg1Component,
+    AccordianDropdwnComponent
   ],
   imports: [
     BrowserModule,
