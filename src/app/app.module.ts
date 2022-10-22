@@ -17,6 +17,7 @@ import { ButtonCmp1Component } from './component/button-cmp1/button-cmp1.compone
 import { ProfileCardComponent } from './component/profile-card/profile-card.component';
 import { LeftImg1Component } from './component/left-img1/left-img1.component';
 import { AccordianDropdwnComponent } from './component/accordian-dropdwn/accordian-dropdwn.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { AccordianDropdwnComponent } from './component/accordian-dropdwn/accordi
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
