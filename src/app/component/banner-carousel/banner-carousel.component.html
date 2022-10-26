@@ -1,1 +1,50 @@
-<p>banner-carousel works!</p>
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+
+	<div class="carousel-inner">
+		<ngb-carousel [interval]="100000" [showNavigationArrows]="false" [showNavigationIndicators]="false"
+			[pauseOnHover]="pauseOnHover" [pauseOnFocus]="pauseOnFocus" [wrap]="true" [activeId]="'slideone'">
+			<ng-template class="carousel-item"  ngbSlide id="slideone" *ngFor="let data of carousel2">
+
+				<div class="hoverpage">
+					<div class="details">
+						<h1>{{data.innerData.header}}</h1>
+						<p>{{data.innerData.text}}</p>
+						<button>{{data.innerData.buttonText}}</button>
+					</div>
+					<div class="photo">
+						<!-- <img src="assets/images/ChetanaDC.jpeg" alt=""> -->
+						<img [src]="data.image.url" [alt]="data.image.alt" />
+					</div>
+				</div>
+
+				<div class="backgroundimage">
+					<img [src]="data.background.url" [alt]="data.background.alt" />
+				</div>
+			</ng-template>
+		</ngb-carousel>
+	</div>
+
+	<div class="carousel-buttons">
+		<div class="carousel-indicators1">
+			<button *ngFor="let data of carousel2;let i = index" type="button" data-bs-target="#carouselExampleCaptions"
+				[attr.data-bs-slide-to]="i" [ngClass]="{'active': i === currentPosition}" aria-current="true"
+				aria-label="Slide 1"></button>
+		</div>
+		<div class="navigation-buttons">
+			<button class="carouselcontrol-prev" type="button" data-bs-target="#carouselExampleCaptions"
+				data-bs-slide="prev">
+				<span class="" aria-hidden="true">
+					<img src="assets/images/left.svg" alt="">
+				</span>
+				<span class="visually-hidden">Previous</span>
+			</button>
+			<button class="carouselcontrol-next" type="button" data-bs-target="#carouselExampleCaptions"
+				data-bs-slide="next">
+				<span class="" aria-hidden="true">
+					<img src="assets/images/right.svg" alt="">
+				</span>
+				<span class="visually-hidden">Next</span>
+			</button>
+		</div>
+	</div>
+</div>

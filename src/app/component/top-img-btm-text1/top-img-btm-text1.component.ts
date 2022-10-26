@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { IPictureComponentImage } from 'src/app/service/data';
 
 @Component({
   selector: 'app-top-img-btm-text1',
@@ -6,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./top-img-btm-text1.component.scss']
 })
 export class TopImgBtmText1Component implements OnInit {
-
+  @Input() images:IPictureComponentImage[]=[];
   constructor() { }
 
   ngOnInit(): void {

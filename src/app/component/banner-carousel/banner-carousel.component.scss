@@ -1,0 +1,100 @@
+.carousel {
+    width: 100%;
+    height: 65vh;
+    margin-bottom: 10px;
+    ::ng-deep {
+        .carousel-inner{
+            height: 57vh;
+            .carousel-item {
+                width: 100%;
+                height: 100%;
+                .hoverpage {
+                    position: absolute;
+                    width: 100%;
+                    height: 57vh;
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    color: white;
+                    background-image: linear-gradient(to right, rgba(44, 62, 80, 1), rgba(44, 62, 80, 0));
+
+                    .details {
+                        width: 38%;
+
+                        button {
+                            width: 20%;
+                            height: 40px;
+                            color: white;
+                            border: none;
+                            background-color: rgba(0, 51, 153, 1);
+                        }
+                    }
+
+                    .photo {
+                        width: 35%;
+                        height: 70%;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+
+                .backgroundimage {
+                    width: 100%;
+                    height: 57vh;
+                }
+
+            }
+        }
+
+        .carousel-buttons {
+            width: 100%;
+            height: 8vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 1%;
+            padding-right: 1%;
+
+            .carousel-indicators1 {
+                width: 8%;
+                display: flex;
+                justify-content: space-between;
+
+                button {
+                    height: 20px;
+                    width: 20px;
+                    border-radius: 50%;
+                    border: none;
+                    background-color: rgb(213, 213, 213);
+                }
+
+                .active {
+                    background-color: rgba(0, 51, 153, 1);
+                }
+            }
+
+            .navigation-buttons {
+                width: 6%;
+                display: flex;
+                justify-content: space-between;
+
+                /* border: 1px solid black; */
+                button {
+                    border: none;
+
+                    span {
+                        border: none;
+
+                        img {
+                            height: 30px;
+                            width: 30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
