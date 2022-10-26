@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { NoticesComponent } from './component/notices/notices.component';
-import { BannerCarouselComponent } from './component/banner-carousel.component';
 import { Container1Component } from './component/container1/container1.component';
 import { Container2Component } from './component/container2/container2.component';
 import { Container3Component } from './component/container3/container3.component';
@@ -18,6 +17,9 @@ import { ProfileCardComponent } from './component/profile-card/profile-card.comp
 import { LeftImg1Component } from './component/left-img1/left-img1.component';
 import { AccordianDropdwnComponent } from './component/accordian-dropdwn/accordian-dropdwn.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { HomeComponent } from './pages/home/home.component';
+import { AboutComponent } from './pages/about/about.component';
+import { ContactUsComponent } from './pages/contact-us/contact-us.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,6 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     HeaderComponent,
     FooterComponent,
     NoticesComponent,
-    BannerCarouselComponent,
     Container1Component,
     Container2Component,
     Container3Component,
@@ -35,7 +36,10 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     ButtonCmp1Component,
     ProfileCardComponent,
     LeftImg1Component,
-    AccordianDropdwnComponent
+    AccordianDropdwnComponent,
+    HomeComponent,
+    AboutComponent,
+    ContactUsComponent
   ],
   imports: [
     BrowserModule,
