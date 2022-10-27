@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+
+.container-testimonials {
+    background: #ECECEC;
+   // width: 1115px;
+    //height: 428px;
+    margin: 0 auto;
+    padding: 0 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    overflow-y: visible;
+    margin-bottom: 200px;
+
+
+}
+
+.testimonial-header {
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+.testimonial-header-title {
+    font-family: 'Ubuntu';
+    font-size: 36px;
+    color: #003399;
+    font-weight: 700;
+
+
+}
+
+.testi-dis {
+    color: #9E9D9D;
+    font-weight: 400;
+    font-size: 24px;
+    font-family: 'Ubuntu';
+    width: 100%;
+
+
+}
+
+.container-box-testimonials {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 10px;
+    //width: 95%;
+   // height: 388px;
+    margin: 0 auto;
+}
+

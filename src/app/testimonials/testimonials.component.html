@@ -1,0 +1,36 @@
+
+<div class="container-testimonials">
+    <div class="testimonial-header" *ngIf="sectionData">
+        <h1 class="testimonial-header-title" >{{sectionData.title}}</h1>
+        <p class="testi-dis">{{sectionData.description}} </p>
+    </div>
+
+    <div class="container-box-testimonials">
+        <app-testimonial-card *ngFor="let cardData of sectionData.cardsData " [cardData]="cardData"></app-testimonial-card>
+        
+
+       
+       <!--  <div class="container-info-testimonials">
+            <p class="testi-info">Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in
+                hendrerit.</p>
+
+            <div class="ellipse-testimonials"></div>
+            <div class="user-details">
+                <p class="testi-name">Alex</p>
+                <p class="testi-post">Sr. Software Developer</p>
+            </div>
+        </div> -->
+      <!--   <div class="container-info-testimonials">
+            <p class="testi-info">Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in
+                hendrerit.</p>
+
+            <div class="ellipse-testimonials"></div>
+            <div class="user-details">
+                <p class="testi-name">John Doe</p>
+                <p class="testi-post">Team Lead</p>
+            </div>
+        </div> -->
+
+    </div>
+
+</div>
