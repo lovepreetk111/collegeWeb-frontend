@@ -1,4 +1,14 @@
+export interface INavbarData {
+  id: string;
+  nav: string;
+  link: string;
+  child: IDropdowns[]
+}
 
+export interface IDropdowns{
+    dropdown:string,
+    url:string
+}
 export interface IleftimageRightTxt{
     url: string;
     alt: string;

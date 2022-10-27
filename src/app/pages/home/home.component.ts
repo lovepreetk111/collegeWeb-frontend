@@ -6,11 +6,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-/*   sectionData = {
-    title: "Testimonials",
-    description: "my name is ghazala.Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit.",
-    cardsData:CARDS_DATA
-  } */
   constructor() { 
     console.log(this.pages)
   }
@@ -26,7 +21,65 @@ export class HomeComponent implements OnInit {
         {
           compId:1,
           compName:'header',
-          metadata:{}
+          metadata:[
+            {
+              id:1,
+              nav:'About',
+              link:'/pages/about',
+              child:[
+                {
+                  dropdown:'something',
+                  url:'something'
+                },
+                {
+                  dropdown:'something',
+                  url:'something'
+                },
+                {
+                  dropdown:'something',
+                  url:'something'
+                }
+              ]
+            },
+            {
+              id:1,
+              nav:'About',
+              link:'/pages/about',
+              child:[
+                {
+                  dropdown:'something',
+                  url:'something'
+                },
+                {
+                  dropdown:'something',
+                  url:'something'
+                },
+                {
+                  dropdown:'something',
+                  url:'something'
+                }
+              ]
+            },
+            {
+              id:1,
+              nav:'About',
+              link:'/pages/about',
+              child:[
+                {
+                  dropdown:'something',
+                  url:'something'
+                },
+                {
+                  dropdown:'something',
+                  url:'something'
+                },
+                {
+                  dropdown:'something',
+                  url:'something'
+                }
+              ]
+            }
+          ]
         },
         {
           compId:2,
