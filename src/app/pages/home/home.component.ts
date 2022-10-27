@@ -70,14 +70,19 @@ export class HomeComponent implements OnInit {
                   url:'something'
                 },
                 {
-                  dropdown:'something',
+                  dropdown:'some',
                   url:'something'
                 },
                 {
-                  dropdown:'something',
+                  dropdown:'thing',
                   url:'something'
                 }
               ]
+            },
+            {
+              id:2,
+              nav:'Contact-Us',
+              link:'/pages/Contact-Us',
             }
           ]
         },

@@ -13,16 +13,32 @@ header{
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
-        padding: 1%;
+        padding: 1% 2%;
 
         img{
             width: 25%;
             height: 100%;
         }
         .navbar{
-            width: 70%;
+            width: auto;
+            max-width: 70%;
             height: 30%;
-            border: 1px solid black;
+            font-weight: 500;
+            /* border: 1px solid black; */
+            ul{
+                display: flex;
+                list-style: none;
+                li{
+                    margin-right: 2rem;
+                .dropdown-list{
+                    border-radius: 0px 0px 5px 5px;
+                    background-color: rgba(0, 51, 153, 1);
+                a{
+                    color: white;
+                }
+                }
+            }
+            }
+            }
         }
     }
-}
