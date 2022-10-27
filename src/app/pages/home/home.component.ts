@@ -121,33 +121,40 @@ export class HomeComponent implements OnInit {
               }
             ]
         }
+      },
+      {
+        compId:5,
+        compName:'footer',
+        metadata:[
+          {
+            call:{
+              
+            },
+            mail:{
+
+            },
+            socialMedia:[
+              {
+                url:"../../assets/img/ig.png",
+                alt:'college insta page',
+                link:'https://www.instagram.com/chetanas_sfc/?hl=en'
+              },
+              {
+                url:"../../assets/img/ig.png",
+                alt:'college insta page',
+                link:'https://www.instagram.com/chetanas_sfc/?hl=en'
+              },
+              {
+                url:"../../assets/img/ig.png",
+                alt:'college insta page',
+                link:'https://www.instagram.com/chetanas_sfc/?hl=en'
+              },
+            ]
+          }
+        ]
       }
       ]
     }
   ]
 }
 
-/* 
-const CARDS_DATA=[
-  {
-    comment: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit.",
-    name: "Ghazala",
-    designation: "student",
-    companyName: "chetana",
-    profileUrl: "https://play-lh.googleusercontent.com/0pyqGxdVkQsZUyWiDkvlUHRfCNcHdFS9Sq8G-GpCl9Idvd2fEUakpboNxqlMNVdDqMA=w240-h480-rw"
-  },
-  {
-    comment: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
-    name: "Lappi",
-    designation: "ncc candidate",
-    companyName: "Gareeb chetana",
-    profileUrl: "https://www.inpixio.com/remove-background/images/main-before.jpg"
-  },
-  {
-    comment: "It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
-    name: "vandita",
-    designation: "pgl",
-    companyName: "BscIT",
-    profileUrl: "https://us.123rf.com/450wm/marctran/marctran1804/marctran180400117/99234583-passport-photo-portrait-of-asian-smiling-woman-.jpg?ver=6"
-  }
-] */

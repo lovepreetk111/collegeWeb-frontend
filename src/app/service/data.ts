@@ -56,3 +56,9 @@ export interface IPictureComponentImage{
     description: string;
     cardsData: ITestimonialCardData[]
   }
+
+  export interface IFooterCmp{
+    call:{
+      numbber:string
+    }
+  }
