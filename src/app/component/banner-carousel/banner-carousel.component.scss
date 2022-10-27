@@ -1,4 +1,4 @@
-.carousel {
+/* .carousel {
     width: 100%;
     height: 65vh;
     margin-bottom: 10px;
@@ -80,8 +80,6 @@
                 width: 6%;
                 display: flex;
                 justify-content: space-between;
-
-                /* border: 1px solid black; */
                 button {
                     border: none;
 
@@ -95,6 +93,20 @@
                     }
                 }
             }
+        }
+    }
+} */
+
+.slider-indicator{
+    display: flex;
+    gap: 10px;
+    span {
+        width: 20px;
+        height: 20px;
+        border-radius: 100%;
+        background-color: grey;
+        &.active {
+            background-color: green;
         }
     }
 }

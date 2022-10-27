@@ -1,4 +1,4 @@
-<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+<!-- <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
 	<div class="carousel-inner">
 		<ngb-carousel [interval]="100000" [showNavigationArrows]="false" [showNavigationIndicators]="false"
 			[pauseOnHover]="pauseOnHover" [pauseOnFocus]="pauseOnFocus" [wrap]="true" [activeId]="'slideone'">
@@ -42,5 +42,30 @@
 				<span class="visually-hidden">Next</span>
 			</button>
 		</div>
+	</div>
+</div> -->
+
+<div class="container-fluid">
+	<ngb-carousel #ngCarousal *ngIf="carousel2" [showNavigationArrows]="false" [showNavigationIndicators]="false">
+		<ng-template ngbSlide>
+			<div>
+			<div class="picsum-img-wrapper">
+				<img [src]="carousel2[0]" alt="Random first slide" />
+			</div>
+			<div class="carousel-caption">
+				<h3>First slide label</h3>
+				<p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+			</div>
+			<div class="background" [ngStyle]=""></div>
+		</div>
+		</ng-template>
+	</ngb-carousel>
+	<div class="navigation-buttons">
+		<button (click)="previousSlide()">Previous</button>
+		<button (click)="nextSlide()">Next</button>
+	</div>
+	<div class="slider-indicator">
+		<span (click)="stepping(img.id)" *ngFor="let img of sliders;let i = index"
+			[ngClass]="{'active': +activeSlideId === i }"></span>
 	</div>
 </div>
