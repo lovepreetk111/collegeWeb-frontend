@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+
 /* .carousel {
     width: 100%;
     height: 65vh;
@@ -97,6 +100,58 @@
     }
 } */
 
+
+
+.container-fluid{
+    font-family: 'Ubuntu', sans-serif;
+    width: 100%;
+    height: 60vh;
+    ::ng-deep{
+        .main{
+            width: 100%;
+            height: 50vh;
+            .info{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 0 2rem;
+                background-image: linear-gradient(to right, rgba(44, 62, 80, 1), rgba(44, 62, 80, 0));
+                position: absolute;
+                .caption{
+                    width: 30%;
+                    color: white;
+                    text-align: left;
+                    button{
+                        color: white;
+                        border: none;
+                        width: 30%;
+                        height: 2.5rem;
+                        background-color: rgba(0, 51, 153, 1);
+                    }
+                }
+                .picsum-img-wrapper{
+                    img{
+                        width: 85%;
+                        height: 60%;
+                    }
+                }
+            }
+            .background{
+                width: 100%;
+                height: 50vh;
+                border: 1px solid yellow;
+            }
+        }
+    }
+
+.buttons{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 1%;
 .slider-indicator{
     display: flex;
     gap: 10px;
@@ -106,7 +161,18 @@
         border-radius: 100%;
         background-color: grey;
         &.active {
-            background-color: green;
+            background-color: rgba(0, 51, 153, 1);
         }
     }
+}
+.navigation-buttons{
+    button{
+        border: none;
+        background: none;
+        img{
+            width: 70%;
+        }
+    }
+}
+}
 }
