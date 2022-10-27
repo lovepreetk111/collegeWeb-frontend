@@ -16,11 +16,13 @@ import { ButtonCmp1Component } from './component/button-cmp1/button-cmp1.compone
 import { ProfileCardComponent } from './component/profile-card/profile-card.component';
 import { LeftImg1Component } from './component/left-img1/left-img1.component';
 import { AccordianDropdwnComponent } from './component/accordian-dropdwn/accordian-dropdwn.component';
-import {BannerCarouselComponent} from './component/banner-carousel/banner-carousel.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HomeComponent } from './pages/home/home.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ContactUsComponent } from './pages/contact-us/contact-us.component';
+import { BannerCarouselComponent } from './component/banner-carousel/banner-carousel.component';
+import { TestimonialsComponent } from './testimonials/testimonials.component';
+import { TestimonialCardComponent } from './testimonial-card/testimonial-card.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +43,9 @@ import { ContactUsComponent } from './pages/contact-us/contact-us.component';
     BannerCarouselComponent,
     HomeComponent,
     AboutComponent,
-    ContactUsComponent
+    ContactUsComponent,
+    TestimonialsComponent,
+    TestimonialCardComponent
   ],
   imports: [
     BrowserModule,
