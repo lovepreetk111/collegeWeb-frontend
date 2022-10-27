@@ -1,1 +1,22 @@
-<p>header works!</p>
+<header>
+    <div class="top">
+        <h3></h3>
+    </div>
+    <div class="bottom">
+        <img src="assets/images/Chetana Logo.svg" alt="">
+        <div class="navbar">
+            <ul>
+                <li ngbDropdown class="nav-item">
+                    <a href (click)="false" class="nav-link" ngbDropdownToggle>Dropdown</a>
+                    <div ngbDropdownMenu>
+                        <button ngbDropdownItem>Action</button>
+                        <button ngbDropdownItem>Another action</button>
+                        <button ngbDropdownItem>Something else here</button>
+                        <div class="dropdown-divider"></div>
+                        <button ngbDropdownItem>Separated link</button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
