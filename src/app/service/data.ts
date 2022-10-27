@@ -43,4 +43,16 @@ export interface IPictureComponentImage{
     }
   }
   
-  
+  export interface ITestimonialCardData {
+    comment: string;
+    name: string;
+    designation: string;
+    companyName: string;
+    profileUrl: string;
+  }
+
+  export interface ITestimonialSectionData{
+    title:string;
+    description: string;
+    cardsData: ITestimonialCardData[]
+  }

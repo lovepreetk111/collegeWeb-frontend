@@ -1,10 +1,8 @@
 <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-
 	<div class="carousel-inner">
 		<ngb-carousel [interval]="100000" [showNavigationArrows]="false" [showNavigationIndicators]="false"
 			[pauseOnHover]="pauseOnHover" [pauseOnFocus]="pauseOnFocus" [wrap]="true" [activeId]="'slideone'">
 			<ng-template class="carousel-item"  ngbSlide id="slideone" *ngFor="let data of carousel2">
-
 				<div class="hoverpage">
 					<div class="details">
 						<h1>{{data.innerData.header}}</h1>
@@ -12,11 +10,9 @@
 						<button>{{data.innerData.buttonText}}</button>
 					</div>
 					<div class="photo">
-						<!-- <img src="assets/images/ChetanaDC.jpeg" alt=""> -->
 						<img [src]="data.image.url" [alt]="data.image.alt" />
 					</div>
 				</div>
-
 				<div class="backgroundimage">
 					<img [src]="data.background.url" [alt]="data.background.alt" />
 				</div>

@@ -21,8 +21,6 @@ import { HomeComponent } from './pages/home/home.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ContactUsComponent } from './pages/contact-us/contact-us.component';
 import { BannerCarouselComponent } from './component/banner-carousel/banner-carousel.component';
-import { TestimonialsComponent } from './testimonials/testimonials.component';
-import { TestimonialCardComponent } from './testimonial-card/testimonial-card.component';
 
 @NgModule({
   declarations: [
@@ -43,10 +41,7 @@ import { TestimonialCardComponent } from './testimonial-card/testimonial-card.co
     BannerCarouselComponent,
     HomeComponent,
     AboutComponent,
-    ContactUsComponent,
-    TestimonialsComponent,
-    TestimonialCardComponent
-  ],
+    ContactUsComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

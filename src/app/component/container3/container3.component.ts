@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { ITestimonialSectionData } from 'src/app/service/data';
 
 @Component({
   selector: 'app-container3',
@@ -6,9 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./container3.component.scss']
 })
 export class Container3Component implements OnInit {
-
+  @Input() sectionData!:ITestimonialSectionData;
   constructor() { }
-
   ngOnInit(): void {
   }
 
