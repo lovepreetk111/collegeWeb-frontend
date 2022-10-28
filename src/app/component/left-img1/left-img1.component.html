@@ -1,1 +1,5 @@
-<p>left-img1 works!</p>
+<div class="leftimg1" *ngIf="ImageData">
+    <img [src]="ImageData.url" [alt]="ImageData.alt">
+    <h1>{{ImageData.Text}}</h1>
+  </div>
+  

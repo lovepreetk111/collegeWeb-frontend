@@ -26,4 +26,8 @@
     <div class="footer" *ngFor="let data of pages[0].component">
         <app-footer *ngIf="data.compId===5" [footerData]="data.metadata"></app-footer>
     </div>
+    <div *ngFor="let comp of pages[currentPageIndex].component">
+        <app-notices [InputData]="comp.metadata" *ngIf="comp.compID === 1"></app-notices>
+        <!-- <app-accordian-dropdwn *ngIf="comp.compID === 3" [DropDownData]="comp.metadata"></app-accordian-dropdwn> -->
+    </div>
     </div>
