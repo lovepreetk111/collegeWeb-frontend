@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-left-img1',
@@ -6,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./left-img1.component.scss']
 })
 export class LeftImg1Component implements OnInit {
-
+  @Input() ImageData!:Ileftimg1;
   constructor() { }
 
   ngOnInit(): void {
   }
 
+}
+interface Ileftimg1{
+  url: string;
+  alt: string;
+  Text:string;
 }
