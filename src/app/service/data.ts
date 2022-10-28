@@ -1,8 +1,24 @@
+export interface INavbarData {
+  id: string;
+  nav: string;
+  link: string;
+  child: IDropdowns[]
+}
+
 
 export interface IleftimageRightTxt {
   url: string;
   alt: string;
 }
+
+export interface IDropdowns{
+    dropdown:string,
+    url:string
+}
+export interface IleftimageRightTxt{
+    url: string;
+    alt: string;
+  }
 
 
 export interface IPictureComponentImage {
@@ -32,12 +48,7 @@ export interface IBannerCarosuelComponent {
 
 
 
-// export interface IFooterCmp{
-//   ,
-//   contact:{
 
-//   }
-// }
 
 export interface ITestimonialCardData {
   comment: string;

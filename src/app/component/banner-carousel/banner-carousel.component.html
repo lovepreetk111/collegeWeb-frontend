@@ -1,4 +1,4 @@
-<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+<!-- <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
 	<div class="carousel-inner">
 		<ngb-carousel [interval]="100000" [showNavigationArrows]="false" [showNavigationIndicators]="false"
 			[pauseOnHover]="pauseOnHover" [pauseOnFocus]="pauseOnFocus" [wrap]="true" [activeId]="'slideone'">
@@ -43,4 +43,41 @@
 			</button>
 		</div>
 	</div>
+</div> -->
+
+<div class="container-fluid">
+	<ngb-carousel #ngCarousal *ngIf="carousel2" [showNavigationArrows]="false" [showNavigationIndicators]="false">
+		<ng-template ngbSlide>
+			<div class="main">
+				<div class="info">
+					<div class="caption">
+						<h1>Techkriti 6.0</h1>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. </p>
+						<button>Read More</button>
+					</div>
+			<div class="picsum-img-wrapper">
+				<img src="../../../assets/images/ChetanaJC.svg" alt="Random first slide" />
+			</div>
+		</div>
+			<div class="background">
+				<img src="../../../assets/images/ChetanaDC.jpeg" alt="">
+			</div>
+		</div>
+		</ng-template>
+	</ngb-carousel>
+	<div class="buttons">
+		<div class="slider-indicator">
+			<span (click)="stepping(img.id)" *ngFor="let img of sliders;let i = index"
+				[ngClass]="{'active': +activeSlideId === i }"></span>
+		</div>
+	<div class="navigation-buttons">
+		<button (click)="previousSlide()"> 
+			<img src="assets/images/left.svg" alt="">
+		</button>
+		<button (click)="nextSlide()">
+			<img src="assets/images/right.svg" alt="">
+		</button>
+	</div>
+	
+</div>
 </div>

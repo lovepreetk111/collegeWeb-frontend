@@ -1,1 +1,19 @@
-<p>header works!</p>
+<header>
+    <div class="top">
+        <h3></h3>
+    </div>
+    <div class="bottom">
+        <img src="assets/images/Chetana Logo.svg" alt="">
+        <div class="navbar" >
+            <ul>
+                <li ngbDropdown class="nav-item" *ngFor="let datas of headerData">
+                    <a [href]="datas.link" (click)="false" class="nav-link" ngbDropdownToggle>{{datas.nav}}</a>
+                    <div ngbDropdownMenu *ngFor="let data of datas.child" class="dropdown-list">
+                        <a class="dropdown-item" [href]="data.url">{{data.dropdown}}</a>
+
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
