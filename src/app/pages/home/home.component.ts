@@ -127,11 +127,11 @@ export class HomeComponent implements OnInit {
         compName:'footer',
         metadata:[
           {
-            call:{
-              
+            ContactCall:{
+            Number: '9321992130',
             },
-            mail:{
-
+            ContactMail:{
+              mail:'chetanahscce@yahool.com'
             },
             socialMedia:[
               {
@@ -140,14 +140,14 @@ export class HomeComponent implements OnInit {
                 link:'https://www.instagram.com/chetanas_sfc/?hl=en'
               },
               {
-                url:"../../assets/img/ig.png",
-                alt:'college insta page',
-                link:'https://www.instagram.com/chetanas_sfc/?hl=en'
+                url:'../../assets/img/yt.png',
+                alt:'college youtube channel',
+                link:'https://www.youtube.com/channel/UCr2658Nq363khQvTSIxntwQ'
               },
               {
-                url:"../../assets/img/ig.png",
-                alt:'college insta page',
-                link:'https://www.instagram.com/chetanas_sfc/?hl=en'
+                url:'../../assets/img/fb.png',
+                alt:'college facebook page',
+                link:'https://www.facebook.com/people/Chetanas-Self-Financing-Courses/100064103347725/'
               },
             ]
           }

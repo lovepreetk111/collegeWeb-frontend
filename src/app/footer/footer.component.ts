@@ -7,7 +7,8 @@ import { IFooterCmp } from '../service/data';
   styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent implements OnInit {
-@Input() footerData!:IFooterCmp;
+  @Input() footerData: IFooterCmp[] = [];
+
   constructor() { }
 
   ngOnInit(): void {

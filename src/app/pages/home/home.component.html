@@ -1,13 +1,22 @@
 <div class="main">
-    <app-header></app-header>
-    <div *ngFor="let data of pages[0].component">
-        <app-banner-carousel *ngIf="data.compId === 3" [carousel2]="data.metadata"></app-banner-carousel>
-    </div>
-    <app-container1></app-container1>
-    <div *ngFor="let data of pages[0].component">
-        <app-container3 *ngIf="data.compId===4" [sectionData]="data.metadata"></app-container3>
-    </div>
-    <div *ngFor="let data of pages[0].component"><!-- 
-    <app-footer *ngIf="data.compId===5 [footerData]="data.metadata"></app-footer> -->
-</div>
+  <app-header></app-header>
+  <div *ngFor="let data of pages[0].component">
+    <app-banner-carousel
+      *ngIf="data.compId === 3"
+      [carousel2]="data.metadata"
+    ></app-banner-carousel>
+  </div>
+  <app-container1></app-container1>
+  <div *ngFor="let data of pages[0].component">
+    <app-container3
+      *ngIf="data.compId === 4"
+      [sectionData]="data.metadata"
+    ></app-container3>
+  </div>
+  <div *ngFor="let data of pages[0].component">
+    <app-footer
+      *ngIf="data.compId === 5"
+      [footerData]="data.metadata"
+    ></app-footer>
+  </div>
 </div>
