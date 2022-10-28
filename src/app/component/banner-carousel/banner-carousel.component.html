@@ -46,21 +46,23 @@
 </div> -->
 
 <div class="container-fluid">
-	<ngb-carousel #ngCarousal *ngIf="carousel2" [showNavigationArrows]="false" [showNavigationIndicators]="false">
-		<ng-template ngbSlide>
+	<ngb-carousel #ngCarousal [interval]="1000" *ngIf="carousel2" [showNavigationArrows]="false" [showNavigationIndicators]="false">
+		<ng-template ngbSlide  *ngFor="let data of carousel2">
 			<div class="main">
 				<div class="info">
 					<div class="caption">
-						<h1>Techkriti 6.0</h1>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. </p>
-						<button>Read More</button>
+						<h1>{{data.innerData.header}}</h1>
+						<p>{{data.innerData.text}}</p>
+						<button>{{data.innerData.buttonText}}</button>
 					</div>
 			<div class="picsum-img-wrapper">
-				<img src="../../../assets/images/ChetanaJC.svg" alt="Random first slide" />
+				<img [src]="data.image.url" [alt]="data.image.alt" />
+				<!-- <img src="../../../assets/images/ChetanaJC.svg" alt=""> -->
 			</div>
 		</div>
 			<div class="background">
-				<img src="../../../assets/images/ChetanaDC.jpeg" alt="">
+				<!-- <img src="../../../assets/images/ChetanaDC.jpeg" alt=""> -->
+				<img [src]="data.background.url" [alt]="data.background.alt" />
 			</div>
 		</div>
 		</ng-template>
