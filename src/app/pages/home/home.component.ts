@@ -25,62 +25,113 @@ export class HomeComponent implements OnInit {
             {
               id:1,
               nav:'About',
-              link:'/pages/about',
-              child:[
-                {
-                  dropdown:'something',
-                  url:'something'
-                },
-                {
-                  dropdown:'something',
-                  url:'something'
-                },
-                {
-                  dropdown:'something',
-                  url:'something'
-                }
-              ]
-            },
-            {
-              id:1,
-              nav:'About',
-              link:'/pages/about',
-              child:[
-                {
-                  dropdown:'something',
-                  url:'something'
-                },
-                {
-                  dropdown:'something',
-                  url:'something'
-                },
-                {
-                  dropdown:'something',
-                  url:'something'
-                }
-              ]
-            },
-            {
-              id:1,
-              nav:'About',
-              link:'/pages/about',
-              child:[
-                {
-                  dropdown:'something',
-                  url:'something'
-                },
-                {
-                  dropdown:'some',
-                  url:'something'
-                },
-                {
-                  dropdown:'thing',
-                  url:'something'
-                }
-              ]
+              link:'/pages/aboout'
             },
             {
               id:2,
+              nav:'Course',
+              link:'/pages/course',
+              child:[
+                {
+                  dropdown:'JUNIOR COLLEGE',
+                  url:'something'
+                },
+                {
+                  dropdown:'DEGREE COLLEGE',
+                  url:'something'
+                },
+                {
+                  dropdown:'SELF FINANCE COURSES',
+                  url:'something'
+                },
+                {
+                  dropdown:'MASTER OF COMMERCE',
+                  url:'something'
+                },
+                {
+                  dropdown:'DOCTORAL PROGRAMME',
+                  url:'something'
+                }
+              ]
+            },
+            {
+              id:3,
+              nav:'Examination',
+              link:'/pages/examination',
+              child:[
+                {
+                  dropdown:"PLACEMENT AT CHETANA'S",
+                  url:'something'
+                },
+                {
+                  dropdown:'TRANNING PROGRAME',
+                  url:'something'
+                },
+                {
+                  dropdown:'PLACEMENT TRACKER',
+                  url:'something'
+                },
+                {
+                  dropdown:'M.COM',
+                  url:'something'
+                },
+                {
+                  dropdown:'RESULT ANALYSIS',
+                  url:'something'
+                }
+              ]
+            },
+            {
+              id:4,
+              nav:'Admision',
+              link:'/pages/admission',
+            },
+            {
+              id:5,
+              nav:'Placemant',
+              link:'/pages/placemant',
+              child:[
+                {
+                  dropdown:"PLACEMENT AT CHETANA'S",
+                  url:'something'
+                },
+                {
+                  dropdown:'TRANNING PROGRAME',
+                  url:'something'
+                },
+                {
+                  dropdown:'PLACEMENT TRACKER',
+                  url:'something'
+                }
+              ]
+            },
+            {
+              id:6,
+              nav:'Research',
+              link:'/pages/research',
+              child:[
+                {
+                  dropdown:"ABOUT RESEARCH COLLEGE"
+                },
+                {
+                  dropdown:"PUBLICATION"
+                },
+                {
+                  dropdown:"PROSPECTUS"
+                },
+                {
+                  dropdown:"CONFERENCE PROCEDINGS"
+                },
+
+              ]
+            },
+            {
+              id:8,
+              nav:"Student’s Corner",
+              link:'/pages/Contact-Us',
+            },
+            {
+              id:8,
               nav:'Contact-Us',
               link:'/pages/Contact-Us',
             }
@@ -103,11 +154,11 @@ export class HomeComponent implements OnInit {
               buttonText: 'readMore',
             },
             background: {
-              url: 'kuch toh',
+              url: '../../../assets/images/ChetanaDC.jpeg',
               alt: 'yeh bhi hai kych',
             },
             image: {
-              url: 'kuch hai IDK',
+              url: '../../../assets/images/ChetanaJC.svg',
               alt: 'IDK'
             },
             routeLink: 'route karo and ghar bhejo',
@@ -120,11 +171,11 @@ export class HomeComponent implements OnInit {
               buttonText: 'readMore',
             },
             background: {
-              url: 'kuch toh',
+              url: '../../../assets/images/ChetanaDC.jpeg',
               alt: 'yeh bhi hai kych',
             },
             image: {
-              url: 'kuch hai IDK',
+              url: '../../../assets/images/ChetanaJC.svg',
               alt: 'IDK'
             },
             routeLink: 'route karo and ghar bhejo',

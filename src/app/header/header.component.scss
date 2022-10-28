@@ -25,15 +25,28 @@ header{
             height: 30%;
             font-weight: 500;
             /* border: 1px solid black; */
+            .nav-link{
+                font-size: 14px;
+            }
             ul{
                 display: flex;
                 list-style: none;
                 li{
-                    margin-right: 2rem;
+                  
                 .dropdown-list{
                     border-radius: 0px 0px 5px 5px;
                     background-color: rgba(0, 51, 153, 1);
+                    &:hover{
+                        background-color: black;
+                        a{
+                            color:white;
+                            &:hover{
+                                color: rgba(0, 51, 153, 1)
+                            }
+                        }
+                    }
                 a{
+                    padding: 5px;
                     color: white;
                 }
                 }

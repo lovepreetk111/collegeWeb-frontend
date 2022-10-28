@@ -4,14 +4,17 @@
     </div>
     <div class="bottom">
         <img src="assets/images/Chetana Logo.svg" alt="">
-        <div class="navbar" >
-            <ul>
-                <li ngbDropdown class="nav-item" *ngFor="let datas of headerData">
+        <div class="navbar">
+            <ul *ngFor="let datas of headerData">
+                <li ngbDropdown class="nav-item" *ngIf="datas.child">
                     <a [href]="datas.link" (click)="false" class="nav-link" ngbDropdownToggle>{{datas.nav}}</a>
-                    <div ngbDropdownMenu *ngFor="let data of datas.child" class="dropdown-list">
-                        <a class="dropdown-item" [href]="data.url">{{data.dropdown}}</a>
-
+                    <!-- {{datas.child | json}} -->
+                    <div ngbDropdownMenu class="dropdown-list">
+                        <a *ngFor="let data of datas.child" class="dropdown-item" [href]="data.url">{{data.dropdown}}</a>
                     </div>
+                </li>
+                <li class="nav-item" *ngIf="!datas.child">
+                    <a [href]="datas.link" (click)="false" class="nav-link" >{{datas.nav}}</a>
                 </li>
             </ul>
         </div>

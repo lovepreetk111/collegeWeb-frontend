@@ -33,7 +33,7 @@ export class Container1Component implements OnInit {
         {
           compID: 3,
           metadata: {
-            url: 'assets/image/ChetanaJC.svg',
+            url: '../../../assets/image/ChetanaJC.svg',
             alt: 'image hai clg ka'
           },
         },
