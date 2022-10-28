@@ -45,11 +45,6 @@ export interface IBannerCarosuelComponent {
   },
   routeLink: string;
 }
-
-
-
-
-
 export interface ITestimonialCardData {
   comment: string;
   name: string;
@@ -76,4 +71,29 @@ export interface IFooterCmp {
     alt: string,
     link: string,
   }[]
+}
+
+export interface IDropDown{
+  Title: string;
+  SubTitle1: string;
+  SubTitle2: string;
+  SubTitle3: string;
+}
+export interface Ileftimg1{
+  url: string;
+  alt: string;
+  Text:string;
+}
+
+export interface ICardCarosuel{
+  img:{
+    id:string,
+    url:string,
+    alt:string,
+    routeLink:string
+  },
+  data:{
+    cardHeading:string,
+    description:string
+  }
 }

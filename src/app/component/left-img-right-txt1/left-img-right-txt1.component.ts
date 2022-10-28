@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { IleftimageRightTxt } from 'src/app/service/data';
+import { Ileftimg1 } from 'src/app/service/data';
 
 @Component({
   selector: 'app-left-img-right-txt1',
@@ -7,7 +7,7 @@ import { IleftimageRightTxt } from 'src/app/service/data';
   styleUrls: ['./left-img-right-txt1.component.scss']
 })
 export class LeftImgRightTxt1Component implements OnInit {
-  @Input() image!: IleftimageRightTxt;
+  @Input() image!:Ileftimg1;
   constructor() { }
 
   ngOnInit(): void {
