@@ -10,8 +10,8 @@
         <app-accordian-dropdwn *ngIf="comp.compID === 5" [DropDownData]="comp.metadata"></app-accordian-dropdwn>
 
     </div>
-<div *ngFor="let comp of pages[currentPageIndex].component">
-    <app-card-carousel *ngIf="comp.compId === 6" [cardConfig]="comp.metadaa"></app-card-carousel>
+<div *ngFor="let comp of pages[0].component">
+    <app-card-carousel *ngIf="comp.compId === 6" [cardConfig]="comp.metadata"></app-card-carousel>
 </div>
 
     <div class="testimonials" *ngFor="let data of pages[0].component">

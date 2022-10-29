@@ -252,27 +252,28 @@ export class HomeComponent implements OnInit {
           compName: "cardcarosuel",
           metadata: [
             {
-              id:1,
+              id: 1,
               img: {
                 url: "../../../assets/images/next.svg",
                 alt: "image",
                 routeLink: "/page/ground",
+              },
                 data: {
                   cardHeading: "Ground",
-                  description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+                  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
                 }
-              }
+              
             },
             {
-              id:2,
+              id: 2,
               img: {
                 url: "../../../assets/images/next.svg",
                 alt: "image",
                 routeLink: "/page/lab",
-                data: {
-                  cardHeading: "Lab",
-                  description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-                }
+              },
+              data: {
+                cardHeading: "Lab",
+                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
               }
             }
           ]

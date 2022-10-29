@@ -1,6 +1,7 @@
-<div class="container-fluid cardcarousel">
+<div class="container-fluid cardcarousel" *ngIf="cardConfig">
+      <!-- {{cardConfig | json}} -->
     <ngb-carousel #ngCarousal [interval]="10000" [showNavigationArrows]="false" [showNavigationIndicators]="false">
-        <ng-template ngbSlide>
+      <!--   <ng-template ngbSlide>
             <div class="slide">
                 <div class="card">
                     <div class="picsum-img-wrapper">
@@ -12,20 +13,24 @@
                     </div>
                 </div>
             </div>
-        </ng-template>
+        </ng-template> -->
+          <!-- {{cardConfig | json}} -->
         
-        <ng-template ngbSlide *ngFor="let data of cardConfig">
-            <div class="slide">
-                <div class="card">
+        <ng-template ngbSlide >
+            <div class="slide" >
+              
+                <div class="card" *ngFor="let datas of cardConfig">
                     <div class="picsum-img-wrapper">
-                        <img [src]="data.img.url" [alt]="data.img.alt">
+                        <img [src]="datas.img.url" [alt]="datas.img.alt">
                     </div>
                     <div class="carousel-caption">
-                        <h3>{{data.data.cardHeading}}</h3>
-                        <p>{{data.data.description}}</p>
+                        <h3>{{datas.data.cardHeading}}</h3>
+                        <p>{{datas.data.description}}</p>
                     </div>
                 </div>
             </div>
+            <!-- <h1 *ngIf="datas.data">{{datas.data.cardHeading}</h1>
+{{datas.data | json}} -->
         </ng-template>
     </ngb-carousel>
 
