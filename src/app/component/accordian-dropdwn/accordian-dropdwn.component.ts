@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { IDropDown } from 'src/app/service/data';
 
 @Component({
   selector: 'app-accordian-dropdwn',
@@ -21,7 +22,7 @@ export class AccordianDropdwnComponent implements OnInit {
         {
           compID: 2,
           metadata: {
-            url: '../../assets/image/ChetanaJC1.svg',
+            url: "../../../assets//images/ChetanaJC.svg",
             alt:'kuch toh hai',
             Text:'Acedemic'
           },

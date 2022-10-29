@@ -1,5 +1,5 @@
 <div class="container acedemic" *ngFor="let comp of pages[currentPageIndex].component">
-    <!-- <app-left-img1 [ImageData]="comp.metadata" *ngIf="comp.compID === 2"></app-left-img1> -->
+    <app-left-img1 [ImageData]="comp.metadata" *ngIf="comp.compID === 2"></app-left-img1>
     <div class="accordion" *ngIf="DropDownData">
       <ngb-accordion [closeOthers]="true" *ngFor="let content of DropDownData">
         <ngb-panel id="static-1" [title]="content.Title">

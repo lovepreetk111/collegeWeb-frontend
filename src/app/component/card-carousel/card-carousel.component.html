@@ -1,18 +1,36 @@
-<div class="container-fluid cardcarousel">
-    <ngb-carousel #ngCarousal [interval]="10000" *ngIf="images" [showNavigationArrows]="false"
-        [showNavigationIndicators]="false">
-        <ng-template ngbSlide>
+<div class="container-fluid cardcarousel" *ngIf="cardConfig">
+      <!-- {{cardConfig | json}} -->
+    <ngb-carousel #ngCarousal [interval]="10000" [showNavigationArrows]="false" [showNavigationIndicators]="false">
+      <!--   <ng-template ngbSlide>
             <div class="slide">
-            <div class="card">
-                <div class="picsum-img-wrapper">
-                    <img src="assets/images/Chetana Logo.svg" alt="Random second slide" />
-                </div>
-                <div class="carousel-caption">
-                    <h3>Second slide label</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div class="card">
+                    <div class="picsum-img-wrapper">
+                        <img src="../../../assets/images/Chetana Logo.svg" alt="Random second slide" />
+                    </div>
+                    <div class="carousel-caption">
+                        <h3>Second slide label</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
                 </div>
             </div>
-        </div>
+        </ng-template> -->
+          <!-- {{cardConfig | json}} -->
+        
+        <ng-template ngbSlide >
+            <div class="slide" >
+              
+                <div class="card" *ngFor="let datas of cardConfig">
+                    <div class="picsum-img-wrapper">
+                        <img [src]="datas.img.url" [alt]="datas.img.alt">
+                    </div>
+                    <div class="carousel-caption">
+                        <h3>{{datas.data.cardHeading}}</h3>
+                        <p>{{datas.data.description}}</p>
+                    </div>
+                </div>
+            </div>
+            <!-- <h1 *ngIf="datas.data">{{datas.data.cardHeading}</h1>
+{{datas.data | json}} -->
         </ng-template>
     </ngb-carousel>
 
@@ -20,12 +38,12 @@
     <div class="functionbuttons">
         <div class="navigationbutton">
             <button (click)="previousSlide()">
-                <img src="assets/images/previous.svg" alt="">
+                <img src="../../../assets/images/left.svg" alt="">
             </button>
             <button (click)="nextSlide()">
-                <img src="assets/images/next.svg" alt="">
+                <img src="../../../assets/images/right.svg" alt="">
             </button>
         </div>
-        
+
     </div>
 </div>

@@ -1,5 +1,6 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, Input, OnInit, ViewChild } from '@angular/core';
 import { NgbCarousel } from '@ng-bootstrap/ng-bootstrap';
+import { ICardCarosuel } from 'src/app/service/data';
 
 @Component({
   selector: 'app-card-carousel',
@@ -7,7 +8,8 @@ import { NgbCarousel } from '@ng-bootstrap/ng-bootstrap';
   styleUrls: ['./card-carousel.component.scss']
 })
 export class CardCarouselComponent implements OnInit {
-  images = [944, 1011, 984].map((n) => `https://picsum.photos/id/${n}/900/500`);
+  @Input() cardConfig:ICardCarosuel[]=[];
+  
   @ViewChild(NgbCarousel) ngbCarousal!: NgbCarousel;
   isCarousalVisible!: boolean;
 
