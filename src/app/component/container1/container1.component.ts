@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { IAboutSectionData } from 'src/app/service/data';
 
 @Component({
   selector: 'app-container1',
@@ -6,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./container1.component.scss']
 })
 export class Container1Component implements OnInit {
-
+ @Input() mergedData!:IAboutSectionData
   constructor() { }
 
   ngOnInit(): void {
@@ -18,29 +19,20 @@ export class Container1Component implements OnInit {
       components: [
         {
           compID: 1,
+          compName:"About-section",
           metadata: {
             style: {
               'background-color': 'rgb(236, 236, 236)'
             },
-          }
-        },
-        {
-          compID: 2,
-          metadata: {
+            text:
+            {
             Text: 'About Chetanas',
           },
-        },
-        {
-          compID: 3,
-          metadata: {
+          imgText:{
             url: '../../../assets/images/ChetanaJC.svg',
             alt: 'image hai clg ka'
           },
-        },
-
-        {
-          compID: 4,
-          metadata: [
+          topimgText:[
             
             {
               url: "../../../assets/images/vision.svg",
@@ -62,6 +54,7 @@ export class Container1Component implements OnInit {
             }
           ]
         }
+      }
       ],
     },
   ];

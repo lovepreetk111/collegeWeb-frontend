@@ -1,12 +1,15 @@
-<div class="test"></div>
-<div class="AboutSection" >
-
-<div *ngFor="let comp of pages[currentPageIndex].components">
+<div class="AboutSection">
+  <!-- <div *ngFor="let comp of pages[currentPageIndex].components">
  <app-button-cmp1 [Text]="comp.metadata.Text" *ngIf="comp.compID === 2"></app-button-cmp1>
  <app-left-img-right-txt1 [image]="comp.metadata" *ngIf="comp.compID === 3"></app-left-img-right-txt1>
   <div class="Info">
     <app-top-img-btm-text1 *ngIf="comp.compID === 4" [images]="comp.metadata" ></app-top-img-btm-text1>
   </div>
-</div>
+</div> -->
 
+  <app-button-cmp1 ></app-button-cmp1>
+  <app-left-img-right-txt1></app-left-img-right-txt1>
+  <div class="info">
+    <app-top-img-btm-text1></app-top-img-btm-text1>
+  </div>
 </div>

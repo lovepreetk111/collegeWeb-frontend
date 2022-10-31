@@ -1,3 +1,18 @@
+export interface InavbarConfig{
+  id:string
+  implinksdata:IImpLinks[]
+  logo:InavLogo[]
+  navbar:INavbarData[]
+}
+export interface InavLogo{
+    logoUrl:string,
+    logoAlt:string
+}
+export interface IImpLinks{
+  id:string,
+  impLinks:string,
+  routeLinks:string;
+}
 export interface INavbarData {
   id: string;
   nav: string;
@@ -8,25 +23,44 @@ export interface IDropdowns{
   dropdown:string,
   url:string
 }
+export interface Inotice{
+  id:string
+  noticeLink:string;
+}
+export interface IAboutSectionData{
+  id:string,
+  style:{
+    backgroundColor:string
+  }
+  text:IBtnCmpData,
+  imgText:Ileftimg1,
+  topimgText:IPictureComponentImage[]
+}
 
-export interface IleftimageRightTxt {
-  url: string;
-  alt: string;
+export interface IBtnCmpData{
+  data:string,
+  
 }
 
 export interface IleftimageRightTxt{
-    url: string;
-    alt: string;
-  }
-
-
+  url: string;
+  alt: string;
+  para1:string;
+  para2:string
+}
 export interface IPictureComponentImage {
   url: string;
   alt: string;
   header: string;
   text: string;
-  style: {}
+
 }
+export interface Ileftimg1 {
+  url: string;
+  alt: string;
+}
+
+
 
 export interface IBannerCarosuelComponent {
   innerData: {
@@ -77,11 +111,6 @@ export interface IDropDown{
   SubTitle1: string;
   SubTitle2: string;
   SubTitle3: string;
-}
-export interface Ileftimg1{
-  url: string;
-  alt: string;
-  Text:string;
 }
 
 export interface ICardCarosuel{
