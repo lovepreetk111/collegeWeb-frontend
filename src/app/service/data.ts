@@ -4,17 +4,16 @@ export interface INavbarData {
   link: string;
   child: IDropdowns[]
 }
-
+export interface IDropdowns{
+  dropdown:string,
+  url:string
+}
 
 export interface IleftimageRightTxt {
   url: string;
   alt: string;
 }
 
-export interface IDropdowns{
-    dropdown:string,
-    url:string
-}
 export interface IleftimageRightTxt{
     url: string;
     alt: string;
