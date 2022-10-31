@@ -1,22 +1,43 @@
-<header>
-    <div class="top">
-        <h3></h3>
+<header *ngIf="headerData">
+    <div *ngFor="let datas of headerData">
+    <div class="top" >
+       <!--  <h3>{{data.impLinks}}</h3> -->
+       <ul *ngFor="let data of datas.implinksdata">
+        <li><a [href]="data.routeLinks"></a>
+        {{data.impLinks}}
+        </li>
+       </ul>
     </div>
-    <div class="bottom">
-        <img src="assets/images/Chetana Logo.svg" alt="">
+    <div class="bottom" *ngFor="let data of datas.logo">
+        <!-- <img src="assets/images/Chetana Logo.svg" alt=""> -->
+        <img [src]="data.logoUrl" [alt]="data.logoAlt">
         <div class="navbar">
-            <ul *ngFor="let datas of headerData">
-                <li ngbDropdown class="nav-item" *ngIf="datas.child">
-                    <a [href]="datas.link" (click)="false" class="nav-link" ngbDropdownToggle>{{datas.nav}}</a>
-                    <!-- {{datas.child | json}} -->
+            <ul *ngFor="let content of datas.navbar">
+                <li ngbDropdown class="nav-item" *ngIf="content.child">
+                    <a [href]="content.link" (click)="false" class="nav-link" ngbDropdownToggle>{{content.nav}}</a>
+                    <!-- {{content.child | json}} -->
                     <div ngbDropdownMenu class="dropdown-list">
-                        <a *ngFor="let data of datas.child" class="dropdown-item" [href]="data.url">{{data.dropdown}}</a>
+                        <a *ngFor="let data of content.child" class="dropdown-item" [href]="data.url">{{data.dropdown}}</a>
                     </div>
                 </li>
-                <li class="nav-item" *ngIf="!datas.child">
-                    <a [href]="datas.link" (click)="false" class="nav-link" >{{datas.nav}}</a>
+                <li class="nav-item" *ngIf="!content.child">
+                    <a [href]="content.link" (click)="false" class="nav-link" >{{content.nav}}</a>
                 </li>
             </ul>
         </div>
     </div>
+</div>
 </header>
+
+<!-- <header *ngIf="headerData">
+   
+    <div *ngFor="let datas of headerData">
+        <div class="top" *ngFor="let data of datas.implinksdata">
+            <h3>{{data.impLinks}}</h3>
+        </div>
+        <div *ngFor="let data of datas.navbar">
+        <h3>{{data.nav}}</h3>
+    </div>
+   
+    </div>
+</header> -->

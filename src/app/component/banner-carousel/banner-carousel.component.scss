@@ -105,11 +105,13 @@
 .container-fluid{
     font-family: 'Ubuntu', sans-serif;
     width: 100%;
-    height: 75vh;
+    height: 67vh;
+    margin: 0;
+    padding: 0;
     ::ng-deep{
         .main{
             width: 100%;
-            height: 68vh;
+            height: 56vh;
             .info{
                 position: absolute;
                 width: 100%;

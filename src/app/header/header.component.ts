@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { INavbarData } from '../service/data';
+import { InavbarConfig } from '../service/data';
 
 @Component({
   selector: 'app-header',
@@ -7,7 +7,7 @@ import { INavbarData } from '../service/data';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-@Input() headerData:INavbarData[] = []
+@Input() headerData:InavbarConfig[] = []
   constructor() { }
 
   ngOnInit(): void {

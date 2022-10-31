@@ -19,134 +19,177 @@ export class HomeComponent implements OnInit {
       pageName: 'Home',
       component: [
         {
-          compId: 1,
-          compName: 'header',
-          metadata: [
+          compId:1,
+          compName:"header",
+          metadata:[
             {
-              id: 1,
-              nav: 'About',
-              link: '/pages/aboout'
-            },
-            {
-              id: 2,
-              nav: 'Course',
-              link: '/pages/course',
-              child: [
+              id:1,
+              implinksdata:[
                 {
-                  dropdown: 'JUNIOR COLLEGE',
-                  url: 'something'
+                  id:1,
+                  impLinks:"NAAC-IQAC",
+                  routeLinks:'pages/naac'
                 },
                 {
-                  dropdown: 'DEGREE COLLEGE',
-                  url: 'something'
-                },
-                {
-                  dropdown: 'SELF FINANCE COURSES',
-                  url: 'something'
-                },
-                {
-                  dropdown: 'MASTER OF COMMERCE',
-                  url: 'something'
-                },
-                {
-                  dropdown: 'DOCTORAL PROGRAMME',
-                  url: 'something'
-                }
-              ]
-            },
-            {
-              id: 3,
-              nav: 'Examination',
-              link: '/pages/examination',
-              child: [
-                {
-                  dropdown: "PLACEMENT AT CHETANA'S",
-                  url: 'something'
-                },
-                {
-                  dropdown: 'TRANNING PROGRAME',
-                  url: 'something'
-                },
-                {
-                  dropdown: 'PLACEMENT TRACKER',
-                  url: 'something'
-                },
-                {
-                  dropdown: 'M.COM',
-                  url: 'something'
-                },
-                {
-                  dropdown: 'RESULT ANALYSIS',
-                  url: 'something'
-                }
-              ]
-            },
-            {
-              id: 4,
-              nav: 'Admision',
-              link: '/pages/admission',
-            },
-            {
-              id: 5,
-              nav: 'Placemant',
-              link: '/pages/placemant',
-              child: [
-                {
-                  dropdown: "PLACEMENT AT CHETANA'S",
-                  url: 'something'
-                },
-                {
-                  dropdown: 'TRANNING PROGRAME',
-                  url: 'something'
-                },
-                {
-                  dropdown: 'PLACEMENT TRACKER',
-                  url: 'something'
-                }
-              ]
-            },
-            {
-              id: 6,
-              nav: 'Research',
-              link: '/pages/research',
-              child: [
-                {
-                  dropdown: "ABOUT RESEARCH COLLEGE"
-                },
-                {
-                  dropdown: "PUBLICATION"
-                },
-                {
-                  dropdown: "PROSPECTUS"
-                },
-                {
-                  dropdown: "CONFERENCE PROCEDINGS"
+                  id:2,
+                  impLinks:"ALUMINI",
+                  routeLinks:"pages/alumini"
                 },
 
+              ],
+              logo:[
+                {
+                logoUrl:"assets/images/Chetana Logo.svg",
+                logoAlt:""
+                }
+            ],
+              navbar:[
+                {
+                  id: 1,
+                  nav: 'About',
+                  link: '/pages/aboout'
+                },
+                {
+                  id: 2,
+                  nav: 'Course',
+                  link: '/pages/course',
+                  child: [
+                    {
+                      dropdown: 'JUNIOR COLLEGE',
+                      url: 'something'
+                    },
+                    {
+                      dropdown: 'DEGREE COLLEGE',
+                      url: 'something'
+                    },
+                    {
+                      dropdown: 'SELF FINANCE COURSES',
+                      url: 'something'
+                    },
+                    {
+                      dropdown: 'MASTER OF COMMERCE',
+                      url: 'something'
+                    },
+                    {
+                      dropdown: 'DOCTORAL PROGRAMME',
+                      url: 'something'
+                    }
+                  ]
+                },
+                {
+                  id: 3,
+                  nav: 'Examination',
+                  link: '/pages/examination',
+                  child: [
+                    {
+                      dropdown: "PLACEMENT AT CHETANA'S",
+                      url: 'something'
+                    },
+                    {
+                      dropdown: 'TRANNING PROGRAME',
+                      url: 'something'
+                    },
+                    {
+                      dropdown: 'PLACEMENT TRACKER',
+                      url: 'something'
+                    },
+                    {
+                      dropdown: 'M.COM',
+                      url: 'something'
+                    },
+                    {
+                      dropdown: 'RESULT ANALYSIS',
+                      url: 'something'
+                    }
+                  ]
+                },
+                {
+                  id: 4,
+                  nav: 'Admision',
+                  link: '/pages/admission',
+                },
+                {
+                  id: 5,
+                  nav: 'Placemant',
+                  link: '/pages/placemant',
+                  child: [
+                    {
+                      dropdown: "PLACEMENT AT CHETANA'S",
+                      url: 'something'
+                    },
+                    {
+                      dropdown: 'TRANNING PROGRAME',
+                      url: 'something'
+                    },
+                    {
+                      dropdown: 'PLACEMENT TRACKER',
+                      url: 'something'
+                    }
+                  ]
+                },
+                {
+                  id: 6,
+                  nav: 'Research',
+                  link: '/pages/research',
+                  child: [
+                    {
+                      dropdown: "ABOUT RESEARCH COLLEGE"
+                    },
+                    {
+                      dropdown: "PUBLICATION"
+                    },
+                    {
+                      dropdown: "PROSPECTUS"
+                    },
+                    {
+                      dropdown: "CONFERENCE PROCEDINGS"
+                    },
+    
+                  ]
+                },
+                {
+                  id: 8,
+                  nav: "Student’s Corner",
+                  link: '/pages/Contact-Us',
+                },
+                {
+                  id: 8,
+                  nav: 'Contact-Us',
+                  link: '/pages/Contact-Us',
+                }
               ]
-            },
-            {
-              id: 8,
-              nav: "Student’s Corner",
-              link: '/pages/Contact-Us',
-            },
-            {
-              id: 8,
-              nav: 'Contact-Us',
-              link: '/pages/Contact-Us',
             }
           ]
         },
         {
           compID: 2,
           compName: 'notices',
-          metadata:
-          {
-            noticeLink1: 'Pankaj',
-            noticeLink2: 'Pankaj VISHWAKARMA',
-            noticeLink3: 'Pankaj BHOLE',
-            noticeLink4: 'Pankaj SHANKAR',
-          },
+          metadata:[
+            {
+              id:1,
+              noticeLink:"Lorem ipsum dolor sit amet", 
+            },
+            {
+              id:2,
+              noticeLink:"consectetur adipiscing elit", 
+            },
+            {
+              id:3,
+              noticeLink:"Ut et massa mi. Aliquam in hendrerit urna", 
+            },
+            {
+              id:4,
+              noticeLink:"Lorem ipsum dolor sit amet", 
+            },
+            {
+              id:5,
+              noticeLink:"consectetur adipiscing elit", 
+            },
+            {
+              id:6,
+              noticeLink:"Ut et mass ", 
+            },
+          ]
         },
         {
           compId: 3,
@@ -208,7 +251,40 @@ export class HomeComponent implements OnInit {
         {
           compId: 4,
           compName: 'aboutus-section',
-          metadata: {}
+          metadata: {
+            style: {
+              'background-color': 'rgb(236, 236, 236)'
+            },
+            text:
+            {
+            Text: 'About Chetanas',
+          },
+          imgText:{
+            url: '../../../assets/images/ChetanaJC.svg',
+            alt: 'image hai clg ka'
+          },
+          topimgText:[
+            
+            {
+              url: "../../../assets/images/vision.svg",
+              alt: 'example3',
+              header: 'Vision',
+              text: 'To raise our institution to higher levels of academic and cultural excellence and create an urge to enrich the personality of our students to serve humanity as one global family.'
+            },
+            {
+              url: "../../../assets/images/mission.svg",
+              alt: 'example3',
+              header: 'Mission',
+              text: 'To raise our institution to higher levels of academic and cultural excellence and create an urge to enrich the personality of our students to serve humanity as one global family.'
+            },
+            {
+              url: "../../../assets/images/values.svg",
+              alt: 'example3',
+              header: 'Values',
+              text: 'To raise our institution to higher levels of academic and cultural excellence and create an urge to enrich the personality of our students to serve humanity as one global family.'
+            }
+          ]
+        }
         },
         {
           compID: 5,
