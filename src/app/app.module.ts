@@ -21,6 +21,8 @@ import { HomeComponent } from './pages/home/home.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ContactUsComponent } from './pages/contact-us/contact-us.component';
 import { BannerCarouselComponent } from './component/banner-carousel/banner-carousel.component';
+import { ImageCmp1Component } from './image-cmp1/image-cmp1.component';
+import { TextCmp1Component } from './component/text-cmp1/text-cmp1.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +43,9 @@ import { BannerCarouselComponent } from './component/banner-carousel/banner-caro
     BannerCarouselComponent,
     HomeComponent,
     AboutComponent,
-    ContactUsComponent],
+    ContactUsComponent,
+    ImageCmp1Component,
+    TextCmp1Component],
   imports: [
     BrowserModule,
     AppRoutingModule,
