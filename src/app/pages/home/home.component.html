@@ -16,7 +16,7 @@
     </div>
 
     <div class="testimonials" *ngFor="let data of pages[0].component">
-        <app-container3 *ngIf="data.compId===7" [sectionData]="data.metadata"></app-container3><!-- 
-        <app-footer *ngIf="data.compId===8" [footerData]="data.metadata"></app-footer> -->
+        <app-container3 *ngIf="data.compId===7" [sectionData]="data.metadata"></app-container3>
+        <app-footer *ngIf="data.compId===8" [footerData]="data.metadata"></app-footer>
     </div>
 </div>

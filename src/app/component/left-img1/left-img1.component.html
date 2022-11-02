@@ -1,5 +1,5 @@
-<div class="leftimg1" *ngIf="ImageData">
-    <img [src]="ImageData.url" [alt]="ImageData.alt">
-    <h1>{{ImageData.Text}}</h1>
+<div class="leftimg1" *ngFor="let data of ImageData">
+    <img [src]="data.url" [alt]="data.alt">
+    <h1>{{data.Text}}</h1>
   </div>
   
