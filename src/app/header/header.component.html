@@ -10,18 +10,20 @@
     </div>
     <div class="bottom" *ngFor="let data of datas.logo">
         <!-- <img src="assets/images/Chetana Logo.svg" alt=""> -->
-        <img [src]="data.logoUrl" [alt]="data.logoAlt">
+        <a [routerLink]=data.link>  <img [src]="data.logoUrl" [alt]="data.logoAlt"> </a>
+       
         <div class="navbar">
             <ul *ngFor="let content of datas.navbar">
                 <li ngbDropdown class="nav-item" *ngIf="content.child">
-                    <a [href]="content.link" (click)="false" class="nav-link" ngbDropdownToggle>{{content.nav}}</a>
-                    <!-- {{content.child | json}} -->
+                    <!-- <a routerLink="/about">About</a> -->
+                    <a [routerLink]="content.link" (click)="false" class="nav-link" ngbDropdownToggle>{{content.nav}}</a>
+                   
                     <div ngbDropdownMenu class="dropdown-list">
-                        <a *ngFor="let data of content.child" class="dropdown-item" [href]="data.url">{{data.dropdown}}</a>
+                        <a *ngFor="let data of content.child" class="dropdown-item" [routerLink]="data.url">{{data.dropdown}}</a>
                     </div>
                 </li>
                 <li class="nav-item" *ngIf="!content.child">
-                    <a [href]="content.link" (click)="false" class="nav-link" >{{content.nav}}</a>
+                    <a [routerLink]="content.link" (click)="false" class="nav-link" >{{content.nav}}</a>
                 </li>
             </ul>
         </div>
