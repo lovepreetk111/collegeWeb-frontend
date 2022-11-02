@@ -19,31 +19,31 @@ export class HomeComponent implements OnInit {
       pageName: 'Home',
       component: [
         {
-          compId:1,
-          compName:"header",
-          metadata:[
+          compId: 1,
+          compName: "header",
+          metadata: [
             {
-              id:1,
-              implinksdata:[
+              id: 1,
+              implinksdata: [
                 {
-                  id:1,
-                  impLinks:"NAAC-IQAC",
-                  routeLinks:'pages/naac'
+                  id: 1,
+                  impLinks: "NAAC-IQAC",
+                  routeLinks: 'pages/naac'
                 },
                 {
-                  id:2,
-                  impLinks:"ALUMINI",
-                  routeLinks:"pages/alumini"
+                  id: 2,
+                  impLinks: "ALUMINI",
+                  routeLinks: "pages/alumini"
                 },
 
               ],
-              logo:[
+              logo: [
                 {
-                logoUrl:"assets/images/Chetana Logo.svg",
-                logoAlt:""
+                  logoUrl: "assets/images/Chetana Logo.svg",
+                  logoAlt: ""
                 }
-            ],
-              navbar:[
+              ],
+              navbar: [
                 {
                   id: 1,
                   nav: 'About',
@@ -144,7 +144,7 @@ export class HomeComponent implements OnInit {
                     {
                       dropdown: "CONFERENCE PROCEDINGS"
                     },
-    
+
                   ]
                 },
                 {
@@ -164,30 +164,30 @@ export class HomeComponent implements OnInit {
         {
           compID: 2,
           compName: 'notices',
-          metadata:[
+          metadata: [
             {
-              id:1,
-              noticeLink:"Lorem ipsum dolor sit amet", 
+              id: 1,
+              noticeLink: "Lorem ipsum dolor sit amet",
             },
             {
-              id:2,
-              noticeLink:"consectetur adipiscing elit", 
+              id: 2,
+              noticeLink: "consectetur adipiscing elit",
             },
             {
-              id:3,
-              noticeLink:"Ut et massa mi. Aliquam in hendrerit urna", 
+              id: 3,
+              noticeLink: "Ut et massa mi. Aliquam in hendrerit urna",
             },
             {
-              id:4,
-              noticeLink:"Lorem ipsum dolor sit amet", 
+              id: 4,
+              noticeLink: "Lorem ipsum dolor sit amet",
             },
             {
-              id:5,
-              noticeLink:"consectetur adipiscing elit", 
+              id: 5,
+              noticeLink: "consectetur adipiscing elit",
             },
             {
-              id:6,
-              noticeLink:"Ut et mass ", 
+              id: 6,
+              noticeLink: "Ut et mass ",
             },
           ]
         },
@@ -252,39 +252,42 @@ export class HomeComponent implements OnInit {
           compId: 4,
           compName: 'aboutus-section',
           metadata: {
-            style: {
-              'background-color': 'rgb(236, 236, 236)'
+            id: 1,
+            style:
+            {
+              backgroundColor: 'rgb(236, 236, 236)'
             },
-            text:
+            info:
             {
-            Text: 'About Chetanas',
-          },
-          imgText:{
-            url: '../../../assets/images/ChetanaJC.svg',
-            alt: 'image hai clg ka'
-          },
-          topimgText:[
-            
-            {
-              url: "../../../assets/images/vision.svg",
-              alt: 'example3',
-              header: 'Vision',
-              text: 'To raise our institution to higher levels of academic and cultural excellence and create an urge to enrich the personality of our students to serve humanity as one global family.'
+              data: "About Chetanas",
             },
-            {
-              url: "../../../assets/images/mission.svg",
-              alt: 'example3',
-              header: 'Mission',
-              text: 'To raise our institution to higher levels of academic and cultural excellence and create an urge to enrich the personality of our students to serve humanity as one global family.'
+            imgText: {
+              url: '../../../assets/images/ChetanaJC.svg',
+              alt: 'image hai clg ka',
+              para1:" The meaning of the word '“Chetana”' is consciousness. Consciousness is the essence of all creation. It isall-pervasive and infinite. It is the essence that unifies all beings and things. The culturaladvancement of the human race itself can be attributed to the awareness of this consciousness. Thisconsciousness requires a blend of emotional awareness and wisdom, which are the primary goals ofeducation.",
+              para2:"Hence this name was suggested by Late Smt. Kusumtai Chaudhari while forming this profound education movement. Chetana, a service oriented educational trust was established on 09th September, 1969 by Respected Balasaheb Madhukarrao Chaudhari (former Education and Finance Minister, Government of Maharashtra and Ex-Speaker, Maharashtra Legislative Assembly)"
             },
-            {
-              url: "../../../assets/images/values.svg",
-              alt: 'example3',
-              header: 'Values',
-              text: 'To raise our institution to higher levels of academic and cultural excellence and create an urge to enrich the personality of our students to serve humanity as one global family.'
-            }
-          ]
-        }
+            topimgText: [
+              {
+                url: "../../../assets/images/vision.svg",
+                alt: 'example3',
+                header: 'Vision',
+                text: 'To raise our institution to higher levels of academic and cultural excellence and create an urge to enrich the personality of our students to serve humanity as one global family.'
+              },
+              {
+                url: "../../../assets/images/mission.svg",
+                alt: 'example3',
+                header: 'Mission',
+                text: 'To raise our institution to higher levels of academic and cultural excellence and create an urge to enrich the personality of our students to serve humanity as one global family.'
+              },
+              {
+                url: "../../../assets/images/values.svg",
+                alt: 'example3',
+                header: 'Values',
+                text: 'To raise our institution to higher levels of academic and cultural excellence and create an urge to enrich the personality of our students to serve humanity as one global family.'
+              }
+            ]
+          }
         },
         {
           compID: 5,
@@ -330,20 +333,20 @@ export class HomeComponent implements OnInit {
             {
               id: 1,
               img: {
-                url: "../../../assets/images/next.svg",
+                url: "../../../assets/images/ChetanaDC.jpeg",
                 alt: "image",
                 routeLink: "/page/ground",
               },
-                data: {
-                  cardHeading: "Ground",
-                  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-                }
-              
+              data: {
+                cardHeading: "Ground",
+                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+              }
+
             },
             {
               id: 2,
               img: {
-                url: "../../../assets/images/next.svg",
+                url: "../../../assets/images/ChetanaJC.svg",
                 alt: "image",
                 routeLink: "/page/lab",
               },
@@ -351,7 +354,20 @@ export class HomeComponent implements OnInit {
                 cardHeading: "Lab",
                 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
               }
+            },
+            {
+              id: 3,
+              img: {
+                url: "../../../assets/images/ChetanaDC.jpeg",
+                alt: "image",
+                routeLink: "/page/libraby",
+              },
+              data: {
+                cardHeading: "Library",
+                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+              }
             }
+
           ]
         },
         {

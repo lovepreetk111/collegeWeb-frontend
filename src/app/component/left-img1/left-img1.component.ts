@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Ileftimg1 } from 'src/app/service/data';
 
 @Component({
   selector: 'app-left-img1',
@@ -13,8 +14,4 @@ export class LeftImg1Component implements OnInit {
   }
 
 }
-interface Ileftimg1{
-  url: string;
-  alt: string;
-  Text:string;
-}
+
