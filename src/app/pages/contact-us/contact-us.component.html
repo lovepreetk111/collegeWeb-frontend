@@ -1,1 +1,15 @@
-<p>contact-us works!</p>
+
+<div class="card">
+    <h2 text-center>Contacts Us</h2>
+    <div class="flex card-container indigo-container">
+        <div class="flex-1 h-20rem bg-indigo-500 text-white font-bold text-center p-5 border-round" id="cards" *ngFor="let data of metadata">
+            
+            <img [src]="data.url" [alt]="data.alt">
+            <h2>{{data.MainText}}</h2>
+            <p>{{data.description}}</p>
+            <p>{{data.description1}}</p>
+            <p>{{data.description2}}</p>
+        </div>
+        
+    </div>
+</div>

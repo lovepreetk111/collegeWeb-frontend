@@ -125,3 +125,14 @@ export interface ICardCarosuel{
     description:string
   }
 }
+
+
+
+// export interface IContact{
+//   url:string,
+//   alt:string,
+//   MainText:string,
+//   description:string,
+//   description1:string,
+//   description2:string
+//   }
