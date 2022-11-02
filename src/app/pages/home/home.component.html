@@ -4,8 +4,9 @@
         <app-notices class="notices" *ngIf="data.compID === 2" [InputData]="data.metadata"></app-notices>
         <app-banner-carousel class="banner-carousel" *ngIf="data.compId === 3" [carousel2]="data.metadata">
         </app-banner-carousel>
+        <app-container1 class="aboutus-section" *ngIf="data.compId ===4" [mergedData]="data.metadata"></app-container1>
     </div>
-    <app-container1 class="aboutus-section"></app-container1>
+    <!-- <app-container1 class="aboutus-section" ></app-container1> -->
     <div class="accordian" *ngFor="let comp of pages[currentPageIndex].component">
         <app-accordian-dropdwn *ngIf="comp.compID === 5" [DropDownData]="comp.metadata"></app-accordian-dropdwn>
 

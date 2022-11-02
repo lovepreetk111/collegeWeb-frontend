@@ -1,11 +1,11 @@
-<div class="sologanMain" *ngIf="images">
+
     <div class="slogans">
         <div class="vision" *ngFor="let content of images">
             <img [src]="content?.url" [alt]="content?.alt">
             <h3>{{content.header}}</h3>
             <p>{{content.text}}</div>
         </div>
-    </div>
+ 
 
     <!-- 
     <div class="col-4" *ngFor="let data of pages>

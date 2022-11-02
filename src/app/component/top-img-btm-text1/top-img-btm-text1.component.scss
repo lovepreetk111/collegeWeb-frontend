@@ -1,15 +1,14 @@
+
 .slogans{
     width: 100%;
-    height: 50vh;
     display: flex;
+    padding: 2rem 5rem;
     justify-content: space-around;
-    padding-top: 0 10%;
-    /* background-color: rgb(236, 236, 236); */
-    /* border: 1px solid black; */
+    margin-bottom: 60px;
+    border: 2px solid black;
 }
     .vision{
-        width: 28%; 
-        height: 100%;
+         width: 28%; 
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -18,24 +17,16 @@
         font: 'ubuntu';
         /* border: 1px solid black; */
         img{
-            width: 70;
-            height: 70%;
+            width: 50%;
         }
         p{
             font-size: 14px;
             line-height: 16px;
         }
         h3{
+            font-weight: 700;
             font-size: 22px;
             padding: 15px 12px;
         }
     }
 
-    .sologanMain{
-            // width: 100%;
-            height: 70vh;
-            padding-left: 10%;
-            background-color: rgb(228, 224, 224);
-            padding: 3rem 5rem;
-            display: flex;
-        }

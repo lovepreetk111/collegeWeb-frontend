@@ -11,7 +11,7 @@ export class Container1Component implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-  }
+  }/* 
   currentPageIndex = 0;
   pages: any = [
     {
@@ -57,5 +57,5 @@ export class Container1Component implements OnInit {
       }
       ],
     },
-  ];
+  ]; */
 }
