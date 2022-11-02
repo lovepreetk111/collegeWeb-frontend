@@ -32,14 +32,13 @@ export interface IAboutSectionData{
   style:{
     backgroundColor:string
   }
-  text:IBtnCmpData,
-  imgText:Ileftimg1,
+  info:IBtnCmpData,
+  imgText:IleftimageRightTxt
   topimgText:IPictureComponentImage[]
 }
 
 export interface IBtnCmpData{
   data:string,
-  
 }
 
 export interface IleftimageRightTxt{
@@ -58,6 +57,7 @@ export interface IPictureComponentImage {
 export interface Ileftimg1 {
   url: string;
   alt: string;
+  Text:string
 }
 
 
