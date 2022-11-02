@@ -14,7 +14,7 @@ export class AccordianDropdwnComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  currentPageIndex = 0;
+ /*  currentPageIndex = 0;
   pages: any = [
     {
       pageName: 'accordian-dropdwn',
@@ -30,6 +30,6 @@ export class AccordianDropdwnComponent implements OnInit {
         
       ],
     },
-  ];
+  ]; */
 
 }

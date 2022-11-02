@@ -1,24 +1,10 @@
 <div class="container-fluid cardcarousel" *ngIf="cardConfig">
       <!-- {{cardConfig | json}} -->
     <ngb-carousel #ngCarousal [interval]="10000" [showNavigationArrows]="false" [showNavigationIndicators]="false">
-      <!--   <ng-template ngbSlide>
-            <div class="slide">
-                <div class="card">
-                    <div class="picsum-img-wrapper">
-                        <img src="../../../assets/images/Chetana Logo.svg" alt="Random second slide" />
-                    </div>
-                    <div class="carousel-caption">
-                        <h3>Second slide label</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                </div>
-            </div>
-        </ng-template> -->
           <!-- {{cardConfig | json}} -->
         
         <ng-template ngbSlide>
             <div class="slide">
-              
                 <div class="card" *ngFor="let datas of cardConfig">
                     <div class="picsum-img-wrapper">
                         <img [src]="datas.img.url" [alt]="datas.img.alt">

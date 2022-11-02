@@ -1,61 +1,67 @@
 .cardcarousel {
     width: 100%;
-    margin-top: 30px;
+    margin-top: 80px;
+    margin-bottom: 60px;
 
     ::ng-deep {
-        .slide{
+        .slide {
             width: 100%;
             height: 60vh;
             display: flex;
             justify-content: space-around;
-            padding: 0 5rem;
+            padding: 0 4rem;
+
             .card {
                 width: 25%;
                 height: 100%;
                 display: flex;
                 justify-content: center;
                 border: 1px solid black;
-                .picsum-img-wrapper{
+
+                .picsum-img-wrapper {
                     width: 100%;
                     height: 100%;
-                img{
-                    width: 100%;
-                    height: 100%;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
                 }
-            }
-                .carousel-caption{
+
+                .carousel-caption {
                     width: 100%;
                     height: 100%;
                     background-color: rgba(0, 0, 0, 0.66);
                     color: black;
                     opacity: 0;
-                    position:absolute;
+                    position: absolute;
                     left: 0;
                     right: 0;
                     bottom: 0;
-                    &:hover{
+
+                    &:hover {
                         opacity: 1;
                     }
                 }
             }
         }
     }
-
-    
 }
 
-
-.functionbuttons{
+.functionbuttons {
     width: 100%;
     display: flex;
     justify-content: right;
-    padding-right: 15%;
-.navigationbutton{
-    button{
-        border: none;
-        img{
-            width: 70%;
+    padding-right: 14%;
+    margin-top: 10px;
+
+    .navigationbutton {
+        button {
+            border: none;
+
+            img {
+                width: 70%;
+            }
         }
     }
-}
 }

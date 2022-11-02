@@ -4,11 +4,12 @@
     display: flex;
     padding: 2rem 5rem;
     justify-content: space-around;
-    margin-bottom: 60px;
-    border: 2px solid black;
+    margin-bottom: 70px;
+    // border: 2px solid black;
 }
     .vision{
          width: 28%; 
+         padding: 0.5rem 1.5rem;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -22,6 +23,7 @@
         p{
             font-size: 14px;
             line-height: 16px;
+            padding: 0 10px;
         }
         h3{
             font-weight: 700;
