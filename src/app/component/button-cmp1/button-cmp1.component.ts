@@ -7,8 +7,10 @@ import { IBtnCmpData } from 'src/app/service/data';
   styleUrls: ['./button-cmp1.component.scss']
 })
 export class ButtonCmp1Component implements OnInit {
-  @Input() Text!: IBtnCmpData;
-  constructor() { }
+  @Input() Text!:IBtnCmpData
+  constructor() { 
+    console.log(this.Text)
+  }
 
   ngOnInit(): void {
   }
