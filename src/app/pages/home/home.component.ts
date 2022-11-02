@@ -40,14 +40,15 @@ export class HomeComponent implements OnInit {
               logo: [
                 {
                   logoUrl: "assets/images/Chetana Logo.svg",
-                  logoAlt: ""
+                  logoAlt: "",
+                  link:'/'
                 }
               ],
               navbar: [
                 {
                   id: 1,
                   nav: 'About',
-                  link: '/pages/aboout'
+                  link: '/about'
                 },
                 {
                   id: 2,
@@ -150,12 +151,12 @@ export class HomeComponent implements OnInit {
                 {
                   id: 8,
                   nav: "Student’s Corner",
-                  link: '/pages/Contact-Us',
+                  link: '/Contact-Us',
                 },
                 {
                   id: 8,
                   nav: 'Contact-Us',
-                  link: '/pages/Contact-Us',
+                  link: '/contact',
                 }
               ]
             }

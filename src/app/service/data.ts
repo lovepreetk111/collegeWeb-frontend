@@ -6,7 +6,8 @@ export interface InavbarConfig {
 }
 export interface InavLogo {
   logoUrl: string,
-  logoAlt: string
+  logoAlt: string,
+  link:string
 }
 export interface IImpLinks {
   id: string,
