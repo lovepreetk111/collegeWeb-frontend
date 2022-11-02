@@ -264,8 +264,8 @@ export class HomeComponent implements OnInit {
             imgText: {
               url: '../../../assets/images/ChetanaJC.svg',
               alt: 'image hai clg ka',
-              para1:" The meaning of the word '“Chetana”' is consciousness. Consciousness is the essence of all creation. It isall-pervasive and infinite. It is the essence that unifies all beings and things. The culturaladvancement of the human race itself can be attributed to the awareness of this consciousness. Thisconsciousness requires a blend of emotional awareness and wisdom, which are the primary goals ofeducation.",
-              para2:"Hence this name was suggested by Late Smt. Kusumtai Chaudhari while forming this profound education movement. Chetana, a service oriented educational trust was established on 09th September, 1969 by Respected Balasaheb Madhukarrao Chaudhari (former Education and Finance Minister, Government of Maharashtra and Ex-Speaker, Maharashtra Legislative Assembly)"
+              para1: " The meaning of the word '“Chetana”' is consciousness. Consciousness is the essence of all creation. It isall-pervasive and infinite. It is the essence that unifies all beings and things. The culturaladvancement of the human race itself can be attributed to the awareness of this consciousness. Thisconsciousness requires a blend of emotional awareness and wisdom, which are the primary goals ofeducation.",
+              para2: "Hence this name was suggested by Late Smt. Kusumtai Chaudhari while forming this profound education movement. Chetana, a service oriented educational trust was established on 09th September, 1969 by Respected Balasaheb Madhukarrao Chaudhari (former Education and Finance Minister, Government of Maharashtra and Ex-Speaker, Maharashtra Legislative Assembly)"
             },
             topimgText: [
               {
@@ -294,36 +294,47 @@ export class HomeComponent implements OnInit {
           compName: "Accordian",
           metadata: [
             {
-              Title: 'JUNIOR COLLEGE',
-              SubTitle1: 'Commerce',
-              SubTitle2: 'Arts',
-              SubTitle3: 'Mcvc',
-
+              data: [
+                {
+                  url: "../../../assets//images/ChetanaJC.svg",
+                  alt: 'kuch toh hai',
+                  Text: 'Acedemic'
+                }]
             },
             {
-              Title: 'DEGREE COLLEGE',
-              SubTitle1: 'Commerce',
-              SubTitle2: 'Arts',
-              SubTitle3: 'Mcvc'
-            },
-            {
-              Title: 'SELF FINANCING COURSES',
-              SubTitle1: 'Commerce',
-              SubTitle2: 'Arts',
-              SubTitle3: 'Mcvc'
-            },
-            {
-              Title: 'MASTER OF COMMERCE',
-              SubTitle1: 'Commerce',
-              SubTitle2: 'Arts',
-              SubTitle3: 'Mcvc'
-            },
-            {
-              Title: 'DOCTORAL Programme',
-              SubTitle1: 'Commerce',
-              SubTitle2: 'Arts',
-              SubTitle3: 'Mcvc'
-            },
+              AccordianData: [
+                {
+                  Title: 'JUNIOR COLLEGE',
+                  SubTitle1: 'Commerce',
+                  SubTitle2: 'Arts',
+                  SubTitle3: 'Mcvc',
+                },
+                {
+                  Title: 'DEGREE COLLEGE',
+                  SubTitle1: 'Commerce',
+                  SubTitle2: 'Arts',
+                  SubTitle3: 'Mcvc'
+                },
+                {
+                  Title: 'SELF FINANCING COURSES',
+                  SubTitle1: 'Commerce',
+                  SubTitle2: 'Arts',
+                  SubTitle3: 'Mcvc'
+                },
+                {
+                  Title: 'MASTER OF COMMERCE',
+                  SubTitle1: 'Commerce',
+                  SubTitle2: 'Arts',
+                  SubTitle3: 'Mcvc'
+                },
+                {
+                  Title: 'DOCTORAL Programme',
+                  SubTitle1: 'Commerce',
+                  SubTitle2: 'Arts',
+                  SubTitle3: 'Mcvc'
+                }
+              ]
+            }
           ],
         },
         {

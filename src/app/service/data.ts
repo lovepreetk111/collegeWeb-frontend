@@ -1,17 +1,17 @@
-export interface InavbarConfig{
-  id:string
-  implinksdata:IImpLinks[]
-  logo:InavLogo[]
-  navbar:INavbarData[]
+export interface InavbarConfig {
+  id: string
+  implinksdata: IImpLinks[]
+  logo: InavLogo[]
+  navbar: INavbarData[]
 }
-export interface InavLogo{
-    logoUrl:string,
-    logoAlt:string
+export interface InavLogo {
+  logoUrl: string,
+  logoAlt: string
 }
-export interface IImpLinks{
-  id:string,
-  impLinks:string,
-  routeLinks:string;
+export interface IImpLinks {
+  id: string,
+  impLinks: string,
+  routeLinks: string;
 }
 export interface INavbarData {
   id: string;
@@ -19,48 +19,63 @@ export interface INavbarData {
   link: string;
   child: IDropdowns[]
 }
-export interface IDropdowns{
-  dropdown:string,
-  url:string
+export interface IDropdowns {
+  dropdown: string,
+  url: string
 }
-export interface Inotice{
-  id:string
-  noticeLink:string;
+export interface Inotice {
+  id: string
+  noticeLink: string;
 }
-export interface IAboutSectionData{
-  id:string,
-  style:{
-    backgroundColor:string
+export interface IAboutSectionData {
+  id: string,
+  style: {
+    backgroundColor: string
   }
-  info:IBtnCmpData,
-  imgText:IleftimageRightTxt
-  topimgText:IPictureComponentImage[]
+  info: IBtnCmpData,
+  imgText: IleftimageRightTxt
+  topimgText: IPictureComponentImage[]
 }
 
-export interface IBtnCmpData{
-  data:string,
+export interface IBtnCmpData {
+  data: string,
 }
 
-export interface IleftimageRightTxt{
+export interface IleftimageRightTxt {
   url: string;
   alt: string;
-  para1:string;
-  para2:string
+  para1: string;
+  para2: string
 }
 export interface IPictureComponentImage {
   url: string;
   alt: string;
   header: string;
   text: string;
-
 }
+
+export interface IDropDown{
+  data: Ileftimg1[]
+/*   AccordianData: [
+    Title: string,
+    SubTitle1: string,
+    SubTitle2: string,
+    SubTitle3: string,
+  ] */
+  AccordianData:IAccordianData[]
+}
+export interface IAccordianData {
+  Title: string;
+  SubTitle1: string;
+  SubTitle2: string;
+  SubTitle3: string;
+}
+
 export interface Ileftimg1 {
   url: string;
   alt: string;
-  Text:string
+  Text: string
 }
-
-
 
 export interface IBannerCarosuelComponent {
   innerData: {
@@ -106,22 +121,16 @@ export interface IFooterCmp {
   }[]
 }
 
-export interface IDropDown{
-  Title: string;
-  SubTitle1: string;
-  SubTitle2: string;
-  SubTitle3: string;
-}
 
-export interface ICardCarosuel{
-  img:{
-    id:string,
-    url:string,
-    alt:string,
-    routeLink:string
+export interface ICardCarosuel {
+  img: {
+    id: string,
+    url: string,
+    alt: string,
+    routeLink: string
   },
-  data:{
-    cardHeading:string,
-    description:string
+  data: {
+    cardHeading: string,
+    description: string
   }
 }

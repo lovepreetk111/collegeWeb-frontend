@@ -7,7 +7,7 @@ import { Ileftimg1 } from 'src/app/service/data';
   styleUrls: ['./left-img1.component.scss']
 })
 export class LeftImg1Component implements OnInit {
-  @Input() ImageData!:Ileftimg1;
+  @Input() ImageData:Ileftimg1[]=[];
   constructor() { }
 
   ngOnInit(): void {
