@@ -21,7 +21,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ContactUsComponent } from './pages/contact-us/contact-us.component';
 import { BannerCarouselComponent } from './component/banner-carousel/banner-carousel.component';
-import { ImageCmp1Component } from './image-cmp1/image-cmp1.component';
+import { ImageCmp1Component } from './component/image-cmp1/image-cmp1.component'
 import { TextCmp1Component } from './component/text-cmp1/text-cmp1.component';
 
 @NgModule({
