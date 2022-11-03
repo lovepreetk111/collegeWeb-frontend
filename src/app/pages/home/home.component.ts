@@ -445,69 +445,6 @@ export class HomeComponent implements OnInit {
             }
           ]
         },
-        /*  {
-           compID: 5,
-           compName: "Accordian",
-           metadata: [
-             {
-               img: {
-                 url: "../../../assets/images/ChetanaJC.svg",
-                 alt: 'kuch toh hai',
-                 Text: 'Acedemic'
-               },
-               data: [
-                 {
-                   Title: 'JUNIOR COLLEGE',
-                   SubTitle1: 'Commerce',
-                   SubTitle2: 'Arts',
-                   SubTitle3: 'Mcvc',
-                 }
-               ]
-             },
-             {
-               data: [
-                 {
-                   Title: 'JUNIOR COLLEGE',
-                   SubTitle1: 'Commerce',
-                   SubTitle2: 'Arts',
-                   SubTitle3: 'Mcvc',
-                 }
-               ]
-             },
-             {
-               data: [
-                 {
-                   Title: 'SELF FINANCING COURSES',
-                   SubTitle1: 'Commerce',
-                   SubTitle2: 'Arts',
-                   SubTitle3: 'Mcvc'
-                 }
-               ]
-             },
-             {
-               data: [
-                 {
-                   Title: 'MASTER OF COMMERCE',
-                   SubTitle1: 'Commerce',
-                   SubTitle2: 'Arts',
-                   SubTitle3: 'Mcvc'
-                 }
-               ]
-             },
-             
-             {
-               data:[
-                 {
-                   Title: 'DOCTORAL Programme',
-               SubTitle1: 'Commerce',
-               SubTitle2: 'Arts',
-               SubTitle3: 'Mcvc'
-                 }
-               ]
-             },
-            
-           ],
-         }, */
       ]
     }
   ]
