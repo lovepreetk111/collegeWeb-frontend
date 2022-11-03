@@ -1,10 +1,8 @@
 <app-image-cmp1></app-image-cmp1>
 
-<!-- <div class="our-insipiration">
-    <h2>Our Inspiration</h2>
-</div> -->
 
 <div *ngFor="let data of pages[0].component">
+    <app-circle-img-left-txt1  [About]="data.metadata.aboutMain" *ngIf="data.compId === 1"></app-circle-img-left-txt1>
 <app-button-cmp1 [Text]="data.metadata.info" *ngIf="data.compId === 1"></app-button-cmp1>
 <app-text-cmp1 [datas]="data.metadata.info3"></app-text-cmp1>
 
