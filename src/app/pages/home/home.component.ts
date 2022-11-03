@@ -19,150 +19,6 @@ export class HomeComponent implements OnInit {
       pageName: 'Home',
       component: [
         {
-          compId: 1,
-          compName: "header",
-          metadata: [
-            {
-              id: 1,
-              implinksdata: [
-                {
-                  id: 1,
-                  impLinks: "NAAC-IQAC",
-                  routeLinks: 'pages/naac'
-                },
-                {
-                  id: 2,
-                  impLinks: "ALUMINI",
-                  routeLinks: "pages/alumini"
-                },
-
-              ],
-              logo: [
-                {
-                  logoUrl: "assets/images/Chetana Logo.svg",
-                  logoAlt: "",
-                  link:'/'
-                }
-              ],
-              navbar: [
-                {
-                  id: 1,
-                  nav: 'About',
-                  link: '/about'
-                },
-                {
-                  id: 2,
-                  nav: 'Course',
-                  link: '/pages/course',
-                  child: [
-                    {
-                      dropdown: 'JUNIOR COLLEGE',
-                      url: 'something'
-                    },
-                    {
-                      dropdown: 'DEGREE COLLEGE',
-                      url: 'something'
-                    },
-                    {
-                      dropdown: 'SELF FINANCE COURSES',
-                      url: 'something'
-                    },
-                    {
-                      dropdown: 'MASTER OF COMMERCE',
-                      url: 'something'
-                    },
-                    {
-                      dropdown: 'DOCTORAL PROGRAMME',
-                      url: 'something'
-                    }
-                  ]
-                },
-                {
-                  id: 3,
-                  nav: 'Examination',
-                  link: '/pages/examination',
-                  child: [
-                    {
-                      dropdown: "PLACEMENT AT CHETANA'S",
-                      url: 'something'
-                    },
-                    {
-                      dropdown: 'TRANNING PROGRAME',
-                      url: 'something'
-                    },
-                    {
-                      dropdown: 'PLACEMENT TRACKER',
-                      url: 'something'
-                    },
-                    {
-                      dropdown: 'M.COM',
-                      url: 'something'
-                    },
-                    {
-                      dropdown: 'RESULT ANALYSIS',
-                      url: 'something'
-                    }
-                  ]
-                },
-                {
-                  id: 4,
-                  nav: 'Admision',
-                  link: '/pages/admission',
-                },
-                {
-                  id: 5,
-                  nav: 'Placemant',
-                  link: '/pages/placemant',
-                  child: [
-                    {
-                      dropdown: "PLACEMENT AT CHETANA'S",
-                      url: 'something'
-                    },
-                    {
-                      dropdown: 'TRANNING PROGRAME',
-                      url: 'something'
-                    },
-                    {
-                      dropdown: 'PLACEMENT TRACKER',
-                      url: 'something'
-                    }
-                  ]
-                },
-                {
-                  id: 6,
-                  nav: 'Research',
-                  link: '/pages/research',
-                  child: [
-                    {
-                      dropdown: "ABOUT RESEARCH COLLEGE"
-                    },
-                    {
-                      dropdown: "PUBLICATION"
-                    },
-                    {
-                      dropdown: "PROSPECTUS"
-                    },
-                    {
-                      dropdown: "CONFERENCE PROCEDINGS"
-                    },
-
-                  ]
-                },
-                {
-                  id: 8,
-                  nav: "Student’s Corner",
-                  link: '/Contact-Us',
-                },
-                {
-                  id: 8,
-                  nav: 'Contact-Us',
-                  link: '/contact',
-                }
-              ]
-            }
-          ]
-        },
-        {
           compID: 2,
           compName: 'notices',
           metadata: [
@@ -343,43 +199,90 @@ export class HomeComponent implements OnInit {
           compName: "cardcarosuel",
           metadata: [
             {
-              id: 1,
-              img: {
-                url: "../../../assets/images/ChetanaDC.jpeg",
-                alt: "image",
-                routeLink: "/page/ground",
-              },
-              data: {
-                cardHeading: "Ground",
-                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-              }
-
+              slide:[
+                
+                {
+                  id: 1,
+                  img: {
+                    url: "../../../assets/images/ChetanaDC.jpeg",
+                    alt: "image",
+                    routeLink: "/page/ground",
+                  },
+                  data: {
+                    cardHeading: "Ground",
+                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+                  }
+    
+                },
+                {
+                  id: 2,
+                  img: {
+                    url: "../../../assets/images/ChetanaJC.svg",
+                    alt: "image",
+                    routeLink: "/page/lab",
+                  },
+                  data: {
+                    cardHeading: "Lab",
+                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+                  }
+                },
+                {
+                  id: 3,
+                  img: {
+                    url: "../../../assets/images/ChetanaDC.jpeg",
+                    alt: "image",
+                    routeLink: "/page/libraby",
+                  },
+                  data: {
+                    cardHeading: "Library",
+                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+                  }
+                }
+    
+              ],
             },
             {
-              id: 2,
-              img: {
-                url: "../../../assets/images/ChetanaJC.svg",
-                alt: "image",
-                routeLink: "/page/lab",
-              },
-              data: {
-                cardHeading: "Lab",
-                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-              }
-            },
-            {
-              id: 3,
-              img: {
-                url: "../../../assets/images/ChetanaDC.jpeg",
-                alt: "image",
-                routeLink: "/page/libraby",
-              },
-              data: {
-                cardHeading: "Library",
-                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-              }
+              slide:[
+                {
+                  id: 1,
+                  img: {
+                    url: "../../../assets/images/ChetanaDC.jpeg",
+                    alt: "image",
+                    routeLink: "/page/ground",
+                  },
+                  data: {
+                    cardHeading: "Ground",
+                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+                  }
+    
+                },
+                {
+                  id: 2,
+                  img: {
+                    url: "../../../assets/images/ChetanaJC.svg",
+                    alt: "image",
+                    routeLink: "/page/lab",
+                  },
+                  data: {
+                    cardHeading: "Lab",
+                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+                  }
+                },
+                {
+                  id: 3,
+                  img: {
+                    url: "../../../assets/images/ChetanaDC.jpeg",
+                    alt: "image",
+                    routeLink: "/page/libraby",
+                  },
+                  data: {
+                    cardHeading: "Library",
+                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+                  }
+                }
+    
+              ], 
             }
-
           ]
         },
         {
@@ -414,37 +317,7 @@ export class HomeComponent implements OnInit {
             ]
           }
         },
-        {
-          compId: 8,
-          compName: 'footer',
-          metadata: [
-            {
-              ContactCall: {
-                Number: '9321992130',
-              },
-              ContactMail: {
-                mail: 'chetanahscce@yahool.com'
-              },
-              socialMedia: [
-                {
-                  url: "../../assets/img/ig.png",
-                  alt: 'college insta page',
-                  link: 'https://www.instagram.com/chetanas_sfc/?hl=en'
-                },
-                {
-                  url: '../../assets/img/yt.png',
-                  alt: 'college youtube channel',
-                  link: 'https://www.youtube.com/channel/UCr2658Nq363khQvTSIxntwQ'
-                },
-                {
-                  url: '../../assets/img/fb.png',
-                  alt: 'college facebook page',
-                  link: 'https://www.facebook.com/people/Chetanas-Self-Financing-Courses/100064103347725/'
-                },
-              ]
-            }
-          ]
-        },
+       
       ]
     }
   ]

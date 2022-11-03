@@ -1,8 +1,21 @@
 <div class="container-fluid cardcarousel" *ngIf="cardConfig">
-      <!-- {{cardConfig | json}} -->
+      {{cardConfig | json}}
     <ngb-carousel #ngCarousal [interval]="10000" [showNavigationArrows]="false" [showNavigationIndicators]="false">
           <!-- {{cardConfig | json}} -->
         
+        <!-- <ng-template ngbSlide>
+            <div class="slide">
+                <div class="card" *ngFor="let datas of cardConfig">
+                    <div class="picsum-img-wrapper">
+                        <img [src]="datas.img.url" [alt]="datas.img.alt">
+                    </div>
+                    <div class="carousel-caption">
+                        <h3>{{datas.data.cardHeading}}</h3>
+                        <p>{{datas.data.description}}</p>
+                    </div>
+                </div>
+            </div>
+        </ng-template>  
         <ng-template ngbSlide>
             <div class="slide">
                 <div class="card" *ngFor="let datas of cardConfig">
@@ -15,10 +28,7 @@
                     </div>
                 </div>
             </div>
-            <!-- <h1 *ngIf="datas.data">{{datas.data.cardHeading}</h1>
-{{datas.data | json}} -->
         </ng-template>
-        
         <ng-template ngbSlide>
             <div class="slide">
                 <div class="card" *ngFor="let datas of cardConfig">
@@ -31,26 +41,8 @@
                     </div>
                 </div>
             </div>
-            <!-- <h1 *ngIf="datas.data">{{datas.data.cardHeading}</h1>
-{{datas.data | json}} -->
-        </ng-template>
 
-        <ng-template ngbSlide>
-            <div class="slide">
-                <div class="card" *ngFor="let datas of cardConfig">
-                    <div class="picsum-img-wrapper">
-                        <img [src]="datas.img.url" [alt]="datas.img.alt">
-                    </div>
-                    <div class="carousel-caption">
-                        <h3>{{datas.data.cardHeading}}</h3>
-                        <p>{{datas.data.description}}</p>
-                    </div>
-                </div>
-            </div>
-            <!-- <h1 *ngIf="datas.data">{{datas.data.cardHeading}</h1>
-{{datas.data | json}} -->
-        </ng-template>
-        
+        </ng-template>  -->
     </ngb-carousel>
 
 
