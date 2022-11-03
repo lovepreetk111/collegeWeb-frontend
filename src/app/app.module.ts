@@ -23,6 +23,7 @@ import { ContactUsComponent } from './pages/contact-us/contact-us.component';
 import { BannerCarouselComponent } from './component/banner-carousel/banner-carousel.component';
 import { ImageCmp1Component } from './component/image-cmp1/image-cmp1.component'
 import { TextCmp1Component } from './component/text-cmp1/text-cmp1.component';
+import { CircleImgLeftTxt1Component } from './component/circle-img-left-txt1/circle-img-left-txt1.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import { TextCmp1Component } from './component/text-cmp1/text-cmp1.component';
     AboutComponent,
     ContactUsComponent,
     ImageCmp1Component,
-    TextCmp1Component],
+    TextCmp1Component,
+    CircleImgLeftTxt1Component],
   imports: [
     BrowserModule,
     AppRoutingModule,
