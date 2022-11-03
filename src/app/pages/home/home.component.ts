@@ -13,19 +13,10 @@ export class HomeComponent implements OnInit {
    console.log(childData);
   this.outPutData = childData.title;
   }
-
-
-
-
-
-
-
   constructor() {
     console.log(this.pages);
     console.log(this.outPutData)
   }
-
-
   ngOnInit(): void {
   }
 

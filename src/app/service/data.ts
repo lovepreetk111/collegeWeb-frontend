@@ -1,4 +1,4 @@
-/* ====================== Header =============== */
+/* ================================ Header =================================== */
 export interface InavbarConfig {
   id: string
   implinksdata: IImpLinks[]
@@ -8,7 +8,7 @@ export interface InavbarConfig {
 export interface InavLogo {
   logoUrl: string,
   logoAlt: string,
-  link:string
+  link: string
 }
 export interface IImpLinks {
   id: string,
@@ -81,9 +81,9 @@ export interface IPictureComponentImage {
 }
 
 /* ====================================== Accordian Section =============================*/
-export interface IDropDown{
+export interface IDropDown {
   data: Ileftimg1[]
-  AccordianData:IAccordianData[]
+  AccordianData: IAccordianData[]
 }
 /* Accordian Component */
 export interface IAccordianData {
@@ -99,21 +99,21 @@ export interface Ileftimg1 {
   Text: string
 }
 
-/* ====================================== Card Carousel Component =========================== */
+/* =====================================F= Card Carousel Component =========================== */
 export interface ICardCarosuel {
-  slide:{
-    id:string,
-  img: {
+  slide: {
     id: string,
-    url: string,
-    alt: string,
-    routeLink: string
-  },
-  data: {
-    cardHeading: string,
-    description: string
+    img: {
+      id: string,
+      url: string,
+      alt: string,
+      routeLink: string
+    },
+    data: {
+      cardHeading: string,
+      description: string
+    }
   }
-}
 }
 
 /* ===================================== Testimonial Section ============================ */
@@ -132,6 +132,22 @@ export interface ITestimonialCardData {
   profileUrl: string;
 }
 
+/* =================================== Card Carousel ============================= */
+export interface ICardCarosuel {
+  style: {
+    img: {
+      id: string,
+      url: string,
+      alt: string,
+      routeLink: string
+    },
+    data: {
+      cardHeading: string,
+      description: string
+    }
+  }
+}
+
 /* ==================================== Footer component ================================ */
 export interface IFooterCmp {
   ContactCall: {
@@ -146,37 +162,9 @@ export interface IFooterCmp {
     link: string,
   }[]
 }
-<<<<<<< HEAD
-
-export interface IDropDown{
-  Title: string;
-  SubTitle1: string;
-  SubTitle2: string;
-  SubTitle3: string;
-}
-
-export interface ICardCarosuel{
-  img:{
-    id:string,
-    url:string,
-    alt:string,
-    routeLink:string
-  },
-  data:{
-    cardHeading:string,
-    description:string
-  }
-}
 
 
 
-// export interface IContact{
-//   url:string,
-//   alt:string,
-//   MainText:string,
-//   description:string,
-//   description1:string,
-//   description2:string
-//   }
-=======
->>>>>>> 10aa0a4dc05b92ad61620dba72754bbc8b01c297
+
+
+
