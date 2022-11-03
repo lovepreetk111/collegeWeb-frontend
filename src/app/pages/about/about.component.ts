@@ -41,7 +41,7 @@ export class AboutComponent implements OnInit {
       component: [
         {
           compId:1,
-          compName:"button-cmp1",
+          compName:"aboutUs",
           metadata:{
             info:
             {
@@ -67,7 +67,18 @@ export class AboutComponent implements OnInit {
             {
               text: "To bring educational opportunities within the reach of the underprivileged section of the society.              To bring educational opportunities within the reach of the underprivileged section of the society.              To impact value-based education to the students.              To bring educational opportunities within the reach of the under-privileged section of society.              To generate academic environment for enabling the students to mould their personalities by imbibing moral values, professional competencies and the spirit of fair competition.              To ensure participation of the student in co-curricular and extra-curricular activities for their balanced development.              To stimulate the teachers to continuously enrich their knowledge for the benefit of their students and for the well-being of society.              To provide infrastructural facilities for the benefit of the students and for the social development of the local community.              To create among the students and the students and the teaching and non-teaching staff a sense pf pride in belonging to the institution so that it channelizes their energies for the progress of the institution.              To ensure justice and fair play in all academic and non-academic matters affecting the students and the staff.              To encourage the students to aspire for higher achievements and help them unleash their latent abilities and realize their cherished goals.",
             },
-            
+            aboutMain:
+            {
+              url:'../../../assets/images/MChaudhary.png',
+              alt:'panj',
+    
+              text:'Our Inspiration',
+              text1:'Late Shri pankaj Madhukarrao',
+              text2:'Chaudhari',
+              text3:'Founder President Chetana Trust',
+              textMain:'Chetana’s was established with the twin objective of providing quality education and infusing students with dynamism. Chetana has created many success stories and today it has become one of the most preferred Institutes in India.              I see many opportunities to be seized as our country stands at the hub of Economic growth. Our economy alone shall make India a super power on the Global Scenario. It is only natural that this accelerated phase of growth would result in investment in people and infrastructure. Therefore, all our initiatives are aimed at developing competent and committed managers who will be very much part of these efforts.             Our high caliber faculty with vast experience would add the required momentum to the whole process. Apart from core faculty, who are always a source of motivation for the students, we have an erudite industry experts that comprises of top managers from the corporate world who share their rich experience with the students.           I take pride in welcoming you all to Chetana’s Institute.'
+            }
+
             }
         }
       ]
@@ -80,4 +91,15 @@ export class AboutComponent implements OnInit {
 
 export interface text{
   text:string;
+}
+
+
+export interface AboutMain{
+  url:string;
+  alt:string;
+  text:string;
+  text1:string;
+  text2:string;
+  text3:string;
+  textMain:string;
 }
