@@ -6,9 +6,25 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-  constructor() {
-    console.log(this.pages)
+
+
+  outPutData = '';
+  receiveData(childData: any){
+   console.log(childData);
+  this.outPutData = childData.title;
   }
+
+
+
+
+
+
+
+  constructor() {
+    // console.log(this.pages);
+    console.log(this.outPutData)
+  }
+
 
   ngOnInit(): void {
   }
@@ -272,19 +288,25 @@ export class HomeComponent implements OnInit {
                 url: "../../../assets/images/vision.svg",
                 alt: 'example3',
                 header: 'Vision',
-                text: 'To raise our institution to higher levels of academic and cultural excellence and create an urge to enrich the personality of our students to serve humanity as one global family.'
+                text: 'To raise our institution to higher levels of academic and cultural excellence and create an urge to enrich the personality of our students to serve humanity as one global family.',
+                description1:'',
+                description2:''
               },
               {
                 url: "../../../assets/images/mission.svg",
                 alt: 'example3',
                 header: 'Mission',
-                text: 'To raise our institution to higher levels of academic and cultural excellence and create an urge to enrich the personality of our students to serve humanity as one global family.'
+                text: 'To raise our institution to higher levels of academic and cultural excellence and create an urge to enrich the personality of our students to serve humanity as one global family.',
+                description1:'',
+                description2:''
               },
               {
                 url: "../../../assets/images/values.svg",
                 alt: 'example3',
                 header: 'Values',
-                text: 'To raise our institution to higher levels of academic and cultural excellence and create an urge to enrich the personality of our students to serve humanity as one global family.'
+                text: 'To raise our institution to higher levels of academic and cultural excellence and create an urge to enrich the personality of our students to serve humanity as one global family.',
+                description1:'',
+                description2:''
               }
             ]
           }

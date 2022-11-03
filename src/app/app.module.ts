@@ -23,6 +23,7 @@ import { ContactUsComponent } from './pages/contact-us/contact-us.component';
 import { BannerCarouselComponent } from './component/banner-carousel/banner-carousel.component';
 import { ImageCmp1Component } from './component/image-cmp1/image-cmp1.component'
 import { TextCmp1Component } from './component/text-cmp1/text-cmp1.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -49,7 +50,8 @@ import { TextCmp1Component } from './component/text-cmp1/text-cmp1.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

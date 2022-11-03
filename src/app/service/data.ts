@@ -52,6 +52,8 @@ export interface IPictureComponentImage {
   alt: string;
   header: string;
   text: string;
+  description1:string;
+  description2:string;
 
 }
 export interface Ileftimg1 {
@@ -59,8 +61,6 @@ export interface Ileftimg1 {
   alt: string;
   Text:string
 }
-
-
 
 export interface IBannerCarosuelComponent {
   innerData: {

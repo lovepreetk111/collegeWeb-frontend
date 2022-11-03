@@ -1,66 +1,75 @@
-// .contDiv{
-//     width: 100%;
-//     height: 30rem;
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     // background-color: aqua;
-//     .InnerContact{
-//         border: 2px solid red;
-//         width: 30rem;
-//         height: 25rem;
-//         background-color: blue;
-//     }
-//     .img{
-//         width: 12rem;
-//         height: 10rem;
-//         background-color: brown;
-//     }
-// }
+
+#main-form{
+    width: 52rem;
+    form{
+        width: 48rem;
+    height: 37rem;
+    margin: auto;
+    background-color: rgb(146, 142, 137);
+    }
+    .leftSection{
+
+    }
+    .your-name{
+
+    }
+    label{
+        position: relative;
+        font-size: 25px;
+        padding: 12px 0px;
+        font-weight: 700;
+        left: -240px;
+    }
+    input{
+        width: 45rem;
+        height: 3rem;
+    }
+    .text-area{
+     height: 10rem;
+     background-color: transparent;
+     margin: 22px auto;
+     textarea{
+        width: 45rem;
+        height: 6rem;
+     }
+    }
+    button{
+        width: 163px;
+        /* font-size: 27px; */
+        height: 46px;
+        font-weight: 600;
+
+        background-color: cornflowerblue;
+        border-radius: 15px;
+    }
 
 
-
+}
 .card{
-    height: 30rem;
+    height: 40rem;
+    width: 100%;
+    background-color: skyblue;
+    display: -webkit-inline-box;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    .contact-form{
+        width: 34rem;
+        margin: 7px 7px;
+        height: 39rem;
+        border: 2px solid red;
+        background-color: blue;
+        text-align: center;
+        .contact-card{
+            width: 21rem;
+    height: 28rem;
+            background-color: brown;
+            margin: 84px auto;
+        }
+    }
     
-    background-color: transparent;
-    display: flex;
-    align-items: center;
-    .card-main{
-        width: 13rem;
-        height: 12rem;
-        border: 3px solid orange;
-        display: flex;
-    align-items: center;
-        background-color: yellow;
-    }
 }
-#cards{
-    margin: 32px 1px;
-    h2{
-        color: #003399;
-    }
-    p{
-        color: #003399;  
-    }
-}
-// .background{
-//     background-color: black;
-//     height: 23rem;
-//     width: ;
-// }
-   
-// .main{
-//     width: 100%;
-//     height: 15rem;
-//     background-color: aquamarine;
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     .mainSecond{
-//         border: 2px solid red;
-//         width: 6rem;
-//         height: 6rem;
-//         background-color: blueviolet;
-//     }
-// }
+
+
+
+
