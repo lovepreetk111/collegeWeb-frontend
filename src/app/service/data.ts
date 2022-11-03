@@ -1,3 +1,4 @@
+/* ====================== Header =============== */
 export interface InavbarConfig {
   id: string
   implinksdata: IImpLinks[]
@@ -24,60 +25,14 @@ export interface IDropdowns {
   dropdown: string,
   url: string
 }
+
+/*============================= Notices component =======================*/
 export interface Inotice {
   id: string
   noticeLink: string;
 }
-export interface IAboutSectionData {
-  id: string,
-  style: {
-    backgroundColor: string
-  }
-  info: IBtnCmpData,
-  imgText: IleftimageRightTxt
-  topimgText: IPictureComponentImage[]
-}
 
-export interface IBtnCmpData {
-  data: string,
-}
-
-export interface IleftimageRightTxt {
-  url: string;
-  alt: string;
-  para1: string;
-  para2: string
-}
-export interface IPictureComponentImage {
-  url: string;
-  alt: string;
-  header: string;
-  text: string;
-}
-
-export interface IDropDown{
-  data: Ileftimg1[]
-/*   AccordianData: [
-    Title: string,
-    SubTitle1: string,
-    SubTitle2: string,
-    SubTitle3: string,
-  ] */
-  AccordianData:IAccordianData[]
-}
-export interface IAccordianData {
-  Title: string;
-  SubTitle1: string;
-  SubTitle2: string;
-  SubTitle3: string;
-}
-
-export interface Ileftimg1 {
-  url: string;
-  alt: string;
-  Text: string
-}
-
+/* ===================================== Banner Carousel component ================ */
 export interface IBannerCarosuelComponent {
   innerData: {
     header: string;
@@ -94,6 +49,81 @@ export interface IBannerCarosuelComponent {
   },
   routeLink: string;
 }
+
+/* ============================================ AboutUsSection =============================*/
+/* ====================== container 2 ============================ */
+export interface IAboutSectionData {
+  id: string,
+  style: {
+    backgroundColor: string
+  }
+  info: IBtnCmpData,
+  imgText: IleftimageRightTxt
+  topimgText: IPictureComponentImage[]
+}
+/* Button component 1 */
+export interface IBtnCmpData {
+  data: string,
+}
+/* Left Image Right Text1 Component */
+export interface IleftimageRightTxt {
+  url: string;
+  alt: string;
+  para1: string;
+  para2: string
+}
+/* Top image btm text1 component */
+export interface IPictureComponentImage {
+  url: string;
+  alt: string;
+  header: string;
+  text: string;
+}
+
+/* ====================================== Accordian Section =============================*/
+export interface IDropDown{
+  data: Ileftimg1[]
+  AccordianData:IAccordianData[]
+}
+/* Accordian Component */
+export interface IAccordianData {
+  Title: string;
+  SubTitle1: string;
+  SubTitle2: string;
+  SubTitle3: string;
+}
+/* Left image1 component */
+export interface Ileftimg1 {
+  url: string;
+  alt: string;
+  Text: string
+}
+
+/* ====================================== Card Carousel Component =========================== */
+export interface ICardCarosuel {
+  slide:{
+    id:string,
+  img: {
+    id: string,
+    url: string,
+    alt: string,
+    routeLink: string
+  },
+  data: {
+    cardHeading: string,
+    description: string
+  }
+}
+}
+
+/* ===================================== Testimonial Section ============================ */
+/* ================================ container 3 ======================== */
+export interface ITestimonialSectionData {
+  title: string;
+  description: string;
+  cardsData: ITestimonialCardData[]
+}
+/* profile Card Component */
 export interface ITestimonialCardData {
   comment: string;
   name: string;
@@ -102,12 +132,7 @@ export interface ITestimonialCardData {
   profileUrl: string;
 }
 
-export interface ITestimonialSectionData {
-  title: string;
-  description: string;
-  cardsData: ITestimonialCardData[]
-}
-
+/* ==================================== Footer component ================================ */
 export interface IFooterCmp {
   ContactCall: {
     Number: string;
@@ -120,18 +145,4 @@ export interface IFooterCmp {
     alt: string,
     link: string,
   }[]
-}
-
-
-export interface ICardCarosuel {
-  img: {
-    id: string,
-    url: string,
-    alt: string,
-    routeLink: string
-  },
-  data: {
-    cardHeading: string,
-    description: string
-  }
 }
