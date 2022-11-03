@@ -146,3 +146,37 @@ export interface IFooterCmp {
     link: string,
   }[]
 }
+<<<<<<< HEAD
+
+export interface IDropDown{
+  Title: string;
+  SubTitle1: string;
+  SubTitle2: string;
+  SubTitle3: string;
+}
+
+export interface ICardCarosuel{
+  img:{
+    id:string,
+    url:string,
+    alt:string,
+    routeLink:string
+  },
+  data:{
+    cardHeading:string,
+    description:string
+  }
+}
+
+
+
+// export interface IContact{
+//   url:string,
+//   alt:string,
+//   MainText:string,
+//   description:string,
+//   description1:string,
+//   description2:string
+//   }
+=======
+>>>>>>> 10aa0a4dc05b92ad61620dba72754bbc8b01c297

@@ -1,9 +1,11 @@
 
-    <div class="slogans">
+    <div class="slogans" *ngIf="images">
         <div class="vision" *ngFor="let content of images">
-            <img [src]="content?.url" [alt]="content?.alt">
+            <img [src]="content.url" [alt]="content.alt">
             <h3>{{content.header}}</h3>
-            <p>{{content.text}}</div>
+            <p>{{content.text}}</p>
+            <p>{{content.description1}}</p>
+            <p>{{content.description2}}</p>
         </div>
  
 

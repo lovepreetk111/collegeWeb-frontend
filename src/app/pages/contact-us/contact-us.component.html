@@ -1,1 +1,40 @@
-<p>contact-us works!</p>
+
+<div *ngFor="let data of pages[0].component">
+<app-top-img-btm-text1 [images]="data.metadata" *ngIf="data.compId === 1"></app-top-img-btm-text1>
+</div>
+
+
+<div class="card" *ngFor="let data of pages[0].component">
+<div class="contact-form" *ngIf="data.compId === 2">
+    <div class="contact-card">
+      <img [src]="data.metadata1.url" [alt]="data.metadata1.alt">
+      <!-- <img src="" alt=""> -->
+    </div>
+</div>
+<div class="contact-form" id="main-form">
+<!-- <form> -->
+      <div class="leftSection">
+        <div class="your-name">
+          <label>Your Name (required)</label>
+          <input  class="input-border" type="text" pInputText [(ngModel)]="dataModel" />
+        </div>
+        <div class="your-name">
+          <label>Your Email (required)</label>
+          <input  class="input-border" type="Email" pInputText [(ngModel)]="dataModel1" />
+        </div>
+        <div class="your-name">
+            <label> Contact (required)</label>
+            <input  class="input-border" type="text" pInputText [(ngModel)]="dataModel2" />
+          </div>
+        <div class="text-area">
+          <label>Your Message</label><br>
+          <textarea  class="input-border-text" rows="5" cols="30" [(ngModel)]="dataModel3" pInputTextarea></textarea>
+        </div>
+        <div class="contact-btn">
+          <button (click)="sendData()">Add Data</button>
+        </div>
+      </div>
+    
+  <!-- </form> -->
+</div>
+</div>
