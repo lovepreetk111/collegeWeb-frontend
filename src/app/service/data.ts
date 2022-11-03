@@ -1,17 +1,19 @@
-export interface InavbarConfig{
-  id:string
-  implinksdata:IImpLinks[]
-  logo:InavLogo[]
-  navbar:INavbarData[]
+/* ====================== Header =============== */
+export interface InavbarConfig {
+  id: string
+  implinksdata: IImpLinks[]
+  logo: InavLogo[]
+  navbar: INavbarData[]
 }
-export interface InavLogo{
-    logoUrl:string,
-    logoAlt:string
+export interface InavLogo {
+  logoUrl: string,
+  logoAlt: string,
+  link:string
 }
-export interface IImpLinks{
-  id:string,
-  impLinks:string,
-  routeLinks:string;
+export interface IImpLinks {
+  id: string,
+  impLinks: string,
+  routeLinks: string;
 }
 export interface INavbarData {
   id: string;
@@ -19,49 +21,18 @@ export interface INavbarData {
   link: string;
   child: IDropdowns[]
 }
-export interface IDropdowns{
-  dropdown:string,
-  url:string
-}
-export interface Inotice{
-  id:string
-  noticeLink:string;
-}
-export interface IAboutSectionData{
-  id:string,
-  style:{
-    backgroundColor:string
-  }
-  info:IBtnCmpData,
-  imgText:IleftimageRightTxt
-  topimgText:IPictureComponentImage[]
+export interface IDropdowns {
+  dropdown: string,
+  url: string
 }
 
-export interface IBtnCmpData{
-  data:string,
+/*============================= Notices component =======================*/
+export interface Inotice {
+  id: string
+  noticeLink: string;
 }
 
-export interface IleftimageRightTxt{
-  url: string;
-  alt: string;
-  para1:string;
-  para2:string
-}
-export interface IPictureComponentImage {
-  url: string;
-  alt: string;
-  header: string;
-  text: string;
-  description1:string;
-  description2:string;
-
-}
-export interface Ileftimg1 {
-  url: string;
-  alt: string;
-  Text:string
-}
-
+/* ===================================== Banner Carousel component ================ */
 export interface IBannerCarosuelComponent {
   innerData: {
     header: string;
@@ -78,6 +49,81 @@ export interface IBannerCarosuelComponent {
   },
   routeLink: string;
 }
+
+/* ============================================ AboutUsSection =============================*/
+/* ====================== container 2 ============================ */
+export interface IAboutSectionData {
+  id: string,
+  style: {
+    backgroundColor: string
+  }
+  info: IBtnCmpData,
+  imgText: IleftimageRightTxt
+  topimgText: IPictureComponentImage[]
+}
+/* Button component 1 */
+export interface IBtnCmpData {
+  data: string,
+}
+/* Left Image Right Text1 Component */
+export interface IleftimageRightTxt {
+  url: string;
+  alt: string;
+  para1: string;
+  para2: string
+}
+/* Top image btm text1 component */
+export interface IPictureComponentImage {
+  url: string;
+  alt: string;
+  header: string;
+  text: string;
+}
+
+/* ====================================== Accordian Section =============================*/
+export interface IDropDown{
+  data: Ileftimg1[]
+  AccordianData:IAccordianData[]
+}
+/* Accordian Component */
+export interface IAccordianData {
+  Title: string;
+  SubTitle1: string;
+  SubTitle2: string;
+  SubTitle3: string;
+}
+/* Left image1 component */
+export interface Ileftimg1 {
+  url: string;
+  alt: string;
+  Text: string
+}
+
+/* ====================================== Card Carousel Component =========================== */
+export interface ICardCarosuel {
+  slide:{
+    id:string,
+  img: {
+    id: string,
+    url: string,
+    alt: string,
+    routeLink: string
+  },
+  data: {
+    cardHeading: string,
+    description: string
+  }
+}
+}
+
+/* ===================================== Testimonial Section ============================ */
+/* ================================ container 3 ======================== */
+export interface ITestimonialSectionData {
+  title: string;
+  description: string;
+  cardsData: ITestimonialCardData[]
+}
+/* profile Card Component */
 export interface ITestimonialCardData {
   comment: string;
   name: string;
@@ -86,12 +132,7 @@ export interface ITestimonialCardData {
   profileUrl: string;
 }
 
-export interface ITestimonialSectionData {
-  title: string;
-  description: string;
-  cardsData: ITestimonialCardData[]
-}
-
+/* ==================================== Footer component ================================ */
 export interface IFooterCmp {
   ContactCall: {
     Number: string;
@@ -105,6 +146,7 @@ export interface IFooterCmp {
     link: string,
   }[]
 }
+<<<<<<< HEAD
 
 export interface IDropDown{
   Title: string;
@@ -136,3 +178,5 @@ export interface ICardCarosuel{
 //   description1:string,
 //   description2:string
 //   }
+=======
+>>>>>>> 10aa0a4dc05b92ad61620dba72754bbc8b01c297
