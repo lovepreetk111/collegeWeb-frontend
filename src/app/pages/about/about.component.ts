@@ -73,7 +73,7 @@ export class AboutComponent implements OnInit {
               alt:'panj',
     
               text:'Our Inspiration',
-              text1:'Late Shri pankaj Madhukarrao',
+              text1:'Late Shri Madhukarrao',
               text2:'Chaudhari',
               text3:'Founder President Chetana Trust',
               textMain:'Chetana’s was established with the twin objective of providing quality education and infusing students with dynamism. Chetana has created many success stories and today it has become one of the most preferred Institutes in India.              I see many opportunities to be seized as our country stands at the hub of Economic growth. Our economy alone shall make India a super power on the Global Scenario. It is only natural that this accelerated phase of growth would result in investment in people and infrastructure. Therefore, all our initiatives are aimed at developing competent and committed managers who will be very much part of these efforts.             Our high caliber faculty with vast experience would add the required momentum to the whole process. Apart from core faculty, who are always a source of motivation for the students, we have an erudite industry experts that comprises of top managers from the corporate world who share their rich experience with the students.           I take pride in welcoming you all to Chetana’s Institute.'
