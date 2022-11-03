@@ -48,7 +48,7 @@ import { FormComponent1Component } from './form-component1/form-component1.compo
     ContactUsComponent,
     ImageCmp1Component,
     TextCmp1Component,
-    CircleImgLeftTxt1Component],
+    CircleImgLeftTxt1Component,
     FormComponent1Component],
   imports: [
     BrowserModule,
