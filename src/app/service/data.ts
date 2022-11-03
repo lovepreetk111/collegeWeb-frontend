@@ -78,6 +78,8 @@ export interface IPictureComponentImage {
   alt: string;
   header: string;
   text: string;
+  description1:string,
+  description2:string
 }
 
 /* ====================================== Accordian Section =============================*/
@@ -163,8 +165,5 @@ export interface IFooterCmp {
   }[]
 }
 
-
-
-
-
-
+/* ******************************************** CONTACT US PAGE ******************************************** */
+/* ============================ form component1 =================================== */
