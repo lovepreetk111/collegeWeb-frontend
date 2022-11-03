@@ -7,3 +7,5 @@
     <app-card-carousel *ngIf="data.compId === 6" [cardConfig]="data.metadata"></app-card-carousel>
     <app-container3 *ngIf="data.compId===7" [sectionData]="data.metadata"></app-container3>
 </div>
+
+<app-form-component1 (sendDataEmitter)="receiveData($event)"></app-form-component1>

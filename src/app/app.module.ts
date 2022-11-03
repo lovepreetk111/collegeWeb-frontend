@@ -24,7 +24,8 @@ import { BannerCarouselComponent } from './component/banner-carousel/banner-caro
 import { ImageCmp1Component } from './component/image-cmp1/image-cmp1.component'
 import { TextCmp1Component } from './component/text-cmp1/text-cmp1.component';
 import { CircleImgLeftTxt1Component } from './component/circle-img-left-txt1/circle-img-left-txt1.component';
-
+import { FormsModule } from '@angular/forms';
+import { FormComponent1Component } from './form-component1/form-component1.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -48,10 +49,12 @@ import { CircleImgLeftTxt1Component } from './component/circle-img-left-txt1/cir
     ImageCmp1Component,
     TextCmp1Component,
     CircleImgLeftTxt1Component],
+    FormComponent1Component],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
