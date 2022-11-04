@@ -7,7 +7,7 @@ import { IaboutUs, IcoursesBanner } from 'src/app/service/data';
   styleUrls: ['./image-cmp1.component.scss']
 })
 export class ImageCmp1Component implements OnInit {
-  @Input() AboutBanner!:IaboutUs;
+  @Input() AboutBanner:IaboutUs[]=[]
   constructor() { }
 
   ngOnInit(): void {

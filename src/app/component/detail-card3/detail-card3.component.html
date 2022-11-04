@@ -1,22 +1,24 @@
-{{CourseData | json}}
-
-<!-- <div class="container detail" *ngIf="values">
-    <app-left-img2 [LeftImage]="values.image"></app-left-img2>
-    <div class="detailcard">
-        <h4>{{values.header}}</h4>
+<!-- {{CourseData | json}} -->
+<div>
+<!-- <app-image-cmp1 *ngFor="let data of CourseData" [AboutBanner]="data.info"></app-image-cmp1> -->
+<div class="container detail" *ngIf="CourseData">
+    <app-left-img2 *ngFor="let data of CourseData"  [LeftImage]="data.image"></app-left-img2>
+    <div class="detailcard" *ngFor="let datas of CourseData">
+        <h4>{{datas.cardData.header}}</h4>
         <div class="detailtext">
-            <div class="duration" *ngFor="let datas of values.">
-                <h4>{{datas.key}}:</h4>
-                <h4>{{datas.value}}</h4>
+            <div class="duration" *ngFor="let data of datas.values">
+                <h4>{{data.key}}:</h4>
+                <h4>{{data.value}}</h4>
             </div>
             <hr>
         </div>
 
         <div class="fees">
-            <h3>{{values.feesdetail}}</h3>
+            <h3>{{datas.cardData.feesdetail}}</h3>
         </div>
-    </div> -->
-    <!--  <div class="detailcard">
+    </div>
+</div>
+     <!-- <div class="detailcard">
         <h4>COURSE FEATURES</h4>
         <div class="detailtext">
             <div class="duration">
@@ -39,4 +41,4 @@
             <h3>COURSES FEE 75000</h3>
         </div>
     </div> -->
-<!-- </div> -->
+</div>

@@ -11,10 +11,6 @@ export class CourseSub1Component implements OnInit {
 
   ngOnInit(): void {
   }
-
-
-
-
   currentPageIndex = 0;
   pages: any = [
     {
@@ -22,6 +18,58 @@ export class CourseSub1Component implements OnInit {
       component: [
         {
           compId:1,
+          compName:'Image Component 1',
+          metadata:[
+              {
+                url:'../../../assets/images/Chetana Building.jpeg',
+                alt:"koi toh imaage",
+                text:"Courses"
+              },
+            
+          ]
+        },
+        {
+          compId:2,
+          compName:"card",
+          metadata:[
+            {
+              info:{
+                url:'../../../assets/images/Chetana Building.jpeg',
+                alt:"koi toh imaage",
+                text:"Courses"
+              },
+              image:[
+              {
+                url:'../../../assets/images/ChetanaDC.jpeg',
+                alt:'detail',
+              }
+              ],
+              cardData:[
+                {
+                  id:1,
+                header:"",
+                feesdetail:"Courses fees is 75000",
+                }
+              ],
+              multiData:[
+                {
+                  key:'',
+                  value:"",
+                },
+                {
+                  key:'',
+                  value:"", 
+                },
+                {
+                  key:'',
+                  value:"",
+                }
+              ]
+            }
+          ],
+        },
+        {
+          compId:3,
           compName:"course-sub1",
           metadata:{
             info1:
@@ -57,41 +105,6 @@ export class CourseSub1Component implements OnInit {
              }
             },
         },
-        {
-          compId:2,
-          compName:"card",
-          metadata:[
-            {
-              image:[
-              {
-                url:'../../../assets/images/ChetanaDC.jpeg',
-                alt:'detail',
-              }
-              ],
-              cardData:[
-                {
-                  id:1,
-                header:"",
-                feesdata:"Courses fees is 75000",
-                }
-              ],
-              multiData:[
-                {
-                  key:'',
-                  value:"",
-                },
-                {
-                  key:'',
-                  value:"", 
-                },
-                {
-                  key:'',
-                  value:"",
-                }
-              ]
-            }
-          ],
-        }
       ]
     }
   ]
