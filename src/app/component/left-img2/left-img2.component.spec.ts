@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { Container3Component } from './container3.component';
+import { LeftImg2Component } from './left-img2.component';
 
-describe('Container3Component', () => {
-  let component: Container3Component;
-  let fixture: ComponentFixture<Container3Component>;
+describe('LeftImg2Component', () => {
+  let component: LeftImg2Component;
+  let fixture: ComponentFixture<LeftImg2Component>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ Container3Component ]
+      declarations: [ LeftImg2Component ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(Container3Component);
+    fixture = TestBed.createComponent(LeftImg2Component);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
