@@ -1,51 +1,23 @@
 <div class="container-fluid cardcarousel" *ngIf="cardConfig">
-      {{cardConfig | json}}
+    <!-- {{cardConfig | json}} -->
     <ngb-carousel #ngCarousal [interval]="10000" [showNavigationArrows]="false" [showNavigationIndicators]="false">
-          <!-- {{cardConfig | json}} -->
-        
-        <!-- <ng-template ngbSlide>
-            <div class="slide">
-                <div class="card" *ngFor="let datas of cardConfig">
-                    <div class="picsum-img-wrapper">
-                        <img [src]="datas.img.url" [alt]="datas.img.alt">
-                    </div>
-                    <div class="carousel-caption">
-                        <h3>{{datas.data.cardHeading}}</h3>
-                        <p>{{datas.data.description}}</p>
-                    </div>
-                </div>
-            </div>
-        </ng-template>  
-        <ng-template ngbSlide>
-            <div class="slide">
-                <div class="card" *ngFor="let datas of cardConfig">
-                    <div class="picsum-img-wrapper">
-                        <img [src]="datas.img.url" [alt]="datas.img.alt">
-                    </div>
-                    <div class="carousel-caption">
-                        <h3>{{datas.data.cardHeading}}</h3>
-                        <p>{{datas.data.description}}</p>
+        <div>
+            <ng-template ngbSlide *ngFor="let info of cardConfig.slides">
+                <div class="slide">
+                    <div class="card" *ngFor="let data of info.cards">
+                        <!-- {{info | json}} -->
+                        <div class="picsum-img-wrapper">
+                            <img [src]="data.img.url" [alt]="data.img.alt">
+                        </div>
+                        <div class="carousel-caption">
+                            <h3>{{data.data.cardHeading}}</h3>
+                            <p>{{data.data.description}}</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </ng-template>
-        <ng-template ngbSlide>
-            <div class="slide">
-                <div class="card" *ngFor="let datas of cardConfig">
-                    <div class="picsum-img-wrapper">
-                        <img [src]="datas.img.url" [alt]="datas.img.alt">
-                    </div>
-                    <div class="carousel-caption">
-                        <h3>{{datas.data.cardHeading}}</h3>
-                        <p>{{datas.data.description}}</p>
-                    </div>
-                </div>
-            </div>
-
-        </ng-template>  -->
+            </ng-template>
+        </div>
     </ngb-carousel>
-
-
     <div class="functionbuttons">
         <div class="navigationbutton">
             <button (click)="previousSlide()">

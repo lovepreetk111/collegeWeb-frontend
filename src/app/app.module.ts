@@ -8,7 +8,6 @@ import { FooterComponent } from './footer/footer.component';
 import { NoticesComponent } from './component/notices/notices.component';
 import { Container1Component } from './component/container1/container1.component';
 import { Container2Component } from './component/container2/container2.component';
-import { Container3Component } from './component/container3/container3.component';
 import { LeftImgRightTxt1Component } from './component/left-img-right-txt1/left-img-right-txt1.component';
 import { TopImgBtmText1Component } from './component/top-img-btm-text1/top-img-btm-text1.component';
 import { CardCarouselComponent } from './component/card-carousel/card-carousel.component';
@@ -25,7 +24,15 @@ import { ImageCmp1Component } from './component/image-cmp1/image-cmp1.component'
 import { TextCmp1Component } from './component/text-cmp1/text-cmp1.component';
 import { CircleImgLeftTxt1Component } from './component/circle-img-left-txt1/circle-img-left-txt1.component';
 import { FormsModule } from '@angular/forms';
-import { FormComponent1Component } from './form-component1/form-component1.component';
+import { FormComponent1Component } from './component/form-component1/form-component1.component';
+import { CourseComponent } from './pages/course/course.component';
+import{ LeftImg2Component } from './component/left-img2/left-img2.component';
+import { DetailsCard2Component } from './component/details-card2/details-card2.component';
+import { DetailCard3Component } from './component/detail-card3/detail-card3.component';
+import { DetialsCard1Component } from './component/detials-card1/detials-card1.component';
+import { TabViewCmp1Component } from './component/tab-view-cmp1/tab-view-cmp1.component';
+import { CourseSub1Component } from './pages/course-sub1/course-sub1.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,7 +41,6 @@ import { FormComponent1Component } from './form-component1/form-component1.compo
     NoticesComponent,
     Container1Component,
     Container2Component,
-    Container3Component,
     LeftImgRightTxt1Component,
     TopImgBtmText1Component,
     CardCarouselComponent,
@@ -49,12 +55,20 @@ import { FormComponent1Component } from './form-component1/form-component1.compo
     ImageCmp1Component,
     TextCmp1Component,
     CircleImgLeftTxt1Component,
-    FormComponent1Component],
+    FormComponent1Component,
+    CourseComponent,
+    LeftImg2Component,
+    DetailsCard2Component,
+    DetailCard3Component,
+    DetialsCard1Component,
+    TabViewCmp1Component,
+    CourseSub1Component
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    FormsModule
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
