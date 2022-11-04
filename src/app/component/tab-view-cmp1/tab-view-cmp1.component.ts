@@ -6,9 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./tab-view-cmp1.component.scss']
 })
 export class TabViewCmp1Component implements OnInit {
-
-  constructor() { }
-
+  active = 1;
   ngOnInit(): void {
   }
 

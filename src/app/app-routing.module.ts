@@ -2,7 +2,10 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutComponent } from './pages/about/about.component';
 import { ContactUsComponent } from './pages/contact-us/contact-us.component';
+import { CourseSub1Component } from './pages/course-sub1/course-sub1.component';
+import { CourseComponent } from './pages/course/course.component';
 import { HomeComponent } from './pages/home/home.component';
+
 
 const routes: Routes = [
   {path:'', component:HomeComponent},
@@ -13,6 +16,14 @@ const routes: Routes = [
   {
     path:'contact',
     component:ContactUsComponent
+  },
+  {
+    path:'course',
+    component:CourseComponent
+  },
+  {
+    path:'course/sub1',
+    component:CourseSub1Component
   }
 ];
 
