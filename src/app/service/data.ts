@@ -1,4 +1,4 @@
-/* ====================== Header =============== */
+/* ================================ Header =================================== */
 export interface InavbarConfig {
   id: string
   implinksdata: IImpLinks[]
@@ -8,7 +8,7 @@ export interface InavbarConfig {
 export interface InavLogo {
   logoUrl: string,
   logoAlt: string,
-  link:string
+  link: string
 }
 export interface IImpLinks {
   id: string,
@@ -78,14 +78,14 @@ export interface IPictureComponentImage {
   alt: string;
   header: string;
   text: string;
-  description1:string,
-  description2:string
+  description1: string,
+  description2: string
 }
 
 /* ====================================== Accordian Section =============================*/
-export interface IDropDown{
+export interface IDropDown {
   data: Ileftimg1[]
-  AccordianData:IAccordianData[]
+  AccordianData: IAccordianData[]
 }
 /* Accordian Component */
 export interface IAccordianData {
@@ -99,23 +99,6 @@ export interface Ileftimg1 {
   url: string;
   alt: string;
   Text: string
-}
-
-/* ====================================== Card Carousel Component =========================== */
-export interface ICardCarosuel {
-  slide:{
-    id:string,
-  img: {
-    id: string,
-    url: string,
-    alt: string,
-    routeLink: string
-  },
-  data: {
-    cardHeading: string,
-    description: string
-  }
-}
 }
 
 /* ===================================== Testimonial Section ============================ */
@@ -132,6 +115,28 @@ export interface ITestimonialCardData {
   designation: string;
   companyName: string;
   profileUrl: string;
+}
+
+/* =================================== Card Carousel ============================= */
+export interface ICardCarosuel {
+  id: string,
+  slides: ICardCarosuelInfo[]
+}
+export interface ICardCarosuelInfo {
+  slideNo: string,
+  cards: ICardCarosuelData[]
+}
+export interface ICardCarosuelData {
+  id: 1,
+  img: {
+    url: string,
+    alt: string,
+    routeLink: string
+  },
+  data: {
+    cardHeading: string,
+    description: string
+  }
 }
 
 /* ==================================== Footer component ================================ */
