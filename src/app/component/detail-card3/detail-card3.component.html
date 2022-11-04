@@ -1,6 +1,22 @@
-<div class="container detail">
-    <app-left-img2></app-left-img2>
+{{CourseData | json}}
+
+<!-- <div class="container detail" *ngIf="values">
+    <app-left-img2 [LeftImage]="values.image"></app-left-img2>
     <div class="detailcard">
+        <h4>{{values.header}}</h4>
+        <div class="detailtext">
+            <div class="duration" *ngFor="let datas of values.">
+                <h4>{{datas.key}}:</h4>
+                <h4>{{datas.value}}</h4>
+            </div>
+            <hr>
+        </div>
+
+        <div class="fees">
+            <h3>{{values.feesdetail}}</h3>
+        </div>
+    </div> -->
+    <!--  <div class="detailcard">
         <h4>COURSE FEATURES</h4>
         <div class="detailtext">
             <div class="duration">
@@ -22,5 +38,5 @@
         <div class="fees">
             <h3>COURSES FEE 75000</h3>
         </div>
-    </div>
-</div>
+    </div> -->
+<!-- </div> -->

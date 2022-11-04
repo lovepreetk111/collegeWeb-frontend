@@ -1,5 +1,10 @@
-<app-image-cmp1></app-image-cmp1>
-<app-detail-card3></app-detail-card3>
+<div *ngFor="let data of pages[0].component">
+<app-image-cmp1 [AboutBanner]="data.metadata.info1" *ngIf="data.compId === 1"></app-image-cmp1>
+<!-- <app-detail-card3 [courseData] *ngIf="data.compId===2"></app-detail-card3> -->
 
-<app-tab-view-cmp1></app-tab-view-cmp1>
+<app-tab-view-cmp1 [details]="data.metadata.courseDetails" *ngIf="data.compId === 1"></app-tab-view-cmp1>
+</div>
 
+<!-- <div *ngFor="let data of pages[0].component">
+    <app-detail-card3 [courseData]="data.metadata" *ngIf="data.compId===2"></app-detail-card3>
+</div> -->

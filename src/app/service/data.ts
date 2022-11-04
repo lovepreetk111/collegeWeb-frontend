@@ -159,6 +159,20 @@ export interface IFooterCmp {
 export interface text{
   text:string;
 }
+
+/* image-cmp1*/
+export interface IaboutUs{
+  url:string;
+  alt:string;
+  text:string;
+}
+
+/* Leftimg1*/
+export interface Ileftimg{
+  url:string;
+  alt:string;
+}
+
 /* circle img left txt */
 export interface AboutMain{
   url:string;
@@ -172,3 +186,41 @@ export interface AboutMain{
 
 /* ******************************************** CONTACT US PAGE ******************************************** */
 /* ============================ form component1 =================================== */
+export interface IcoursesBanner{
+  url:string;
+  alt:string;
+  text:string;
+}
+
+export interface IcourseDetail{
+  text:string;
+  text1:string;
+  text2:string;
+  text3:string;
+  text4:string;
+  text5:string;
+  text6:string;
+  text7:string;
+  text8:string;
+  text9:string;
+  text10:string;
+  link:string;
+  url:string;
+  alt:string;
+  text11:string;
+  text12:string;
+
+}
+
+export interface ICourseFeature{
+  image:Ileftimg[]
+  cardData:{
+    id:string,
+    header:string,
+    feesdetail:string,
+  }
+  multidata:[
+    key:string,
+    value:string,
+  ]
+}
