@@ -4,6 +4,7 @@ import { AboutComponent } from './pages/about/about.component';
 import { ContactUsComponent } from './pages/contact-us/contact-us.component';
 import { HomeComponent } from './pages/home/home.component';
 
+
 const routes: Routes = [
   {path:'', component:HomeComponent},
   {

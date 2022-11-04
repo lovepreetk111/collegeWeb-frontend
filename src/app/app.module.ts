@@ -31,6 +31,7 @@ import { DetailsCard2Component } from './component/details-card2/details-card2.c
 import { DetailCard3Component } from './component/detail-card3/detail-card3.component';
 import { DetialsCard1Component } from './component/detials-card1/detials-card1.component';
 import { TabViewCmp1Component } from './component/tab-view-cmp1/tab-view-cmp1.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -65,7 +66,7 @@ import { TabViewCmp1Component } from './component/tab-view-cmp1/tab-view-cmp1.co
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    FormsModule
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
