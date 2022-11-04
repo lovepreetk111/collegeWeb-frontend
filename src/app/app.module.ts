@@ -26,6 +26,7 @@ import { CircleImgLeftTxt1Component } from './component/circle-img-left-txt1/cir
 import { FormsModule } from '@angular/forms';
 import { FormComponent1Component } from './form-component1/form-component1.component';
 import { CourseComponent } from './pages/course/course.component';
+import { TabViewCmp1Component } from './tab-view-cmp1/tab-view-cmp1.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -49,7 +50,8 @@ import { CourseComponent } from './pages/course/course.component';
     TextCmp1Component,
     CircleImgLeftTxt1Component,
     FormComponent1Component,
-    CourseComponent],
+    CourseComponent,
+    TabViewCmp1Component],
   imports: [
     BrowserModule,
     AppRoutingModule,
