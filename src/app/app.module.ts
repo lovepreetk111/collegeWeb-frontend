@@ -26,11 +26,11 @@ import { CircleImgLeftTxt1Component } from './component/circle-img-left-txt1/cir
 import { FormsModule } from '@angular/forms';
 import { FormComponent1Component } from './form-component1/form-component1.component';
 import { CourseComponent } from './pages/course/course.component';
-import { TabViewCmp1Component } from './tab-view-cmp1/tab-view-cmp1.component';
 import{ LeftImg2Component } from './component/left-img2/left-img2.component';
 import { DetailsCard2Component } from './component/details-card2/details-card2.component';
 import { DetailCard3Component } from './component/detail-card3/detail-card3.component';
 import { DetialsCard1Component } from './component/detials-card1/detials-card1.component';
+import { TabViewCmp1Component } from './component/tab-view-cmp1/tab-view-cmp1.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -55,11 +55,11 @@ import { DetialsCard1Component } from './component/detials-card1/detials-card1.c
     CircleImgLeftTxt1Component,
     FormComponent1Component,
     CourseComponent,
-    TabViewCmp1Component,
     LeftImg2Component,
     DetailsCard2Component,
     DetailCard3Component,
-    DetialsCard1Component
+    DetialsCard1Component,
+    TabViewCmp1Component
   ],
   imports: [
     BrowserModule,
