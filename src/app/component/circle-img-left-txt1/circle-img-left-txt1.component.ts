@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { AboutMain } from 'src/app/pages/about/about.component';
+import { AboutMain } from 'src/app/service/data';
+
 
 @Component({
   selector: 'app-circle-img-left-txt1',
