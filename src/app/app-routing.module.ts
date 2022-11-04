@@ -5,6 +5,7 @@ import { ContactUsComponent } from './pages/contact-us/contact-us.component';
 import { CourseComponent } from './pages/course/course.component';
 import { HomeComponent } from './pages/home/home.component';
 
+
 const routes: Routes = [
   {path:'', component:HomeComponent},
   {

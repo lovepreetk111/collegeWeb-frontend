@@ -1,1 +1,72 @@
-<p>tab-view-cmp1 works!</p>
+<ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-tabs">
+	<li [ngbNavItem]="1">
+		<a ngbNavLink>COURSE DETAILS</a>
+		<ng-template ngbNavContent>
+			<h1>Bachelor of Science in I.T.</h1>
+        <p>The B.Sc. IT programme of the University of Mumbai is designed to provide basic inputs for abroad understanding of information technology and its interfaces. The focus is on information technology and IT Management. Today smart, successful businesses use IT to give them an extra-edge to stay ahead of the competition. IT is soon becoming s ‘driver’ rather than an 
+            ‘enabler’ of business. It is used for processes like office Automation, Management information
+        </p>
+        <ul>
+            <li>Program Outcome : To apply the IT skills and knowledge acquired in managing and solving real world problems within their work domain.
+            </li>
+            <li>Program Specific Outcome : To recognize the need for and have the preparation and ability to engage and enhance the skills onto the next level of computing.
+            </li>
+            <li>Course Outcome : Enabling and equipping the students with technological skills as per the industry expectation.
+            </li>
+            <li>Student Vision : To prepare a workforce of professionals who exhibit leadership by creating a platform of opportunities which will help them shape themselves as future entrepreneurs.</li>
+        </ul>
+        <h3>Eligibility Criteria</h3>
+        <ul>
+            <li>A candidate for being eligible for admission to the degree Course of Bachelor of Science Information Technology shall have passed XII Standard Examination of the Maharashtra board of Higher Secondary Education or its equivalent with Mathematic and Statistics as one of the subject and one should not have secured less than 35% marks in aggregate for open category and Reserved category candidates.
+            </li>
+            <li> Candidate who have passed Diploma (Three years after S.S.C.- Xth Std.) in Information Technology /Computer technology/ Computer Engineering/ Computer Science / Electrical, electronics and video Engineering and allied branches/ Mechanical and ALLIED Branches/ Civil and Allied Branches are eligible for direct admission to the second year of the B.Sc.(I.T) degree Education course. However, the Diploma should have recognized by the Board of Technical Education or any other recognized Government Body. Minimum marks required 35% aggregate for open reserved category candidates
+            </li>
+            <h4>OR</h4>
+            <li>Candidates with post HSC-Diploma in Information Technology / Computer Technology/ Computer Engineering/ Computer Science and allied branches will be eligible for direct admission to the Second year of B.Sc.(I.T) However the Diploma should be recognized by the board of Technical education or any other recognized Government body minimum marks required 35% aggregate for open category candidates and reserved category candidates.
+            </li>
+            <li>P/S Further candidate should note the criteria of admission procedure is as per University of Mumbai</li>
+        </ul>
+		</ng-template>
+	</li>
+	<li [ngbNavItem]="2">
+		<a ngbNavLink>COURSE STRUCTURE</a>
+		<ng-template ngbNavContent>
+			<ul>
+                <li>FYBScIT_First Year_Sem 1and 2_2016_17</li>
+                <li>SYBScIT_Second Year__Sem 3and 4_2017_18</li>
+                <li>TYBScIT_Third Year_Sem 5and 6_2018_19</li>
+            </ul>
+            <h3>Duration of the programme and related information:</h3>
+            <ul>
+                <li>The programme is full time, consisting of six semester spread over three years.</li>
+                <li>The course consists of 30 modules comprising 30 theory papers and 01 project.</li>
+                <li>As per the University guidelines, degree will be conferred under “Choice Based Credit System” with 20 Credit Points per Semester and 10 Point Grading System
+                </li>
+                <li>A total number of lectures per course (subject) shall be a minimum of 50 and a maximum of 60, each of 50 minutes duration.</li>
+            </ul>
+		</ng-template>
+	</li>
+	<li [ngbNavItem]="3">
+		<a ngbNavLink>SYLLABUS</a>
+		<ng-template ngbNavContent>
+            <h3>BScIT SYLLABUS MUMBAI UNIVERSITY</h3>
+            <p><a href="https://mu.ac.in/wp-content/uploads/2021/10/B.Sc.I.T-Syllabus-FY-SY-TY.pdf" target="_blank">All Three Years</a></p>
+		</ng-template>
+	</li>
+    <li [ngbNavItem]="4">
+		<a ngbNavLink>FACULTY</a>
+		<ng-template ngbNavContent>
+            <div class="facultyinfo">
+                <img src="assets/images/FACULTY.svg" alt="" class="facultyimage" >
+                <div class="facultyname">
+                    <h4>Saravanan Reddy</h4>
+                    <p>Course Co-ordinator</p>
+                </div>
+            </div>
+		</ng-template>
+	</li>
+</ul>
+
+<div [ngbNavOutlet]="nav" class="mt-2"></div>
+
+<!-- <pre>Active: {{ active }}</pre> -->

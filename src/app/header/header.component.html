@@ -1,43 +1,29 @@
 <header *ngIf="headerData">
     <div *ngFor="let datas of headerData">
-        <div class="top">
-            <ul *ngFor="let data of datas.implinksdata">
-                <li><a [href]="data.routeLinks"></a>
-                    {{data.impLinks}}
+    <div class="top" >
+       <ul *ngFor="let data of datas.implinksdata">
+        <li><a [href]="data.routeLinks"></a>
+        {{data.impLinks}}
+        </li>
+       </ul>
+    </div>
+    <div class="bottom" *ngFor="let data of datas.logo">
+        <a [routerLink]=data.link>  <img [src]="data.logoUrl" [alt]="data.logoAlt"> </a>
+       
+        <div class="navbar">
+            <ul *ngFor="let content of datas.navbar">
+                <li ngbDropdown class="nav-item" *ngIf="content.child">
+                    <a [routerLink]="content.link" (click)="false" class="nav-link" ngbDropdownToggle>{{content.nav}}</a>
+                   
+                    <div ngbDropdownMenu class="dropdown-list">
+                        <a *ngFor="let data of content.child" class="dropdown-item" [routerLink]="data.url">{{data.dropdown}}</a>
+                    </div>
+                </li>
+                <li class="nav-item" *ngIf="!content.child">
+                    <a [routerLink]="content.link" (click)="false" class="nav-link" >{{content.nav}}</a>
                 </li>
             </ul>
         </div>
-        <div class="bottom" *ngFor="let data of datas.logo">
-            <a [routerLink]=data.link> <img [src]="data.logoUrl" [alt]="data.logoAlt"> </a>
-
-            <div class="navbar">
-                <ul *ngFor="let content of datas.navbar">
-                    <li ngbDropdown class="nav-item" *ngIf="content.child">
-                        <a [routerLink]="content.link" (click)="false" class="nav-link"
-                            ngbDropdownToggle>{{content.nav}}</a>
-                        <div ngbDropdownMenu class="dropdown-list">
-                            <a *ngFor="let data of content.child" class="dropdown-item"
-                                [routerLink]="data.url">{{data.dropdown}}</a>
-                        </div>
-                    </li>
-                    <li class="nav-item" *ngIf="!content.child">
-                        <a [routerLink]="content.link" (click)="false" class="nav-link">{{content.nav}}</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
     </div>
+</div>
 </header>
-
-<!-- <header *ngIf="headerData">
-   
-    <div *ngFor="let datas of headerData">
-        <div class="top" *ngFor="let data of datas.implinksdata">
-            <h3>{{data.impLinks}}</h3>
-        </div>
-        <div *ngFor="let data of datas.navbar">
-        <h3>{{data.nav}}</h3>
-    </div>
-   
-    </div>
-</header> -->
