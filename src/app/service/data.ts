@@ -154,5 +154,21 @@ export interface IFooterCmp {
   }[]
 }
 
+/* *************************************** ABOUT US ******************************* */
+/* txt comp1 */
+export interface text{
+  text:string;
+}
+/* circle img left txt */
+export interface AboutMain{
+  url:string;
+  alt:string;
+  text:string;
+  text1:string;
+  text2:string;
+  textMain:string;
+}
+
+
 /* ******************************************** CONTACT US PAGE ******************************************** */
 /* ============================ form component1 =================================== */

@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { text } from 'src/app/pages/about/about.component';
+import { text } from 'src/app/service/data';
 
 @Component({
   selector: 'app-text-cmp1',
