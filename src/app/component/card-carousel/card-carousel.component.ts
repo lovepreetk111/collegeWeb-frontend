@@ -8,7 +8,7 @@ import { ICardCarosuel } from 'src/app/service/data';
   styleUrls: ['./card-carousel.component.scss']
 })
 export class CardCarouselComponent implements OnInit {
-  @Input() cardConfig:ICardCarosuel[]=[];
+  @Input() cardConfig!:ICardCarosuel;
   
   @ViewChild(NgbCarousel) ngbCarousal!: NgbCarousel;
   isCarousalVisible!: boolean;

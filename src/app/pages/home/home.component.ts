@@ -9,9 +9,9 @@ export class HomeComponent implements OnInit {
 
 
   outPutData = '';
-  receiveData(childData: any){
-   console.log(childData);
-  this.outPutData = childData.title;
+  receiveData(childData: any) {
+    console.log(childData);
+    this.outPutData = childData.title;
   }
   constructor() {
     console.log(this.pages);
@@ -137,24 +137,24 @@ export class HomeComponent implements OnInit {
                 alt: 'example3',
                 header: 'Vision',
                 text: 'To raise our institution to higher levels of academic and cultural excellence and create an urge to enrich the personality of our students to serve humanity as one global family.',
-                description1:'',
-                description2:''
+                description1: '',
+                description2: ''
               },
               {
                 url: "../../../assets/images/mission.svg",
                 alt: 'example3',
                 header: 'Mission',
                 text: 'To raise our institution to higher levels of academic and cultural excellence and create an urge to enrich the personality of our students to serve humanity as one global family.',
-                description1:'',
-                description2:''
+                description1: '',
+                description2: ''
               },
               {
                 url: "../../../assets/images/values.svg",
                 alt: 'example3',
                 header: 'Values',
                 text: 'To raise our institution to higher levels of academic and cultural excellence and create an urge to enrich the personality of our students to serve humanity as one global family.',
-                description1:'',
-                description2:''
+                description1: '',
+                description2: ''
               }
             ]
           }
@@ -211,91 +211,140 @@ export class HomeComponent implements OnInit {
           compId: 6,
           compName: "cardcarosuel",
           metadata: [
-            {
-              slide:[
-                
-                {
-                  id: 1,
-                  img: {
-                    url: "../../../assets/images/ChetanaDC.jpeg",
-                    alt: "image",
-                    routeLink: "/page/ground",
+           {
+            id:1,
+            /* slides:[
+              {
+                slideNo:1,
+                cards:[
+                  {
+                    id:1,
+                    img:{
+                      url:"",
+                      alt:"",
+                      routeLink:"",
+                    },
+                    data:{
+                      cardHeading:"Lab",
+                      description:""
+                    }
                   },
-                  data: {
-                    cardHeading: "Ground",
-                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-                  }
-    
-                },
-                {
-                  id: 2,
-                  img: {
-                    url: "../../../assets/images/ChetanaJC.svg",
-                    alt: "image",
-                    routeLink: "/page/lab",
+                  {
+                    id:2,
+                    img:{
+                      url:"",
+                      alt:"",
+                      routeLink:"",
+                    },
+                    data:{
+                      cardHeading:"Lab",
+                      description:""
+                    }
                   },
-                  data: {
-                    cardHeading: "Lab",
-                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+                  {
+                    id:3,
+                    img:{
+                      url:"",
+                      alt:"",
+                      routeLink:"",
+                    },
+                    data:{
+                      cardHeading:"Lab",
+                      description:""
+                    }
                   }
-                },
-                {
-                  id: 3,
-                  img: {
-                    url: "../../../assets/images/ChetanaDC.jpeg",
-                    alt: "image",
-                    routeLink: "/page/libraby",
+                ]
+              }
+            ] */
+            slides:[
+              {
+                id:1,
+                cards:[
+                  {
+                    id:1,
+                    img:{
+                      url:"../../../assets/images/Chetana Building.jpeg",
+                      alt:"",
+                      routeLink:""
+                    },
+                    data:{
+                      cardHeading:"Lab",
+                      description:""
+                    }
                   },
-                  data: {
-                    cardHeading: "Library",
-                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-                  }
-                }
-    
-              ],
-            },
-            {
-              slide:[
-                {
-                  id: 1,
-                  img: {
-                    url: "../../../assets/images/ChetanaDC.jpeg",
-                    alt: "image",
-                    routeLink: "/page/ground",
+                  {
+                    id:2,
+                    img:{
+                      url:"../../../assets/images/Chetana Building.jpeg",
+                      alt:"",
+                      routeLink:""
+                    },
+                    data:{
+                      cardHeading:"Lab",
+                      description:""
+                    }
                   },
-                  data: {
-                    cardHeading: "Ground",
-                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+                  {
+                    id:3,
+                    img:{
+                      url:"../../../assets/images/Chetana Building.jpeg",
+                      alt:"",
+                      routeLink:""
+                    },
+                    data:{
+                      cardHeading:"Lab",
+                      description:""
+                    }
                   }
-    
-                },
-                {
-                  id: 2,
-                  img: {
-                    url: "../../../assets/images/ChetanaJC.svg",
-                    alt: "image",
-                    routeLink: "/page/lab",
+                ]
+              }
+            ]
+           },{
+            id:2,
+            slides:[
+              {
+                id:1,
+                cards:[
+                  {
+                    id:1,
+                    img:{
+                      url:"../../../assets/images/Chetana Building.jpeg",
+                      alt:"",
+                      routeLink:""
+                    },
+                    data:{
+                      cardHeading:"Lab",
+                      description:""
+                    }
                   },
-                  data: {
-                    cardHeading: "Lab",
-                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-                  }
-                },
-                {
-                  id: 3,
-                  img: {
-                    url: "../../../assets/images/ChetanaDC.jpeg",
-                    alt: "image",
-                    routeLink: "/page/libraby",
+                  {
+                    id:2,
+                    img:{
+                      url:"../../../assets/images/Chetana Building.jpeg",
+                      alt:"",
+                      routeLink:""
+                    },
+                    data:{
+                      cardHeading:"Lab",
+                      description:""
+                    }
                   },
-                  data: {
-                    cardHeading: "Library",
-                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+                  {
+                    id:3,
+                    img:{
+                      url:"../../../assets/images/Chetana Building.jpeg",
+                      alt:"",
+                      routeLink:""
+                    },
+                    data:{
+                      cardHeading:"Lab",
+                      description:""
+                    }
                   }
-                }
-    
-              ], 
-            }
+                ]
+              }
+            ]
+           }
           ]
         },
         {
@@ -330,8 +379,8 @@ export class HomeComponent implements OnInit {
             ]
           }
         },
-       
-       
+
+
       ]
     }
   ]

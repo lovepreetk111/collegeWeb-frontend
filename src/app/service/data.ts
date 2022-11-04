@@ -78,8 +78,8 @@ export interface IPictureComponentImage {
   alt: string;
   header: string;
   text: string;
-  description1:string,
-  description2:string
+  description1: string,
+  description2: string
 }
 
 /* ====================================== Accordian Section =============================*/
@@ -101,23 +101,6 @@ export interface Ileftimg1 {
   Text: string
 }
 
-/* =====================================F= Card Carousel Component =========================== */
-export interface ICardCarosuel {
-  slide: {
-    id: string,
-    img: {
-      id: string,
-      url: string,
-      alt: string,
-      routeLink: string
-    },
-    data: {
-      cardHeading: string,
-      description: string
-    }
-  }
-}
-
 /* ===================================== Testimonial Section ============================ */
 /* ================================ container 3 ======================== */
 export interface ITestimonialSectionData {
@@ -136,17 +119,23 @@ export interface ITestimonialCardData {
 
 /* =================================== Card Carousel ============================= */
 export interface ICardCarosuel {
-  style: {
-    img: {
-      id: string,
-      url: string,
-      alt: string,
-      routeLink: string
-    },
-    data: {
-      cardHeading: string,
-      description: string
-    }
+  id: string,
+  slides: ICardCarosuelInfo[]
+}
+export interface ICardCarosuelInfo {
+  slideNo: string,
+  cards: ICardCarosuelData[]
+}
+export interface ICardCarosuelData {
+  id: 1,
+  img: {
+    url: string,
+    alt: string,
+    routeLink: string
+  },
+  data: {
+    cardHeading: string,
+    description: string
   }
 }
 

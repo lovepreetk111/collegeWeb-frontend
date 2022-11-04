@@ -8,7 +8,6 @@ import { FooterComponent } from './footer/footer.component';
 import { NoticesComponent } from './component/notices/notices.component';
 import { Container1Component } from './component/container1/container1.component';
 import { Container2Component } from './component/container2/container2.component';
-import { Container3Component } from './component/container3/container3.component';
 import { LeftImgRightTxt1Component } from './component/left-img-right-txt1/left-img-right-txt1.component';
 import { TopImgBtmText1Component } from './component/top-img-btm-text1/top-img-btm-text1.component';
 import { CardCarouselComponent } from './component/card-carousel/card-carousel.component';
@@ -26,6 +25,7 @@ import { TextCmp1Component } from './component/text-cmp1/text-cmp1.component';
 import { CircleImgLeftTxt1Component } from './component/circle-img-left-txt1/circle-img-left-txt1.component';
 import { FormsModule } from '@angular/forms';
 import { FormComponent1Component } from './form-component1/form-component1.component';
+import { CourseComponent } from './pages/course/course.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,7 +34,6 @@ import { FormComponent1Component } from './form-component1/form-component1.compo
     NoticesComponent,
     Container1Component,
     Container2Component,
-    Container3Component,
     LeftImgRightTxt1Component,
     TopImgBtmText1Component,
     CardCarouselComponent,
@@ -48,8 +47,9 @@ import { FormComponent1Component } from './form-component1/form-component1.compo
     ContactUsComponent,
     ImageCmp1Component,
     TextCmp1Component,
-    CircleImgLeftTxt1Component],
-    FormComponent1Component],
+    CircleImgLeftTxt1Component,
+    FormComponent1Component,
+    CourseComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
