@@ -51,8 +51,9 @@ export class AppComponent {
                   link: '/course',
                   child: [
                     {
+                    
                       dropdown: 'JUNIOR COLLEGE',
-                      url: 'something'
+                      url: 'course/sub1'
                     },
                     {
                       dropdown: 'DEGREE COLLEGE',
