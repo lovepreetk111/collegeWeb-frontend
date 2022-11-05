@@ -1,8 +1,9 @@
 header {
     width: 100%;
-    height: 25vh;
+    // height: 25vh;
 
     /* border: 1px solid black; */
+    
     ::ng-deep {
         .top {
             width: 100%;
@@ -38,6 +39,11 @@ header {
             justify-content: space-between;
             align-items: flex-end;
             padding: 1% 3%;
+            .khudkaclass{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+            }
 
             img {
                 // width:388px;
