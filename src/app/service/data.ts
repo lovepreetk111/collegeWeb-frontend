@@ -215,11 +215,13 @@ export interface IcourseDetail{
 export interface ICourseFeature{
   info:IaboutUs[]
   image:Ileftimg[]
-  cardData:{
-    id:string,
+  cardData:[
+    {
+      id:string,
     header:string,
     feesdetail:string,
-  }
+    }
+  ]
   values:Ivalues[]
 }
 

@@ -2,11 +2,20 @@
 *{
     font-family: 'Ubuntu', sans-serif;
 }
+li{
+    margin-top: 20px;
+    a{
+        text-decoration: none;
+        color: black;
+    }
+}
+
+.details{
+    padding: 2% 4%;
+    font-family: 'Ubuntu', sans-serif;
+}
 .facultyinfo{
+    padding: 3%;
     display: flex;
-.facultyimage{
-    width: 100px;
-    height: 100px;
+    font-family: 'Ubuntu', sans-serif;
 }
-}
-   

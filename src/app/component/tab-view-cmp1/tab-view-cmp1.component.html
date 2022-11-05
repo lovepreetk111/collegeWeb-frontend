@@ -3,6 +3,7 @@
 	<li [ngbNavItem]="1">
 		<a ngbNavLink>COURSE DETAILS</a>
 		<ng-template ngbNavContent>
+            <div class="details">
 			<h1>{{details.text}}</h1>
         <p>{{details.text1}}</p>
         <ul>
@@ -14,11 +15,13 @@
             <h4>{{details.text5}}</h4>
             <li [innerHTML]="details.text6"></li>
         </ul>
+    </div>
 		</ng-template>
 	</li>
 	<li [ngbNavItem]="2">
 		<a ngbNavLink>COURSE STRUCTURE</a>
 		<ng-template ngbNavContent>
+            <div class="details">
 			<ul>
                 <li [innerHTML]="details.text7"></li>
             </ul>
@@ -27,13 +30,16 @@
                 <li [innerHTML]="details.text9"></li>
                 
             </ul>
+            </div>
 		</ng-template>
 	</li>
 	<li [ngbNavItem]="3">
 		<a ngbNavLink>SYLLABUS</a>
 		<ng-template ngbNavContent>
+            <div class="details">
             <h3>{{details.text10}}</h3>
             <p><a [href]="details.link" target="_blank">All Three Years</a></p>
+            </div>
 		</ng-template>
 	</li>
     <li [ngbNavItem]="4">

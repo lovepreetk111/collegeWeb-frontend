@@ -4,8 +4,8 @@
 <div class="container detail" *ngIf="CourseData">
     <app-left-img2 *ngFor="let data of CourseData"  [LeftImage]="data.image"></app-left-img2>
     <div class="detailcard" *ngFor="let datas of CourseData">
-        <h4>{{datas.cardData.header}}</h4>
-        <div class="detailtext">
+        <h4 *ngFor="let data of datas.cardData">{{data.header}}</h4>
+        <div class="detailtext" >
             <div class="duration" *ngFor="let data of datas.values">
                 <h4>{{data.key}}:</h4>
                 <h4>{{data.value}}</h4>
@@ -13,8 +13,8 @@
             <hr>
         </div>
 
-        <div class="fees">
-            <h3>{{datas.cardData.feesdetail}}</h3>
+        <div class="fees" >
+            <h3  *ngFor="let data of datas.cardData">{{data.feesdetail}}</h3>
         </div>
     </div>
 </div>

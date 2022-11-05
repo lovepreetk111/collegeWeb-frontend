@@ -47,22 +47,22 @@ export class CourseSub1Component implements OnInit {
               cardData:[
                 {
                   id:1,
-                header:"",
+                header:"Course Features",
                 feesdetail:"Courses fees is 75000",
                 }
               ],
-              multiData:[
+              values:[
                 {
-                  key:'',
-                  value:"",
+                  key:'1',
+                  value:"Shubham",
                 },
                 {
-                  key:'',
-                  value:"", 
+                  key:'2',
+                  value:"LP", 
                 },
                 {
-                  key:'',
-                  value:"",
+                  key:'3',
+                  value:"NIVU",
                 }
               ]
             }
