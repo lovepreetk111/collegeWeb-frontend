@@ -1,12 +1,13 @@
-<div class="card-container"> 
-  <div class="left-side">
-   <div class="icon">
-    <!-- <img src="../../../assets/images/values.svg" alt=""> -->
-   </div>
+
+ <div class="container" >
+  <div class="card-container" *ngFor="let data of detailCardConfig">
+  <div class="left">
+    <img [src]="data.imgUrl" [alt]="data.imgAlt">
+  </div>
+  <div class="right">
+    <h4>{{data.header}}</h4>
+    <button type="button" value="Read More"><a [routerLink]="data.btnLink">{{data.btnTxt}}</a></button>
+  </div>
 </div>
-<div class="right-side">
-<div class="subject"> Arts
-</div>
-<button class="read-more">Read more</button>
-</div>
-</div>
+ </div>
+ <!-- <img src="../../../assets/images/ARTS.svg" alt=""> -->

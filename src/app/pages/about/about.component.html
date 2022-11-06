@@ -1,5 +1,3 @@
-
-
 <div *ngFor="let data of pages[0].component">
     <app-image-cmp1 [AboutBanner]="data.metadata.info6" *ngIf="data.compId === 1"></app-image-cmp1>
     <app-circle-img-left-txt1 [About]="data.metadata.aboutMain" *ngIf="data.compId === 1"></app-circle-img-left-txt1>
