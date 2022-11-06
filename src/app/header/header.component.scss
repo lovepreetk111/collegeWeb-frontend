@@ -4,7 +4,6 @@ header {
 
     /* border: 1px solid black; */
 
-    ::ng-deep {
         .top {
             width: 100%;
             height: 5vh;
@@ -28,6 +27,7 @@ header {
                 }
             }
         }
+        
         .bottom {
             width: 100%;
             height: 70%;
@@ -55,4 +55,3 @@ header {
             }
         }
     }
-}
