@@ -22,7 +22,7 @@ const routes: Routes = [
     component:CourseComponent
   },
   {
-    path:'course/sub1',
+    path:'course/bscit',
     component:CourseSub1Component
   }
 ];
