@@ -32,7 +32,25 @@ header {
             width: 100%;
             height: 70%;
             .navbar {
-                padding: 1%;
+                height: 100%;
+                align-items: flex-end;
+                padding: 1% 2%;
+                .navbar-brand{
+                    margin: 0;
+                }
+                .navlinks{
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: baseline;
+                }
+                ul{
+                    a{
+                    color: black;
+                    &:hover{
+                        color: blue;
+                    }
+                }
+                }
                 img {
                     width: 80%;
                 }
