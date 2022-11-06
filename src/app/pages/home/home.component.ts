@@ -360,21 +360,21 @@ export class HomeComponent implements OnInit {
                 name: "Ghazala",
                 designation: "student",
                 companyName: "chetana",
-                profileUrl: "https://play-lh.googleusercontent.com/0pyqGxdVkQsZUyWiDkvlUHRfCNcHdFS9Sq8G-GpCl9Idvd2fEUakpboNxqlMNVdDqMA=w240-h480-rw"
+                profileUrl: "assets/img/ghazala.svg"
               },
               {
                 comment: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
                 name: "Lappi",
                 designation: "ncc candidate",
                 companyName: "Gareeb chetana",
-                profileUrl: "https://www.inpixio.com/remove-background/images/main-before.jpg"
+                profileUrl: "assets/img/lappi.svg"
               },
               {
                 comment: "It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
                 name: "vandita",
                 designation: "pgl",
                 companyName: "BscIT",
-                profileUrl: "https://us.123rf.com/450wm/marctran/marctran1804/marctran180400117/99234583-passport-photo-portrait-of-asian-smiling-woman-.jpg?ver=6"
+                profileUrl: "assets/img/vandita.svg"
               }
             ]
           }
