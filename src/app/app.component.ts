@@ -73,22 +73,37 @@ export class AppComponent {
                       url: 'something',
                       subchild:[
                         {
-                          subchild: 'ARTS',
-                          routeLink: 'course/arts',
+                          subchild: 'BA',
+                          routeLink: 'course/BA',
                         },
                         {
-                          subchild: 'COMMERCE',
-                          routeLink: 'course/comm',
+                          subchild: 'BCOM',
+                          routeLink: 'course/bcom',
                         },
-                        {
-                          subchild: 'MCVC',
-                          routeLink: 'course/mcvc',
-                        }
+                        
                       ]
                     },
                     {
                       dropdown: 'SELF FINANCE COURSES',
-                      url: 'something'
+                      url: 'something',
+                      subchild:[
+                        {
+                          subchild: 'BMS',
+                          routeLink: 'course/bms',
+                        },
+                        {
+                          subchild: 'BAF',
+                          routeLink: 'course/baf',
+                        },
+                        {
+                          subchild: 'BAMMC',
+                          routeLink: 'course/bammc',
+                        },
+                        {
+                          subchild: 'BScIT',
+                          routeLink: 'course/bscit',
+                        }
+                      ]
                     },
                     {
                       dropdown: 'MASTER OF COMMERCE',
