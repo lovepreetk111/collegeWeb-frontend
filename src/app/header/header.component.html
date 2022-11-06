@@ -57,53 +57,32 @@
                 <a class="navbar-brand pb-2" href="#">
                     <img src="assets/images/Chetana Logo.svg" alt="">
                 </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse navlinks" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Dropdown </a>
+                    <ul class="navbar-nav" *ngFor="let content of datas.navbar">
+                        <li class="nav-item dropdown" *ngIf="content.child">
+                            <a class="nav-link dropdown-toggle" [routerLink]="content.link" id="navbarDropdownMenuLink"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> {{content.nav}} </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="http://google.com">Google</a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">Submenu</a></li>
-                                        <li><a class="dropdown-item" href="#">Submenu0</a></li>
-                                        <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Submenu 1</a>
-                                            <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="#">Subsubmenu1</a></li>
-                                                <li><a class="dropdown-item" href="#">Subsubmenu1</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Submenu 2</a>
-                                            <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="#">Subsubmenu2</a></li>
-                                                <li><a class="dropdown-item" href="#">Subsubmenu2</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
+                                <div>
+                                    <li class="dropdown-submenu" *ngFor="let child of content.child">
+                                        <a class="dropdown-item dropdown-toggle" [routerLink]="child.url">{{child.dropdown}}
+                                        </a>
+                                        <ul class="dropdown-menu" >
+                                            <li>
+                                                <a class="dropdown-item" *ngFor="let subchild of child.subchild"
+                                                    [routerLink]="subchild.routeLink">{{subchild.subchild}}</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </div>
                             </ul>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
+                        <li class="nav-item dropdown" *ngIf="!content.child">
+                            <a [routerLink]="content.link" (click)="false" class="nav-link">{{content.nav}}</a>
                         </li>
                     </ul>
                 </div>

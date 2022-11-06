@@ -51,13 +51,40 @@ export class AppComponent {
                   link: '/course',
                   child: [
                     {
-                    
                       dropdown: 'JUNIOR COLLEGE',
-                      url: 'course/sub1'
+                      url: 'course/sub1',
+                      subchild:[
+                        {
+                          subchild: 'ARTS',
+                          routeLink: 'course/arts',
+                        },
+                        {
+                          subchild: 'COMMERCE',
+                          routeLink: 'course/comm',
+                        },
+                        {
+                          subchild: 'MCVC',
+                          routeLink: 'course/mcvc',
+                        }
+                      ]
                     },
                     {
                       dropdown: 'DEGREE COLLEGE',
-                      url: 'something'
+                      url: 'something',
+                      subchild:[
+                        {
+                          subchild: 'ARTS',
+                          routeLink: 'course/arts',
+                        },
+                        {
+                          subchild: 'COMMERCE',
+                          routeLink: 'course/comm',
+                        },
+                        {
+                          subchild: 'MCVC',
+                          routeLink: 'course/mcvc',
+                        }
+                      ]
                     },
                     {
                       dropdown: 'SELF FINANCE COURSES',

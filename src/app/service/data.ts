@@ -19,11 +19,17 @@ export interface INavbarData {
   id: string;
   nav: string;
   link: string;
-  child: IDropdowns[]
+  child: IDropDownChild[]
 }
-export interface IDropdowns {
+export interface IDropDownChild {
   dropdown: string,
-  url: string
+  url: string,
+  subchild:IDropDownSubChild[]
+}
+
+export interface IDropDownSubChild{
+  subchild:string,
+  routeLink:string
 }
 
 /*============================= Notices component =======================*/
