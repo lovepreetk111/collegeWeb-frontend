@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { IDetailCardInfo } from 'src/app/service/data';
 
 @Component({
   selector: 'app-detials-card1',
@@ -6,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./detials-card1.component.scss']
 })
 export class DetialsCard1Component implements OnInit {
-
+@Input() detailCardConfig:IDetailCardInfo[]=[]
   constructor() { }
 
   ngOnInit(): void {

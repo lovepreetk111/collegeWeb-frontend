@@ -229,3 +229,12 @@ interface Ivalues{
   key:string,
     value:string,
 }
+
+export interface IDetailCardInfo{
+  id:string;
+  imgUrl:string,
+  imgAlt:string,
+  header:string,
+  btnLink:string,
+  btnTxt:string
+}

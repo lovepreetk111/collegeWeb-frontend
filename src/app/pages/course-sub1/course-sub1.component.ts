@@ -23,7 +23,7 @@ export class CourseSub1Component implements OnInit {
               {
                 url:'../../../assets/images/Chetana Building.jpeg',
                 alt:"koi toh imaage",
-                text:"Courses"
+                text:"Bachelor of Science in I.T."
               },
             
           ]
