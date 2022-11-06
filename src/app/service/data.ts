@@ -126,11 +126,7 @@ export interface ITestimonialCardData {
 /* =================================== Card Carousel ============================= */
 export interface ICardCarosuel {
   id: string,
-  slides: ICardCarosuelInfo[]
-}
-export interface ICardCarosuelInfo {
-  slideNo: string,
-  cards: ICardCarosuelData[]
+  slides: ICardCarosuelData[]
 }
 export interface ICardCarosuelData {
   id: 1,
