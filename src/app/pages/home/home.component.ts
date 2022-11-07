@@ -175,33 +175,97 @@ export class HomeComponent implements OnInit {
               AccordianData: [
                 {
                   Title: 'JUNIOR COLLEGE',
-                  SubTitle1: 'Commerce',
-                  SubTitle2: 'Arts',
-                  SubTitle3: 'Mcvc',
+                  SubTitles:[
+                    {
+                      id:1,
+                      title:"Arts",
+                      link:"course/arts"
+                    },
+                    {
+                      id:2,
+                      title:"Commerce",
+                      link:"course/comm"
+                    },
+                    {
+                      id:3,
+                      title:"MCVC",
+                      link:"course/mcvc"
+                    }
+                  ]
                 },
                 {
                   Title: 'DEGREE COLLEGE',
-                  SubTitle1: 'Commerce',
-                  SubTitle2: 'Arts',
-                  SubTitle3: 'Mcvc'
+                  SubTitles:[
+                    {
+                      id:1,
+                      title:"BA",
+                      link:"course/ba"
+                    },
+                    {
+                      id:2,
+                      title:"BCOM",
+                      link:"course/bcom"
+                    },
+                    
+                  ]
                 },
                 {
                   Title: 'SELF FINANCING COURSES',
-                  SubTitle1: 'Commerce',
-                  SubTitle2: 'Arts',
-                  SubTitle3: 'Mcvc'
+                  SubTitles:[
+                    {
+                      id:1,
+                      title:"BMS",
+                      link:"course/arts"
+                    },
+                    {
+                      id:2,
+                      title:"BAF",
+                      link:"course/comm"
+                    },
+                    {
+                      id:3,
+                      title:"BAMMC",
+                      link:"course/mcvc"
+                    },
+                    {
+                      id:4,
+                      title:"B.Sc.IT",
+                      link:"course/bscit"
+                    }
+                  ]
                 },
                 {
-                  Title: 'MASTER OF COMMERCE',
-                  SubTitle1: 'Commerce',
-                  SubTitle2: 'Arts',
-                  SubTitle3: 'Mcvc'
+                  Title: 'POST GRADUATE PROGRAMME',
+                  SubTitles:[
+                    {
+                      id:1,
+                      title:"MASTER OF COMMERCE",
+                      link:"course/mcom"
+                    },
+                    
+                  ]
                 },
                 {
                   Title: 'DOCTORAL Programme',
-                  SubTitle1: 'Commerce',
-                  SubTitle2: 'Arts',
-                  SubTitle3: 'Mcvc'
+                  SubTitles:[
+                    {
+                      id:1,
+                      title:"PH. D. In Commerce",
+                      link:"course/arts"
+                    },
+                    
+                  ]
+                },
+                {
+                  Title: 'DISTANCE LEARNING',
+                  SubTitles:[
+                    {
+                      id:1,
+                      title:"Y.C.M.O.U",
+                      link:"course/yomuc"
+                    },
+                    
+                  ]
                 }
               ]
             }

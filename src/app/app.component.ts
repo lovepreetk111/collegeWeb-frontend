@@ -106,12 +106,34 @@ export class AppComponent {
                       ]
                     },
                     {
-                      dropdown: 'MASTER OF COMMERCE',
-                      url: 'something'
+                      dropdown: 'POST GRADUATE PROGRAMME',
+                      url: 'course/pg',
+                      subchild:[
+                        {
+                          subchild: 'MCOM',
+                          routeLink: 'course/mcom',
+                        }
+                      ]
                     },
                     {
                       dropdown: 'DOCTORAL PROGRAMME',
-                      url: 'something'
+                      url: 'something',
+                      subchild:[
+                        {
+                          subchild: 'PH.D. IN  COMMERCE',
+                          routeLink: 'course/phd',
+                        }
+                      ]
+                    },
+                    {
+                      dropdown: 'DISTANCE LEARNING',
+                      url: 'ycmou',
+                      subchild:[
+                        {
+                          subchild: 'Y.C.M.O.U.',
+                          routeLink: 'course/ycmou',
+                        }
+                      ]
                     }
                   ]
                 },

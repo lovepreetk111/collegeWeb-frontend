@@ -45,12 +45,21 @@ export class CourseComponent implements OnInit {
               info3: {
                 data: "SELF FINANCING COURSES",
               },
+              info4: {
+                data: "P. G. PROGRAMME",
+              },
+              info5: {
+                data: "DOCTRAL PROGRAMME",
+              },
+              info6: {
+                data: "DISTANCE LEARNING",
+              },
               value:[
                 {
                   id:1,
                   imgUrl:"../../../assets/images/ARTS.svg",
                   imgAlt:"Arts Icon",
-                  header:"Arts",
+                  header:"ARTS",
                   btnLink:"course/arts",
                   btnTxt:"Read More"
                 },
@@ -93,12 +102,38 @@ export class CourseComponent implements OnInit {
               value2:[
                 {
                   id:1,
-                  imgUrl:"../../../assets/images/UG.svg",
-                  imgAlt:"UG Icon",
-                  header:"UNDER GRADUATE (BMS/BAF/ BAMMC/BSCIT)",
-                  btnLink:"course/ug",
+                  imgUrl:"../../../assets/images/BMS.svg",
+                  imgAlt:"BMS Icon",
+                  header:"(BMS) Bachelor of Management Studies",
+                  btnLink:"course/bms",
                   btnTxt:"Read More"
                 },
+                {
+                  id:2,
+                  imgUrl:"../../../assets/images/BAF.svg",
+                  imgAlt:"BAF Icon",
+                  header:"(BAF) Bachelor of Accounting and Finance",
+                  btnLink:"course/baf",
+                  btnTxt:"Read More"
+                },
+                {
+                  id:3,
+                  imgUrl:"../../../assets/images/BAMMC.svg",
+                  imgAlt:"BAMMC Icon",
+                  header:"(B.A.M.M.C) (Bachelor of Science in Information & Technology)",
+                  btnLink:"course/bammc",
+                  btnTxt:"Read More"
+                },
+                {
+                  id:4,
+                  imgUrl:"../../../assets/images/BSCIT.svg",
+                  imgAlt:"BSCIT Icon",
+                  header:"(B.Sc.IT) Bachelor of Science in Information Technology",
+                  btnLink:"bscit",
+                  btnTxt:"Read More"
+                },
+              ],
+              value3:[
                 {
                   id:2,
                   imgUrl:"../../../assets/images/PG.svg",
@@ -108,6 +143,16 @@ export class CourseComponent implements OnInit {
                   btnTxt:"Read More"
                 },
                 {
+                  id:2,
+                  imgUrl:"../../../assets/images/PG.svg",
+                  imgAlt:"PG Icon",
+                  header:"POST GRADUATE (MASTER OF COMMERCE)",
+                  btnLink:"course/arts",
+                  btnTxt:"Read More"
+                }
+              ],
+              value4:[
+                {
                   id:3,
                   imgUrl:"../../../assets/images/ResearchCentre.svg",
                   imgAlt:"Arts Icon",
@@ -115,7 +160,18 @@ export class CourseComponent implements OnInit {
                   btnLink:"course/arts",
                   btnTxt:"Read More"
                 }
+              ],
+              value5:[
+                {
+                  id:1,
+                  imgUrl:"../../../assets/images/UG.svg",
+                  imgAlt:"Arts Icon",
+                  header:"Y.C.M.O.U.",
+                  btnLink:"course/arts",
+                  btnTxt:"Read More"
+                },
               ]
+              
               
             }
           ]

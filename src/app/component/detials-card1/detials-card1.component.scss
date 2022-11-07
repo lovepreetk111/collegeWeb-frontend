@@ -1,7 +1,7 @@
 .container{
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     // padding-bottom: 20px;
 }
 .card-container {
@@ -34,8 +34,8 @@
     h4{
         // margin-top: 20px;
         font-family: 'Ubuntu';
-        font-weight: 700;
-        font-size: 20px;
+        font-size: 19px;
+        // text-align:  left;
     }
 }
 button {
@@ -46,6 +46,7 @@ button {
     box-shadow: 1px 2px 0 rgb(0, 51, 153,0.5);
     border-radius: 10px;
     font-size: 13px;
+    // align-items: left;
     a{
         color:#003399
     }

@@ -96,9 +96,12 @@ export interface IDropDown {
 /* Accordian Component */
 export interface IAccordianData {
   Title: string;
-  SubTitle1: string;
-  SubTitle2: string;
-  SubTitle3: string;
+  SubTitles:IsubTitleData[]
+}
+
+export interface IsubTitleData{
+  title:string,
+  link:string
 }
 /* Left image1 component */
 export interface Ileftimg1 {
