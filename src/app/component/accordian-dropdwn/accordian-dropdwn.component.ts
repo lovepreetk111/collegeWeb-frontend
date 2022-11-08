@@ -14,22 +14,5 @@ export class AccordianDropdwnComponent implements OnInit {
   ngOnInit(): void {
   }
 
- /*  currentPageIndex = 0;
-  pages: any = [
-    {
-      pageName: 'accordian-dropdwn',
-      component: [
-        {
-          compID: 2,
-          metadata: {
-            url: "../../../assets//images/ChetanaJC.svg",
-            alt:'kuch toh hai',
-            Text:'Acedemic'
-          },
-        },
-        
-      ],
-    },
-  ]; */
-
+ 
 }

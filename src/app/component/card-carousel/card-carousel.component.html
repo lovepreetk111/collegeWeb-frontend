@@ -1,32 +1,31 @@
-<div class="container-fluid cardcarousel" *ngIf="cardConfig">
-    <!-- {{cardConfig | json}} -->
-    <ngb-carousel #ngCarousal [interval]="10000" [showNavigationArrows]="false" [showNavigationIndicators]="false">
-        <div>
-            <ng-template ngbSlide *ngFor="let info of cardConfig.slides">
-                <div class="slide">
-                    <div class="card" *ngFor="let data of info.cards">
-                        <!-- {{info | json}} -->
-                        <div class="picsum-img-wrapper">
-                            <img [src]="data.img.url" [alt]="data.img.alt">
-                        </div>
-                        <div class="carousel-caption">
-                            <h3>{{data.data.cardHeading}}</h3>
-                            <p>{{data.data.description}}</p>
-                        </div>
-                    </div>
+<div class="container-fluid cardcarousel">
+    <ngb-carousel #ngCarousal [interval]="10000" *ngIf="cardConfig" [showNavigationArrows]="false"
+        [showNavigationIndicators]="false">
+        <ng-template ngbSlide *ngIf="cardConfig">
+            <div class="slide" *ngFor="let data of cardConfig.slides">
+                <!-- {{cardConfig | json}} -->
+            <div class="card" >
+                <div class="picsum-img-wrapper">
+                    <img [src]="data.img.url" alt="data.img.alt">
+                </div >
+                <div class="carousel-caption">
+                    <h3>{{data.data.cardHeading}}</h3>
+                    <p>{{data.data.description}}</p>
                 </div>
-            </ng-template>
+            </div>
         </div>
+        </ng-template>
     </ngb-carousel>
+
+
     <div class="functionbuttons">
         <div class="navigationbutton">
             <button (click)="previousSlide()">
-                <img src="../../../assets/images/previous.svg" alt="">
+                <img src="assets/images/previous.svg" alt="">
             </button>
             <button (click)="nextSlide()">
-                <img src="../../../assets/images/next.svg" alt="">
+                <img src="assets/images/next.svg" alt="">
             </button>
         </div>
-
     </div>
 </div>

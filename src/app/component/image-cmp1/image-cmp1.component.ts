@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { IaboutUs, IcoursesBanner } from 'src/app/service/data';
 
 @Component({
   selector: 'app-image-cmp1',
@@ -6,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./image-cmp1.component.scss']
 })
 export class ImageCmp1Component implements OnInit {
-
+  @Input() AboutBanner:IaboutUs[]=[]
   constructor() { }
 
   ngOnInit(): void {

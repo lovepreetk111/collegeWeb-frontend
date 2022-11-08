@@ -19,11 +19,17 @@ export interface INavbarData {
   id: string;
   nav: string;
   link: string;
-  child: IDropdowns[]
+  child: IDropDownChild[]
 }
-export interface IDropdowns {
+export interface IDropDownChild {
   dropdown: string,
-  url: string
+  url: string,
+  subchild:IDropDownSubChild[]
+}
+
+export interface IDropDownSubChild{
+  subchild:string,
+  routeLink:string
 }
 
 /*============================= Notices component =======================*/
@@ -90,9 +96,12 @@ export interface IDropDown {
 /* Accordian Component */
 export interface IAccordianData {
   Title: string;
-  SubTitle1: string;
-  SubTitle2: string;
-  SubTitle3: string;
+  SubTitles:IsubTitleData[]
+}
+
+export interface IsubTitleData{
+  title:string,
+  link:string
 }
 /* Left image1 component */
 export interface Ileftimg1 {
@@ -120,11 +129,7 @@ export interface ITestimonialCardData {
 /* =================================== Card Carousel ============================= */
 export interface ICardCarosuel {
   id: string,
-  slides: ICardCarosuelInfo[]
-}
-export interface ICardCarosuelInfo {
-  slideNo: string,
-  cards: ICardCarosuelData[]
+  slides: ICardCarosuelData[]
 }
 export interface ICardCarosuelData {
   id: 1,
@@ -159,6 +164,20 @@ export interface IFooterCmp {
 export interface text{
   text:string;
 }
+
+/* image-cmp1*/
+export interface IaboutUs{
+  url:string;
+  alt:string;
+  text:string;
+}
+
+/* Leftimg1*/
+export interface Ileftimg{
+  url:string;
+  alt:string;
+}
+
 /* circle img left txt */
 export interface AboutMain{
   url:string;
@@ -172,3 +191,55 @@ export interface AboutMain{
 
 /* ******************************************** CONTACT US PAGE ******************************************** */
 /* ============================ form component1 =================================== */
+export interface IcoursesBanner{
+  url:string;
+  alt:string;
+  text:string;
+}
+
+export interface IcourseDetail{
+  text:string;
+  text1:string;
+  text2:string;
+  text3:string;
+  text4:string;
+  text5:string;
+  text6:string;
+  text7:string;
+  text8:string;
+  text9:string;
+  text10:string;
+  link:string;
+  url:string;
+  alt:string;
+  text11:string;
+  text12:string;
+
+}
+
+export interface ICourseFeature{
+  info:IaboutUs[]
+  image:Ileftimg[]
+  cardData:[
+    {
+      id:string,
+    header:string,
+    feesdetail:string,
+    }
+  ]
+  values:Ivalues[]
+}
+
+interface Ivalues{
+  key:string,
+    value:string,
+}
+
+export interface IDetailCardInfo{
+  id:string;
+  imgUrl:string,
+  imgAlt:string,
+  header:string,
+  btnLink:string,
+  btnTxt:string
+}

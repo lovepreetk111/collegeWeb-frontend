@@ -52,23 +52,88 @@ export class AppComponent {
                   child: [
                     {
                       dropdown: 'JUNIOR COLLEGE',
-                      url: 'something'
+                      url: 'course/sub1',
+                      subchild:[
+                        {
+                          subchild: 'ARTS',
+                          routeLink: 'course/arts',
+                        },
+                        {
+                          subchild: 'COMMERCE',
+                          routeLink: 'course/comm',
+                        },
+                        {
+                          subchild: 'MCVC',
+                          routeLink: 'course/mcvc',
+                        }
+                      ]
                     },
                     {
                       dropdown: 'DEGREE COLLEGE',
-                      url: 'something'
+                      url: 'something',
+                      subchild:[
+                        {
+                          subchild: 'BA',
+                          routeLink: 'course/BA',
+                        },
+                        {
+                          subchild: 'BCOM',
+                          routeLink: 'course/bcom',
+                        },
+                        
+                      ]
                     },
                     {
                       dropdown: 'SELF FINANCE COURSES',
-                      url: 'something'
+                      url: 'something',
+                      subchild:[
+                        {
+                          subchild: 'BMS',
+                          routeLink: 'course/bms',
+                        },
+                        {
+                          subchild: 'BAF',
+                          routeLink: 'course/baf',
+                        },
+                        {
+                          subchild: 'BAMMC',
+                          routeLink: 'course/bammc',
+                        },
+                        {
+                          subchild: 'BScIT',
+                          routeLink: 'course/bscit',
+                        }
+                      ]
                     },
                     {
-                      dropdown: 'MASTER OF COMMERCE',
-                      url: 'something'
+                      dropdown: 'POST GRADUATE PROGRAMME',
+                      url: 'course/pg',
+                      subchild:[
+                        {
+                          subchild: 'MCOM',
+                          routeLink: 'course/mcom',
+                        }
+                      ]
                     },
                     {
                       dropdown: 'DOCTORAL PROGRAMME',
-                      url: 'something'
+                      url: 'something',
+                      subchild:[
+                        {
+                          subchild: 'PH.D. IN  COMMERCE',
+                          routeLink: 'course/phd',
+                        }
+                      ]
+                    },
+                    {
+                      dropdown: 'DISTANCE LEARNING',
+                      url: 'ycmou',
+                      subchild:[
+                        {
+                          subchild: 'Y.C.M.O.U.',
+                          routeLink: 'course/ycmou',
+                        }
+                      ]
                     }
                   ]
                 },

@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Ileftimg, Ileftimg1 } from 'src/app/service/data';
+// import { Ileftimg } from 'src/app/service/data';
 
 @Component({
   selector: 'app-left-img2',
@@ -6,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./left-img2.component.scss']
 })
 export class LeftImg2Component implements OnInit {
-
+@Input() LeftImage:Ileftimg[]=[];
   constructor() { }
 
   ngOnInit(): void {

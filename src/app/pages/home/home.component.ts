@@ -175,33 +175,97 @@ export class HomeComponent implements OnInit {
               AccordianData: [
                 {
                   Title: 'JUNIOR COLLEGE',
-                  SubTitle1: 'Commerce',
-                  SubTitle2: 'Arts',
-                  SubTitle3: 'Mcvc',
+                  SubTitles:[
+                    {
+                      id:1,
+                      title:"Arts",
+                      link:"course/arts"
+                    },
+                    {
+                      id:2,
+                      title:"Commerce",
+                      link:"course/comm"
+                    },
+                    {
+                      id:3,
+                      title:"MCVC",
+                      link:"course/mcvc"
+                    }
+                  ]
                 },
                 {
                   Title: 'DEGREE COLLEGE',
-                  SubTitle1: 'Commerce',
-                  SubTitle2: 'Arts',
-                  SubTitle3: 'Mcvc'
+                  SubTitles:[
+                    {
+                      id:1,
+                      title:"BA",
+                      link:"course/ba"
+                    },
+                    {
+                      id:2,
+                      title:"BCOM",
+                      link:"course/bcom"
+                    },
+                    
+                  ]
                 },
                 {
                   Title: 'SELF FINANCING COURSES',
-                  SubTitle1: 'Commerce',
-                  SubTitle2: 'Arts',
-                  SubTitle3: 'Mcvc'
+                  SubTitles:[
+                    {
+                      id:1,
+                      title:"BMS",
+                      link:"course/arts"
+                    },
+                    {
+                      id:2,
+                      title:"BAF",
+                      link:"course/comm"
+                    },
+                    {
+                      id:3,
+                      title:"BAMMC",
+                      link:"course/mcvc"
+                    },
+                    {
+                      id:4,
+                      title:"B.Sc.IT",
+                      link:"course/bscit"
+                    }
+                  ]
                 },
                 {
-                  Title: 'MASTER OF COMMERCE',
-                  SubTitle1: 'Commerce',
-                  SubTitle2: 'Arts',
-                  SubTitle3: 'Mcvc'
+                  Title: 'POST GRADUATE PROGRAMME',
+                  SubTitles:[
+                    {
+                      id:1,
+                      title:"MASTER OF COMMERCE",
+                      link:"course/mcom"
+                    },
+                    
+                  ]
                 },
                 {
                   Title: 'DOCTORAL Programme',
-                  SubTitle1: 'Commerce',
-                  SubTitle2: 'Arts',
-                  SubTitle3: 'Mcvc'
+                  SubTitles:[
+                    {
+                      id:1,
+                      title:"PH. D. In Commerce",
+                      link:"course/arts"
+                    },
+                    
+                  ]
+                },
+                {
+                  Title: 'DISTANCE LEARNING',
+                  SubTitles:[
+                    {
+                      id:1,
+                      title:"Y.C.M.O.U",
+                      link:"course/yomuc"
+                    },
+                    
+                  ]
                 }
               ]
             }
@@ -211,140 +275,36 @@ export class HomeComponent implements OnInit {
           compId: 6,
           compName: "cardcarosuel",
           metadata: [
-           {
-            id:1,
-            /* slides:[
-              {
-                slideNo:1,
-                cards:[
-                  {
-                    id:1,
-                    img:{
-                      url:"",
-                      alt:"",
-                      routeLink:"",
-                    },
-                    data:{
-                      cardHeading:"Lab",
-                      description:""
-                    }
+            {
+              id: 1,
+              slides: [
+                {
+                  img: {
+                    id: 1,
+                    img: "../../../assets/images/Chetana Logo.svg",
+                    alt: "image",
+                    routeLink:'ground/kuch-toh',
                   },
-                  {
-                    id:2,
-                    img:{
-                      url:"",
-                      alt:"",
-                      routeLink:"",
-                    },
-                    data:{
-                      cardHeading:"Lab",
-                      description:""
-                    }
-                  },
-                  {
-                    id:3,
-                    img:{
-                      url:"",
-                      alt:"",
-                      routeLink:"",
-                    },
-                    data:{
-                      cardHeading:"Lab",
-                      description:""
-                    }
+                  data:{
+                    cardHeading:"Ground",
+                    description:"Lorem ki maa ki chudiya"
                   }
-                ]
-              }
-            ] */
-            slides:[
-              {
-                id:1,
-                cards:[
-                  {
-                    id:1,
-                    img:{
-                      url:"../../../assets/images/Chetana Building.jpeg",
-                      alt:"",
-                      routeLink:""
-                    },
-                    data:{
-                      cardHeading:"Lab",
-                      description:""
-                    }
+                },
+                {
+                  img: {
+                    id: 1,
+                    img: "../../../assets/images/Chetana Logo.svg",
+                    alt: "image",
+                    routeLink:'ground/kuch-toh',
                   },
-                  {
-                    id:2,
-                    img:{
-                      url:"../../../assets/images/Chetana Building.jpeg",
-                      alt:"",
-                      routeLink:""
-                    },
-                    data:{
-                      cardHeading:"Lab",
-                      description:""
-                    }
-                  },
-                  {
-                    id:3,
-                    img:{
-                      url:"../../../assets/images/Chetana Building.jpeg",
-                      alt:"",
-                      routeLink:""
-                    },
-                    data:{
-                      cardHeading:"Lab",
-                      description:""
-                    }
+                  data:{
+                    cardHeading:"Ground",
+                    description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit."
                   }
-                ]
-              }
-            ]
-           },{
-            id:2,
-            slides:[
-              {
-                id:1,
-                cards:[
-                  {
-                    id:1,
-                    img:{
-                      url:"../../../assets/images/Chetana Building.jpeg",
-                      alt:"",
-                      routeLink:""
-                    },
-                    data:{
-                      cardHeading:"Lab",
-                      description:""
-                    }
-                  },
-                  {
-                    id:2,
-                    img:{
-                      url:"../../../assets/images/Chetana Building.jpeg",
-                      alt:"",
-                      routeLink:""
-                    },
-                    data:{
-                      cardHeading:"Lab",
-                      description:""
-                    }
-                  },
-                  {
-                    id:3,
-                    img:{
-                      url:"../../../assets/images/Chetana Building.jpeg",
-                      alt:"",
-                      routeLink:""
-                    },
-                    data:{
-                      cardHeading:"Lab",
-                      description:""
-                    }
-                  }
-                ]
-              }
-            ]
-           }
+                }
+              ]
+            }
+
           ]
         },
         {
@@ -360,21 +320,21 @@ export class HomeComponent implements OnInit {
                 name: "Ghazala",
                 designation: "student",
                 companyName: "chetana",
-                profileUrl: "https://play-lh.googleusercontent.com/0pyqGxdVkQsZUyWiDkvlUHRfCNcHdFS9Sq8G-GpCl9Idvd2fEUakpboNxqlMNVdDqMA=w240-h480-rw"
+                profileUrl: "assets/img/ghazala.svg"
               },
               {
                 comment: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
                 name: "Lappi",
                 designation: "ncc candidate",
                 companyName: "Gareeb chetana",
-                profileUrl: "https://www.inpixio.com/remove-background/images/main-before.jpg"
+                profileUrl: "assets/img/lappi.svg"
               },
               {
                 comment: "It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
                 name: "vandita",
                 designation: "pgl",
                 companyName: "BscIT",
-                profileUrl: "https://us.123rf.com/450wm/marctran/marctran1804/marctran180400117/99234583-passport-photo-portrait-of-asian-smiling-woman-.jpg?ver=6"
+                profileUrl: "assets/img/vandita.svg"
               }
             ]
           }
