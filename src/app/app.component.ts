@@ -194,16 +194,20 @@ export class AppComponent {
                   link: '/research',
                   child: [
                     {
-                      dropdown: "ABOUT RESEARCH COLLEGE"
+                      dropdown: "ABOUT RESEARCH COLLEGE",
+                      url: 'something'
                     },
                     {
-                      dropdown: "PUBLICATION"
+                      dropdown: "PUBLICATION",
+                      url: 'something'
                     },
                     {
-                      dropdown: "PROSPECTUS"
+                      dropdown: "PROSPECTUS",
+                      url: 'something'
                     },
                     {
-                      dropdown: "CONFERENCE PROCEDINGS"
+                      dropdown: "CONFERENCE PROCEDINGS",
+                      url: 'something'
                     },
 
                   ]
@@ -212,6 +216,16 @@ export class AppComponent {
                   id: 8,
                   nav: "Student’s Corner",
                   link: '/studentCorner',
+                  child:[
+                    {
+                      dropdown: "Student's Support",
+                      url: 'something'
+                    },
+                    {
+                      dropdown: "Events",
+                      url: 'something'
+                    },
+                  ]
                 },
                 {
                   id: 8,
