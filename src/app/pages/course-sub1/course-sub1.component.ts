@@ -105,8 +105,14 @@ export class CourseSub1Component implements OnInit {
              }
             },
         },
-      ]
-    }
+      ],
+      
+    },
+    
   ]
+
+
+
+  
 }
 

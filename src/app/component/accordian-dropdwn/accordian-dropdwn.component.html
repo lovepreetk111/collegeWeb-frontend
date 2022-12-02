@@ -5,8 +5,8 @@
   <div class="accordion">
     <div *ngFor="let datas of DropDownData">
     <!-- {{DropDownData | json}} -->
-    <ngb-accordion [closeOthers]="true"  activeIds="static-1" *ngFor="let data of datas.AccordianData;let i = index">
-      <ngb-panel [title]="data.Title">
+    <ngb-accordion [closeOthers]="true"  *ngFor="let data of datas.AccordianData;let i = index">
+      <ngb-panel [title]="data.Title" [id]="'static-'+i"> 
         <ng-template ngbPanelContent>
           <li *ngFor="let datas of data.SubTitles"><a *ngIf="datas" [routerLink]="datas.link">{{datas.title}}</a></li>
          <!--  <li><a href="">{{data.SubTitle1}}</a></li>

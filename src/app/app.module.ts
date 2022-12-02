@@ -32,6 +32,8 @@ import { DetailCard3Component } from './component/detail-card3/detail-card3.comp
 import { DetialsCard1Component } from './component/detials-card1/detials-card1.component';
 import { TabViewCmp1Component } from './component/tab-view-cmp1/tab-view-cmp1.component';
 import { CourseSub1Component } from './pages/course-sub1/course-sub1.component';
+import { EventComponent } from './pages/event/event.component';
+import { EventSub1Component } from './pages/event-sub1/event-sub1.component';
 
 @NgModule({
   declarations: [
@@ -62,7 +64,9 @@ import { CourseSub1Component } from './pages/course-sub1/course-sub1.component';
     DetailCard3Component,
     DetialsCard1Component,
     TabViewCmp1Component,
-    CourseSub1Component
+    CourseSub1Component,
+    EventComponent,
+    EventSub1Component
   ],
   imports: [
     BrowserModule,

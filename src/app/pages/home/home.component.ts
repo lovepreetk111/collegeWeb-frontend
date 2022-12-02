@@ -14,8 +14,8 @@ export class HomeComponent implements OnInit {
     this.outPutData = childData.title;
   }
   constructor() {
-    console.log(this.pages);
-    console.log(this.outPutData)
+    // console.log(this.pages);
+    // console.log(this.outPutData)
   }
   ngOnInit(): void {
   }
@@ -94,6 +94,23 @@ export class HomeComponent implements OnInit {
               routeLink: 'route karo and ghar bhejo',
             },
             {
+              id: 1,
+              innerData: {
+                header: 'Techkriti 6.0',
+                text: 'Lorem',
+                buttonText: 'readMore',
+              },
+              background: {
+                url: '../../../assets/images/ChetanaDC.jpeg',
+                alt: 'yeh bhi hai kych',
+              },
+              image: {
+                url: '../../../assets/images/ChetanaJC.svg',
+                alt: 'IDK'
+              },
+              routeLink: 'route karo and ghar bhejo',
+            },
+            {
               id: 3,
               innerData: {
                 header: 'Techkriti 6.0',
@@ -101,11 +118,11 @@ export class HomeComponent implements OnInit {
                 buttonText: 'readMore',
               },
               background: {
-                url: 'kuch toh',
+                url: '../../../assets/images/ChetanaJC.svg',
                 alt: 'yeh bhi hai kych',
               },
               image: {
-                url: 'kuch hai IDK',
+                url: '../../../assets/images/ChetanaJC.svg',
                 alt: 'IDK'
               },
               routeLink: 'route karo and ghar bhejo',
