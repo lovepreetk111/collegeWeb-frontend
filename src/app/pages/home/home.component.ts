@@ -356,7 +356,19 @@ export class HomeComponent implements OnInit {
             ]
           }
         },
-
+      {  
+          compId: 8,
+          compName: 'detailcard2',
+          metadata:
+          {
+            image:'../../../assets/images/EventPhoto.jpg',
+            alt:'Pankaj',
+            date:'20TH NOV',
+            eventName:'TECHKRITI 6.0',
+            time:'9:00 to 11:00',
+            venu:'CHETANA COLLEGE'
+          }
+        }       
 
       ]
     }

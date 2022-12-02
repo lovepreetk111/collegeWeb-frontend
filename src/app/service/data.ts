@@ -243,3 +243,12 @@ export interface IDetailCardInfo{
   btnLink:string,
   btnTxt:string
 }
+
+export interface IDetailsCard2{
+  image:string,
+  alt:string,
+  date:string,
+  eventName:string,
+  time:string,
+  venu:string
+}
