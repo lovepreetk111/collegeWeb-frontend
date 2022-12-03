@@ -219,11 +219,11 @@ export class AppComponent {
                   child:[
                     {
                       dropdown: "Student's Support",
-                      url: 'something'
+                      url: '/student support'
                     },
                     {
                       dropdown: "Events",
-                      url: 'something'
+                      url: '/event'
                     },
                   ]
                 },
