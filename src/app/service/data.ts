@@ -250,7 +250,9 @@ export interface IDetailsCard2{
   date:string,
   eventName:string,
   time:string,
-  venu:string
+  venu:string,
+  buttonData:string,
+  routeLink:string
 }
 //////////////////////////////////////////////////////////////////////////////////
 // speaker

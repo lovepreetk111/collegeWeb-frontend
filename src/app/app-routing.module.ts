@@ -32,7 +32,7 @@ const routes: Routes = [
     component:EventComponent
   },
   {
-   path:'student support',
+   path:'event/techkriti',
    component:EventSub1Component
   }
 ];
