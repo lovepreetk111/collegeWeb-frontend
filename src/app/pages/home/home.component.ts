@@ -368,7 +368,21 @@ export class HomeComponent implements OnInit {
             time:'9:00 to 11:00',
             venu:'CHETANA COLLEGE'
           }
-        }       
+        } ,
+        
+        {  
+          compId: 9,
+          compName: 'speaker',
+          metadata:
+          [
+          {
+            image:'/assets/images/FACULTY.svg',
+            alt:'Reddy',
+            name:'Saravanan Reddy',
+            role:'Course Co-ordinator'
+          }
+        ]
+        } 
 
       ]
     }

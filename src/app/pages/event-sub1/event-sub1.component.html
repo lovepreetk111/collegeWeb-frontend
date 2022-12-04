@@ -1,25 +1,10 @@
+
+
+
+
+
 <div *ngFor="let data of pages[currentPageIndex].component">
     <app-image-cmp1 [AboutBanner]="data.metadata" *ngIf="data.compId===1"></app-image-cmp1>
-    <!-- <app-details-card2 [cardData]="data.metadata" *ngIf="data.compId===2"></app-details-card2> -->
-    <!-- <div class="detail"> -->
-    <!-- <app-left-img2 [LeftImage]="data.metadata" *ngIf="data.compId===3"></app-left-img2> -->
-    
-    <!-- </div> -->
-    
-
-</div>    
-<div class="card">
-    <div class="card-container yellow-container">
-        <div class="block bg-yellow-500 font-bold text-center p-4 border-round mb-3" id="block1">
-            <div class="details"></div>
-            <div class="detail-card"></div>
-        </div>
+    <app-details-card2 [cardData]="data.metadata" *ngIf="data.compId===2"></app-details-card2>
     </div>
-</div>
-<div class="card">
-    <div class="flex card-container indigo-container">
-        <div class="flex-1 h-4rem bg-indigo-500 text-white font-bold text-center p-4 border-round">1</div>
-        <div class="flex-1 h-4rem w-1rem bg-indigo-500 text-white font-bold text-center p-4 border-round mx-4">2</div>
-    
-    </div>
-</div>
+  
