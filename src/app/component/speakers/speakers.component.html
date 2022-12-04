@@ -1,0 +1,11 @@
+<div class="speaker-main" *ngIf="speakerData">
+    <div class="speaker-info" *ngFor="let speakerData of speakerData">
+        <div class="speaker-img">
+            <img [src]="speakerData.image" [alt]="speakerData.alt">
+        </div>
+        <div class="speaker-name">
+            <h4>{{speakerData.name}}</h4>
+            <h5>{{speakerData.role}}</h5>
+        </div>
+    </div>
+</div>
