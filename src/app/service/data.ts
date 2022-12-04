@@ -252,3 +252,12 @@ export interface IDetailsCard2{
   time:string,
   venu:string
 }
+//////////////////////////////////////////////////////////////////////////////////
+// speaker
+
+export interface ISpeaker{
+  image:string,
+  alt:string,
+  name:string,
+  role:string
+}
