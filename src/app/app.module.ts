@@ -34,6 +34,7 @@ import { TabViewCmp1Component } from './component/tab-view-cmp1/tab-view-cmp1.co
 import { CourseSub1Component } from './pages/course-sub1/course-sub1.component';
 import { EventComponent } from './pages/event/event.component';
 import { EventSub1Component } from './pages/event-sub1/event-sub1.component';
+import {ButtonModule} from 'primeng/button';
 
 @NgModule({
   declarations: [
@@ -73,6 +74,8 @@ import { EventSub1Component } from './pages/event-sub1/event-sub1.component';
     AppRoutingModule,
     NgbModule,
     FormsModule,
+    ButtonModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
