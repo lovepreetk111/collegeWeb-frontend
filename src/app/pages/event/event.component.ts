@@ -21,18 +21,17 @@ export class EventComponent implements OnInit {
       component: [
         {
           compId:1,
-          compName:'Student Detail',
+          compName:'Image Component 1',
           metadata:[
               {
                 url:'../../../assets/images/event.png',
                 alt:"koi toh imaage",
-                text:"EVENT DETAILS"
+                text:"Events"
                 
               },
           ]
         
         }, 
-
         {
           compId:2,
           compName:'detail',
@@ -44,80 +43,74 @@ export class EventComponent implements OnInit {
               date:'20Th Nov',
               eventName:'TECHKRITI 1.0',
               time:'9:00 to 11:00',
-              venu:'CHETANA  COLLEGE'
+              venu:'CHETANA  COLLEGE',
+              buttonData:"Read More",
+              routeLink:'techkriti'
+            },
+            {
+              image:'../../../assets/images/EventPhoto.jpg',
+              alt:'Pankaj',
+              date:'10Th Nov',
+              eventName:'TECHKRITI 2.0',
+              time:'9:00 to 11:00',
+              venu:'CHETANA  COLLEGE',
+              buttonData:"Read More",
+              routeLink:''
+            },
+            {
+              image:'../../../assets/images/EventPhoto.jpg',
+              alt:'Pankaj',
+              date:'20Th Jan',
+              eventName:'TECHKRITI 3.0',
+              time:'9:00 to 11:00',
+              venu:'CHETANA  COLLEGE',
+              buttonData:"Read More",
+              routeLink:''
+            },
+            {
+              image:'../../../assets/images/EventPhoto.jpg',
+              alt:'Pankaj',
+              date:'20Th Jan',
+              eventName:'TECHKRITI 4.0',
+              time:'9:00 to 11:00',
+              venu:'CHETANA  COLLEGE',
+              buttonData:"Read More",
+              routeLink:''
             },
             {
               image:'../../../assets/images/EventPhoto.jpg',
               alt:'Pankaj',
               date:'20Th Nov',
-              eventName:'TECHKRITI 1.0',
+              eventName:'TECHKRITI 5.0',
               time:'9:00 to 11:00',
-              venu:'CHETANA  COLLEGE'
+              venu:'CHETANA  COLLEGE',
+              buttonData:"Read More",
+              routeLink:''
+            }, 
+            {
+              image:'../../../assets/images/EventPhoto.jpg',
+              alt:'Pankaj',
+              date:'20Th Nov',
+              eventName:'TECHKRITI 6.0',
+              time:'9:00 to 11:00',
+              venu:'CHETANA  COLLEGE',
+              buttonData:"Read More",
+              routeLink:''
             },
             {
               image:'../../../assets/images/EventPhoto.jpg',
               alt:'Pankaj',
               date:'20Th Nov',
-              eventName:'TECHKRITI 1.0',
+              eventName:'TECHKRITI 7.0',
               time:'9:00 to 11:00',
-              venu:'CHETANA  COLLEGE'
-            }
-          ]
-        },
-        
-        {
-          compId:3,
-          compName:'detail2',
-          metadata:
-          [
-            {
-              url:'/assets/images/ChetanaDC.jpeg',
-              alt:'Pankaj'  
-            }
-          ]
-        },
-
-
-        {
-          compId:4,
-          compName:"aboutUs",
-          metadata:{
-      
-            info4:
-            {
-              text: "<h2>ADVANCE WEB DEVELOPMENT WORKSHOP <br><br>  <h4>  Time : 9:30am - 4:45pm Venue : Cristal Centre, 254 New Yourk <br><br><p> I must explain to you how all this a mistaken idea of denouncing great explorer of the rut the is lder of human happiness pcias unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit asnatur aut odit aut fugit, sed quia consequuntur magni dolores eos quit.<br><br> <p> I must explain to you how all this a mistaken idea of denouncing great explorer of the rut the is lder of human happiness pcias unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem.<br><br> <p> I must explain to you how all this a mistaken idea of denouncing great explorer of the rut the is lder of human happiness pcias unde omnis iste natus error sit voluptatem accusantium doloremque laudantium"
+              venu:'CHETANA  COLLEGE',
+              buttonData:"Read More",
+              routeLink:''
             },
-           
-            }
+            
+          ]
         },
-
-        {  
-          compId: 5,
-          compName: 'speaker',
-          metadata:
-          [
-          {
-            image:'/assets/images/FACULTY.svg',
-            alt:'Reddy',
-            name:'Saravanan Reddy',
-            role:'Course Co-ordinator'
-          },
-          {
-            image:'/assets/images/FACULTY.svg',
-            alt:'Reddy',
-            name:'Saravanan Reddy',
-            role:'Course Co-ordinator'
-          },
-          {
-            image:'/assets/images/FACULTY.svg',
-            alt:'Reddy',
-            name:'Saravanan Reddy',
-            role:'Course Co-ordinator'
-          },
-
-        ]
-        } 
-
+       
       ]
     }
   ]

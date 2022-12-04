@@ -1,9 +1,3 @@
-
-
-
-
-
-
 <div class="container" *ngIf="cardData">
     <div class="card-container" *ngFor="let cardData of cardData">
     <div class="left">
@@ -17,7 +11,7 @@
         <h4>{{cardData.eventName}}</h4> 
         <p>{{cardData.time}}</p>
         <p>{{cardData.venu}}</p>
-        <button>Read More</button>
+        <button><a [routerLink]="cardData.routeLink">{{cardData.buttonData}}</a></button>
     </div>
   </div>
    </div>
