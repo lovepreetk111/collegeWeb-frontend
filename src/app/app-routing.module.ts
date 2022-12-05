@@ -24,7 +24,7 @@ const routes: Routes = [
     component:CourseComponent
   },
   {
-    path:'course/bscit',
+    path:'course/:coursename',
     component:CourseSub1Component
   },
   {
@@ -34,7 +34,8 @@ const routes: Routes = [
   {
    path:'event/techkriti',
    component:EventSub1Component
-  }
+  },
+  
 ];
 
 @NgModule({
