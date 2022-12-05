@@ -215,11 +215,11 @@ export class AppComponent {
                 {
                   id: 8,
                   nav: "Student’s Corner",
-                  link: '/studentCorner',
+                  link: 'student-corner',
                   child:[
                     {
                       dropdown: "Student's Support",
-                      url: '/student support'
+                      url: '/student-support'
                     },
                     {
                       dropdown: "Events",

@@ -252,3 +252,10 @@ export interface IDetailsCard2{
   time:string,
   venu:string
 }
+//Student support
+export interface Istudentsupport{
+  data:string,
+  Text:string,
+  url:string,
+  alt:string,
+}

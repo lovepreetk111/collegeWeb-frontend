@@ -34,7 +34,10 @@ import { TabViewCmp1Component } from './component/tab-view-cmp1/tab-view-cmp1.co
 import { CourseSub1Component } from './pages/course-sub1/course-sub1.component';
 import { EventComponent } from './pages/event/event.component';
 import { EventSub1Component } from './pages/event-sub1/event-sub1.component';
-import {ButtonModule} from 'primeng/button';
+//import {ButtonModule} from 'primeng/button';
+import { RightTxtLeftImg1Component } from './component/right-txt-left-img1/right-txt-left-img1.component';
+import { StudentSupportComponent } from './pages/student-support/student-support.component';
+import { StudentCornerComponent } from './pages/student-corner/student-corner.component';
 
 @NgModule({
   declarations: [
@@ -67,14 +70,17 @@ import {ButtonModule} from 'primeng/button';
     TabViewCmp1Component,
     CourseSub1Component,
     EventComponent,
-    EventSub1Component
+    EventSub1Component,
+    RightTxtLeftImg1Component,
+    StudentSupportComponent,
+    StudentCornerComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
     FormsModule,
-    ButtonModule
+    //ButtonModule
     
   ],
   providers: [],
