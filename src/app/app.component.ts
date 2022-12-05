@@ -6,7 +6,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'CollegeWebsite-New';
- 
+  onActivate(event:any){
+    window.scroll(0,0)
+  }
   currentPageIndex = 0;
   pages: any = [
     {
