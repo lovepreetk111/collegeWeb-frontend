@@ -36,6 +36,7 @@ import { EventComponent } from './pages/event/event.component';
 import { EventSub1Component } from './pages/event-sub1/event-sub1.component';
 import {ButtonModule} from 'primeng/button';
 import { SpeakersComponent } from './component/speakers/speakers.component';
+import { NoticeComponent } from './pages/notice/notice.component';
 
 
 @NgModule({
@@ -70,7 +71,8 @@ import { SpeakersComponent } from './component/speakers/speakers.component';
     CourseSub1Component,
     EventComponent,
     EventSub1Component,
-    SpeakersComponent
+    SpeakersComponent,
+    NoticeComponent
   ],
   imports: [
     BrowserModule,
