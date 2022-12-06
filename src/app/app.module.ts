@@ -38,9 +38,8 @@ import { EventSub1Component } from './pages/event-sub1/event-sub1.component';
 import {ButtonModule} from 'primeng/button';
 import { RightTxtLeftImg1Component } from './component/right-txt-left-img1/right-txt-left-img1.component';
 import { StudentSupportComponent } from './pages/student-support/student-support.component';
-import { StudentCornerComponent } from './pages/student-corner/student-corner.component';
 
-import {ButtonModule} from 'primeng/button';
+// import {ButtonModule} from 'primeng/button';
 import { SpeakersComponent } from './component/speakers/speakers.component';
 import { NoticeComponent } from './pages/notice/notice.component';
 
@@ -76,10 +75,8 @@ import { NoticeComponent } from './pages/notice/notice.component';
     CourseSub1Component,
     EventComponent,
     EventSub1Component,
-component/notice&accordion
     RightTxtLeftImg1Component,
     StudentSupportComponent,
-    StudentCornerComponent
     SpeakersComponent,
     NoticeComponent
   ],
