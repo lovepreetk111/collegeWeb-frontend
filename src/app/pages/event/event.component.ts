@@ -43,7 +43,9 @@ export class EventComponent implements OnInit {
               date:'20Th Nov',
               eventName:'TECHKRITI 1.0',
               time:'9:00 to 11:00',
-              venu:'CHETANA  COLLEGE'
+              venu:'CHETANA  COLLEGE',
+              buttonData:"Read More",
+              routeLink:'techkriti'
             },
             {
               image:'../../../assets/images/EventPhoto.jpg',
@@ -51,7 +53,9 @@ export class EventComponent implements OnInit {
               date:'10Th Nov',
               eventName:'TECHKRITI 2.0',
               time:'9:00 to 11:00',
-              venu:'CHETANA  COLLEGE'
+              venu:'CHETANA  COLLEGE',
+              buttonData:"Read More",
+              routeLink:''
             },
             {
               image:'../../../assets/images/EventPhoto.jpg',
@@ -59,7 +63,9 @@ export class EventComponent implements OnInit {
               date:'20Th Jan',
               eventName:'TECHKRITI 3.0',
               time:'9:00 to 11:00',
-              venu:'CHETANA  COLLEGE'
+              venu:'CHETANA  COLLEGE',
+              buttonData:"Read More",
+              routeLink:''
             },
             {
               image:'../../../assets/images/EventPhoto.jpg',
@@ -67,7 +73,9 @@ export class EventComponent implements OnInit {
               date:'20Th Jan',
               eventName:'TECHKRITI 4.0',
               time:'9:00 to 11:00',
-              venu:'CHETANA  COLLEGE'
+              venu:'CHETANA  COLLEGE',
+              buttonData:"Read More",
+              routeLink:''
             },
             {
               image:'../../../assets/images/EventPhoto.jpg',
@@ -75,7 +83,9 @@ export class EventComponent implements OnInit {
               date:'20Th Nov',
               eventName:'TECHKRITI 5.0',
               time:'9:00 to 11:00',
-              venu:'CHETANA  COLLEGE'
+              venu:'CHETANA  COLLEGE',
+              buttonData:"Read More",
+              routeLink:''
             }, 
             {
               image:'../../../assets/images/EventPhoto.jpg',
@@ -83,7 +93,9 @@ export class EventComponent implements OnInit {
               date:'20Th Nov',
               eventName:'TECHKRITI 6.0',
               time:'9:00 to 11:00',
-              venu:'CHETANA  COLLEGE'
+              venu:'CHETANA  COLLEGE',
+              buttonData:"Read More",
+              routeLink:''
             },
             {
               image:'../../../assets/images/EventPhoto.jpg',
@@ -91,7 +103,9 @@ export class EventComponent implements OnInit {
               date:'20Th Nov',
               eventName:'TECHKRITI 7.0',
               time:'9:00 to 11:00',
-              venu:'CHETANA  COLLEGE'
+              venu:'CHETANA  COLLEGE',
+              buttonData:"Read More",
+              routeLink:''
             },
             
           ]

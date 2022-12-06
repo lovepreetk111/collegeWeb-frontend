@@ -232,17 +232,17 @@ export class HomeComponent implements OnInit {
                     {
                       id:1,
                       title:"BMS",
-                      link:"course/arts"
+                      link:"course/bms"
                     },
                     {
                       id:2,
                       title:"BAF",
-                      link:"course/comm"
+                      link:"course/baf"
                     },
                     {
                       id:3,
                       title:"BAMMC",
-                      link:"course/mcvc"
+                      link:"course/bammc"
                     },
                     {
                       id:4,
@@ -368,7 +368,21 @@ export class HomeComponent implements OnInit {
             time:'9:00 to 11:00',
             venu:'CHETANA COLLEGE'
           }
-        }       
+        } ,
+        
+        {  
+          compId: 9,
+          compName: 'speaker',
+          metadata:
+          [
+          {
+            image:'/assets/images/FACULTY.svg',
+            alt:'Reddy',
+            name:'Saravanan Reddy',
+            role:'Course Co-ordinator'
+          }
+        ]
+        } 
 
       ]
     }

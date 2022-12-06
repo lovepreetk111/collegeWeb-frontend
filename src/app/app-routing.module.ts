@@ -26,7 +26,7 @@ const routes: Routes = [
     component:CourseComponent
   },
   {
-    path:'course/bscit',
+    path:'course/:coursename',
     component:CourseSub1Component
   },
   {
@@ -34,6 +34,7 @@ const routes: Routes = [
     component:EventComponent
   },
   {
+component/notice&accordion
    path:'student-support',
    component:StudentSupportComponent
   },
@@ -41,6 +42,11 @@ const routes: Routes = [
     path:'student-corner',
     component:StudentCornerComponent
   }
+
+   path:'event/techkriti',
+   component:EventSub1Component
+  },
+  
 ];
 
 @NgModule({
