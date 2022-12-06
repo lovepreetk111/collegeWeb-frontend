@@ -7,6 +7,8 @@ import { CourseComponent } from './pages/course/course.component';
 import { EventSub1Component } from './pages/event-sub1/event-sub1.component';
 import { EventComponent } from './pages/event/event.component';
 import { HomeComponent } from './pages/home/home.component';
+import { StudentCornerComponent } from './pages/student-corner/student-corner.component';
+import { StudentSupportComponent } from './pages/student-support/student-support.component';
 
 
 const routes: Routes = [
@@ -32,6 +34,15 @@ const routes: Routes = [
     component:EventComponent
   },
   {
+component/notice&accordion
+   path:'student-support',
+   component:StudentSupportComponent
+  },
+  {
+    path:'student-corner',
+    component:StudentCornerComponent
+  }
+
    path:'event/techkriti',
    component:EventSub1Component
   },
