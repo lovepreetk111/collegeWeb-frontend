@@ -10,6 +10,12 @@ export class NoticeComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+
+    /* function Image_OnError(img){
+      image.onerror ="";
+      image.style.visibility ="hidden";
+      return true;
+    } */
   }
 
 }
