@@ -263,3 +263,10 @@ export interface ISpeaker{
   name:string,
   role:string
 }
+//Student support
+export interface Istudentsupport{
+  data:string,
+  Text:string,
+  url:string,
+  alt:string,
+}
