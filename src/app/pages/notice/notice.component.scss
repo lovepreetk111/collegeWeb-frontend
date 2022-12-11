@@ -1,0 +1,39 @@
+.accordion-item{
+    width: 98%;
+    padding-left: 2%;
+    margin: 1% 0%;
+    outline: none;
+    border: none;
+    button{
+        font-size: large;
+        font-weight: 500;
+        color: white;
+        background-color: #003399;
+        border-radius: 10px 0 10px 0;
+    }
+ul{
+    list-style: none;
+    a{
+        text-decoration: none;
+        color: black;
+    li{
+        
+        display: flex;
+        justify-content: space-between;
+        font-size: large;
+        margin-right: 4%;
+        margin-top: 2%;
+        border-bottom: 1px solid blue;
+    }
+}
+}
+}
+.accordion-button{
+    background: white;
+  }
+/* POPUP */ 
+.modal-footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+} 
