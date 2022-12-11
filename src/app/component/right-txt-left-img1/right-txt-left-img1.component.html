@@ -1,0 +1,10 @@
+<div class="student container" *ngIf="details">
+<div class="right" *ngFor="let data of details">
+    <div class="right-txt" >
+        <p>{{data.Text}}</p>
+    </div>
+    <div class="left-img1" >
+        <img [src]="data.url" [alt]="data.alt">
+    </div>
+</div>
+</div>
