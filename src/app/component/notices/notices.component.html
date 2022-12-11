@@ -3,7 +3,7 @@
     </a>
     </button>
     <div class="list" *ngIf="InputData">
-        <marquee behavior="" direction="" >
+        <marquee behavior="" direction="" onmouseover="this.stop();" onmouseout="this.start();">
             <a href="" *ngFor="let data of InputData">{{data.noticeLink}} | </a>
         </marquee>
     </div>
