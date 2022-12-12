@@ -6,12 +6,23 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'CollegeWebsite-New';
+  DataserviceService: any;
   onActivate(event:any){
     window.scroll(0,0)
   }
+
+  ngOnInit(): void {
+   /*  this.DataserviceService.getNavbarData().subscribe(
+      (data:any) => {
+        this.pages = data;
+        console.log(data)
+      }
+    ); */
+
+  }
   currentPageIndex = 0;
   pages: any = [
-    {
+   /*  {
 
       pageName: 'Home',
       component: [
@@ -270,6 +281,6 @@ export class AppComponent {
           ]
         },
       ]
-      },
+      }, */
     ]
   }

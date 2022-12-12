@@ -1,5 +1,6 @@
 import { Component, Input, OnInit,ViewChild } from '@angular/core';
 import { NgbCarousel } from '@ng-bootstrap/ng-bootstrap';
+import { BanDataService } from 'src/app/service/ban-data.service';
 import { IBannerCarosuelComponent } from 'src/app/service/data';
 
 @Component({
@@ -10,7 +11,7 @@ import { IBannerCarosuelComponent } from 'src/app/service/data';
 export class BannerCarouselComponent implements OnInit {
   @ViewChild(NgbCarousel) ngbCarousal!: NgbCarousel;
   @Input() carousel2: IBannerCarosuelComponent[] = []
-  constructor() { }
+  constructor(private banData: BanDataService) { }
   i:any ='index';
   currentPosition = 0;
   isCarousalVisible!: boolean;
@@ -19,6 +20,12 @@ export class BannerCarouselComponent implements OnInit {
   pauseOnHover = true;
   pauseOnFocus = true;
   ngOnInit(): void {
+    this.banData.getBannerData().subscribe(
+      data => {
+        console.log(data)
+       this.carousel2 = data
+      }
+    )
   }
 
   ngAfterViewInit(): void {

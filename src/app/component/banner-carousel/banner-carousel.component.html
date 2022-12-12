@@ -4,17 +4,17 @@
 		<ng-template ngbSlide *ngFor="let data of carousel2">
 			<div class="main">
 				<div class="info">
-					<div class="caption">
-						<h1>{{data.innerData.header}}</h1>
-						<p>{{data.innerData.text}}</p>
-						<button>{{data.innerData.buttonText}}</button>
+					<div class="caption" *ngFor="let datas of data.innerData">
+						<h1>{{datas.header}}</h1>
+						<p>{{datas.text}}</p>
+						<button> <a [routerLink]="data.routeLink"></a>{{datas.buttonText}}</button>
 					</div>
-					<div class="picsum-img-wrapper">
-						<img [src]="data.image.url" [alt]="data.image.alt" />
+					<div class="picsum-img-wrapper" *ngFor="let datas of data.background">
+						<img [src]="datas.url" [alt]="datas.alt" />
 					</div>
 				</div>
-				<div class="background">
-					<img [src]="data.background.url" [alt]="data.background.alt" />
+				<div class="background" *ngFor="let datas of data.image">
+					<img [src]="datas.url" [alt]="datas.alt" />
 				</div>
 			</div>
 		</ng-template>

@@ -40,20 +40,24 @@ export interface Inotice {
 
 /* ===================================== Banner Carousel component ================ */
 export interface IBannerCarosuelComponent {
-  innerData: {
-    header: string;
-    text: string;
-    buttonText: string;
-  },
-  background: {
-    url: string,
-    alt: string
-  },
-  image: {
-    url: string,
-    alt: string
-  },
-  routeLink: string;
+  innerData:IinnerData[]
+  background:Ibackground[]
+  image:Iimage[]
+  routeLink:string  
+}
+
+export interface IinnerData{
+  header:string;
+  text:string,
+  buttonText:string
+}
+export interface Ibackground{
+  url:string,
+      alt:string,
+}
+export interface Iimage{
+  url:string,
+      alt:string
 }
 
 /* ============================================ AboutUsSection =============================*/

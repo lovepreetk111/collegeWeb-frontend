@@ -43,6 +43,9 @@ import { StudentSupportComponent } from './pages/student-support/student-support
 import { SpeakersComponent } from './component/speakers/speakers.component';
 import { NoticeComponent } from './pages/notice/notice.component';
 
+import {HttpClientModule } from '@angular/common/http'
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -85,7 +88,8 @@ import { NoticeComponent } from './pages/notice/notice.component';
     AppRoutingModule,
     NgbModule,
     FormsModule,
-    ButtonModule
+    ButtonModule,
+    HttpClientModule
     
   ],
   providers: [],

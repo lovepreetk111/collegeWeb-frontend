@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { BanDataService } from 'src/app/service/ban-data.service';
 import { Inotice } from 'src/app/service/data';
 
 @Component({
@@ -8,9 +9,15 @@ import { Inotice } from 'src/app/service/data';
 })
 export class NoticesComponent implements OnInit {
   @Input() InputData:Inotice[]=[]
-  constructor() { }
+  constructor(private banData:BanDataService) { }
 
   ngOnInit(): void {
+    this.banData.getNoticeData().subscribe(
+      data => {
+        console.log(data)
+        this.InputData = data;
+      }
+    );
   }
 
 }

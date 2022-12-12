@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { InavbarConfig } from '../service/data';
+import { DataserviceService } from '../service/dataservice.service';
 
 @Component({
   selector: 'app-header',
@@ -8,9 +9,15 @@ import { InavbarConfig } from '../service/data';
 })
 export class HeaderComponent implements OnInit {
 @Input() headerData:InavbarConfig[] = []
-  constructor() { }
+  // DataserviceService: any;
+  constructor( private dataservice: DataserviceService) { }
 
   ngOnInit(): void {
+    this.dataservice.getNavbarData().subscribe(
+      data => {
+        console.log(data)
+        this.headerData = data;
+      }
+    );
   }
-
 }
