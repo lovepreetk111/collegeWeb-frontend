@@ -24,12 +24,12 @@ export interface INavbarData {
 export interface IDropDownChild {
   dropdown: string,
   url: string,
-  subchild:IDropDownSubChild[]
+  subchild: IDropDownSubChild[]
 }
 
-export interface IDropDownSubChild{
-  subchild:string,
-  routeLink:string
+export interface IDropDownSubChild {
+  subchild: string,
+  routeLink: string
 }
 
 /*============================= Notices component =======================*/
@@ -96,12 +96,12 @@ export interface IDropDown {
 /* Accordian Component */
 export interface IAccordianData {
   Title: string;
-  SubTitles:IsubTitleData[]
+  SubTitles: IsubTitleData[]
 }
 
-export interface IsubTitleData{
-  title:string,
-  link:string
+export interface IsubTitleData {
+  title: string,
+  link: string
 }
 /* Left image1 component */
 export interface Ileftimg1 {
@@ -161,112 +161,167 @@ export interface IFooterCmp {
 
 /* *************************************** ABOUT US ******************************* */
 /* txt comp1 */
-export interface text{
-  text:string;
+export interface text {
+  text: string;
 }
 
 /* image-cmp1*/
-export interface IaboutUs{
-  url:string;
-  alt:string;
-  text:string;
+export interface IaboutUs {
+  url: string;
+  alt: string;
+  text: string;
 }
 
 /* Leftimg1*/
-export interface Ileftimg{
-  url:string;
-  alt:string;
+export interface Ileftimg {
+  url: string;
+  alt: string;
 }
 
 /* circle img left txt */
-export interface AboutMain{
-  url:string;
-  alt:string;
-  text:string;
-  text1:string;
-  text2:string;
-  textMain:string;
+export interface AboutMain {
+  url: string;
+  alt: string;
+  text: string;
+  text1: string;
+  text2: string;
+  textMain: string;
 }
 
 
 /* ******************************************** CONTACT US PAGE ******************************************** */
 /* ============================ form component1 =================================== */
-export interface IcoursesBanner{
-  url:string;
-  alt:string;
-  text:string;
+export interface IcoursesBanner {
+  url: string;
+  alt: string;
+  text: string;
 }
 
-export interface IcourseDetail{
-  text:string;
-  text1:string;
-  text2:string;
-  text3:string;
-  text4:string;
-  text5:string;
-  text6:string;
-  text7:string;
-  text8:string;
-  text9:string;
-  text10:string;
-  link:string;
-  url:string;
-  alt:string;
-  text11:string;
-  text12:string;
+export interface IcourseDetail {
+  text: string;
+  text1: string;
+  text2: string;
+  text3: string;
+  text4: string;
+  text5: string;
+  text6: string;
+  text7: string;
+  text8: string;
+  text9: string;
+  text10: string;
+  link: string;
+  url: string;
+  alt: string;
+  text11: string;
+  text12: string;
 
 }
 
-export interface ICourseFeature{
-  info:IaboutUs[]
-  image:Ileftimg[]
-  cardData:[
+export interface ICourseFeature {
+  info: IaboutUs[]
+  image: Ileftimg[]
+  cardData: [
     {
-      id:string,
-    header:string,
-    feesdetail:string,
+      id: string,
+      header: string,
+      feesdetail: string,
     }
   ]
-  values:Ivalues[]
+  values: Ivalues[]
 }
 
-interface Ivalues{
-  key:string,
-    value:string,
+interface Ivalues {
+  key: string,
+  value: string,
 }
 
-export interface IDetailCardInfo{
-  id:string;
-  imgUrl:string,
-  imgAlt:string,
-  header:string,
-  btnLink:string,
-  btnTxt:string
+export interface IDetailCardInfo {
+  id: string;
+  imgUrl: string,
+  imgAlt: string,
+  header: string,
+  btnLink: string,
+  btnTxt: string
 }
 
-export interface IDetailsCard2{
-  image:string,
-  alt:string,
-  date:string,
-  eventName:string,
-  time:string,
-  venu:string,
-  buttonData:string,
-  routeLink:string
+export interface IDetailsCard2 {
+  image: string,
+  alt: string,
+  date: string,
+  eventName: string,
+  time: string,
+  venu: string,
+  buttonData: string,
+  routeLink: string
 }
 //////////////////////////////////////////////////////////////////////////////////
 // speaker
 
-export interface ISpeaker{
-  image:string,
-  alt:string,
-  name:string,
-  role:string
+export interface ISpeaker {
+  image: string,
+  alt: string,
+  name: string,
+  role: string
 }
 //Student support
-export interface Istudentsupport{
-  data:string,
-  Text:string,
-  url:string,
-  alt:string,
+export interface Istudentsupport {
+  data: string,
+  Text: string,
+  url: string,
+  alt: string,
 }
+
+/* Notice Data */
+export interface INoticeDetails {
+  Month: string,
+  NoticeInfo: INoticeInfo[],
+  ModalData: IModalData[]
+}
+
+export interface INoticeInfo {
+  noticename: string,
+  noticeDate: string,
+  noticeLink: string
+}
+
+export interface IModalData {
+  noticename: string,
+  noticeDate: string,
+  title:string,
+  modalInfo: IModalInfo[],
+  date: string,
+  name: string,
+  designation: string,
+}
+
+export interface IModalInfo {
+  imageUrl: string,
+  imageAlt: string,
+  text: string,
+}
+
+/* mainApi{
+id:string,
+Month:string,
+NoticeInto:Interface[],
+modalData:Interface2[],
+}
+
+Interface:{
+noticename:string,
+noticeDate:string,
+},
+
+Interface2{
+title:string,
+modalData:Interface3[],
+date:string,
+name:string,
+designation:string,
+}
+
+Interface3:{
+imageUrl:string,
+imageAlt:string,
+text:string,
+} */
