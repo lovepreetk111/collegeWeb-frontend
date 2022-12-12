@@ -36,7 +36,7 @@ export class AppComponent {
               ],
               logo: [
                 {
-                  logoUrl: "assets/images/Chetana Logo.svg",
+                  logoUrl: "assets/images/ChetanaLogo.svg",
                   logoAlt: "",
                   link:'/'
                 }
