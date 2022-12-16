@@ -28,7 +28,7 @@ export class HomeComponent implements OnInit {
         {
           compID: 2,
           compName: 'notices',
-          metadata: [
+          /* metadata: [
             {
               id: 1,
               noticeLink: "Lorem ipsum dolor sit amet",
@@ -53,12 +53,12 @@ export class HomeComponent implements OnInit {
               id: 6,
               noticeLink: "Ut et mass ",
             },
-          ]
+          ] */
         },
         {
           compId: 3,
           compName: 'banner-carousel',
-          metadata: [
+         /*  metadata: [
             {
               id: 1,
               innerData: {
@@ -127,7 +127,7 @@ export class HomeComponent implements OnInit {
               },
               routeLink: 'route karo and ghar bhejo',
             },
-          ]
+          ] */
         },
         {
           compId: 4,

@@ -22,8 +22,7 @@ export class AppComponent {
   }
   currentPageIndex = 0;
   pages: any = [
-   /*  {
-
+   {
       pageName: 'Home',
       component: [
         {
@@ -281,6 +280,6 @@ export class AppComponent {
           ]
         },
       ]
-      }, */
+      }, 
     ]
   }
