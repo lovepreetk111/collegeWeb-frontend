@@ -63,7 +63,7 @@ export class HomeComponent implements OnInit {
               id: 1,
               innerData: {
                 header: 'Techkriti 6.0',
-                text: 'Lorem',
+                text: 'LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem',
                 buttonText: 'readMore',
               },
               background: {
@@ -71,7 +71,7 @@ export class HomeComponent implements OnInit {
                 alt: 'yeh bhi hai kych',
               },
               image: {
-                url: '../../../assets/images/ChetanaJC.svg',
+                url: '../../../assets/images/ChetanaDC.jpeg',
                 alt: 'IDK'
               },
               routeLink: 'route karo and ghar bhejo',
