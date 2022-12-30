@@ -1,231 +1,192 @@
-<!-- test -->
-<div class="accordion accordion-flush" id="accordionExample" *ngIf="NoticeDetails">
-	<div class="accordion-item" *ngFor="let data of NoticeDetails">
-		<h2 class="accordion-header" id="headingOne">
-			<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-				aria-expanded="true" aria-controls="collapseOne">
-				{{data.Month}}
-			</button>
-		</h2>
-		<div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-			data-bs-parent="#accordionExample">
-			<div class="accordion-body">
-				<ul [ngIf]="data.NoticeInfo" *ngFor="let noticeinfo of data.NoticeInfo">
-					<a [routerLink]="noticeinfo.noticeLink" target="_blank">
-						<li>
-							<p>{{noticeinfo.noticename}}</p>
-							<p>{{noticeinfo.noticeDate}}</p>
-						</li>
-					</a>
+<!-- <div class="card">
+	<div class="flex card-container indigo-container">
+		<div class="flex-1 h-4  text-white font-bold text-center p- border-round">
+			
+			<div class="block  font-bold text-center p-4 border-round mb-3">
 				
-					<div class="popupModule" *ngIf="data.ModalData">
-						<!-- Button trigger modal -->
-						<button type="button" class="btn module-button" data-bs-toggle="modal"
-							data-bs-target="#staticBackdrop" *ngFor="let modalinfo of data.ModalData">
-							<p>{{modalinfo.noticename}}</p>
-							<p>{{modalinfo.noticename}}</p>
-						</button>
-
-						<!-- Modal -->
-						<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
-							tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-							<div class="modal-dialog" *ngFor="let innermodal of data.ModalData">
-								<div class="modal-content" >
-									<div class="modal-header">
-										<h1 class="modal-title fs-5" id="staticBackdropLabel">{{innermodal.title}}</h1>
-										<button type="button" class="btn-close " data-bs-dismiss="modal"
-											aria-label="Close"></button>
-									</div>
-									<div class="modal-body" *ngFor="let content of innermodal.modalInfo">
-										<div *ngIf="content.imageUrl && content.imageAlt">
-										<img src="" onError="this.style.display = 'none';" alt="" />
-									</div>
-									<div *ngIf="content.text">
-										<p [innerHTML]=""></p>
-									</div>
-									</div>
-									<div class="modal-footer">
-										<div class="UplodeDate">
-											<p>{{innermodal.date}}</p>
-										</div>
-										<div class="EditorsDetails">
-											<p>{{innermodal.name}}</p>
-											<p></p>
-										</div>
-									</div>
-								</div>
-							</div>
+				<div class="noticeInfo">
+					<div class="top">
+						<div class="heading">
+							<h3>NEW NOTICES</h3>
 						</div>
-
 					</div>
-					<div class="popupModule" *ngIf="data.ModalData">
-						<!-- Button trigger modal -->
-						<button type="button" class="btn module-button" data-bs-toggle="modal"
-							data-bs-target="#staticBackdrop2">
-							<p>Notice Name2</p>
-							<p>Dec 6</p>
-						</button>
-
-						<!-- Modal -->
-						<div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false"
-							tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-							<div class="modal-dialog">
-								<div class="modal-content">
-									<div class="modal-header">
-										<h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
-										<button type="button" class="btn-close " data-bs-dismiss="modal"
-											aria-label="Close"></button>
-									</div>
-									<div class="modal-body">
-										<img src="assets/images/ChetanaDC.jpeg" onError="this.style.display = 'none';"
-											alt="" />
-										<p class="not-visible"></p>
-									</div>
-									<div class="modal-footer">
-										<div class="UplodeDate">
-											<p>11/12/2022</p>
-										</div>
-										<div class="EditorsDetails">
-											<p>Shubham Todankar</p>
-											<p></p>
-										</div>
-									</div>
-								</div>
-							</div>
+                    <div class="notice text-center p-4">
+						<div class="data">
+							<p class="Main-data">EVENT</p>
+							<span class="second-data">25 DEC 2022</span>
+							<p>Order Placed Successfully. You can check order delivery status.</p>
 						</div>
-
 					</div>
-				</ul>
+				
+                    <div class="notice">
+						<div class="data">
+							<span class="Main-data">EVENT</span>
+							<span class="second-data">25 DEC 2022</span>
+							<p>Order Placed Successfully. You can check order delivery status.</p>
+						</div>
+					</div>
+
+					<div class="notice">
+						<div class="data">
+							<span class="Main-data">EVENT</span>
+							<span class="second-data">25 DEC 2022</span>
+							<p>Order Placed Successfully. You can check order delivery status.</p>
+						</div>
+					</div>
+
+					<div class="notice">
+						<div class="data">
+							<span class="Main-data">EVENT</span>
+							<span class="second-data">25 DEC 2022</span>
+							<p>Order Placed Successfully. You can check order delivery status.</p>
+						</div>
+					</div>
+			
+
+				</div>
+			</div>
+
+
+
+
+
+			<div class="block  font-bold text-center p-4 mt-40rem border-round mb-3">
+				<div class="noticeInfo">
+					<div class="top">
+						<div class="heading">
+							<h3>PAST NOTICES</h3>
+						</div>
+					</div>
+                    <div class="notice">
+						<div class="data">
+							<span class="Main-data">EVENT</span>
+							<span class="second-data">25 DEC 2022</span>
+							<p>Order Placed Successfully. You can check order delivery status.</p>
+						</div>
+					</div>
+					<div class="notice">
+						<div class="data">
+							<span class="Main-data">EVENT</span>
+							<span class="second-data">25 DEC 2022</span>
+							<p>Order Placed Successfully. You can check order delivery status.</p>
+						</div>
+					</div>
+					<div class="notice">
+						<div class="data">
+							<span class="Main-data">EVENT</span>
+							<span class="second-data">25 DEC 2022</span>
+							<p>Order Placed Successfully. You can check order delivery status.</p>
+						</div>
+					</div>
+					<div class="notice">
+						<div class="data">
+							<span class="Main-data">EVENT</span>
+							<span class="second-data">25 DEC 2022</span>
+							<p>Order Placed Successfully. You can check order delivery status.</p>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
+</div> -->
 
 
 
 
+    <div class="main-container">
+        <div class="notice-container">
+            <div class="heading"> New Notice</div>
+
+        <div class="info-container">
+            <!-- 1st row -->
+            <div class="data">
+                <div class="iner-data">
+                <p class="notice-name">EVENT</p>
+                <span class="date">12 DEC 2022</span>
+            </div>
+                <p>Order Placed Successfully. You can check order delivery status.</p>
+            </div>
+
+             <!-- 2nd row -->
+             <div class="data">
+                <div class="iner-data">
+                <p class="notice-name">EXAM</p>
+                <span class="date">15 DEC 2022</span>
+            </div>
+                <p>Order Placed Successfully. You can check order delivery status.</p>
+            </div>
+
+             <!-- 3rd row -->
+             <div class="data">
+                <div class="iner-data">
+                <p class="notice-name">ADMISSION</p>
+                <span class="date">20 DEC 2022</span>
+            </div>
+                <p>Order Placed Successfully. You can check order delivery status.</p>
+            </div>
+
+             <!-- 4th row -->
+             <div class="data">
+                <div class="iner-data">
+                <p class="notice-name">STUDENT LIST</p>
+                <span class="date">24 DEC 2022</span>
+            </div>
+                <p>Order Placed Successfully. You can check order delivery status.</p>
+            </div>
+            
+           
+        </div>
 
 
 
+        </div>
+
+        <div class="notice-container">
+            <div class="heading"> Old Notice</div>
+
+        <div class="info-container">
+
+             <!-- 1st row -->
+             <div class="data">
+                <div class="iner-data">
+                <p class="notice-name">EVENT</p>
+                <span class="date">12 Jan 2022</span>
+            </div>
+                <p>Order Placed Successfully. You can check order delivery status.</p>
+            </div>
+
+             <!-- 2nd row -->
+             <div class="data">
+                <div class="iner-data">
+                <p class="notice-name">EXAM</p>
+                <span class="date">15 Feb 2022</span>
+            </div>
+                <p>Order Placed Successfully. You can check order delivery status.</p>
+            </div>
+
+             <!-- 3rd row -->
+             <div class="data">
+                <div class="iner-data">
+                <p class="notice-name">ADMISSION</p>
+                <span class="date">20 March 2022</span>
+            </div>
+                <p>Order Placed Successfully. You can check order delivery status.</p>
+            </div>
+
+             <!-- 4th row -->
+             <div class="data">
+                <div class="iner-data">
+                <p class="notice-name">STUDENT LIST</p>
+                <span class="date">24 April 2022</span>
+            </div>
+                <p>Order Placed Successfully. You can check order delivery status.</p>
+            </div>
 
 
-	
+            
+        </div>
 
-	<div class="accordion-item">
-		<h2 class="accordion-header" id="headingTwo">
-			<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-				data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-				November 2022
-			</button>
-		</h2>
-		<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-			data-bs-parent="#accordionExample">
-			<div class="accordion-body">
-				<ul>
-					<!-- Button trigger modal -->
-					<button type="button" class="btn btn-primary" data-bs-toggle="modal"
-						data-bs-target="#staticBackdrop">
-						Launch static backdrop modal
-					</button>
-
-					<!-- Modal -->
-					<div class="modal fade modal-dialog modal-dialog-centered" id="staticBackdrop"
-						data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-						aria-labelledby="staticBackdropLabel" aria-hidden="true">
-						<div class="modal-dialog">
-							<div class="modal-content">
-								<div class="modal-header">
-									<h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
-									<button type="button" class="btn-close" data-bs-dismiss="modal"
-										aria-label="Close"></button>
-								</div>
-								<div class="modal-body">
-									...
-								</div>
-								<div class="modal-footer">
-									<div class="date">
-										<p>11/12/2022</p>
-									</div>
-									<div class="editorsDetail">
-										<div class="name">
-											<p>Shubham Todankar</p>
-										</div>
-										<div class="designation">
-											<p>T.Y.BSc IT</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<a href="https://www.youtube.com/" target="_blank">
-						<li>
-							<p>Notice Name</p>
-							<p>Dec 6</p>
-						</li>
-					</a>
-					<a href="https://www.youtube.com/" target="_blank">
-						<li>
-							<p>Notice Name</p>
-							<p>Dec 6</p>
-						</li>
-					</a>
-					<a href="https://www.youtube.com/" target="_blank">
-						<li>
-							<p>Notice Name</p>
-							<p>Dec 6</p>
-						</li>
-					</a>
-					<a href="https://www.youtube.com/" target="_blank">
-						<li>
-							<p>Notice Name</p>
-							<p>Dec 6</p>
-						</li>
-					</a>
-				</ul>
-			</div>
-		</div>
-	</div>
-
-
-	<div class="accordion-item">
-		<h2 class="accordion-header" id="headingThree">
-			<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-				data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-				October 2022
-			</button>
-		</h2>
-		<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-			data-bs-parent="#accordionExample">
-			<div class="accordion-body">
-				<ul>
-					<a href="https://www.youtube.com/" target="_blank">
-						<li>
-							<p>Notice Name</p>
-							<p>Dec 6</p>
-						</li>
-					</a>
-					<a href="https://www.youtube.com/" target="_blank">
-						<li>
-							<p>Notice Name</p>
-							<p>Dec 6</p>
-						</li>
-					</a>
-					<a href="https://www.youtube.com/" target="_blank">
-						<li>
-							<p>Notice Name</p>
-							<p>Dec 6</p>
-						</li>
-					</a>
-					<a href="https://www.youtube.com/" target="_blank">
-						<li>
-							<p>Notice Name</p>
-							<p>Dec 6</p>
-						</li>
-					</a>
-				</ul>
-			</div>
-		</div>
-	</div>
-
-</div>
-<!-- new changes -->
+        </div>
+    </div>
+    
