@@ -1,173 +1,4 @@
-// // .accordion-item{
-// //     width: 98%;
-// //     padding-left: 2%;
-// //     margin: 1% 0%;
-// //     outline: none;
-// //     border: none;
-// //     .accordion-button{
-// //         font-size: large;
-// //         font-weight: 500;
-// //         color: white;
-// //         background-color: #003399;
-// //         border-radius: 10px 0 10px 0;
-// //     }
-// // ul{
-// //     list-style: none;
-// //     a{
-// //         text-decoration: none;
-// //         color: black;
-// //     li{
-
-// //         display: flex;
-// //         justify-content: space-between;
-// //         font-size: large;
-// //         margin-right: 4%;
-// //         margin-top: 2%;
-// //         border-bottom: 1px solid blue;
-// //     }
-// // }
-// // }
-// // }
-// // .accordion-button{
-// //     background: white;
-// //   }
-// // /* POPUP */ 
-
-// // .popupModule{
-// //     width: 96%;
-// // .btn{
-// //     width: 100%;
-// //     display: flex;
-// //     justify-content: space-between;
-// //     font-size: large;
-// //     padding: 0;
-// //     margin-right: 4%;
-// //     margin-top: 2%;
-// //     border-bottom: 1px solid blue;
-// //     border-radius: 0;
-// //     color: black;
-// //     background: none;
-// //     outline: none;
-// // }
-
-// // .modal-content{
-// //     width: 600px;
-// //     height: 500px;
-// //     .modal-header{
-// //         height: 10%;
-// //     }
-// //     .modal-body{
-// //         height: 70%;
-// //         img{
-// //             width: 90%;
-// //             height: 90%;
-// //         }
-// //     }
-// //     .modal-footer{
-// //         height: 20%;
-// //     }
-// // }
-// // .modal-footer{
-// //     width: 100%;
-// //     display: flex;
-// //     justify-content: space-between;
-// // } 
-// // }
-
-
-
-
-
-// .top {
-//     width: auto;
-//     // height: 9%;
-//     margin-top: -36px;
-    
-//     padding-bottom: 12px;
-//     .heading {
-//         width: 28%;
-//         height: 3rem;
-//         border-radius: 10px 1px 10px 1px;
-//         box-shadow: 0px 0px 0px 6px white;
-//         background-color: rgba(0, 51, 153, 1);
-//         h3 {
-//             color: white;
-//             text-align: center;
-//             padding: 8px 22px;
-//             font-size: 22px;
-//         }
-//     }
-// }
-// .noticeInfo {
-
-    
-//     background: rgba(217, 217, 217, 0.64);
-//     padding: 16px 175px;
-//     margin-top: 50px;
-//     .notice {
-//         height: 97px;
-//         width: 100%;
-//         background-color: #003298;
-//         ;
-//         border-radius: 20px;
-//         padding-top: 12px;
-//        margin: 34px 0px;
-
-//         .data {
-//             position: relative;
-
-//             .Main-data {
-//                 // position: absolute;
-//                 // left: -790px;
-//                 // right: 12px;
-//                 font-size: 36px;
-//                 top: -12px;
-//             }
-
-//             .second-data {
-//                 position: absolute;
-//                 left: 83.02%;
-//                 right: -2.55%;
-//                 top: 20%;
-//                 bottom: 54.12%;
-
-//                 font-family: 'Ubuntu';
-//                 font-style: normal;
-//                 font-weight: 700;
-//                 font-size: 15px;
-//                 line-height: 17px;
-
-//                 color: #D9D9D9;
-//             }
-
-//             p {
-//                 position: absolute;
-//                 width: 837.84px;
-//                 height: 44px;
-//                 left: 158.1px;
-//                 top: 33px;
-
-//                 font-family: 'Poppins';
-//                 font-style: normal;
-//                 font-weight: 400;
-//                 font-size: 26px;
-//                 line-height: 39px;
-//                 display: flex;
-//                 align-items: center;
-
-//                 color: #FFFFFF;
-//             }
-//         }
-//     }
-// }
-
-
-
-
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu,wght@1,300&display=swap');
-
-
-
 .main-container{
    margin-top: 30px;
 }
@@ -181,7 +12,7 @@
 border: 10px solid #FFFFFF;
 border-radius: 25px 0px;
 font-family: 'Ubuntu';
-font-size: 32px;
+font-size: 24px;
 width: 20%;
 padding:  5px;
 color: #FFFFFF;
@@ -189,13 +20,11 @@ text-align: center;
 position: absolute;
 top: -35px ;
 left: 20px;
- 
-
 }
 
 .info-container{
     background: rgba(217, 217, 217, 0.64);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: rgba(217, 217, 217, 0.25);
     display: flex;
     flex-direction: column;
     margin-bottom: 100px;
@@ -205,7 +34,7 @@ left: 20px;
 
 p{
     margin: 0;
-    font-size: 24px;
+    font-size: 16px;
     font-family: 'Ubuntu';
     display: flex;
 align-items: center;
@@ -224,7 +53,7 @@ padding: 10px 20px;
 }
 
 .notice-name{
-    font-size: 36px;
+    font-size: 20px;
     font-family: 'Ubuntu';
 
 color: #FFFFFF;
