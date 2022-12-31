@@ -42,6 +42,10 @@ import { StudentSupportComponent } from './pages/student-support/student-support
 // import {ButtonModule} from 'primeng/button';
 import { SpeakersComponent } from './component/speakers/speakers.component';
 import { NoticeComponent } from './pages/notice/notice.component';
+import { PlacementComponent } from './pages/placement/placement.component';
+import { InfocardComponent } from './component/infocard/infocard.component';
+import { CardContainerComponent } from './component/card-container/card-container.component';
+import { PlaceTableComponent } from './component/place-table/place-table.component';
 
 @NgModule({
   declarations: [
@@ -78,7 +82,11 @@ import { NoticeComponent } from './pages/notice/notice.component';
     RightTxtLeftImg1Component,
     StudentSupportComponent,
     SpeakersComponent,
-    NoticeComponent
+    NoticeComponent,
+    PlacementComponent,
+    InfocardComponent,
+    CardContainerComponent,
+    PlaceTableComponent
   ],
   imports: [
     BrowserModule,

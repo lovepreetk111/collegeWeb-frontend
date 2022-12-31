@@ -173,8 +173,8 @@ export class AppComponent {
                 },
                 {
                   id: 5,
-                  nav: 'Placemant',
-                  link: '/placemant',
+                  nav: 'Placement',
+                  link: '/placement',
                   child: [
                     {
                       dropdown: "PLACEMENT AT CHETANA'S",
