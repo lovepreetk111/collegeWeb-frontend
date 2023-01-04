@@ -1,5 +1,6 @@
 import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { placements } from '@popperjs/core';
 import { AboutComponent } from './pages/about/about.component';
 import { ContactUsComponent } from './pages/contact-us/contact-us.component';
 import { CourseSub1Component } from './pages/course-sub1/course-sub1.component';
@@ -9,6 +10,7 @@ import { EventComponent } from './pages/event/event.component';
 import { HomeComponent } from './pages/home/home.component';
 
 import { NoticeComponent } from './pages/notice/notice.component';
+import { PlacementComponent } from './pages/placement/placement.component';
 
 import { StudentSupportComponent } from './pages/student-support/student-support.component';
 
@@ -49,7 +51,10 @@ const routes: Routes = [
     path:'notice',
     component:NoticeComponent
   },
-  
+  {
+    path:'placement',
+    component:PlacementComponent
+  },
 ];
 
 @NgModule({
