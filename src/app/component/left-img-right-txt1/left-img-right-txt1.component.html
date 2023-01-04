@@ -1,9 +1,9 @@
 
 <div class="about" *ngIf="image">
-    <div class="photo">
+    <div class="photo" data-aos="flip-right"  data-aos-duration="10000">
         <img [src]="image.url" [alt]="image.alt">
     </div>
-    <div class="details">
+    <div class="details" data-aos="fade-right"  data-aos-duration="10000">
         <p>{{image.para1}}</p>
            
         <p><!-- Hence this name was suggested by Late Smt. Kusumtai Chaudhari while forming this profound education

@@ -37,14 +37,15 @@
           <div class="mail">
             <img src="../../assets/img/mail.png" alt="" />
             <a target="_blank" href="mailto:"
-              ><p>{{ data.ContactMail.mail }}</p></a
-            >
+              ><p>{{ data.ContactMail.mail }}</p></a>
           </div>
           <br />
           <div class="socialmedia" >
             <a target="_blank" *ngFor="let data of data.socialMedia" [href]="data.link"
               ><img [src]="data.url" [alt]="data.alt"
-            /></a>
+            />
+          </a>
+          
           </div>
         </div>
       </div>

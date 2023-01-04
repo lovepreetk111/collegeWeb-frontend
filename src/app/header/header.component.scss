@@ -18,7 +18,7 @@ header {
                 // padding:0 10px;
                 li {
                     font-weight: 700;
-                    font-size: 16px;
+                    font-size: 1.2vw;
                 }
                 a {
                     display: flex;
@@ -39,39 +39,43 @@ header {
                 font-size: small;
                 .navbar-brand{
                     margin: 0;
+                    width: 40%;
+                    img {
+                        width: 100%;
+                    }
                 }
                 .navlinks{
+                    width: 60%;
                     display: flex;
                     justify-content: flex-end;
                     align-items: baseline;
-                }
-                ul{
-                    a{
-                    color: black;
-                    &:hover{
-                        color: blue;
+                    ul{
+                        a{
+                        color: black;
+                        font-size: 1vw;
+                        &:hover{
+                            color: blue;
+                        }
+                    }
+                    }
+                    .navbar-nav li:hover>ul.dropdown-menu {
+                        display: block;
+                    }
+                    .dropdown-submenu {
+                        position: relative;
+                    }
+                    .dropdown-submenu>.dropdown-menu {
+                        top: 0;
+                        left: 100%;
+                        margin-top: -6px;
+                    }
+                    /* rotate caret on hover */
+                    .dropdown-menu>li>a:hover:after {
+                        text-decoration: underline;
+                        transform: rotate(-90deg);
                     }
                 }
-                }
-                img {
-                    width: 80%;
-                }
-                .navbar-nav li:hover>ul.dropdown-menu {
-                    display: block;
-                }
-                .dropdown-submenu {
-                    position: relative;
-                }
-                .dropdown-submenu>.dropdown-menu {
-                    top: 0;
-                    left: 100%;
-                    margin-top: -6px;
-                }
-                /* rotate caret on hover */
-                .dropdown-menu>li>a:hover:after {
-                    text-decoration: underline;
-                    transform: rotate(-90deg);
-                }
+                
             }
         }
     }
