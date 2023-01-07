@@ -46,6 +46,7 @@ import { PlacementComponent } from './pages/placement/placement.component';
 import { InfocardComponent } from './component/infocard/infocard.component';
 import { CardContainerComponent } from './component/card-container/card-container.component';
 import { PlaceTableComponent } from './component/place-table/place-table.component';
+import { CompanyPicComponent } from './component/company-pic/company-pic.component';
 
 @NgModule({
   declarations: [
@@ -86,7 +87,8 @@ import { PlaceTableComponent } from './component/place-table/place-table.compone
     PlacementComponent,
     InfocardComponent,
     CardContainerComponent,
-    PlaceTableComponent
+    PlaceTableComponent,
+    CompanyPicComponent
   ],
   imports: [
     BrowserModule,

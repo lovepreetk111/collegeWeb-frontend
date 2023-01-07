@@ -1,0 +1,14 @@
+.background{
+    background-color: grey;
+    height: 40vh;
+    width: 100%;
+    .container{
+        padding-top: 20px;
+        .col{
+            img{
+                height: 10vh;
+                width: 10%;
+            }
+        }
+    }
+}
