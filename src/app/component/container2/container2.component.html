@@ -1,0 +1,10 @@
+
+<div class="container-testimonials">
+    <div class="testimonial-header" *ngIf="sectionData" data-aos="zoom-in-left"  data-aos-duration="10000">
+        <h1 class="testimonial-header-title" >{{sectionData.title}}</h1>
+        <p class="testi-dis">{{sectionData.description}} </p>
+    </div>
+    <div class="container-box-testimonials">
+        <app-profile-card *ngFor="let cardData of sectionData.cardsData" [cardData]="cardData"></app-profile-card>
+    </div>
+</div>

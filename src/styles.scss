@@ -1,0 +1,16 @@
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+// overflow-x: hidden;
+}
+
+// @media screen and (max-width: 1200px) {
+//     body {
+//      width: 100rem;
+//     }
+//   }

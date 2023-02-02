@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+
+.container-testimonials {
+    background: #ECECEC;
+    height: 100%;
+    margin: 44px 21px;
+    padding: 30px 19px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    // margin-bottom: 200px;/* 
+    margin-top: 15px; 
+    
+}
+
+.testimonial-header {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding: 0 2rem;
+}
+
+.testimonial-header-title {
+    font-family: 'Ubuntu';
+    font-size: 36px;
+    color: #003399;
+    font-weight: 700;
+}
+
+.testi-dis {
+    color: #9E9D9D;
+    font-weight: 400;
+    font-size: 24px;
+    font-family: 'Ubuntu';
+    }
+
+.container-box-testimonials {
+//     display: flex;
+//     gap: 10px;
+//     width: 95%;
+//    height: 388px;
+//     margin: 0 auto;
+display: grid;
+    height: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(233px, auto));
+    grid-gap: 47px;
+    // background-color: #003399;
+    max-width: 100%;
+}
+
+
+@media screen and (max-width:500px) {
+    .testimonial-header-title{
+        font-size: 1.3rem;
+    }
+    .testi-dis{
+        font-size: 0.625rem;
+    }
+}
+
+@media (min-width:500px) and (max-width:810px){
+    .testimonial-header-title{
+        font-size: 1.66rem;
+    }
+    .testi-dis{
+        font-size: 0.9rem;
+    }
+}
+
+@media (min-width:810px) and (max-width:1000px){
+    .testimonial-header-title{
+        font-size: 2.05rem;
+    }
+    .testi-dis{
+        font-size: 1.25rem;
+    }
+}

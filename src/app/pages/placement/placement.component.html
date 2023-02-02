@@ -1,0 +1,18 @@
+
+<div *ngFor="let data of pages[0].component">
+    <app-image-cmp1 [AboutBanner]="data.metadata.info6" *ngIf="data.compId === 1"></app-image-cmp1>
+    <app-button-cmp1 [Text]="data.metadata.info" *ngIf="data.compId === 1"></app-button-cmp1>
+    <app-text-cmp1 [datas]="data.metadata.info3"></app-text-cmp1>
+
+    <app-button-cmp1 [Text]="data.metadata.info1" *ngIf="data.compId === 1"></app-button-cmp1>
+    <app-infocard></app-infocard>
+
+    <app-button-cmp1 [Text]="data.metadata.info2" *ngIf="data.compId === 1"></app-button-cmp1>
+    <app-text-cmp1 [datas]="data.metadata.info4"></app-text-cmp1>
+
+    <app-button-cmp1 [Text]="data.metadata.info7" *ngIf="data.compId === 1"></app-button-cmp1>
+    <app-place-table></app-place-table>
+
+<app-button-cmp1 [Text]="data.metadata.info8" *ngIf="data.compId === 1"></app-button-cmp1>
+<app-company-pic></app-company-pic>
+</div>

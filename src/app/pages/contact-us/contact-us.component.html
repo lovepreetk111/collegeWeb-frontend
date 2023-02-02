@@ -1,0 +1,8 @@
+
+<div *ngFor="let data of pages[0].component">
+<app-top-img-btm-text1 [images]="data.metadata" *ngIf="data.compId === 1"></app-top-img-btm-text1>
+<!-- <app-text-cmp1 [data]=data.metadata *ngIf="data.compId===2"></app-text-cmp1> -->
+<app-form-component1 [item]="data.metadata" *ngIf="data.compId===2"></app-form-component1>
+</div>
+
+

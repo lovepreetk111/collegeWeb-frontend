@@ -1,0 +1,40 @@
+<header>
+    <div *ngFor="let datas of headerData">
+        <div class="top">
+            <ul *ngFor="let data of datas.implinksdata">
+                <li><a [href]="data.routeLinks"></a>
+                    {{data.impLinks}}
+                </li>
+            </ul>
+        </div>
+        <div class="bottom" *ngFor="let data of datas.logo">
+            <nav class="navbar navbar-expand-lg bg-light">
+                <div class="container-fluid khudkaclass">
+                    <a [routerLink]=data.link> <img [src]="data.logoUrl" [alt]="data.logoAlt"> </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                       <!--  <ul class="navbar-nav" me-auto mb-2 mb-lg-0 *ngFor="let content of datas.navbar">
+                            <li ngbDropdown class="nav-item" *ngIf="content.child">
+                                <a [routerLink]="content.link" (click)="false" class="nav-link"
+                                    ngbDropdownToggle>{{content.nav}}</a>
+                                <div ngbDropdownMenu class="dropdown-list">
+                                    <a *ngFor="let data of content.child" class="dropdown-item"
+                                        [routerLink]="data.url">{{data.dropdown}}</a>
+                                </div>
+                            </li>
+                            <li class="nav-item" *ngIf="!content.child">
+                                <a [routerLink]="content.link" (click)="false" class="nav-link">{{content.nav}}</a>
+                            </li>
+                        </ul> -->
+
+                        
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>

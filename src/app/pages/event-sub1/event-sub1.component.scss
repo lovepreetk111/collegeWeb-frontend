@@ -1,0 +1,111 @@
+// .detail {
+//     width: 12rem;
+//     height: 12rem;
+
+// }
+
+// #block1 {
+//     text-align: center;
+
+//     .details {
+//         width: 12rem;
+//         height: 12rem;
+
+//     }
+
+//     .details-card {
+//         width: 12rem;
+//         height: 13rem;
+
+//     }
+// }
+
+
+
+
+
+// .main {
+//     width: 100%;
+//     height: 50%;
+//     background-color: transparent;
+//     display: flex;
+//     align-items: center;
+
+
+//     .main-sub {
+//         width: 58.5rem;
+//         height: 100%;
+//         background-color: transparent;
+//         margin-left: 1rem;
+
+//         .image {
+//             width: 12rem;
+//             height: 12px;
+//             margin: 12px 116px;
+
+//         }
+//     }
+// }
+
+
+// .about{
+//     width: 52rem;
+
+//     margin-top: 31rem;
+//     margin-left: 3rem;
+//     box-shadow: none;
+
+//     border: none;
+// }
+// .speakers{
+//     width: 100%;
+//     background-color: whitesmoke;
+//     height: 12rem;
+//     margin-top: -11rem;
+// }
+
+
+.main1 {
+
+    .main {
+        display: flex;
+        margin: 30px;
+
+        .main-sub {
+            box-shadow: none;
+            border: none;
+
+            .image {}
+
+            box-shadow: none;
+            border: none;
+            width: 90%;
+
+            .about {
+                padding-top: 50px;
+                box-shadow: none;
+                border: none;
+                width: 135%;
+
+            }
+
+            .speakers {
+                padding-top: 20vh;
+
+                .speaker {}
+            }
+        }
+
+        .main-sub2 {
+
+            .card {
+                width: 50%;
+                border: none;
+                margin-left: 40%;
+                padding-top: 30px;
+                padding-bottom: -50px;
+                background-color: transparent;
+            }
+        }
+    }
+}

@@ -1,0 +1,66 @@
+<!-- <div class="card">
+    <div class="contact-form">
+        <div class="contact-card">
+            <img [src]="" [alt]="">
+        </div>
+    </div>
+    <div class="contact-form" id="main-form">
+        <div class="leftSection">
+            <div class="your-name">
+                <label>Your Name (required)</label>
+                <input class="input-border" type="text" pInputText [(ngModel)]="dataModel" />
+            </div>
+            <div class="your-name">
+                <label>Your Email (required)</label>
+                <input class="input-border" type="Email" pInputText [(ngModel)]="dataModel1" />
+            </div>
+            <div class="your-name">
+                <label> Contact (required)</label>
+                <input class="input-border" type="text" pInputText [(ngModel)]="dataModel2" />
+            </div>
+            <div class="text-area">
+                <label>Your Message</label><br>
+                <textarea class="input-border-text" rows="5" cols="30" [(ngModel)]="dataModel3"
+                    pInputTextarea></textarea>
+            </div>
+            <div class="contact-btn">
+                <button (click)="sendData()">Add Data</button>
+            </div>
+        </div>
+
+        
+    </div>
+</div> -->
+
+<div class=" container contactform">
+   <!-- <div class="leftimg">
+        <img src="../../assets/images/carouseltest.jpg" alt="">
+    </div> -->
+    <div>
+       <form>
+           <h3>LEAVE A MESSAGE</h3>
+            <p>I must explain to you how all this a mistaken idea of ncing great explorer of the rut the is lder of
+                human happinescias unde omnis iste natus error sit volptatem</p>
+                <div class="form">
+            <div class="common">
+                <label for="fname">First name:</label>
+                <input class="input" type="text" id="fname" name="fname" [(ngModel)]="dataModel">
+            </div>
+            <div class="common">
+                <label for="lname">Last name:</label>
+                <input class="input" type="text" id="lname" name="lname" [(ngModel)]="dataModel1">
+            </div>
+            <div class="common">
+                <label for="contact">Contact:</label>
+                <input class="input" type="text" id="contact" name="contact" [(ngModel)]="dataModel2">
+            </div>
+            <div class="common">
+                <label for="your-message">Your Mesaage:</label>
+                <input class="message" type="text" id="contact" name="contact" [(ngModel)]="dataModel3">
+            </div>
+            <button type="submit" value="Submit" (click)="sendData()">Submit</button>
+        </div>
+        </form>
+        <!-- <input type="submit" value="Submit"> -->
+    </div>
+</div>

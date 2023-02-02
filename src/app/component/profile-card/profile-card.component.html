@@ -1,0 +1,9 @@
+<div class="container-info-testimonials" *ngIf="cardData" data-aos="slide-down"  data-aos-duration="10000">
+    <p class="testi-info">{{cardData.comment}}</p>
+    <div class="ellipse-testimonials" [ngStyle]="{backgroundImage:'url('+cardData.profileUrl+')'}"></div>
+    <div class="user-details">
+        <p class="testi-name">{{cardData.name}}</p>
+        <p class="testi-post">{{cardData.designation}}, {{cardData.companyName}}</p>
+    </div>
+</div>
+

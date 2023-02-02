@@ -1,0 +1,67 @@
+<footer>
+  <div class="upper">
+    <div class="map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.0562188313374!2d72.84631431482173!3d19.06126568709637!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c91fa1b0129b%3A0xb7602700af261223!2sChetana%20College!5e0!3m2!1sen!2sin!4v1663961077744!5m2!1sen!2sin"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+    <div class="Details">
+      <h2>Contact Us</h2>
+      <div class="address">
+        <img src="../../assets/img/map.png" alt="" />
+        <a
+        target="_blank"
+          href ="https://www.google.com/maps/dir//Chetana+College+New+Bldg.
+                ,+Survey+No.+341,+SD+Mandir+Rd,+Government+Colony,+Bandra+East+Mumbai
+                ,+Maharashtra+400051/@19.0612657,72.848503,16z/data=!4m8!4m7!1m0!1m5!
+                1m1!1s0x3be7c91fa1b0129b:0xb7602700af261223!2m2!1d72.848503!2d19.0612657"
+          >
+          <div class="location">
+          <p>
+            Survey No.341, Chetana Mahavidyalaya marg, Bandra (E) Mumbai-55
+            Maharashtra India
+          </p>
+          </div>
+          </a
+        >
+      </div>
+      <div class="contacts" *ngIf="footerData">
+        <div class="contacts-main" *ngFor="let data of footerData">
+          <div class="call" >
+            <img src="../../assets/img/call.png" alt="" />
+            <a href="tel:"><p>{{ data.ContactCall.Number }}</p></a>
+          </div>
+     
+          <div class="mail">
+            <img src="../../assets/img/mail.png" alt="" />
+            <a target="_blank" href="mailto:"
+              ><p>{{ data.ContactMail.mail }}</p></a>
+          </div>
+      
+          <div class="socialmedia" >
+            <a target="_blank" *ngFor="let data of data.socialMedia" [href]="data.link"
+              ><img [src]="data.url" [alt]="data.alt"
+            />
+          </a>
+          
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="lower">
+    <p>All rights Reserved © |TYBScIT</p>
+  </div>
+</footer>
+
+<!-- <div  *ngFor="let comp of pages[currentPageIndex].component">
+            <app-contact-call [Number]="comp.metadata.Number" *ngIf="comp.compID === 1  "></app-contact-call>
+            <app-contact-mail [mail]="comp.metadata.ContactMail.mail" *ngIf="comp.compID ===2" ></app-contact-mail>
+            <app-social-media [SocialMedia]="comp.metadata.SocialMedia" *ngIf="comp.compID ===3"></app-social-media>
+        </div> -->

@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+.container-fluid {
+    font-family: 'Ubuntu', sans-serif;
+    width: 100%;
+    height: 65vh;
+    margin: 0;
+    padding: 0;
+
+    ::ng-deep {
+        .main {
+            width: 100%;
+            height: 56vh;
+
+            .info {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: white;
+                background: linear-gradient(91.29deg, rgb(91, 136, 180) 0.96%, #ffffff00 103.73%);
+
+                .caption {
+                    width: 38%;
+                    text-align: left;
+
+                    h1 {
+                        font-size: 2.25rem;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+
+                    .row {
+                        p {
+                            font-size: 1.25rem;
+                        }
+                    }
+
+                    button {
+                        padding: 6px 6px;
+                        color: white;
+                        background-color: rgba(0, 51, 153, 1);
+                        border-radius: 5px;
+                        border-color: white;
+                    }
+                }
+
+                .picsum-img-wrapper {
+                    width: 55%;
+                    height: 75%;
+
+                    img {
+                        width: 80%;
+                        height: 100%;
+                        margin-left: 20%;
+                    }
+                }
+            }
+
+            .background {
+                width: 100%;
+                height: 100%;
+                background-color: white;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+
+    .buttons {
+        width: 100%;
+        height: 10vh;
+        display: flex;
+        justify-content: space-between;
+        padding: 1% 1% 0% 1%;
+
+        .slider-indicator {
+            display: flex;
+            gap: 10px;
+
+            span {
+                width: 20px;
+                height: 20px;
+                border-radius: 100%;
+                background-color: grey;
+                cursor: pointer;
+
+                &.active {
+                    background-color: rgba(0, 51, 153, 1);
+                }
+            }
+        }
+
+        .navigation-buttons {
+            button {
+                border: none;
+                background: none;
+
+                img {
+                    width: 70%;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:550px) {
+    .container-fluid {
+        height: 38vh;
+        .main {
+            width: 100%;
+            height: 32vh;
+            .info {
+                .caption {
+                    width: 38%;
+                    text-align: left;
+                    h1 {
+                        font-size: 1rem;
+                    }
+                    .row {
+                        p {
+                            font-size: 0.625rem;
+                        }
+                    }
+                    button {
+                        font-size: 0.6rem;
+                        padding: 4px 4px;
+                    }
+                }
+
+                .picsum-img-wrapper {
+                    width: 55%;
+                    height: 75%;
+
+                    img {
+                        width: 80%;
+                        height: 100%;
+                        margin-left: 20px;
+                    }
+                }
+            }
+
+
+        }
+        
+    .buttons {
+        .slider-indicator {
+            span {
+                width: 14px;
+                height: 14px;
+                &.active {
+                    background-color: rgba(0, 51, 153, 1);
+                }
+            }
+        }
+
+        .navigation-buttons {
+            button {
+                border: none;
+                background: none;
+
+                img {
+                    width: 50%;
+                }
+            }
+        }
+    }
+    }
+}
+
+
+@media (min-width:550px) and (max-width:810px) {
+    .container-fluid {
+        height: 42vh;
+        .main {
+            width: 100%;
+            height: 38vh;
+
+            .info {
+                .caption {
+                    width: 38%;
+                    text-align: left;
+
+                    h1 {
+                        font-size: 1.4rem;
+                    }
+
+                    .row {
+                        p {
+                            font-size: 0.9rem;
+                        }
+                    }
+
+                    button {
+                        font-size: 0.85rem;
+                        padding: 4.5px 4.5px;
+                    }
+                }
+
+                .picsum-img-wrapper {
+                    width: 55%;
+                    height: 75%;
+
+                    img {
+                        width: 80%;
+                        height: 100%;
+                        margin-left: 20px;
+                    }
+                }
+            }
+
+
+        }
+        
+        .buttons {
+            .slider-indicator {
+                span {
+                    width: 16px;
+                    height: 16px;
+                    &.active {
+                        background-color: rgba(0, 51, 153, 1);
+                    }
+                }
+            }
+            .navigation-buttons {
+                button {
+                    border: none;
+                    background: none;
+                    img {
+                        width: 53%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:810px) and (max-width:1100px){
+    .container-fluid {
+        height: 50vh;
+        .main {
+            width: 100%;
+            height: 46vh;
+
+            .info {
+                .caption {
+                    width: 38%;
+                    text-align: left;
+
+                    h1 {
+                        font-size: 1.6rem;
+                    }
+
+                    .row {
+                        p {
+                            font-size: 1.125rem;
+                        }
+                    }
+
+                    button {
+                        font-size: 1rem;
+                        padding: 5px 5px;
+                    }
+                }
+
+                .picsum-img-wrapper {
+                    width: 55%;
+                    height: 75%;
+
+                    img {
+                        width: 80%;
+                        height: 100%;
+                        margin-left: 20px;
+                    }
+                }
+            }
+
+
+        }
+        
+        .buttons {
+            .slider-indicator {
+                span {
+                    width: 18px;
+                    height: 18px;
+                    &.active {
+                        background-color: rgba(0, 51, 153, 1);
+                    }
+                }
+            }
+    
+            .navigation-buttons {
+                button {
+                    border: none;
+                    background: none;
+    
+                    img {
+                        width: 56%;
+                    }
+                }
+            }
+        }
+    }
+}

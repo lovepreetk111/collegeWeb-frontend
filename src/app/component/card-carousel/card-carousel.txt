@@ -1,0 +1,92 @@
+<div class="container-fluid cardcarousel">
+    <ngb-carousel #ngCarousal [interval]="10000" *ngIf="cardConfig" [showNavigationArrows]="false"
+        [showNavigationIndicators]="false">
+        <ng-template ngbSlide *ngIf="cardConfig">
+            <div class="slide" *ngFor="let data of cardConfig.slides">
+                <!-- {{cardConfig | json}} -->
+            <div class="card" >
+                <div class="picsum-img-wrapper">
+                    <img [src]="data.img.url" alt="data.img.alt">
+                </div >
+                <div class="carousel-caption">
+                    <h3>Test</h3>
+                    <p>Test</p>
+                </div>
+            </div>
+        </div>
+        </ng-template>
+    </ngb-carousel>
+
+
+    <div class="functionbuttons">
+        <div class="navigationbutton">
+            <button (click)="previousSlide()">
+                <img src="assets/images/previous.svg" alt="">
+            </button>
+            <button (click)="nextSlide()">
+                <img src="assets/images/next.svg" alt="">
+            </button>
+        </div>
+    </div>
+</div>
+
+
+.cardcarousel {
+    width: 100%;
+    height: 100vh;
+    ::ng-deep {
+        .slide{
+            width: 100%;
+            height: 60vh;
+            display: flex;
+            justify-content: space-around;
+            padding: 0 5rem;
+           /*  border: 1px solid rgb(15, 202, 36); */
+            .card {
+                width: 25%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                border: 1px solid black;
+                .picsum-img-wrapper{
+                    width: 100%;
+                    height: 100%;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+                .carousel-caption{
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba(0, 0, 0, 0.66);
+                    color: black;
+                    opacity: 0;
+                    position:absolute;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    &:hover{
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+
+    
+}
+
+
+.functionbuttons{
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    padding-right: 15%;
+.navigationbutton{
+    button{
+        border: none;
+        img{
+            width: 70%;}}
+}
+}

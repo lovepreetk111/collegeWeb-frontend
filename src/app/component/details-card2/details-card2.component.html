@@ -1,0 +1,17 @@
+<div class="container" *ngIf="cardData">
+    <div class="card-container" *ngFor="let cardData of cardData">
+    <div class="left">
+        
+        <img [src]="cardData.image" [alt]="cardData.alt">
+        <div class="dates">
+            <h4>{{cardData.date}}</h4>
+        </div>
+    </div>
+    <div class="right">
+        <h4>{{cardData.eventName}}</h4> 
+        <p>{{cardData.time}}</p>
+        <p>{{cardData.venu}}</p>
+        <button><a [routerLink]="cardData.routeLink">{{cardData.buttonData}}</a></button>
+    </div>
+  </div>
+   </div>

@@ -1,0 +1,24 @@
+
+        .aboutcard{
+            margin-top: -3rem;
+            box-shadow:4px 4px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 10px;
+            width: 100%;
+            height: auto;
+                .abouttext{
+                    text-align: justify;
+                    margin: 49px 19px;
+                    padding: 10px 1px;
+                        p{
+                            color: rgb(100, 100, 100);
+                            //font-style: italic;
+                            font-size: 16px;
+                            line-height:18px;
+                            padding: 15px;
+                            font-style: italic;
+                            font-family: 'Ubuntu', sans-serif;
+                            word-spacing: 0.3rem; 
+                        }
+                }
+        }
+

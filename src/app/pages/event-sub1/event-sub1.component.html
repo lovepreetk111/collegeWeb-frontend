@@ -1,0 +1,40 @@
+
+
+
+
+
+<!-- <div *ngFor="let data of pages[currentPageIndex].component">
+    <app-image-cmp1 [AboutBanner]="data.metadata" *ngIf="data.compId===1"></app-image-cmp1>
+    <app-details-card2 [cardData]="data.metadata" *ngIf="data.compId===2"></app-details-card2>
+    </div> -->
+  
+
+
+    
+<div class="main1">
+    <div *ngFor="let data of pages[currentPageIndex].component">
+        <app-image-cmp1 [AboutBanner]="data.metadata" *ngIf="data.compId===1"></app-image-cmp1>
+    </div>    
+    <div class="main">
+        <div class="main-sub">
+            <div class="image" *ngFor="let data of pages[currentPageIndex].component">
+            <app-left-img2 [LeftImage]="data.metadata" *ngIf="data.compId===3"></app-left-img2>
+            </div>
+            <div class="about" *ngFor="let data of pages[currentPageIndex].component">
+                <app-text-cmp1 [datas]="data.metadata.info4"></app-text-cmp1>
+            </div>
+            <div class="speakers">
+                <h3>Speakers</h3> 
+             <div class="speaker" *ngFor="let data of pages[currentPageIndex].component">  
+                <app-speakers [speakerData]="data.metadata" *ngIf="data.compId===5"></app-speakers>
+            </div>
+           
+            </div>
+        </div>
+        <div class="main-sub2" >
+            <div class="card" *ngFor="let data of pages[currentPageIndex].component">
+                <app-details-card2 [cardData]="data.metadata" *ngIf="data.compId===2"></app-details-card2>
+            </div>
+        </div>
+    </div>
+</div>

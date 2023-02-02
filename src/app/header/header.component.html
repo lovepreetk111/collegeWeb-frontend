@@ -1,0 +1,149 @@
+<!-- <p-menubar [model]="headerData"> -->
+<!-- <header *ngIf="headerData">
+    <div *ngFor="let datas of headerData">
+        <div class="top">
+            <ul *ngFor="let data of datas.implinksdata">
+                <li><a [href]="data.routeLinks"></a>
+                    {{data.impLinks}}
+                </li>
+            </ul>
+        </div>
+
+        <div class="bottom" *ngFor="let data of datas.logo">
+            <a [routerLink]=data.link> <img [src]="data.logoUrl" [alt]="data.logoAlt"> </a>
+            <nav class="navbar navbar-expand-lg bg-light">
+                <div class="container-fluid">
+            <a [routerLink]=data.link> <img [src]="data.logoUrl" [alt]="data.logoAlt"> </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav" me-auto mb-2 mb-lg-0 *ngFor="let content of datas.navbar">
+                            <li ngbDropdown class="nav-item" *ngIf="content.child">
+                                <a [routerLink]="content.link" (click)="false" class="nav-link"
+                                    ngbDropdownToggle>{{content.nav}}</a>
+
+                                <div ngbDropdownMenu class="dropdown-list">
+                                    <a *ngFor="let data of content.child" class="dropdown-item"
+                                        [routerLink]="data.url">{{data.dropdown}}</a>
+                                </div>
+                            </li>
+                            <li class="nav-item" *ngIf="!content.child">
+                                <a [routerLink]="content.link" (click)="false" class="nav-link">{{content.nav}}</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </nav>
+        </div>
+
+    </div>
+</header> -->
+<!-- </p-menubar> -->
+<header>
+   
+     
+    <div *ngFor="let datas of headerData">
+        <div class="top">
+            <ul *ngFor="let data of datas.implinksdata">
+                <li><a [href]="data.routeLinks"></a>
+                    {{data.impLinks}}
+                </li>
+            </ul>
+        </div>
+        
+        <div class="bottom" *ngFor="let data of datas.logo">
+            
+            <nav class="navbar navbar-expand-md navbar-light bg-light">
+                
+                <a class="navbar-brand pb-2" href="#">
+                    <img src="assets/images/Chetana-Logo.svg" alt="">
+
+                    <span>
+                    <p-button type="button" (click)="visibleSidebar1 = true" icon="pi pi-align-justify" class="btn align-items-end" ></p-button>
+                    <p-sidebar  [(visible)]="visibleSidebar1" [style]="{mwidth:'12em', borderTopRightRadius:'18px', borderBottomRightRadius:'18px', background:'skyblue'}"  [baseZIndex]="1000" >
+                      
+                    <div class="collapse navbar-collapse navlinks" id="navbarNavDropdown1">
+                        <!-- Level 0 : Navbar -->
+                        <ul class="navbar-nav" *ngFor="let content of datas.navbar">
+                            <li class="nav-item dropdown" *ngIf="content.child">
+                                <a class="nav-link dropdown-toggle" [routerLink]="content.link" id="navbarDropdownMenuLink"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> {{content.nav}} </a>
+                                <!-- Level 1 : Dropdown -->
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <div *ngFor="let child of content.child">
+                                        <li class="dropdown-submenu" *ngIf="child.subchild">
+                                            <a class="dropdown-item dropdown-toggle" [routerLink]="child.url">{{child.dropdown}}
+                                            </a>
+                                            <!-- Level 2 : Dropdown -->
+                                            <ul class="dropdown-menu" >
+                                                <li class="dropdown-item" *ngFor="let subchild of child.subchild">
+                                                    <a 
+                                                        [routerLink]="subchild.routeLink">{{subchild.subchild}}</a>
+                                                </li>
+    
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item dropdown" *ngIf="!child.subchild">
+                                            <a [routerLink]="child.url" (click)="false" class="nav-link">{{child.dropdown}}</a>
+                                        </li>
+                                        
+                                    </div>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown" *ngIf="!content.child">
+                                <a [routerLink]="content.link" (click)="false" class="nav-link">{{content.nav}}</a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                </p-sidebar>
+                </span>
+                </a>
+                
+                <div class="collapse navbar-collapse navlinks" id="navbarNavDropdown">
+                    <!-- Level 0 : Navbar -->
+                    <ul class="navbar-nav" *ngFor="let content of datas.navbar">
+                        <li class="nav-item dropdown" *ngIf="content.child">
+                            <a class="nav-link dropdown-toggle" [routerLink]="content.link" id="navbarDropdownMenuLink"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> {{content.nav}} </a>
+                            <!-- Level 1 : Dropdown -->
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <div *ngFor="let child of content.child">
+                                    <li class="dropdown-submenu" *ngIf="child.subchild">
+                                        <a class="dropdown-item dropdown-toggle" [routerLink]="child.url">{{child.dropdown}}
+                                        </a>
+                                        <!-- Level 2 : Dropdown -->
+                                        <ul class="dropdown-menu" >
+                                            <li class="dropdown-item" *ngFor="let subchild of child.subchild">
+                                                <a 
+                                                    [routerLink]="subchild.routeLink">{{subchild.subchild}}</a>
+                                            </li>
+
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropdown" *ngIf="!child.subchild">
+                                        <a [routerLink]="child.url" (click)="false" class="nav-link">{{child.dropdown}}</a>
+                                    </li>
+                                    
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown" *ngIf="!content.child">
+                            <a [routerLink]="content.link" (click)="false" class="nav-link">{{content.nav}}</a>
+                        </li>
+                    </ul>
+                    
+                </div>
+               
+                
+            </nav>
+            
+        </div>
+        
+    </div>
+    
+</header>

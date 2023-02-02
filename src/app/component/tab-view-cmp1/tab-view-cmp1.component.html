@@ -1,0 +1,91 @@
+<div *ngIf="details">
+  <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-tabs">
+    <li [ngbNavItem]="1">
+      <a ngbNavLink>COURSE DETAILS</a>
+      <ng-template ngbNavContent>
+        <div class="details">
+          <h1>{{details.text}}</h1>
+          <p>{{details.text1}}</p>
+          <ul>
+            <li [innerHTML]="details.text2"></li>
+          </ul>
+          <!-- <h3>{{details.text3}}</h3>
+        <ul>
+            <li [innerHTML]="details.text4"></li>
+            <h4>{{details.text5}}</h4>
+            <li [innerHTML]="details.text6"></li>
+        </ul> -->
+          <div class="details">
+            <h3>{{details.text10}}</h3>
+            <p><a [href]="details.link" target="_blank">All Three Years</a></p>
+          </div>
+        </div>
+      </ng-template>
+    </li>
+    <li [ngbNavItem]="2">
+      <a ngbNavLink>Eligibility Criteria</a>
+      <ng-template ngbNavContent>
+        <div class="details">
+          <ul>
+            <li [innerHTML]="details.text7"></li>
+          </ul>
+          <h3>{{details.text8}}</h3>
+          <ul>
+            <li [innerHTML]="details.text9"></li>
+
+          </ul>
+
+          <table>
+            <thead>
+              <tr>
+                <th><label>No</label></th>
+                <th><label>Categories</label></th>
+                <th><label>Criteria</label></th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- {{data | json}} -->
+              <tr *ngFor="let data of details.table">
+
+                <td data-label="Invoice">{{data.id}}</td>
+                <td data-label="Details">{{data.category}}</td>
+                <td data-label="Due Date">{{data.criteria}}</td>
+
+              </tr>
+
+
+            </tbody>
+          </table>
+
+        </div>
+      </ng-template>
+    </li>
+    <!-- <li [ngbNavItem]="3">
+		<a ngbNavLink>SYLLABUS</a>
+		<ng-template ngbNavContent>
+            <div class="details">
+            <h3>{{details.text10}}</h3>
+            <p><a [href]="details.link" target="_blank">All Three Years</a></p>
+            </div>
+		</ng-template>
+	</li> -->
+    <li [ngbNavItem]="4">
+      <a ngbNavLink>FACULTY</a>
+      <ng-template ngbNavContent>
+        <div class="facultyinfo container">
+          <img [src]="details.url" [alt]="details.alt" class="facultyimage">
+          <div class="facultyname">
+            <h2>{{details.text11}}</h2>
+            <p>{{details.text12}}</p>
+            <p>{{details.text12}}</p>
+            <p>{{details.text12}}</p>
+          </div>
+        </div>
+      </ng-template>
+    </li>
+  </ul>
+
+
+  <div [ngbNavOutlet]="nav" class="mt-2"></div>
+</div>
+<!-- <pre>Active: {{ active }}</pre> -->

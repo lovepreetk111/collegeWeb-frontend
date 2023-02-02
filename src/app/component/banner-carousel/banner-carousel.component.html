@@ -1,0 +1,39 @@
+<div class="container-fluid">
+	<ngb-carousel #ngCarousal [interval]="10000" *ngIf="carousel2" [showNavigationArrows]="false"
+		[showNavigationIndicators]="false">
+		<ng-template ngbSlide *ngFor="let data of carousel2">
+			<div class="main">
+				<div class="info">
+					<div class="caption">
+						<h1 class="default" [title]="data.innerData.header">{{data.innerData.header}}</h1>
+						<div class="row">
+						<p>{{data.innerData.text}}</p>
+						</div>
+						<button>{{data.innerData.buttonText}}</button>
+					</div>
+					<div class="picsum-img-wrapper" >
+						<img [src]="data.image.url" [alt]="data.image.alt" />
+					</div>
+				</div>
+				<div class="background">
+					<!-- <img [src]="data.background.url" [alt]="data.background.alt" /> -->
+				</div>
+			</div>
+		</ng-template>
+	</ngb-carousel>
+	<div class="buttons">
+		<div class="slider-indicator">
+			<span (click)="stepping(img.id)" *ngFor="let img of sliders;let i = index"
+				[ngClass]="{'active': +activeSlideId === i }"></span>
+		</div>
+		<div class="navigation-buttons">
+			<button (click)="previousSlide()">
+				<img src="assets/images/left.svg" alt="">
+			</button>
+			<button (click)="nextSlide()">
+				<img src="assets/images/right.svg" alt="">
+			</button>
+		</div>
+
+	</div>
+</div>

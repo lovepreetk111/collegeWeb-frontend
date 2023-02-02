@@ -1,0 +1,13 @@
+
+ <div class="container" data-aos="fade-left"  data-aos-duration="10000">
+  <div class="card-container" *ngFor="let data of detailCardConfig">
+  <div class="left">
+    <img [src]="data.imgUrl" [alt]="data.imgAlt">
+  </div>
+  <div class="right">
+    <h4>{{data.header}}</h4>
+    <button type="button" value="Read More"><a [routerLink]="data.btnLink">{{data.btnTxt}}</a></button>
+  </div>
+</div>
+ </div>
+ <!-- <img src="../../../assets/images/ARTS.svg" alt=""> -->

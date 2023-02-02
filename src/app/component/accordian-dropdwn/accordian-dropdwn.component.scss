@@ -1,0 +1,106 @@
+.acedemic {
+    display: flex;
+    // position: relative;
+
+    .accordion ::ng-deep {
+        width: 100%;
+        height: 100%;
+
+        .accordion-button {
+            background: linear-gradient(90.97deg, #003399 0%, rgba(0, 51, 153, 0.65) 98.76%);
+            color: white;
+            border: 2px solid white;
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        .accordion-body {
+            background-color: rgba(0, 51, 153, 1);
+            color: white;
+
+            li {
+                list-style: none;
+
+                a {
+                    color: white;
+                    text-decoration: none;
+                    font-size: 18px;
+                    font-weight: 500;
+
+                    &:hover {
+                        color: #003399;
+                        background-color: white;
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:500px) {
+    .acedemic {
+        flex-direction: column;
+        align-items: center;
+
+        .accordion::ng-deep {
+            .accordion-button {
+                font-size: 0.625rem;
+            }
+
+            .accordion-body {
+                li {
+                    a {
+                        font-size: 5.5rem;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media (min-width:500px) and (max-width:810px) {
+    .acedemic {
+        flex-direction: column;
+        align-items: center;
+
+        .accordion::ng-deep {
+            .accordion-button {
+                font-size: 0.825rem;
+            }
+
+            .accordion-body {
+                li {
+                    a {
+                        font-size: 0.625rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:810px) and (max-width:1000px) {
+    .acedemic {
+        // flex-direction: column;
+        align-items: center;
+
+        .accordion::ng-deep{
+            .accordion-button {
+                font-size: 1.0rem;
+            }
+
+            .accordion-body {
+                li {
+                    a {
+                        font-size: 0.9rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+

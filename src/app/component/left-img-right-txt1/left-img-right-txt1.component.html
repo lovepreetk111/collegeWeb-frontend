@@ -1,0 +1,9 @@
+
+<div class="about" *ngIf="image">
+    <div class="photo" data-aos="flip-right"  data-aos-duration="10000">
+        <img [src]="image.url" [alt]="image.alt">
+    </div>
+    <div class="details" data-aos="fade-right"  data-aos-duration="10000">
+        <p [innerHTML]="image.para1"></p>
+    </div>
+</div>

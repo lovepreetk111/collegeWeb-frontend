@@ -1,0 +1,22 @@
+.background{
+    background-color: rgba(158, 157, 157, 0.58);
+    height: auto;
+    width: 100%;
+    .container{
+        height: 100%;
+        width: 100%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        .row{
+            padding: 2%;
+        .col-3{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img{
+                height: 10vh;
+            }
+        }
+    }
+    }
+}
