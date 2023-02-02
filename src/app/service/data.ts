@@ -212,6 +212,7 @@ export interface IcourseDetail {
   text11: string;
   text12: string;
   table:aboutCouse[];
+  table2:aboutCouse[];
 }
 
 

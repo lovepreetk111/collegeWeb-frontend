@@ -26,36 +26,63 @@
       <a ngbNavLink>Eligibility Criteria</a>
       <ng-template ngbNavContent>
         <div class="details">
-          <ul>
+          <!-- <ul>
             <li [innerHTML]="details.text7"></li>
-          </ul>
-          <h3>{{details.text8}}</h3>
-          <ul>
+          </ul> -->
+          <!-- <h3>{{details.text8}}</h3> -->
+          <!-- <ul>
             <li [innerHTML]="details.text9"></li>
 
-          </ul>
-
-          <table>
+          </ul> -->
+<div class="table-responsive">
+          <table class="table">
             <thead>
               <tr>
-                <th><label>No</label></th>
+                <th class="fit"><label>No</label></th>
+                <th><label>Categories</label></th>
+                <th><label>Criteria</label></th>
+              </tr>
+            </thead>
+            <tbody>
+             <!--  <pre>{{details | json}} </pre> -->
+               
+              <tr *ngFor="let data of details.table">
+
+                <td data-label="No" class="fit">{{data.id}}</td>
+                <td data-label="Categories">{{data.category}}</td>
+                <td data-label="Criteria">{{data.criteria}}</td>
+
+              </tr>
+
+
+            </tbody>
+          </table></div><br> <br>
+
+
+          <h2 class="text-center">OR</h2> <br><br>
+
+          <div class="table-responsive">
+          <table class="table">
+            <thead>
+              <tr>
+                <th class="fit"><label>No</label></th>
                 <th><label>Categories</label></th>
                 <th><label>Criteria</label></th>
               </tr>
             </thead>
             <tbody>
               <!-- {{data | json}} -->
-              <tr *ngFor="let data of details.table">
+              <tr *ngFor="let data of details.table2">
 
-                <td data-label="Invoice">{{data.id}}</td>
-                <td data-label="Details">{{data.category}}</td>
-                <td data-label="Due Date">{{data.criteria}}</td>
+                <td data-label="No" class="fit">{{data.id}}</td>
+                <td data-label="Categories">{{data.category}}</td>
+                <td data-label="Criteria">{{data.criteria}}</td>
 
               </tr>
 
 
             </tbody>
-          </table>
+          </table></div>
 
         </div>
       </ng-template>
