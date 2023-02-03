@@ -1,15 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 
-* {
-    font-family: 'Ubuntu', sans-serif;
-}
 
 li {
     margin-top: 20px;
     font-size: 19px;
+
     a {
         text-decoration: none;
         color: black;
+        font-size: 20px;
     }
 }
 
@@ -87,58 +86,11 @@ li {
         width: 1%;
     }
 
-    /*  @media screen and (max-width: 600px) {
-        table {
-            border: 0;
-        }
-        table caption {
-            font-size: 1.3em;
-        }
-        table thead {
-            border: none;
-            clip: rect(0 0 0 0);
-            height: 1px;
-            margin: -1px;
-            overflow: hidden;
-            position: absolute;
-            width: 1px;
-            padding: 0;
-        }
-        table tr {
-            border-bottom: 3px solid #e1e5e9;
-            display: block;
-            margin-bottom: .625em;
-        }
-        table th,
-        table td {
-            padding: 0.625em;
-        }
-        table td {
-            border-bottom: 1px solid #e1e5e9;
-            display: block;
-            font-size: .8em;
-            text-align: right;
-            color: #9da9b9;
-        }
-        table td::before {
-            content: attr(data-label);
-            float: left;
-            font-weight: bold;
-            text-transform: uppercase;
-            color: #656971;
-        }
-        table td:last-child {
-            border-bottom: 0;
-        }
-        table td:nth-child(4) {
-            font-size: 0.8em;
-        }
-} */
     .table-dark {
         background-color: blue;
     }
 
-   
+
 }
 
 .facultyinfo {
@@ -153,12 +105,12 @@ li {
     }
 
     .facultyname {
-       
+
 
         h2 {
             color: rgba(0, 51, 153, 1);
             font-weight: 700;
-            
+
         }
 
         p {
@@ -174,36 +126,36 @@ li {
 
 
 @media screen and (max-width:550px) {
-
+    li {
+        a {
+            font-size: 14px;
+        }
+    }
 
     .details {
         padding: 4px 17px;
-        font-size: 13px;
-        ul li{
+        font-size: 11px;
+        h1{
             font-size: 13px;
-            padding: 4px 17 px;
+            font-weight: 700;
         }
-        h3{
-            font-size: 17px;
+        p{
+            font-size: 0.78rem;
+        }
+
+        ul li {
+            font-size: 13px;
+            padding: 4px 17px;
+        }
+
+        h3 {
+            font-size: 15px;
         }
     }
 
     .facultyinfo {
-        padding: 3%;
-        display: flex;
-        font-family: 'Ubuntu', sans-serif;
-        gap: 2rem;
-        background-color: rgb(235, 235, 235);
-
-        img {
-            width: 27%;
-        }
-
         .facultyname {
-
             h2 {
-                color: rgba(0, 51, 153, 1);
-                font-weight: 700;
                 font-size: 20px;
             }
 
@@ -217,38 +169,37 @@ li {
 
 
 @media (min-width:550px) and (max-width:810px) {
+    li{
+        a{
+            font-size: 16px;
+        }
+    }
     .details {
         padding: 4px 17px;
-        font-size: 15px;
-        ul li{
-            font-size: 15px;
-            padding: 4px 17 px;
+        // font-size: 13px;
+        h1{
+            font-size: 16px;
+            font-weight: 700;
         }
-        h3{
-            font-size: 19px;
+        p{
+            font-size: 0.95rem;
+        }
+
+        ul li {
+            font-size: 15px;
+            padding: 4px 17px;
+        }
+
+        h3 {
+            font-size: 17px;
         }
     }
 
     .facultyinfo {
-        padding: 3%;
-        display: flex;
-        font-family: 'Ubuntu', sans-serif;
-        gap: 2rem;
-        background-color: rgb(235, 235, 235);
-
-        img {
-            width: 27%;
-        }
-
         .facultyname {
-           
-
             h2 {
-                color: rgba(0, 51, 153, 1);
-                font-weight: 700;
                 font-size: 23px;
             }
-
             p {
                 font-size: 15px;
                 padding: 7px 3px;
@@ -258,40 +209,27 @@ li {
 }
 
 @media (min-width:810px) and (max-width:1100px) {
+    li{
+        a{
+            font-size: 18px;
+        }
+    }
     .details {
         padding: 4px 17px;
         font-size: 19px;
-        ul li{
-            font-size: 18px;
+        h1{
+            font-size: 19px;
+            font-weight: 700;
+        }
+        p{
+            font-size: 1.1rem;
+        }
+
+        ul li {
+            font-size: 17px;
             padding: 4px 17 px;
         }
-       
+
     }
 
-    .facultyinfo {
-        padding: 3%;
-        display: flex;
-        font-family: 'Ubuntu', sans-serif;
-        gap: 2rem;
-        background-color: rgb(235, 235, 235);
-
-        img {
-            width: 27%;
-        }
-
-        .facultyname {
-           
-
-            h2 {
-                color: rgba(0, 51, 153, 1);
-                font-weight: 700;
-                
-            }
-
-            p {
-                font-size: 17px;
-                padding: 16px 3px;
-            }
-        }
-    }
 }
