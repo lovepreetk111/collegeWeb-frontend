@@ -1,18 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
-*{
+
+* {
     font-family: 'Ubuntu', sans-serif;
 }
-li{
+
+li {
     margin-top: 20px;
-    a{
+    font-size: 19px;
+    a {
         text-decoration: none;
         color: black;
     }
 }
 
-.details{
+.details {
     padding: 2% 1%;
+    font-size: 19px;
     font-family: 'Ubuntu', sans-serif;
+
     table {
         border: 1px solid #ccc;
         border-collapse: collapse;
@@ -21,20 +26,23 @@ li{
         width: 100%;
         table-layout: fixed;
     }
-    
+
     table caption {
         font-size: 1.5em;
         margin: .5em 0 .75em;
     }
+
     table tr {
         background-color: #fff;
         border: 1px solid #e1e5e9;
         padding: .35em;
         border-radius: 3px;
     }
+
     table thead tr:first-child {
         border: 1px solid #0f82e6;
     }
+
     table th,
     table td {
         padding: 1.625em;
@@ -43,11 +51,11 @@ li{
         font-size: 14px;
         // font-family: cursive;
     }
-    
+
     table td:nth-child(4) {
         font-size: 18px;
     }
-    
+
     table th {
         font-size: .85em;
         letter-spacing: .1em;
@@ -55,7 +63,7 @@ li{
         background: linear-gradient(180deg, #003399 0%, #4D70B8 100%);
         color: #FFF;
     }
-    
+
     table tbody tr td .btn-invoice {
         background: #0f82e6;
         color: #FFF;
@@ -64,20 +72,22 @@ li{
         border: 0;
         font-family: cursive;
     }
-    
+
     tbody tr:nth-child(even) {
         background-color: #eee;
     }
-    
+
     tbody tr:nth-child(odd) {
         background-color: #fff;
     }
-    table td.fit,table th.fit {
+
+    table td.fit,
+    table th.fit {
         white-space: nowrap;
         width: 1%;
     }
-    
-   /*  @media screen and (max-width: 600px) {
+
+    /*  @media screen and (max-width: 600px) {
         table {
             border: 0;
         }
@@ -124,29 +134,164 @@ li{
             font-size: 0.8em;
         }
 } */
-.table-dark{
-    background-color: blue;
+    .table-dark {
+        background-color: blue;
+    }
+
+   
 }
-.facultyinfo{
+
+.facultyinfo {
     padding: 3%;
     display: flex;
     font-family: 'Ubuntu', sans-serif;
-    gap:2rem;
+    gap: 2rem;
     background-color: rgb(235, 235, 235);
-    img{
-        width: 20%;
+
+    img {
+        width: 27%;
     }
-    .facultyname{
-        
-        h2{
-            color:rgba(0, 51, 153, 1);
+
+    .facultyname {
+       
+
+        h2 {
+            color: rgba(0, 51, 153, 1);
             font-weight: 700;
+            
         }
-        p{
-            //margin-left: 5%;
-            padding-top: 15px;
-            font-size: 15px;
+
+        p {
+            font-size: 17px;
+            padding: 16px 3px;
         }
     }
 }
+
+
+
+
+
+
+@media screen and (max-width:550px) {
+
+
+    .details {
+        padding: 4px 17px;
+        font-size: 13px;
+        ul li{
+            font-size: 13px;
+            padding: 4px 17 px;
+        }
+        h3{
+            font-size: 17px;
+        }
+    }
+
+    .facultyinfo {
+        padding: 3%;
+        display: flex;
+        font-family: 'Ubuntu', sans-serif;
+        gap: 2rem;
+        background-color: rgb(235, 235, 235);
+
+        img {
+            width: 27%;
+        }
+
+        .facultyname {
+
+            h2 {
+                color: rgba(0, 51, 153, 1);
+                font-weight: 700;
+                font-size: 20px;
+            }
+
+            p {
+                font-size: 13px;
+                padding: 1px 7px
+            }
+        }
+    }
+}
+
+
+@media (min-width:550px) and (max-width:810px) {
+    .details {
+        padding: 4px 17px;
+        font-size: 15px;
+        ul li{
+            font-size: 15px;
+            padding: 4px 17 px;
+        }
+        h3{
+            font-size: 19px;
+        }
+    }
+
+    .facultyinfo {
+        padding: 3%;
+        display: flex;
+        font-family: 'Ubuntu', sans-serif;
+        gap: 2rem;
+        background-color: rgb(235, 235, 235);
+
+        img {
+            width: 27%;
+        }
+
+        .facultyname {
+           
+
+            h2 {
+                color: rgba(0, 51, 153, 1);
+                font-weight: 700;
+                font-size: 23px;
+            }
+
+            p {
+                font-size: 15px;
+                padding: 7px 3px;
+            }
+        }
+    }
+}
+
+@media (min-width:810px) and (max-width:1100px) {
+    .details {
+        padding: 4px 17px;
+        font-size: 19px;
+        ul li{
+            font-size: 18px;
+            padding: 4px 17 px;
+        }
+       
+    }
+
+    .facultyinfo {
+        padding: 3%;
+        display: flex;
+        font-family: 'Ubuntu', sans-serif;
+        gap: 2rem;
+        background-color: rgb(235, 235, 235);
+
+        img {
+            width: 27%;
+        }
+
+        .facultyname {
+           
+
+            h2 {
+                color: rgba(0, 51, 153, 1);
+                font-weight: 700;
+                
+            }
+
+            p {
+                font-size: 17px;
+                padding: 16px 3px;
+            }
+        }
+    }
 }
