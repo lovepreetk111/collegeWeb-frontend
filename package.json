@@ -25,6 +25,8 @@
     "angular-font-awesome": "^3.1.2",
     "bootstrap": "^5.2.0",
     "font-awesome": "^4.7.0",
+    "get-latest-version": "^5.0.0",
+    "loader-utils": "^3.2.1",
     "primeflex": "^3.3.0",
     "primeicons": "^6.0.1",
     "primeng": "^14.1.2",
@@ -34,7 +36,7 @@
     "zone.js": "~0.11.4"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^14.2.4",
+    "@angular-devkit/build-angular": "^14.2.10",
     "@angular/cli": "~14.2.4",
     "@angular/compiler-cli": "^14.2.0",
     "@angular/localize": "^14.2.0",
