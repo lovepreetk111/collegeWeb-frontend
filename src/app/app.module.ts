@@ -50,6 +50,7 @@ import { CompanyPicComponent } from './component/company-pic/company-pic.compone
 import { OurCampusComponent } from './our-campus/our-campus.component';
 import {SidebarModule} from 'primeng/sidebar';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {TableModule} from 'primeng/table';
 // import {ButtonModule} from 'primeng/button';
 // import {SidebarModule} from 'primeng/sidebar';
 // import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -104,7 +105,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     FormsModule,
     ButtonModule,
     SidebarModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    TableModule
     
   ],
   providers: [],
