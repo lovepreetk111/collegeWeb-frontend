@@ -2,6 +2,7 @@
     background-color: rgba(158, 157, 157, 0.58);
     height: auto;
     width: 100%;
+    
     .container{
         height: 100%;
         width: 100%;
@@ -9,6 +10,11 @@
         padding-bottom: 20px;
         .row{
             padding: 2%;
+            img{
+                width: 80%;
+                display: block;
+                margin: 0 auto;
+            }
         .col-3{
             display: flex;
             justify-content: center;
