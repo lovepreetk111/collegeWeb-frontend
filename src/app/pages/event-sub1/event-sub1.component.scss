@@ -65,7 +65,7 @@
 // }
 
 
-.main1 {
+/* .main1 {
 
     .main {
         display: flex;
@@ -107,5 +107,22 @@
                 background-color: transparent;
             }
         }
+    }
+} */
+
+.eventdetails{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    margin-top: 1%;
+    .details{
+        width: 75%;
+        height: 100%;
+        border: 1px solid black;
+    }
+    .otherevents{
+        width: 25%;
+        height: 100%;
+        border: 1px solid black;
     }
 }

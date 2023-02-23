@@ -1,7 +1,7 @@
 
     <div class="slogans" *ngIf="images">
-        <div class="vision" *ngFor="let content of images" data-aos="slide-right"  >
-            <img [src]="content.url" [alt]="content.alt" data-aos="zoom-in-up"  >
+        <div class="vision" *ngFor="let content of images">
+            <img [src]="content.url" [alt]="content.alt">
             <h3>{{content.header}}</h3>
             <p>{{content.text}}</p>
             <p>{{content.description1}}</p>

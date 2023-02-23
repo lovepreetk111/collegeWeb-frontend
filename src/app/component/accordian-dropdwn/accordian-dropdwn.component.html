@@ -1,6 +1,6 @@
 <div class="container acedemic" >
-  <app-left-img1 *ngFor="let datas of DropDownData" [ImageData]="datas.data" data-aos="flip-left"  data-aos-duration="10000"></app-left-img1>
-  <div class="accordion" data-aos="zoom-in-left"  data-aos-duration="10000">
+  <app-left-img1 *ngFor="let datas of DropDownData" [ImageData]="datas.data" ></app-left-img1>
+  <div class="accordion" >
     <div *ngFor="let datas of DropDownData">
     <!-- {{DropDownData | json}} -->
     <ngb-accordion [closeOthers]="true"  *ngFor="let data of datas.AccordianData;let i = index">
