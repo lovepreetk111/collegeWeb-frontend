@@ -6,8 +6,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'CollegeWebsite-New';
-  onActivate(event:any){
-    window.scroll(0,0)
+  onActivate(event: any) {
+    window.scroll(0, 0)
   }
   currentPageIndex = 0;
   pages: any = [
@@ -38,7 +38,7 @@ export class AppComponent {
                 {
                   logoUrl: "assets/images/ChetanaLogo.svg",
                   logoAlt: "",
-                  link:'/'
+                  link: '/'
                 }
               ],
               navbar: [
@@ -55,14 +55,14 @@ export class AppComponent {
                     {
                       dropdown: 'JUNIOR COLLEGE',
                       url: 'course/sub1',
-                      subchild:[
+                      subchild: [
                         {
                           subchild: 'ARTS',
                           routeLink: 'course/arts',
                         },
                         {
                           subchild: 'COMMERCE',
-                          routeLink: 'course/comm',
+                          routeLink: 'course/commerce+',
                         },
                         {
                           subchild: 'MCVC',
@@ -73,7 +73,7 @@ export class AppComponent {
                     {
                       dropdown: 'DEGREE COLLEGE',
                       url: 'something',
-                      subchild:[
+                      subchild: [
                         {
                           subchild: 'BA',
                           routeLink: 'course/BA',
@@ -82,13 +82,13 @@ export class AppComponent {
                           subchild: 'BCOM',
                           routeLink: 'course/bcom',
                         },
-                        
+
                       ]
                     },
                     {
                       dropdown: 'SELF FINANCE COURSES',
                       url: 'something',
-                      subchild:[
+                      subchild: [
                         {
                           subchild: 'BMS',
                           routeLink: 'course/bms',
@@ -110,7 +110,7 @@ export class AppComponent {
                     {
                       dropdown: 'POST GRADUATE PROGRAMME',
                       url: 'course/pg',
-                      subchild:[
+                      subchild: [
                         {
                           subchild: 'MCOM',
                           routeLink: 'course/mcom',
@@ -120,7 +120,7 @@ export class AppComponent {
                     {
                       dropdown: 'DOCTORAL PROGRAMME',
                       url: 'something',
-                      subchild:[
+                      subchild: [
                         {
                           subchild: 'PH.D. IN  COMMERCE',
                           routeLink: 'course/phd',
@@ -130,10 +130,10 @@ export class AppComponent {
                     {
                       dropdown: 'DISTANCE LEARNING',
                       url: 'ycmou',
-                      subchild:[
+                      subchild: [
                         {
                           subchild: 'Y.C.M.O.U.',
-                          routeLink: 'course/ycmou',
+                          routeLink: 'http://ycmou.digitaluniversity.ac',
                         }
                       ]
                     }
@@ -145,25 +145,21 @@ export class AppComponent {
                   link: '/examination',
                   child: [
                     {
-                      dropdown: "PLACEMENT AT CHETANA'S",
-                      url: 'something'
+                      dropdown: "Junior College",
+                      url: '/junior'
                     },
                     {
-                      dropdown: 'TRANNING PROGRAME',
-                      url: 'something'
+                      dropdown: 'Degree College',
+                      url: '/degree'
                     },
                     {
-                      dropdown: 'PLACEMENT TRACKER',
-                      url: 'something'
+                      dropdown: 'Self Financing Courses',
+                      url: 'csfc'
                     },
                     {
                       dropdown: 'M.COM',
-                      url: 'something'
+                      url: 'mcom'
                     },
-                    {
-                      dropdown: 'RESULT ANALYSIS',
-                      url: 'something'
-                    }
                   ]
                 },
                 {
@@ -218,7 +214,7 @@ export class AppComponent {
                   id: 8,
                   nav: "Student’s Corner",
                   link: 'student-corner',
-                  child:[
+                  child: [
                     {
                       dropdown: "Student's Support",
                       url: '/student-support'
@@ -226,6 +222,22 @@ export class AppComponent {
                     {
                       dropdown: "Events",
                       url: '/event'
+                    },
+                    {
+                      dropdown: "Govt. Scholarship/Freeship",
+                      url: '/gvt'
+                    },
+                    {
+                      dropdown: "Anti-Ragging",
+                      url: '/anti-ragging'
+                    },
+                    {
+                      dropdown: "Workshop/Seminar",
+                      url: '/workshop'
+                    },
+                    {
+                      dropdown: "WDC",
+                      url: '/wdc'
                     },
                   ]
                 },
@@ -270,6 +282,6 @@ export class AppComponent {
           ]
         },
       ]
-      },
-    ]
-  }
+    },
+  ]
+}
