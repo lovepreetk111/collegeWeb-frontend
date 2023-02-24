@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import {  ICardGroupData } from 'src/app/service/data';
 
 @Component({
   selector: 'app-infocard',
@@ -6,10 +7,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./infocard.component.scss']
 })
 export class InfocardComponent implements OnInit {
+  @Input() cardGroup!:ICardGroupData
 
   constructor() { }
 
   ngOnInit(): void {
   }
+
+  currentPageIndex = 0;
+    pages:Array<any> = [
+      {
+        pageName:'placement'
+      }
+    ]
+
 
 }
