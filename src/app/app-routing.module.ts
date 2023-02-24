@@ -1,6 +1,7 @@
 import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { placements } from '@popperjs/core';
+import { OurCampusComponent } from './our-campus/our-campus.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ContactUsComponent } from './pages/contact-us/contact-us.component';
 import { CourseSub1Component } from './pages/course-sub1/course-sub1.component';
