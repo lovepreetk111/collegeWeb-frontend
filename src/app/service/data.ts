@@ -335,3 +335,16 @@ imageUrl:string,
 imageAlt:string,
 text:string,
 } */
+
+/* Card-Container */
+
+export interface IcardData{
+  url:string
+  alt:string
+  post:string
+  facultyName:string
+} 
+
+export interface ICardGroupData{
+  cardConfig:IcardData[]
+}
