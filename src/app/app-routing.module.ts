@@ -11,9 +11,9 @@ import { HomeComponent } from './pages/home/home.component';
 
 import { NoticeComponent } from './pages/notice/notice.component';
 import { PlacementComponent } from './pages/placement/placement.component';
+import { ResearchComponent } from './research/research.component';
 
 import { StudentSupportComponent } from './pages/student-support/student-support.component';
-
 
 
 const routes: Routes = [
@@ -54,6 +54,10 @@ const routes: Routes = [
   {
     path:'placement',
     component:PlacementComponent
+  },
+  {
+    path: 'research',
+    component:ResearchComponent
   },
 ];
 
