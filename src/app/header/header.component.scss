@@ -9,6 +9,7 @@ header {
             height: 5vh;
             background-color: rgba(0, 51, 153, 1);
             display: flex;
+            align-items: center;
             justify-content: flex-end;
             margin: 0 0px;
             padding: 0 70px;
@@ -18,7 +19,7 @@ header {
                 // padding:0 10px;
                 li {
                     font-weight: 700;
-                    font-size: 1.2vw;
+                    font-size: 1rem;
                 }
                 a {
                     display: flex;
@@ -63,7 +64,7 @@ header {
                     ul{
                         a{
                         color: black;
-                        font-size: 1vw;
+                        font-size: 0.9rem;
                         &:hover{
                             color: blue;
                         }

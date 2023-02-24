@@ -1,14 +1,26 @@
-<div *ngFor="let data of pages[0].component">
-    <app-image-cmp1 [AboutBanner]="data.metadata.info6" *ngIf="data.compId === 1"></app-image-cmp1>
-    <app-circle-img-left-txt1 [About]="data.metadata.aboutMain" *ngIf="data.compId === 1"></app-circle-img-left-txt1>
-    <div class="about">
-        <app-button-cmp1 [Text]="data.metadata.info" *ngIf="data.compId === 1" ></app-button-cmp1>
-        <app-text-cmp1 [datas]="data.metadata.info3"></app-text-cmp1>
+<div>
+    <div *ngIf="aboutpage">
+        <div *ngFor="let data of pages[0].component">
+            <app-image-cmp1 [AboutBanner]="data.metadata.info6" *ngIf="data.compId === 1"></app-image-cmp1>
+            <app-circle-img-left-txt1 [About]="data.metadata.aboutMain"
+                *ngIf="data.compId === 1"></app-circle-img-left-txt1>
+            <div class="about">
+                <app-button-cmp1 [Text]="data.metadata.info" *ngIf="data.compId === 1"></app-button-cmp1>
+                <app-text-cmp1 [datas]="data.metadata.info3"></app-text-cmp1>
 
-        <app-button-cmp1 [Text]="data.metadata.info1" *ngIf="data.compId === 1"></app-button-cmp1>
-        <app-text-cmp1 [datas]="data.metadata.info4"></app-text-cmp1>
+                <app-button-cmp1 [Text]="data.metadata.info1" *ngIf="data.compId === 1"></app-button-cmp1>
+                <app-text-cmp1 [datas]="data.metadata.info4"></app-text-cmp1>
 
-        <app-button-cmp1 [Text]="data.metadata.info2" *ngIf="data.compId === 1"></app-button-cmp1>
-        <app-text-cmp1 [datas]="data.metadata.info5"></app-text-cmp1>
+                <app-button-cmp1 [Text]="data.metadata.info2" *ngIf="data.compId === 1"></app-button-cmp1>
+                <app-text-cmp1 [datas]="data.metadata.info5"></app-text-cmp1>
+            </div>
+        </div>
+    </div>
+    <div *ngIf="campus">
+        campus
+        <div *ngFor="let data of pages[1].component">
+            <app-button-cmp1 [Text]="data.metadata.antiHeader" *ngIf="data.compId === 1"></app-button-cmp1>
+            <app-right-txt-left-img1 [details]="data.metadata.antiData" *ngIf="data.compId === 1"></app-right-txt-left-img1>
+        </div>
     </div>
 </div>

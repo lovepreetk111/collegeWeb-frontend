@@ -1,0 +1,41 @@
+.accordion{
+
+    .accordion-item {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1%;
+
+        .accordion-header {
+            width: 80%;
+            align-self: center;
+            button {
+                background: linear-gradient(90.97deg, #003399 0%, rgba(0, 51, 153, 0.65) 98.76%);
+                color: white;
+            }
+        }
+        .accordion-body{
+            width: 100%;
+            border: 1px solid black;
+            .details{
+                display: flex;
+                .timetable{
+                    width: 50%;
+                    text-align: center;
+                }
+                .samplequestion{
+                    width: 50%;
+                    text-align: center;
+                }
+            }
+            .results{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .accordion-item{
+                    width: 50%;
+                }
+            }
+        }
+    }
+}

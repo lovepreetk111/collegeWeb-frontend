@@ -1,17 +1,34 @@
-<!-- <app-event-sub1></app-event-sub1> -->
-<div class="gapping" *ngFor="let data of pages[0].component">
-<app-button-cmp1 [Text]="data.metadata.info" *ngIf="data.compId === 1"></app-button-cmp1>
-<app-right-txt-left-img1 [details]="data.metadata.info5" *ngIf="data.compId === 1"></app-right-txt-left-img1>
+<div *ngIf="supportdata">
+    <div class="gapping" *ngFor="let data of pages[0].component">
+        <app-button-cmp1 [Text]="data.metadata.antiHeader" *ngIf="data.compId === 1"></app-button-cmp1>
+        <app-right-txt-left-img1 [details]="data.metadata.antiData" *ngIf="data.compId === 1"></app-right-txt-left-img1>
 
-<app-button-cmp1 [Text]="data.metadata.info1" *ngIf="data.compId === 1"></app-button-cmp1>
-<app-right-txt-left-img1 [details]="data.metadata.info5" *ngIf="data.compId === 1"></app-right-txt-left-img1>
+        <app-button-cmp1 [Text]="data.metadata.nssHeader" *ngIf="data.compId === 1"></app-button-cmp1>
+        <app-left-txt-right-text [details]="data.metadata.nssData" *ngIf="data.compId === 1"></app-left-txt-right-text>
+        <!-- <app-right-txt-left-img1 [details]="data.metadata.nssData" *ngIf="data.compId === 1"></app-right-txt-left-img1> -->
 
-<app-button-cmp1 [Text]="data.metadata.info2" *ngIf="data.compId === 1"></app-button-cmp1>
-<app-right-txt-left-img1 [details]="data.metadata.info5" *ngIf="data.compId === 1"></app-right-txt-left-img1>
+        <app-button-cmp1 [Text]="data.metadata.nccHeader" *ngIf="data.compId === 1"></app-button-cmp1>
+        <app-right-txt-left-img1 [details]="data.metadata.nccData" *ngIf="data.compId === 1"></app-right-txt-left-img1>
 
-<app-button-cmp1 [Text]="data.metadata.info3" *ngIf="data.compId === 1"></app-button-cmp1>
-<app-right-txt-left-img1 [details]="data.metadata.info5" *ngIf="data.compId === 1"></app-right-txt-left-img1>
+        <app-button-cmp1 [Text]="data.metadata.eqcHeader" *ngIf="data.compId === 1"></app-button-cmp1>
+        <app-left-txt-right-text [details]="data.metadata.nssData" *ngIf="data.compId === 1"></app-left-txt-right-text>
+        <!-- <app-right-txt-left-img1 [details]="data.metadata.eqcData" *ngIf="data.compId === 1"></app-right-txt-left-img1> -->
 
-<app-button-cmp1 [Text]="data.metadata.info4" *ngIf="data.compId === 1"></app-button-cmp1>
-<app-right-txt-left-img1 [details]="data.metadata.info5" *ngIf="data.compId === 1"></app-right-txt-left-img1>
+        <app-button-cmp1 [Text]="data.metadata.scHeader" *ngIf="data.compId === 1"></app-button-cmp1>
+        <app-right-txt-left-img1 [details]="data.metadata.scData" *ngIf="data.compId === 1"></app-right-txt-left-img1>
+    </div>
+</div>
+
+
+<div *ngIf="wdcdata">
+    <!-- coming -->
+
+    <div *ngFor="let data of pages[1]?.component">
+        <!-- coming -->
+        <app-image-cmp1 [AboutBanner]="data.metadata" *ngIf="data.compId===2"></app-image-cmp1>
+        <app-button-cmp1 [Text]="data.metadata.buttonData" *ngIf="data.compId === 3"></app-button-cmp1>
+        <app-text-cmp1 [datas]="data.metadata.dataText" *ngIf="data.compId===3"></app-text-cmp1>
+        <app-button-cmp1 [Text]="data.metadata.buttonData2" *ngIf="data.compId === 3"></app-button-cmp1>
+        <app-text-cmp1 [datas]="data.metadata.dataText2" *ngIf="data.compId===3"></app-text-cmp1>
+    </div>
 </div>

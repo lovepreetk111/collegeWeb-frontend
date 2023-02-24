@@ -1,6 +1,4 @@
-<div class="container">
-    <app-card-container></app-card-container>
-    <app-card-container></app-card-container>
-    <app-card-container></app-card-container>
-    <app-card-container></app-card-container>
+<div class="container" >
+    <!-- {{cardGroup | json}} -->
+    <app-card-container *ngFor="let carddata of cardGroup.cardConfig" [cardData]="carddata" ></app-card-container>
 </div>
