@@ -266,7 +266,6 @@ export interface IDetailsCard2 {
 }
 //////////////////////////////////////////////////////////////////////////////////
 // speaker
-
 export interface ISpeaker {
   image: string,
   alt: string,

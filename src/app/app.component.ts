@@ -45,7 +45,7 @@ export class AppComponent {
                 {
                   id: 1,
                   nav: 'About',
-                  link: '/about'
+                  link: '/about',
                 },
                 {
                   id: 2,
