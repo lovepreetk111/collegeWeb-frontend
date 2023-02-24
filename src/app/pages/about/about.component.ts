@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-about',
@@ -6,14 +7,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./about.component.scss']
 })
 export class AboutComponent implements OnInit {
-
-  constructor() {
-    console.log(this.pages)
-   }
-
-  ngOnInit(): void {
-  }
-
   // currentPageIndex = 0;
   // pages: any = [
   // {
@@ -33,11 +26,13 @@ export class AboutComponent implements OnInit {
   // ]
 
 
+  aboutpage!: boolean;
+  campus!: boolean;
 
   currentPageIndex = 0;
-  pages: any = [
+  pages:Array<any> = [
     {
-      pageName: 'About Us',
+      pageName: 'us',
       component: [
         {
           compId:1,
@@ -88,8 +83,36 @@ export class AboutComponent implements OnInit {
             }
         }
       ]
+    },
+    {
+      pageName:"campus"
     }
   ]
+
+  constructor(private activeRoute: ActivatedRoute) {
+    // console.log(function show("hello"))
+  }
+
+  ngOnInit(): void {
+    this.activeRoute.params.subscribe
+      ((params: any) => {
+        const page = params.aboutpage;
+        const pageIndex = this.pages.findIndex((pg: { pageName: any; }) => pg.pageName === page)
+        this.currentPageIndex = pageIndex
+        console.log(this.currentPageIndex, "currentpageinsed checking")
+        console.log("index bro", pageIndex)
+        if (pageIndex == 0) {
+          this.aboutpage = true;
+          this.campus = false;
+        }
+        else if (pageIndex == 1) {
+          this.campus = true;
+          this.aboutpage = false
+        }
+      })
+
+
+  }
 
 
 }

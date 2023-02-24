@@ -45,7 +45,13 @@ export class AppComponent {
                 {
                   id: 1,
                   nav: 'About',
-                  link: '/about',
+                  link: 'about/us',
+                  child:[
+                    {
+                      dropdown:"Our Campus",
+                      url:"about/campus"
+                    }
+                  ]
                 },
                 {
                   id: 2,

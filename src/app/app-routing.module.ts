@@ -20,7 +20,7 @@ import { StudentSupportComponent } from './pages/student-support/student-support
 const routes: Routes = [
   {path:'', component:HomeComponent},
   {
-    path:'about',
+    path:'about/:aboutpage',
     component:AboutComponent
   },
   {
