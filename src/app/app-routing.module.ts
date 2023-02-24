@@ -7,6 +7,7 @@ import { CourseSub1Component } from './pages/course-sub1/course-sub1.component';
 import { CourseComponent } from './pages/course/course.component';
 import { EventSub1Component } from './pages/event-sub1/event-sub1.component';
 import { EventComponent } from './pages/event/event.component';
+import { ExaminationComponent } from './pages/examination/examination.component';
 import { HomeComponent } from './pages/home/home.component';
 
 import { NoticeComponent } from './pages/notice/notice.component';
@@ -44,7 +45,7 @@ const routes: Routes = [
   },
  
 {
-   path:'event/techkriti',
+   path:'event/:eventpage',
    component:EventSub1Component
   },
   {
@@ -55,6 +56,10 @@ const routes: Routes = [
     path:'placement',
     component:PlacementComponent
   },
+  {
+    path:'examination',
+    component:ExaminationComponent
+  }
 ];
 
 @NgModule({
