@@ -51,8 +51,10 @@ import { OurCampusComponent } from './our-campus/our-campus.component';
 import {SidebarModule} from 'primeng/sidebar';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {TableModule} from 'primeng/table';
+import { ResearchComponent } from './research/research.component';
 import { ExaminationComponent } from './pages/examination/examination.component';
 import { LeftTxtRightTextComponent } from './component/left-txt-right-text/left-txt-right-text.component';
+
 // import {ButtonModule} from 'primeng/button';
 // import {SidebarModule} from 'primeng/sidebar';
 // import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -98,6 +100,7 @@ import { LeftTxtRightTextComponent } from './component/left-txt-right-text/left-
     PlaceTableComponent,
     CompanyPicComponent,
     OurCampusComponent,
+    ResearchComponent,
     ExaminationComponent,
     LeftTxtRightTextComponent,
   

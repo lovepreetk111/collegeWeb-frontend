@@ -12,54 +12,60 @@ import { HomeComponent } from './pages/home/home.component';
 
 import { NoticeComponent } from './pages/notice/notice.component';
 import { PlacementComponent } from './pages/placement/placement.component';
+import { ResearchComponent } from './research/research.component';
 
 import { StudentSupportComponent } from './pages/student-support/student-support.component';
 
 
-
 const routes: Routes = [
-  {path:'', component:HomeComponent},
+  { path: '', component: HomeComponent },
   {
-    path:'about/:aboutpage',
-    component:AboutComponent
+    path: 'about/:aboutpage',
+    component: AboutComponent
   },
   {
-    path:'contact',
-    component:ContactUsComponent
+    path: 'contact',
+    component: ContactUsComponent
   },
   {
-    path:'course',
-    component:CourseComponent
+    path: 'course',
+    component: CourseComponent
   },
   {
-    path:'course/:coursename',
-    component:CourseSub1Component
+    path: 'course/:coursename',
+    component: CourseSub1Component
   },
   {
-    path:'event',
-    component:EventComponent
+    path: 'event',
+    component: EventComponent
   },
   {
-   path:'sc/:scpages',
-   component:StudentSupportComponent
+    path: 'sc/:scpages',
+    component: StudentSupportComponent
   },
- 
-{
-   path:'event/:eventpage',
-   component:EventSub1Component
+
+  {
+    path: 'event/:eventpage',
+    component: EventSub1Component
   },
   {
-    path:'notice',
-    component:NoticeComponent
+    path: 'notice',
+    component: NoticeComponent
   },
   {
-    path:'placement',
-    component:PlacementComponent
+    path: 'placement',
+    component: PlacementComponent
   },
   {
-    path:'examination',
-    component:ExaminationComponent
+
+    path: 'research',
+    component: ResearchComponent
+  },
+  {
+    path: 'examination',
+    component: ExaminationComponent
   }
+
 ];
 
 @NgModule({
