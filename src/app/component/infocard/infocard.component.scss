@@ -1,10 +1,25 @@
 .container{
+    margin-bottom: 35px;
     width: 100%;
     height: auto;
     background: linear-gradient(180deg, rgba(3, 53, 154, 0.9) 0%, rgba(77, 112, 184, 0.9) 100%);
     display: flex;
+    justify-content: space-between;
     padding: 40px;
     gap: 2rem;
+    // margin: 0 auto;
     overflow-y: auto;
     scroll-behavior: smooth;
+}
+
+@media screen and (max-width:400px) {
+.container{
+    width: 97%
+}
+}
+
+@media (min-width:400px) and (max-width:810px){
+    .container{
+        width: 97%;
+    }
 }

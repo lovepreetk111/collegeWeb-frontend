@@ -193,7 +193,7 @@ export class AppComponent {
                   child: [
                     {
                       dropdown: "ABOUT RESEARCH COLLEGE",
-                      url: 'something'
+                      url: '/course/phd'
                     },
                     {
                       dropdown: "PUBLICATION",

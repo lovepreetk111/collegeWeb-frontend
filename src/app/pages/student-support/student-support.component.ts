@@ -46,7 +46,14 @@ export class StudentSupportComponent implements OnInit {
                 url:"../../../assets/images/Chetana Building.jpeg",
                 alt:"image"              
             }
-          ]
+          ],
+            info6:[
+              {
+              Text:'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero ex id nam quos laboriosam quo, fugiat explicabo excepturi blanditiis doloribus facilis nihil quibusdam. Quos voluptatibus, laboriosam odit ducimus pariatur veniam?',
+                url:"../../../assets/images/Chetana Building.jpeg",
+                alt:"image"              
+            }
+          ],
             }
         }
       ]
