@@ -85,7 +85,75 @@ export class AboutComponent implements OnInit {
       ]
     },
     {
-      pageName:"campus"
+      pageName:"campus",
+      component: [
+        {
+          compId: 1,
+          compName: "Our Campus",
+          metadata: {
+            labHeader:
+            {
+              data: "About Library",
+            },
+            labData: [
+              {
+                Text: "The Library of CHETANA’S Hazarimal Somani College of Commerce & Economics, Smt. Kusumtai Chaudhari College of Arts, was established in 1970 along with the college by former Education Minister Shri Madhukarrao Chaudhari. The aim of the college is to provide education to lower strata of the society. The library is situated on the ground floor of the college building. At present it has a rich collection of 97069 books , 401 bound volumes and 539 CDs/Video.Having established a user-friendly environment in the library the librarian along with other professionals and Semi professionals are managing the library with proficiency & effective library services. Library is fully computerized with SLIM21 Library Software. All the work of the library is done with help of this software.It also provides Internet facility to Teachers and Students and has a book-bank facility for the needy and deserving students. Last one year book-bank service was provided to junior college students also. Beside this it has services like references, circulars, bibliographies; inter library loan facility, current awareness etc. Library staff conducts the library orientation program for freshers to make them aware of library facilities and services. It arranges special books’ exhibitions on different occasion. Our library also provides open access to all our Students.Our college Library has gone a step ahead to make Library Portal with the help of website provider. On 6th December 2014 Chetana Library Portal www.chetanalibrary.webs.com was inaugurated by our Honorable Secretary Mr. Shirish Chaudhary and Principal Dr. M.P.Joshi. Chetana library portal is the website, which helps to get information about all relevant e-resources at one point. It provides the following library services",
+                url: "../../../assets/images/Chetana Building.jpeg",
+                alt: "image"
+              }
+            ],
+
+            itHeader:
+            {
+              data: "IT Facilities",
+            },
+            itData: [
+              {
+                Text: 'Chetana boasts of an excellent IT infrastructure that supports its pedagogy of out-of-class learning. The computer center services the IT needs of the Institute and is equipped with state of the art networking peripherals.Chetana is also creating a state of the art information systems set-up consisting of Gigabit Ethernet Backbone and Fast Ethernet to the desktops. The center is equipped with 217 desktops, HP Servers, Printers and Scanners exclusively for students. Our drive to keep up with the changing times makes sure all our computers are equipped with the most up-to-date softwares and programs.All students are provided with laptops to facilitate unimpeded learning and the entire campus has Wireless LAN connectivity. The Institute also offers full time leased line internet accessibility of 48 mbps for all students, faculty and its office.',
+                url: "../../../assets/images/Chetana Building.jpeg",
+                alt: "image"
+              }
+            ],
+
+            sportsHeader:
+            {
+              data: "Sports",
+            },
+            sportsData: [
+              {
+                Text: "Gymkhana Section of our college conducts and participate in different sports activities at College, University, State and National level.College motivates students (Sportsmen) to participate in intra as well as inter collegiate sports activities. The following indoor as well as outdoor game facilities are provided by college:Indoor Games: – Chess, Carrom, Table – Tennis and Badminton etc.Outdoor Games:- Kabaddi, Kho-kho, Football, Cricket, Volleyball, Cross Country, Athletics event, Best Physique, Weight Lifting, Judo, Kick Boxing and Boxing etc.",
+                url: "../../../assets/images/Chetana Building.jpeg",
+                alt: "image"
+              }
+            ],
+
+            canteenHeader:
+            {
+              data: "Canteen",
+            },
+            canteenData: [
+              {
+                Text: "The Canteen at the Institute offers a variety of snacks and meals at affordable rates for the students and staff alike. The Institute has very high standards of health and hygiene and ensures that the quality of food served in the cafeteria meets the required standards.The self-service counters ensures that the customers are served promptly. Student feedback on the cafeteria services are taken regularly from the students for the improvement in services.The cafeteria is not just a food joint but a place to relax, interact, rejuvenate and take a refuge from the daily hectic schedule!!!",
+                url: "../../../assets/images/Chetana Building.jpeg",
+                alt: "image"
+              }
+            ],
+
+            audiHeader:
+            {
+              data: "Auditorium",
+            },
+            audiData: [
+              {
+                Text: "At Chetana’s, we feel learning need not be restricted to a classroom. A state-of-the-art auditorium, complete with a sophisticated sound system and audio visual aids, is the perfect dais on which our students’ latent talents can bloom.With the use of various co-curricular activities, we aim to develop their sense of competitiveness, team spirit, leadership & creativity. Able to comfortably seat 500, the Chetana auditorium provides the right environment for conducting seminars, workshops, panel discussions and guest lectures.",
+                url: "../../../assets/images/Chetana Building.jpeg",
+                alt: "image"
+              }
+            ],
+          }
+        },
+        
+      ]
     }
   ]
 

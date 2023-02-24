@@ -10,6 +10,7 @@ export class StudentSupportComponent implements OnInit {
 
   supportdata!: boolean;
   wdcdata!: boolean;
+  gvtdata!: boolean;
 
   currentPageIndex = 0;
   pages: Array<any> = [
@@ -24,7 +25,6 @@ export class StudentSupportComponent implements OnInit {
             {
               data: "Anti-Ragging",
             },
-
             antiData: [
               {
                 Text: "The National Service Scheme (NSS) is an Indian government sector public service program conducted by the Ministry of Youth Affairs[1] and Sports of the Government of India. Popularly known as NSS, the scheme was launched in Gandhiji's Centenary year in 1969. Aimed at developing student's personality through community service, NSS is a voluntary association of young people in Colleges, Universities and at +2 level working for a campus-community (esp. Villages) linkage.",
@@ -32,6 +32,7 @@ export class StudentSupportComponent implements OnInit {
                 alt: "image"
               }
             ],
+
             nssHeader:
             {
               data: "National Service Scheme(NSS)",
@@ -43,6 +44,7 @@ export class StudentSupportComponent implements OnInit {
                 alt: "image"
               }
             ],
+
             nccHeader:
             {
               data: "National Cadet Corps(NCC)",
@@ -54,6 +56,7 @@ export class StudentSupportComponent implements OnInit {
                 alt: "image"
               }
             ],
+            
             eqcHeader:
             {
               data: "Equal Opportunity Centre",
@@ -65,6 +68,7 @@ export class StudentSupportComponent implements OnInit {
                 alt: "image"
               }
             ],
+
             scHeader:
             {
               data: "Student Council",
@@ -114,6 +118,56 @@ export class StudentSupportComponent implements OnInit {
           }
         }
       ]
+    },
+    {
+      pageName: 'gvt',
+      component: [
+        {
+          compId: 2,
+          compName: "image-comp1",
+          metadata: [
+            {
+              url: '../../../assets/images/Chetana Building.jpeg',
+              alt: "koi toh imaage",
+              text: "SCHOLARSHIP & FREESHIP"
+            }
+
+          ]
+        },
+        {
+          compId: 3,
+          compName: "button comp 1",
+          metadata: {
+            buttonData:{
+              data:"RESERVATION"
+            },
+            dataText:{
+              text:"As per the directives issued by the Government of Maharashtra, seats will be reserved for students belonging to backward classes and other category, if any. The Student who fail to process or submit the Online Scholarship or Free-Ship Form with the concerned authority will have to deposit remaining fee before the declaration of the First Term Examination Result."
+            },
+
+            buttonData2:{
+              data:"IMPORTANT NOTICE"
+            },
+            dataText2:{
+              text:"<li><a href='https://drive.google.com/file/d/1TE_GjsjHhW7sdT_-bvLuwtTzhWzwHvAQ/view' target=_blank>JUNIOR COLLEGE</a></li> <li><a href='https://drive.google.com/file/d/1TE_GjsjHhW7sdT_-bvLuwtTzhWzwHvAQ/view' target=_blank>Degree College (BA/BCOM)</a></li> <li><a href='https://drive.google.com/file/d/1TE_GjsjHhW7sdT_-bvLuwtTzhWzwHvAQ/view' target=_blank>Self Financing Courses (BMS/BAF/BAMMC/BSCIT)</a></li>"
+            },
+
+            buttonData3:{
+              data:"FORM LINK"
+            },
+            dataText3:{
+              text:"<li>FOR EXISITING STUDENTS</li> <li>FOR NEW STUDENTS​</li>"
+            },
+
+            buttonData4:{
+              data:"IMPORTANT LINK"
+            },
+            dataText4:{
+              text:"<li><a href='https://eoffice.mu.ac.in/statistical/login.php' target=_blank>University of Mumbai (Reservation)</a></li> <li><a href='https://dhemis.maharashtra.gov.in/' target=_blank>Management Information System of Higher Educational Institution</a></li> <li><a href='https://aishe.gov.in/aishe/instituteLoginPage' target=_blank>All India Survey for Higher Education (AISHE)</a></li>"
+            },
+          }
+        }
+      ]
     }
   ]
 
@@ -135,10 +189,17 @@ export class StudentSupportComponent implements OnInit {
         if (pageIndex == 0) {
           this.supportdata = true;
           this.wdcdata = false;
+          this.gvtdata = false;
         }
         else if (pageIndex == 1) {
           this.wdcdata = true;
-          this.supportdata = false
+          this.supportdata = false;
+          this.gvtdata = false;
+        }
+        else if (pageIndex==2){
+          this.wdcdata = false;
+          this.supportdata = false;
+          this.gvtdata = true;
         }
       })
 

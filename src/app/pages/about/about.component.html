@@ -16,11 +16,23 @@
             </div>
         </div>
     </div>
+
     <div *ngIf="campus">
-        campus
         <div *ngFor="let data of pages[1].component">
-            <app-button-cmp1 [Text]="data.metadata.antiHeader" *ngIf="data.compId === 1"></app-button-cmp1>
-            <app-right-txt-left-img1 [details]="data.metadata.antiData" *ngIf="data.compId === 1"></app-right-txt-left-img1>
+            <app-button-cmp1 [Text]="data.metadata.labHeader" *ngIf="data.compId === 1"></app-button-cmp1>
+            <app-right-txt-left-img1 [details]="data.metadata.labData" *ngIf="data.compId === 1"></app-right-txt-left-img1>
+
+            <app-button-cmp1 [Text]="data.metadata.itHeader" *ngIf="data.compId === 1"></app-button-cmp1>
+        <app-left-txt-right-text [details]="data.metadata.itData" *ngIf="data.compId === 1"></app-left-txt-right-text>
+        
+        <app-button-cmp1 [Text]="data.metadata.sportsHeader" *ngIf="data.compId === 1"></app-button-cmp1>
+        <app-right-txt-left-img1 [details]="data.metadata.sportsData" *ngIf="data.compId === 1"></app-right-txt-left-img1>
+
+        <app-button-cmp1 [Text]="data.metadata.canteenHeader" *ngIf="data.compId === 1"></app-button-cmp1>
+        <app-left-txt-right-text [details]="data.metadata.canteenData" *ngIf="data.compId === 1"></app-left-txt-right-text>
+
+        <app-button-cmp1 [Text]="data.metadata.audiHeader" *ngIf="data.compId === 1"></app-button-cmp1>
+        <app-right-txt-left-img1 [details]="data.metadata.audiData" *ngIf="data.compId === 1"></app-right-txt-left-img1>
         </div>
     </div>
 </div>
