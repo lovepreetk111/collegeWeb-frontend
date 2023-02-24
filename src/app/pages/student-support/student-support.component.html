@@ -32,3 +32,24 @@
         <app-text-cmp1 [datas]="data.metadata.dataText2" *ngIf="data.compId===3"></app-text-cmp1>
     </div>
 </div>
+
+<div *ngIf="gvtdata">
+    <!-- coming -->
+ aetrxrx
+    <div *ngFor="let data of pages[2]?.component">
+        <!-- coming -->
+        <app-image-cmp1 [AboutBanner]="data.metadata" *ngIf="data.compId===2"></app-image-cmp1>
+
+        <app-button-cmp1 [Text]="data.metadata.buttonData" *ngIf="data.compId === 3"></app-button-cmp1>
+        <app-text-cmp1 [datas]="data.metadata.dataText" *ngIf="data.compId===3"></app-text-cmp1>
+
+        <app-button-cmp1 [Text]="data.metadata.buttonData2" *ngIf="data.compId === 3"></app-button-cmp1>
+        <app-text-cmp1 [datas]="data.metadata.dataText2" *ngIf="data.compId===3"></app-text-cmp1>
+
+        <app-button-cmp1 [Text]="data.metadata.buttonData3" *ngIf="data.compId === 3"></app-button-cmp1>
+        <app-text-cmp1 [datas]="data.metadata.dataText3" *ngIf="data.compId===3"></app-text-cmp1>
+
+        <app-button-cmp1 [Text]="data.metadata.buttonData4" *ngIf="data.compId === 3"></app-button-cmp1>
+        <app-text-cmp1 [datas]="data.metadata.dataText4" *ngIf="data.compId===3"></app-text-cmp1>
+    </div>
+</div>

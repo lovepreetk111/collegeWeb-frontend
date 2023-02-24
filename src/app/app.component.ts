@@ -231,7 +231,7 @@ export class AppComponent {
                     },
                     {
                       dropdown: "Govt. Scholarship/Freeship",
-                      url: '/gvt'
+                      url: 'sc/gvt'
                     },
                     {
                       dropdown: "Anti-Ragging",
