@@ -39,7 +39,7 @@ const routes: Routes = [
     component:EventComponent
   },
   {
-   path:'student-support',
+   path:'sc/:scpages',
    component:StudentSupportComponent
   },
  
