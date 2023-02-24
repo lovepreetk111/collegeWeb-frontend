@@ -1,32 +1,167 @@
-.student{
-    padding-top: 10px;
-.right{
-    background-color: rgba(217, 217, 217, 0.36);
-    height: 70vh;
-    display: flex;
-    border-radius: 10px;
-    .right-txt{
+.student {
+    padding: 0px 30px 20px 30px;
+
+    .right {
+        background-color: rgba(217, 217, 217, 0.36);
         display: flex;
-        justify-content: center;
-        align-items:center;
-        p{
-            font-family: 'Ubuntu', sans-serif;
-            margin-left: 5rem;
-            margin-right: 8rem;
-            text-align: justify;
-            font-size: 20px;
-            color: black;
+        border-radius: 10px;
+
+        .right-txt {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            p {
+                font-family: 'Ubuntu', sans-serif;
+                text-align: justify;
+                padding: 30px;
+                font-size: 20px;
+                color: black;
+            }
         }
-    }
-    .left-img1{
-        margin-right: 2rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        img{
-            height: 50vh;
-            width: 40vh;
+
+        .left-img1 {
+            margin-right: 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                // height: 30vh;
+                padding: 20px;
+                height: auto;
+                width: 78vh;
+            }
         }
     }
 }
+
+@media screen and (max-width:350px) {
+    .student {
+        .right {
+
+            .right-txt {
+                position: relative;
+
+                p {
+                    font-size: 0.65rem;
+                    padding: 100px 10px 10px 10px
+                }
+            }
+
+            .left-img1 {
+                position: absolute;
+                height: auto;
+                width: auto;
+                margin-right: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    // padding: 5px 10px 10px 70px;
+                    width: 30vh;
+                    height: 15vh;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:350px) and (max-width:500px) {
+    .student {
+        .right {
+            .right-txt {
+                position: relative;
+
+                p {
+                    font-size: 0.75rem;
+                    padding: 125px 20px 35px 20px
+                }
+            }
+
+            .left-img1 {
+                position: absolute;
+                height: auto;
+                width: 90%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-right: 10px;
+
+                img {
+                    width: 35vh;
+                    height: 20vh;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:500px) and (max-width:810px) {
+    .student {
+        .right {
+            .right-txt {
+                position: relative;
+
+                p {
+                    font-size: 0.9rem;
+                    padding: 180px 35px 50px 35px
+                }
+            }
+
+            .left-img1 {
+                position: absolute;
+                height: auto;
+                width: 90%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-right: 10px;
+
+                img {
+                    width: 45vh;
+                    height: 29vh;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:810px) and (max-width:1000px) {
+    .student {
+        .right {
+            .right-txt {
+                p {
+                    font-size: 0.9rem;
+                }
+            }
+
+            .left-img1 {
+                img {
+
+                    width: 50vh;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:1000px) and (max-width:1180px) {
+    .student {
+        .right {
+            .right-txt {
+                p {
+                    font-size: 1.1rem;
+                }
+            }
+
+            .left-img1 {
+                img {
+
+                    width: 60vh;
+                }
+            }
+        }
+    }
 }
