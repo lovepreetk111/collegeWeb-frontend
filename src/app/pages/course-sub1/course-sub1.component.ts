@@ -381,7 +381,29 @@ export class CourseSub1Component implements OnInit {
               url: "assets/images/FACULTY.svg",
               alt: "don",
               text11: "MR. SARAVANAN REDDY",
-              text12: "HOD,B.A."
+              text12: "HOD,B.A.",
+              table: [
+                {
+                  id: 1,
+                  category: "Eligible for admission",
+                  criteria: "Xll Passed",
+                },
+                {
+                  id: 2,
+                  category: "Board",
+                  criteria: "Maharashtra board of higher secondary education",
+                },
+                {
+                  id: 3,
+                  category: "Marks",
+                  criteria: "Not less than 35%",
+                },
+                {
+                  id: 4,
+                  category: "Category",
+                  criteria: "Open and Reserved",
+                }
+              ],
             }
           },
         },
@@ -473,7 +495,29 @@ export class CourseSub1Component implements OnInit {
               url: "assets/images/FACULTY.svg",
               alt: "don",
               text11: "MR. SARAVANAN REDDY",
-              text12: "HOD,B.Com"
+              text12: "HOD,B.Com",
+              table: [
+                {
+                  id: 1,
+                  category: "Eligible for admission",
+                  criteria: "Xll Passed",
+                },
+                {
+                  id: 2,
+                  category: "Board",
+                  criteria: "Maharashtra board of higher secondary education",
+                },
+                {
+                  id: 3,
+                  category: "Marks",
+                  criteria: "Not less than 35%",
+                },
+                {
+                  id: 4,
+                  category: "Category",
+                  criteria: "Open and Reserved",
+                }
+              ],
             }
           },
         },

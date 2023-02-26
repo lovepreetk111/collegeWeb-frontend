@@ -1,5 +1,8 @@
 .student {
     padding: 0px 30px 20px 30px;
+    margin-top: -0.5rem;
+    position: relative;
+    z-index: -1;
 
     .right {
         background-color: rgba(217, 217, 217, 0.36);

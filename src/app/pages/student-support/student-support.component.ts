@@ -56,7 +56,7 @@ export class StudentSupportComponent implements OnInit {
                 alt: "image"
               }
             ],
-            
+
             eqcHeader:
             {
               data: "Equal Opportunity Centre",
@@ -88,7 +88,7 @@ export class StudentSupportComponent implements OnInit {
       pageName: 'wdc',
       component: [
         {
-          compId: 2,
+          compId: 1,
           compName: "image-comp1",
           metadata: [
             {
@@ -100,21 +100,121 @@ export class StudentSupportComponent implements OnInit {
           ]
         },
         {
+          compId: 2,
+          compName: "button comp 1",
+          metadata: {
+            buttonData: {
+              data: "About WDC"
+            },
+            dataText: {
+              text: "The Cell works with an aim to create a gender sensitized community within the campus as well as in the society. It has been organising varied academic, technical, medical, cultural and social events for the upliftment of women and spread the real importance of gender equality."
+            },
+            buttonData2: {
+              data: "OBJECTIVES OF THE WDC"
+            },
+            dataText2: {
+              text: "<li>Creating awareness about the need of gender equality, Inclusion and Diversity.</li><li>To instill positive self-esteem and confidence in the female students so that they can take the right decision in and for-their lives.</li><li>Spreading awareness among the students about the social, legal and constitutional rights of women in order to prevent the exploitation based on gender.</li><li>Making females aware about different kinds of violence: sexual, physical and mental and to further equip them with the knowledge and strength to fight against them.</li><li> Providing on going workshops on self-grooming, mental and physical well being </li>"
+            }
+          }
+        },
+        {
+          compId: 3,
+          compName: "Information Card",
+          metadata:
+          {
+            teamHeader:
+            {
+              data: "MANAGING TEAM",
+            },
+            cardConfig: [
+              {
+                url: "../../../assets/images/1.jpg",
+                alt: "",
+                post: "Faculty",
+                facultyName: "Lovepreet"
+              },
+              {
+                url: "../../../assets/images/1.jpg",
+                alt: "",
+                post: "Faculty",
+                facultyName: "Lovepreet"
+              },
+              {
+                url: "../../../assets/images/1.jpg",
+                alt: "",
+                post: "Faculty",
+                facultyName: "Lovepreet"
+              },
+              {
+                url: "../../../assets/images/1.jpg",
+                alt: "",
+                post: "Faculty",
+                facultyName: "Lovepreet"
+              },
+              {
+                url: "../../../assets/images/1.jpg",
+                alt: "",
+                post: "Faculty",
+                facultyName: "Lovepreet"
+              },
+              {
+                url: "../../../assets/images/1.jpg",
+                alt: "",
+                post: "Faculty",
+                facultyName: "Lovepreet"
+              }
+            ],
+
+          }
+        },
+      ]
+    },
+    {
+      pageName: 'gvt',
+      component: [
+        {
+          compId: 2,
+          compName: "image-comp1",
+          metadata: [
+            {
+              url: '../../../assets/images/Chetana Building.jpeg',
+              alt: "koi toh imaage",
+              text: "SCHOLARSHIP & FREESHIP"
+            }
+
+          ]
+        },
+        {
           compId: 3,
           compName: "button comp 1",
           metadata: {
-            buttonData:{
-              data:"About WDC"
+            buttonData: {
+              data: "RESERVATION"
             },
-            dataText:{
-              text:"The Cell works with an aim to create a gender sensitized community within the campus as well as in the society. It has been organising varied academic, technical, medical, cultural and social events for the upliftment of women and spread the real importance of gender equality."
+            dataText: {
+              text: "As per the directives issued by the Government of Maharashtra, seats will be reserved for students belonging to backward classes and other category, if any. The Student who fail to process or submit the Online Scholarship or Free-Ship Form with the concerned authority will have to deposit remaining fee before the declaration of the First Term Examination Result."
             },
-            buttonData2:{
-              data:"OBJECTIVES OF THE WDC"
+
+            buttonData2: {
+              data: "IMPORTANT NOTICE"
             },
-            dataText2:{
-              text:"<li>Creating awareness about the need of gender equality, Inclusion and Diversity.</li><li>To instill positive self-esteem and confidence in the female students so that they can take the right decision in and for-their lives.</li><li>Spreading awareness among the students about the social, legal and constitutional rights of women in order to prevent the exploitation based on gender.</li><li>Making females aware about different kinds of violence: sexual, physical and mental and to further equip them with the knowledge and strength to fight against them.</li><li> Providing on going workshops on self-grooming, mental and physical well being </li>"
-            }
+            dataText2: {
+              text: "<li><a href='https://drive.google.com/file/d/1TE_GjsjHhW7sdT_-bvLuwtTzhWzwHvAQ/view' target=_blank>JUNIOR COLLEGE</a></li> <li><a href='https://drive.google.com/file/d/1TE_GjsjHhW7sdT_-bvLuwtTzhWzwHvAQ/view' target=_blank>Degree College (BA/BCOM)</a></li> <li><a href='https://drive.google.com/file/d/1TE_GjsjHhW7sdT_-bvLuwtTzhWzwHvAQ/view' target=_blank>Self Financing Courses (BMS/BAF/BAMMC/BSCIT)</a></li>"
+            },
+
+            buttonData3: {
+              data: "FORM LINK"
+            },
+            dataText3: {
+              text: "<li>FOR EXISITING STUDENTS</li> <li>FOR NEW STUDENTS​</li>"
+            },
+
+            buttonData4: {
+              data: "IMPORTANT LINK"
+            },
+            dataText4: {
+              text: "<li><a href='https://eoffice.mu.ac.in/statistical/login.php' target=_blank>University of Mumbai (Reservation)</a></li> <li><a href='https://dhemis.maharashtra.gov.in/' target=_blank>Management Information System of Higher Educational Institution</a></li> <li><a href='https://aishe.gov.in/aishe/instituteLoginPage' target=_blank>All India Survey for Higher Education (AISHE)</a></li>"
+            },
           }
         }
       ]
@@ -138,37 +238,37 @@ export class StudentSupportComponent implements OnInit {
           compId: 3,
           compName: "button comp 1",
           metadata: {
-            buttonData:{
-              data:"RESERVATION"
+            buttonData: {
+              data: "RESERVATION"
             },
-            dataText:{
-              text:"As per the directives issued by the Government of Maharashtra, seats will be reserved for students belonging to backward classes and other category, if any. The Student who fail to process or submit the Online Scholarship or Free-Ship Form with the concerned authority will have to deposit remaining fee before the declaration of the First Term Examination Result."
-            },
-
-            buttonData2:{
-              data:"IMPORTANT NOTICE"
-            },
-            dataText2:{
-              text:"<li><a href='https://drive.google.com/file/d/1TE_GjsjHhW7sdT_-bvLuwtTzhWzwHvAQ/view' target=_blank>JUNIOR COLLEGE</a></li> <li><a href='https://drive.google.com/file/d/1TE_GjsjHhW7sdT_-bvLuwtTzhWzwHvAQ/view' target=_blank>Degree College (BA/BCOM)</a></li> <li><a href='https://drive.google.com/file/d/1TE_GjsjHhW7sdT_-bvLuwtTzhWzwHvAQ/view' target=_blank>Self Financing Courses (BMS/BAF/BAMMC/BSCIT)</a></li>"
+            dataText: {
+              text: "As per the directives issued by the Government of Maharashtra, seats will be reserved for students belonging to backward classes and other category, if any. The Student who fail to process or submit the Online Scholarship or Free-Ship Form with the concerned authority will have to deposit remaining fee before the declaration of the First Term Examination Result."
             },
 
-            buttonData3:{
-              data:"FORM LINK"
+            buttonData2: {
+              data: "IMPORTANT NOTICE"
             },
-            dataText3:{
-              text:"<li>FOR EXISITING STUDENTS</li> <li>FOR NEW STUDENTS​</li>"
+            dataText2: {
+              text: "<li><a href='https://drive.google.com/file/d/1TE_GjsjHhW7sdT_-bvLuwtTzhWzwHvAQ/view' target=_blank>JUNIOR COLLEGE</a></li> <li><a href='https://drive.google.com/file/d/1TE_GjsjHhW7sdT_-bvLuwtTzhWzwHvAQ/view' target=_blank>Degree College (BA/BCOM)</a></li> <li><a href='https://drive.google.com/file/d/1TE_GjsjHhW7sdT_-bvLuwtTzhWzwHvAQ/view' target=_blank>Self Financing Courses (BMS/BAF/BAMMC/BSCIT)</a></li>"
             },
 
-            buttonData4:{
-              data:"IMPORTANT LINK"
+            buttonData3: {
+              data: "FORM LINK"
             },
-            dataText4:{
-              text:"<li><a href='https://eoffice.mu.ac.in/statistical/login.php' target=_blank>University of Mumbai (Reservation)</a></li> <li><a href='https://dhemis.maharashtra.gov.in/' target=_blank>Management Information System of Higher Educational Institution</a></li> <li><a href='https://aishe.gov.in/aishe/instituteLoginPage' target=_blank>All India Survey for Higher Education (AISHE)</a></li>"
+            dataText3: {
+              text: "<li>FOR EXISITING STUDENTS</li> <li>FOR NEW STUDENTS​</li>"
+            },
+
+            buttonData4: {
+              data: "IMPORTANT LINK"
+            },
+            dataText4: {
+              text: "<li><a href='https://eoffice.mu.ac.in/statistical/login.php' target=_blank>University of Mumbai (Reservation)</a></li> <li><a href='https://dhemis.maharashtra.gov.in/' target=_blank>Management Information System of Higher Educational Institution</a></li> <li><a href='https://aishe.gov.in/aishe/instituteLoginPage' target=_blank>All India Survey for Higher Education (AISHE)</a></li>"
             },
           }
         }
       ]
-    }
+    },
   ]
 
 
@@ -196,7 +296,7 @@ export class StudentSupportComponent implements OnInit {
           this.supportdata = false;
           this.gvtdata = false;
         }
-        else if (pageIndex==2){
+        else if (pageIndex == 2) {
           this.wdcdata = false;
           this.supportdata = false;
           this.gvtdata = true;
