@@ -139,7 +139,7 @@ export class AppComponent {
                       subchild: [
                         {
                           subchild: 'Y.C.M.O.U.',
-                          routeLink: 'http://ycmou.digitaluniversity.ac',
+                          routeLink: 'https://www.ycmou.ac.in',
                         }
                       ]
                     }

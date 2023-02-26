@@ -610,7 +610,29 @@ export class CourseSub1Component implements OnInit {
               url: "assets/images/TQ.png",
               alt: "don",
               text11: "MS. TAQDEES SHAIKH",
-              text12: "ASST.CHIEF CO-ORDINATOR , HOD Bachelor Of Management Studies"
+              text12: "ASST.CHIEF CO-ORDINATOR , HOD Bachelor Of Management Studies",
+              table: [
+                {
+                  id: 1,
+                  category: "Eligible for admission",
+                  criteria: "Xll Passed",
+                },
+                {
+                  id: 2,
+                  category: "Board",
+                  criteria: "Maharashtra board of higher secondary education",
+                },
+                {
+                  id: 3,
+                  category: "Marks",
+                  criteria: "Not less than 35%",
+                },
+                {
+                  id: 4,
+                  category: "Category",
+                  criteria: "Open and Reserved",
+                }
+              ],
 
             },
           },
@@ -800,7 +822,29 @@ export class CourseSub1Component implements OnInit {
               url: "assets/images/FACULTY.svg",
               alt: "don",
               text11: "?",
-              text12: "HOD,Bachelor Of Arts In Multimedia And Mass Communication"
+              text12: "HOD,Bachelor Of Arts In Multimedia And Mass Communication",
+              table: [
+                {
+                  id: 1,
+                  category: "Eligible for admission",
+                  criteria: "Xll Passed",
+                },
+                {
+                  id: 2,
+                  category: "Board",
+                  criteria: "Maharashtra board of higher secondary education",
+                },
+                {
+                  id: 3,
+                  category: "Marks",
+                  criteria: "Not less than 35%",
+                },
+                {
+                  id: 4,
+                  category: "Category",
+                  criteria: "Open and Reserved",
+                }
+              ],
             }
           },
         },
@@ -1049,7 +1093,8 @@ export class CourseSub1Component implements OnInit {
               url: "assets/images/FACULTY.svg",
               alt: "don",
               text11: "MR. SARAVANAN REDDY",
-              text12: "HOD,M.COm"
+              text12: "HOD,M.COm",
+                
             }
           },
         },
