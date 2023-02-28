@@ -67,11 +67,11 @@ export class HomeComponent implements OnInit {
                 buttonText: 'readMore',
               },
               background: {
-                url: '../../../assets/images/ChetanaDC.jpeg',
+                url: '../../../assets/image/ChetanaDC.jpeg',
                 alt: 'yeh bhi hai kych',
               },
               image: {
-                url: '../../../assets/images/ChetanaDC.jpeg',
+                url: '../../../assets/image/BestCollegeCertificate.jpeg',
                 alt: 'IDK'
               },
               routeLink: 'route karo and ghar bhejo',
@@ -84,11 +84,11 @@ export class HomeComponent implements OnInit {
                 buttonText: 'readMore',
               },
               background: {
-                url: '../../../assets/images/ChetanaDC.jpeg',
+                url: '../../../assets/image/ChetanaDC.jpeg',
                 alt: 'yeh bhi hai kych',
               },
               image: {
-                url: '../../../assets/images/ChetanaJC.svg',
+                url: '../../../assets/image/idbicertificate.jpg',
                 alt: 'IDK'
               },
               routeLink: 'route karo and ghar bhejo',
@@ -101,11 +101,11 @@ export class HomeComponent implements OnInit {
                 buttonText: 'readMore',
               },
               background: {
-                url: '../../../assets/images/ChetanaDC.jpeg',
+                url: '../../../assets/image/ChetanaDC.jpeg',
                 alt: 'yeh bhi hai kych',
               },
               image: {
-                url: '../../../assets/images/ChetanaJC.svg',
+                url: '../../../assets/image/ISO Certificate.jpg',
                 alt: 'IDK'
               },
               routeLink: 'route karo and ghar bhejo',
