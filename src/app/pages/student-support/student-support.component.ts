@@ -27,8 +27,8 @@ export class StudentSupportComponent implements OnInit {
             },
             antiData: [
               {
-                Text: "The National Service Scheme (NSS) is an Indian government sector public service program conducted by the Ministry of Youth Affairs[1] and Sports of the Government of India. Popularly known as NSS, the scheme was launched in Gandhiji's Centenary year in 1969. Aimed at developing student's personality through community service, NSS is a voluntary association of young people in Colleges, Universities and at +2 level working for a campus-community (esp. Villages) linkage.",
-                url: "../../../assets/images/Chetana Building.jpeg",
+                Text: 'To prohibit, prevent and eliminate the scourge of ragging including any conduct by any student whether by words spoken or written or by an act which has the effect of teasing, treating or handling with rudeness a fresher or any other student, or indulging in rowdy or undisciplined activities by any student.',
+                url: "../../../assets/image/antiragging.jpg",
                 alt: "image"
               }
             ],
@@ -39,8 +39,8 @@ export class StudentSupportComponent implements OnInit {
             },
             nssData: [
               {
-                Text: 'To prohibit, prevent and eliminate the scourge of ragging including any conduct by any student whether by words spoken or written or by an act which has the effect of teasing, treating or handling with rudeness a fresher or any other student, or indulging in rowdy or undisciplined activities by any student.',
-                url: "../../../assets/images/Chetana Building.jpeg",
+                Text: "The National Service Scheme (NSS) is an Indian government sector public service program conducted by the Ministry of Youth Affairs[1] and Sports of the Government of India. Popularly known as NSS, the scheme was launched in Gandhiji's Centenary year in 1969. Aimed at developing student's personality through community service, NSS is a voluntary association of young people in Colleges, Universities and at +2 level working for a campus-community (esp. Villages) linkage.",
+                url: "../../../assets/image/nss.png",
                 alt: "image"
               }
             ],
@@ -52,7 +52,7 @@ export class StudentSupportComponent implements OnInit {
             nccData: [
               {
                 Text: "The National Cadet Corps (NCC) is the youth wing of the Indian Armed Forces with its headquarters in New Delhi, India. It is open to school and college students on voluntary basis as a Tri-Services Organisation, comprising the Army, the Navy and the Air Force, engaged in developing the youth of the country into disciplined and patriotic citizens. The soldier youth foundation in India is a voluntary organization which recruits cadets from high schools, higher secondary, colleges and universities all over India. The cadets are given basic military training in small arms and drill. The officers and cadets have no liability for active military service once they complete their course.",
-                url: "../../../assets/images/Chetana Building.jpeg",
+                url: "../../../assets/image/ncc.png",
                 alt: "image"
               }
             ],
