@@ -4,5 +4,7 @@
     </app-banner-carousel>
     <app-container1 class="aboutus-section" *ngIf="data.compId ===4" [mergedData]="data.metadata"></app-container1>
     <app-accordian-dropdwn *ngIf="data.compID === 5" [DropDownData]="data.metadata"></app-accordian-dropdwn>
+    <app-our-campus [cardConfig2]="data.metadata" *ngIf="data.compId===6"></app-our-campus>
+    <!-- <app-card-carousel [cardData]="data.metadata" *ngIf="data.compID === 6"></app-card-carousel> -->
     <app-container2 *ngIf="data.compId===7" [sectionData]="data.metadata"></app-container2>
 </div>
