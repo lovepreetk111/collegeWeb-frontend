@@ -302,8 +302,6 @@ export class HomeComponent implements OnInit {
                     cardHeading:"Ground",
                     description:"Lorem ki maa ki chudiya"
                   },
-              
-                
                   {
                     url: "assets/images/bg2.png",
                     alt: "image",

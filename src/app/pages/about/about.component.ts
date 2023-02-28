@@ -30,14 +30,14 @@ export class AboutComponent implements OnInit {
   campus!: boolean;
 
   currentPageIndex = 0;
-  pages:Array<any> = [
+  pages: Array<any> = [
     {
       pageName: 'us',
       component: [
         {
-          compId:1,
-          compName:"aboutUs",
-          metadata:{
+          compId: 1,
+          compName: "aboutUs",
+          metadata: {
             info:
             {
               data: "About Us",
@@ -62,30 +62,28 @@ export class AboutComponent implements OnInit {
             {
               text: "To bring educational opportunities within the reach of the underprivileged section of the society.<br><br>  <li> To bring educational opportunities within the reach of the underprivileged section of the society.  <br><br>  <li>  To impact value-based education to the students. <br><br>  <li>  To bring educational opportunities within the reach of the under-privileged section of society. <br><br>  <li>   To generate academic environment for enabling the students to mould their personalities by imbibing moral values, professional competencies and the spirit of fair competition. <br><br>  <li>   To ensure participation of the student in co-curricular and extra-curricular activities for their balanced development.  <br><br>  <li>   To stimulate the teachers to continuously enrich their knowledge for the benefit of their students and for the well-being of society.  <br><br>  <li>  To provide infrastructural facilities for the benefit of the students and for the social development of the local community.  <br><br>  <li>   To create among the students and the students and the teaching and non-teaching staff a sense pf pride in belonging to the institution so that it channelizes their energies for the progress of the institution.  <br><br>  <li>   To ensure justice and fair play in all academic and non-academic matters affecting the students and the staff.<br><br>  <li>    To encourage the students to aspire for higher achievements and help them unleash their latent abilities and realize their cherished goals.",
             },
-            info6:[{
-              
-                url:"../../../assets/images/ChetanaDC.jpeg",
-                alt:"image",
-                text:"About Us"
-              
-            }]
-            ,
+            info6: [{
+
+              url: "../../../assets/images/ChetanaDC.jpeg",
+              alt: "image",
+              text: "About Us"
+
+            }],
             aboutMain:
             {
-              url:'../../../assets/images/MChaudhary.png',
-              alt:'panj',
-              text:'Our Inspiration',
-              text1:'Late Shri Madhukarrao Chaudhari',
-              text2:'Founder President Chetana Trust',
-              textMain:'Chetana’s was established with the twin objective of providing quality education and infusing students with dynamism. Chetana has created many success stories and today it has become one of the most preferred Institutes in India.<br><br> I see many opportunities to be seized as our country stands at the hub of Economic growth. Our economy alone shall make India a super power on the Global Scenario. It is only natural that this accelerated phase of growth would result in investment in people and infrastructure. Therefore, all our initiatives are aimed at developing competent and committed managers who will be very much part of these efforts. <br><br>            Our high caliber faculty with vast experience would add the required momentum to the whole process. Apart from core faculty, who are always a source of motivation for the students, we have an erudite industry experts that comprises of top managers from the corporate world who share their rich experience with the students.   <br><br>        I take pride in welcoming you all to Chetana’s Institute.'
+              url: '../../../assets/images/MChaudhary.png',
+              alt: 'panj',
+              text: 'Our Inspiration',
+              text1: 'Late Shri Madhukarrao Chaudhari',
+              text2: 'Founder President Chetana Trust',
+              textMain: 'Chetana’s was established with the twin objective of providing quality education and infusing students with dynamism. Chetana has created many success stories and today it has become one of the most preferred Institutes in India.<br><br> I see many opportunities to be seized as our country stands at the hub of Economic growth. Our economy alone shall make India a super power on the Global Scenario. It is only natural that this accelerated phase of growth would result in investment in people and infrastructure. Therefore, all our initiatives are aimed at developing competent and committed managers who will be very much part of these efforts. <br><br>            Our high caliber faculty with vast experience would add the required momentum to the whole process. Apart from core faculty, who are always a source of motivation for the students, we have an erudite industry experts that comprises of top managers from the corporate world who share their rich experience with the students.   <br><br>        I take pride in welcoming you all to Chetana’s Institute.'
             }
-
-            }
+          }
         }
       ]
     },
     {
-      pageName:"campus",
+      pageName: "campus",
       component: [
         {
           compId: 1,
@@ -152,7 +150,7 @@ export class AboutComponent implements OnInit {
             ],
           }
         },
-        
+
       ]
     }
   ]
