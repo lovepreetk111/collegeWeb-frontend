@@ -3,15 +3,25 @@
 .table{
     margin: 0 auto;
     margin-top: 10px;
-   
-
-    
+    width: 80%;
+    border: 1px solid #003399;
     th{
     background: linear-gradient(180deg, #03359A 0%, #4D70B8 100%);
     color: #FFFFFF;
     font-family: 'Ubuntu';
+    border: 1px solid #003399;
+
+    tbody{
+        tr{
+            border: 1px solid #003399;
+        td{
+            border: 1px solid #003399;
+          }
+        }
+}
+}
      
-}}
+}
 
 .accordion{
     margin-top: 10px;
@@ -19,7 +29,6 @@
     background: linear-gradient(180deg, #03359A 0%, #4D70B8 100%);
     color: #FFFFFF;
     font-family: 'Ubuntu';
-   
-
-}}
+}
+}
 

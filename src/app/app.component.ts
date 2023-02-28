@@ -139,7 +139,7 @@ export class AppComponent {
                       subchild: [
                         {
                           subchild: 'Y.C.M.O.U.',
-                          routeLink: 'http://ycmou.digitaluniversity.ac',
+                          routeLink: 'https://www.ycmou.ac.in',
                         }
                       ]
                     }
@@ -179,16 +179,16 @@ export class AppComponent {
                   link: '/placement',
                   child: [
                     {
-                      dropdown: "PLACEMENT AT CHETANA'S",
-                      url: 'something'
+                      dropdown: "Placement at Chetana's",
+                      url: '/placement'
                     },
                     {
-                      dropdown: 'TRANNING PROGRAME',
-                      url: 'something'
+                      dropdown: 'Tranning Programe',
+                      url: '/placement'
                     },
                     {
-                      dropdown: 'PLACEMENT TRACKER',
-                      url: 'something'
+                      dropdown: 'Placement Tracker',
+                      url: '/placement'
                     }
                   ]
                 },
@@ -198,19 +198,19 @@ export class AppComponent {
                   link: '/research',
                   child: [
                     {
-                      dropdown: "ABOUT RESEARCH COLLEGE",
+                      dropdown: "About Research College",
                       url: '/course/phd'
                     },
                     {
-                      dropdown: "PUBLICATION",
+                      dropdown: "Publication",
                       url: 'something'
                     },
-                    {
-                      dropdown: "PROSPECTUS",
+                    /* {
+                      dropdown: "Prospect-Us",
                       url: 'something'
-                    },
+                    }, */
                     {
-                      dropdown: "CONFERENCE PROCEDINGS",
+                      dropdown: "Conference Procedings",
                       url: 'something'
                     },
 

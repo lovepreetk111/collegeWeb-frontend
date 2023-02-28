@@ -25,17 +25,20 @@
 
     <div *ngFor="let data of pages[1]?.component">
         <!-- coming -->
-        <app-image-cmp1 [AboutBanner]="data.metadata" *ngIf="data.compId===2"></app-image-cmp1>
-        <app-button-cmp1 [Text]="data.metadata.buttonData" *ngIf="data.compId === 3"></app-button-cmp1>
-        <app-text-cmp1 [datas]="data.metadata.dataText" *ngIf="data.compId===3"></app-text-cmp1>
-        <app-button-cmp1 [Text]="data.metadata.buttonData2" *ngIf="data.compId === 3"></app-button-cmp1>
-        <app-text-cmp1 [datas]="data.metadata.dataText2" *ngIf="data.compId===3"></app-text-cmp1>
+        <app-image-cmp1 [AboutBanner]="data.metadata" *ngIf="data.compId===1"></app-image-cmp1>
+        <app-button-cmp1 [Text]="data.metadata.buttonData" *ngIf="data.compId === 2"></app-button-cmp1>
+        <app-text-cmp1 [datas]="data.metadata.dataText" *ngIf="data.compId===2"></app-text-cmp1>
+        <app-button-cmp1 [Text]="data.metadata.buttonData2" *ngIf="data.compId === 2"></app-button-cmp1>
+        <app-text-cmp1 [datas]="data.metadata.dataText2" *ngIf="data.compId===2"></app-text-cmp1>
+       <app-button-cmp1 [Text]="data.metadata.teamHeader" *ngIf="data.compId===3"></app-button-cmp1>
+        <app-infocard [cardGroup]="data.metadata" *ngIf="data.compId === 3"></app-infocard>
+
     </div>
 </div>
 
 <div *ngIf="gvtdata">
     <!-- coming -->
-    
+
     <div *ngFor="let data of pages[2]?.component">
         <!-- coming -->
         <app-image-cmp1 [AboutBanner]="data.metadata" *ngIf="data.compId===2"></app-image-cmp1>

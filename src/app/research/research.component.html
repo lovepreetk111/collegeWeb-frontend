@@ -2,98 +2,97 @@
    <app-image-cmp1 [AboutBanner]="data.metadata" *ngIf="data.compId===1"></app-image-cmp1>
    <app-button-cmp1 [Text]="data.metadata.info" *ngIf="data.compId===2"></app-button-cmp1>
 
-<div class="table-responsive" *ngIf="data.compId===3" >
-   <table class="table">
-      <thead>
-      <tr>
-         <th scope="col">Sr.No</th>
-         <th scope="col">Title</th>
-         <th scope="col">Attachment</th>
-         
-   
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td scope="row">1</td>
-         <td>Research papers presented / published 2020-21</td>
-         <td>view</td>
-      </tr>
-      <tr>
-         <td scope="row">2</td>
-         <td>Research papers presented 2019-20</td>
-         <td>view</td>
-      </tr>
-      <tr>
-         <td scope="row">3</td>
-         <td>Research papers presented 2018-19</td>
-         <td>view</td>
-      </tr>
-      <tr>
-         <td scope="row">4</td>
-         <td>Research papers presented 2017-18</td>
-         <td>view</td>
-      </tr>
-      <tr>
-         <td scope="row">5</td>
-         <td>Research papers Presented 2016-17</td>
-         <td>view</td>
-      </tr>
-      <tr>
-         <td scope="row">6</td>
-         <td>International Research Papers</td>
-         <td>view</td>
-      </tr>
-      <tr>
-         <td scope="row">7</td>
-         <td>Research Projects undertaken by College</td>
-         <td>view</td>
-      </tr>
-      <tr>
-         <td scope="row">8</td>
-         <td>Books / Chapters / Papers in Conference Proceedings by faculty members</td>
-         <td>view</td>
-      </tr>
-      <tr>
-         <td scope="row">9</td>
-         <td>Research Publications by faculty</td>
-         <td>view</td>
-      </tr>
-   
-   </tbody>
-   
-   </table>
+   <div class="table-responsive" *ngIf="data.compId===3">
+      <table class="table">
+         <thead>
+            <tr>
+               <th scope="col">Sr.No</th>
+               <th scope="col">Title</th>
+               <th scope="col">Attachment</th>
+            </tr>
+         </thead>
+         <tbody>
+            <tr>
+               <td scope="row">1</td>
+               <td>Research papers presented / published 2020-21</td>
+               <td>view</td>
+            </tr>
+            <tr>
+               <td scope="row">2</td>
+               <td>Research papers presented 2019-20</td>
+               <td>view</td>
+            </tr>
+            <tr>
+               <td scope="row">3</td>
+               <td>Research papers presented 2018-19</td>
+               <td>view</td>
+            </tr>
+            <tr>
+               <td scope="row">4</td>
+               <td>Research papers presented 2017-18</td>
+               <td>view</td>
+            </tr>
+            <tr>
+               <td scope="row">5</td>
+               <td>Research papers Presented 2016-17</td>
+               <td>view</td>
+            </tr>
+            <tr>
+               <td scope="row">6</td>
+               <td>International Research Papers</td>
+               <td>view</td>
+            </tr>
+            <tr>
+               <td scope="row">7</td>
+               <td>Research Projects undertaken by College</td>
+               <td>view</td>
+            </tr>
+            <tr>
+               <td scope="row">8</td>
+               <td>Books / Chapters / Papers in Conference Proceedings by faculty members</td>
+               <td>view</td>
+            </tr>
+            <tr>
+               <td scope="row">9</td>
+               <td>Research Publications by faculty</td>
+               <td>view</td>
+            </tr>
 
-</div>
-<app-button-cmp1 [Text]="data.metadata.info" *ngIf="data.compId===4"></app-button-cmp1>
+         </tbody>
+
+      </table>
+
+   </div>
+   <app-button-cmp1 [Text]="data.metadata.info" *ngIf="data.compId===4"></app-button-cmp1>
 
 
-<div class="accordion"  *ngIf="data.compId===5" id="accordionExample">
-   <div class="accordion-item"> 
-      <h2 class="accordion-header" id="headingOne">
-         <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-   SHOD-CHETANA
-         </button>
+   <div class="accordion" *ngIf="data.compId===5" id="accordionExample">
+      <div class="accordion-item">
+         <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button navbar-light"  type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+               aria-expanded="true" aria-controls="collapseOne">
+               SHOD-CHETANA
+            </button>
          </h2>
-         <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+         <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample">
             <div class="accordion-body">
                <ul class="list-group">
-              <li class="list-item">Vol. I Issue 1</li>  
-              <li class="list-item">Vol. I Issue 2</li>  
-              <li class="list-item">Vol. I Issue 3</li>  
-              <li class="list-item">Vol. II Issue 1</li>  
-              <li class="list-item">Vol. II Issue 2</li>  
-              <li class="list-item">Vol. II Issue 3</li>  
-              <li class="list-item">Vol. II Issue 4</li>  
-              <li class="list-item">Vol. III Issue 1</li>  
-              <li class="list-item">Vol. III Issue 2</li>  
-            </ul>
+                  <li class="list-item">Vol. I Issue 1</li>
+                  <li class="list-item">Vol. I Issue 2</li>
+                  <li class="list-item">Vol. I Issue 3</li>
+                  <li class="list-item">Vol. II Issue 1</li>
+                  <li class="list-item">Vol. II Issue 2</li>
+                  <li class="list-item">Vol. II Issue 3</li>
+                  <li class="list-item">Vol. II Issue 4</li>
+                  <li class="list-item">Vol. III Issue 1</li>
+                  <li class="list-item">Vol. III Issue 2</li>
+               </ul>
             </div>
-          </div>
          </div>
+      </div>
+   </div>
+
+
+   <app-button-cmp1 [Text]="data.metadata.info" *ngIf="data.compId===6"></app-button-cmp1>
 </div>
-
-
-<app-button-cmp1 [Text]="data.metadata.info" *ngIf="data.compId===6"></app-button-cmp1>
-</div>
-

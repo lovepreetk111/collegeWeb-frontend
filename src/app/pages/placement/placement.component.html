@@ -1,44 +1,19 @@
 <div *ngFor="let data of pages[0].component">
-    <app-image-cmp1 [AboutBanner]="data.metadata.imgCmp" *ngIf="data.compId === 1"></app-image-cmp1>
+  <app-image-cmp1 [AboutBanner]="data.metadata.imgCmp" *ngIf="data.compId === 1"></app-image-cmp1>
 
-    <app-button-cmp1 [Text]="data.metadata.objHeader" *ngIf="data.compId === 1"></app-button-cmp1>
-    <app-text-cmp1 [datas]="data.metadata.objData"></app-text-cmp1>
+  <app-button-cmp1 [Text]="data.metadata.objHeader" *ngIf="data.compId === 1"></app-button-cmp1>
+  <app-text-cmp1 *ngIf="data.compId===1" [datas]="data.metadata.objData"></app-text-cmp1>
 
-    <app-button-cmp1 [Text]="data.metadata.teamHeader" *ngIf="data.compId === 1"></app-button-cmp1>
-    <!-- <app-infocard [cardGroup]="data.metadata.cardData" *ngIf="data.compId ===1"></app-infocard> -->
-    <app-infocard [cardGroup]="data.metadata" *ngIf="data.compId === 2"></app-infocard>
+  <app-button-cmp1 [Text]="data.metadata.teamHeader" *ngIf="data.compId === 2"></app-button-cmp1>
+  <!-- <app-infocard [cardGroup]="data.metadata.cardData" *ngIf="data.compId ===1"></app-infocard> -->
+  <app-infocard [cardGroup]="data.metadata" *ngIf="data.compId === 2"></app-infocard>
 
-    <app-button-cmp1 [Text]="data.metadata.traningHeader" *ngIf="data.compId === 3"></app-button-cmp1>
-    <app-text-cmp1 [datas]="data.metadata.traningData" *ngIf="data.compId === 3"></app-text-cmp1>
+  <app-button-cmp1 [Text]="data.metadata.traningHeader" *ngIf="data.compId === 3"></app-button-cmp1>
+  <app-text-cmp1 [datas]="data.metadata.traningData" *ngIf="data.compId === 3"></app-text-cmp1>
 
-    <app-button-cmp1 [Text]="data.metadata.alumini" *ngIf="data.compId === 4"></app-button-cmp1>
-    <app-place-table *ngIf="data.compId === 4"></app-place-table>
+  <app-button-cmp1 [Text]="data.metadata.alumini" *ngIf="data.compId === 4"></app-button-cmp1>
+  <app-place-table *ngIf="data.compId === 4"></app-place-table>
 
-    <app-button-cmp1 [Text]="data.metadata.recuriters" *ngIf="data.compId === 5"></app-button-cmp1>
-    <app-company-pic *ngIf="data.compId === 5"></app-company-pic>
+  <app-button-cmp1 [Text]="data.metadata.recuriters" *ngIf="data.compId === 5"></app-button-cmp1>
+  <app-company-pic *ngIf="data.compId === 5"></app-company-pic>
 </div>
-
-<!--  cardConfig: [
-              {
-                cardConfig: [
-                  {
-                    url: "",
-                    alt: "",
-                    post: "Faculty",
-                    facultyName: "Lovepreet"
-                  },
-                  {
-                    url: "",
-                    alt: "",
-                    post: "Data",
-                    facultyName: "Lovepreet"
-                  },
-                  {
-                    url: "",
-                    alt: "",
-                    post: "Faculty",
-                    facultyName: "Lovepreet"
-                  }
-                ]
-              }
-            ], -->
