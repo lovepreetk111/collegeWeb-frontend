@@ -11,6 +11,8 @@ export class StudentSupportComponent implements OnInit {
   supportdata!: boolean;
   wdcdata!: boolean;
   gvtdata!: boolean;
+  workshopData!: boolean;
+  antiraggingData!:boolean;
 
   currentPageIndex = 0;
   pages: Array<any> = [
@@ -220,6 +222,453 @@ export class StudentSupportComponent implements OnInit {
       ]
     },
     {
+      pageName: 'workshop',
+      component: [
+        {
+          compId: 1,
+          compName: "button",
+          metadata: {
+            data: "WORKSHOP TO ENHANCE RESEARCH"
+          }
+        },
+        {
+          compId: 2,
+          compName: "Table comp",
+          metadata: {
+            thead: [
+              {
+                tablehead: [
+                  {
+                    thdata: "Sr.No"
+                  },
+                  {
+                    thdata: "Date"
+                  },
+                  {
+                    thdata: "Title"
+                  },
+                  {
+                    thdata: "Speaker"
+                  },
+                  {
+                    thdata: "Course"
+                  }
+                ]
+              }
+            ],
+            data: [
+              {
+                trdata: [
+                  {
+                    tdData: "1",
+                  },
+                  {
+                    tdData: "12/02/2923"
+                  },
+                  {
+                    tdData: "Research Methodology"
+                  },
+                  {
+                    tdData: "Dr.Nishikant Jha (M.Com, ICWA, PGDM, PhD, D.Litt, Research Guide)"
+                  },
+                  {
+                    tdData: "TYBMS(Finance), TYBAF and M. Com"
+                  }
+                ],
+              },
+              {
+                trdata: [
+                  {
+                    tdData: "1",
+                  },
+                  {
+                    tdData: "12/02/2923"
+                  },
+                  {
+                    tdData: "Research Methodology"
+                  },
+                  {
+                    tdData: "Dr.Nishikant Jha (M.Com, ICWA, PGDM, PhD, D.Litt, Research Guide)"
+                  },
+                  {
+                    tdData: "TYBMS(Finance), TYBAF and M. Com"
+                  }
+                ],
+              },
+              {
+                trdata: [
+                  {
+                    tdData: "1",
+                  },
+                  {
+                    tdData: "12/02/2923"
+                  },
+                  {
+                    tdData: "Research Methodology"
+                  },
+                  {
+                    tdData: "Dr.Nishikant Jha (M.Com, ICWA, PGDM, PhD, D.Litt, Research Guide)"
+                  },
+                  {
+                    tdData: "TYBMS(Finance), TYBAF and M. Com"
+                  }
+                ],
+              },
+              {
+                trdata: [
+                  {
+                    tdData: "1",
+                  },
+                  {
+                    tdData: "12/02/2923"
+                  },
+                  {
+                    tdData: "Research Methodology"
+                  },
+                  {
+                    tdData: "Dr.Nishikant Jha (M.Com, ICWA, PGDM, PhD, D.Litt, Research Guide)"
+                  },
+                  {
+                    tdData: "TYBMS(Finance), TYBAF and M. Com"
+                  }
+                ],
+              },
+
+            ]
+          }
+        },
+        {
+          compId: 3,
+          compName: "Button",
+          metadata: {
+            header:{
+              data: "WORKSHOP BY INDUSTRY EXPERTS"
+            },
+            table: {
+              thead: [
+                {
+                  tablehead: [
+                    {
+                      thdata: "Sr.No"
+                    },
+                    {
+                      thdata: "Date"
+                    },
+                    {
+                      thdata: "Title"
+                    },
+                    {
+                      thdata: "Speaker"
+                    },
+                    {
+                      thdata: "Course"
+                    }
+                  ]
+                }
+              ],
+              data: [
+                {
+                  trdata: [
+                    {
+                      tdData: "1",
+                    },
+                    {
+                      tdData: "12/02/2923"
+                    },
+                    {
+                      tdData: "Research Methodology"
+                    },
+                    {
+                      tdData: "Dr.Nishikant Jha (M.Com, ICWA, PGDM, PhD, D.Litt, Research Guide)"
+                    },
+                    {
+                      tdData: "TYBMS(Finance), TYBAF and M. Com"
+                    }
+                  ],
+                },
+                {
+                  trdata: [
+                    {
+                      tdData: "1",
+                    },
+                    {
+                      tdData: "12/02/2923"
+                    },
+                    {
+                      tdData: "Research Methodology"
+                    },
+                    {
+                      tdData: "Dr.Nishikant Jha (M.Com, ICWA, PGDM, PhD, D.Litt, Research Guide)"
+                    },
+                    {
+                      tdData: "TYBMS(Finance), TYBAF and M. Com"
+                    }
+                  ],
+                },
+                {
+                  trdata: [
+                    {
+                      tdData: "1",
+                    },
+                    {
+                      tdData: "12/02/2923"
+                    },
+                    {
+                      tdData: "Research Methodology"
+                    },
+                    {
+                      tdData: "Dr.Nishikant Jha (M.Com, ICWA, PGDM, PhD, D.Litt, Research Guide)"
+                    },
+                    {
+                      tdData: "TYBMS(Finance), TYBAF and M. Com"
+                    }
+                  ],
+                },
+                {
+                  trdata: [
+                    {
+                      tdData: "1",
+                    },
+                    {
+                      tdData: "12/02/2923"
+                    },
+                    {
+                      tdData: "Research Methodology"
+                    },
+                    {
+                      tdData: "Dr.Nishikant Jha (M.Com, ICWA, PGDM, PhD, D.Litt, Research Guide)"
+                    },
+                    {
+                      tdData: "TYBMS(Finance), TYBAF and M. Com"
+                    }
+                  ],
+                },
+
+              ]
+            }
+          }
+        },
+        {
+          compId: 4,
+          compName: "Button",
+          metadata: {
+            header:{
+              data: "WORKSHOPS CONDUCTED BY ALUMNI"
+            },
+            table: {
+              thead: [
+                {
+                  tablehead: [
+                    {
+                      thdata: "Sr.No"
+                    },
+                    {
+                      thdata: "Date"
+                    },
+                    {
+                      thdata: "Title"
+                    },
+                    {
+                      thdata: "Speaker"
+                    },
+                    {
+                      thdata: "Course"
+                    }
+                  ]
+                }
+              ],
+              data: [
+                {
+                  trdata: [
+                    {
+                      tdData: "1",
+                    },
+                    {
+                      tdData: "12/02/2923"
+                    },
+                    {
+                      tdData: "Research Methodology"
+                    },
+                    {
+                      tdData: "Dr.Nishikant Jha (M.Com, ICWA, PGDM, PhD, D.Litt, Research Guide)"
+                    },
+                    {
+                      tdData: "TYBMS(Finance), TYBAF and M. Com"
+                    }
+                  ],
+                },
+                {
+                  trdata: [
+                    {
+                      tdData: "1",
+                    },
+                    {
+                      tdData: "12/02/2923"
+                    },
+                    {
+                      tdData: "Research Methodology"
+                    },
+                    {
+                      tdData: "Dr.Nishikant Jha (M.Com, ICWA, PGDM, PhD, D.Litt, Research Guide)"
+                    },
+                    {
+                      tdData: "TYBMS(Finance), TYBAF and M. Com"
+                    }
+                  ],
+                },
+                {
+                  trdata: [
+                    {
+                      tdData: "1",
+                    },
+                    {
+                      tdData: "12/02/2923"
+                    },
+                    {
+                      tdData: "Research Methodology"
+                    },
+                    {
+                      tdData: "Dr.Nishikant Jha (M.Com, ICWA, PGDM, PhD, D.Litt, Research Guide)"
+                    },
+                    {
+                      tdData: "TYBMS(Finance), TYBAF and M. Com"
+                    }
+                  ],
+                },
+                {
+                  trdata: [
+                    {
+                      tdData: "1",
+                    },
+                    {
+                      tdData: "12/02/2923"
+                    },
+                    {
+                      tdData: "Research Methodology"
+                    },
+                    {
+                      tdData: "Dr.Nishikant Jha (M.Com, ICWA, PGDM, PhD, D.Litt, Research Guide)"
+                    },
+                    {
+                      tdData: "TYBMS(Finance), TYBAF and M. Com"
+                    }
+                  ],
+                },
+
+              ]
+            }
+          }
+        },
+        {
+          compId:5,
+          compName:"button and Text",
+          metadata:{
+            header:{
+              data:"CAREER GUIDANCE WORKSHOPS:"
+            },
+            text:{
+              text:"<li>Careers and Challenges in Journalism for BMM students by Renu Nauriyal (Former Journalist)</li><li> Careers in Import-Export for SYBMS students by Dr.PP Radhakrishnan, President- Indian Institution of Export and Import Management) </li><li>Seminar on Financial Markets and Prospects as a Chartered Accountant by CA Hitesh Thakkar and ICAI for FY and TYBAF</li>"
+            }
+          },
+
+        }
+
+      ]
+    },
+    {
+      pageName:"anti-ragging",
+      component:[
+        {
+          compId:1, 
+          compName:"button and text",
+          metadata:{
+            header:{
+              data:"Anti-Ragging",
+            },
+            text:{
+              text:"Ragging means any conduct whether by words spoken or written or by an act which has the effect of teasing, treating or handling with rudeness any other student, indulging in rowdy or undisciplined activities which causes or is likely to cause annoyance, hardship or psychological harm to raise fear or apprehension thereof in a fresher or junior student or asking the students to do any act or perform something which such student will not in the ordinary course and which has the effect of causing or generating a sense of shame or embarrassment so as to adversely affect the physique or psyche of a fresher or a junior student. The student indulging in above act is liable for punishment of suspension, debarring from examination, rustication or cancellation of admission or fine etc. <br> <br> <b>UGC Regulation on Curbing the Menace of Ragging in Higher Educational Institutions 2009No: F.1-16/2007 (CPP-II) dated 13 April 2009 </b> <br> <br> Ragging in all its forms is prohibited in the College Campus, including the departments, all its premises (academic, residential, sports, canteen, restrooms etc.), within the campus or outside it and all means of transportation whether public or private. The provisions of the Act of the Central Government and the State Governments if enacted will consider ragging as a cognizable offence under the law on a par with rape and other atrocities against women and ill-treatment of persons belonging to SC/ ST. <br><br><b>You can register your complaints with the following Phone Numbers.</b>"
+            }
+          }
+        },
+        {
+          compId:2,
+          compName:"accordian",
+          metadata:{
+            AccordianData:[
+              {
+                Title:"Duties",
+                SubTitles:[
+                  {
+                    title:"<li>To ensure overall disciplined environment in the College.</li><li>To initiate timely action against erring students.</li><li>To sensitise students about the evils of ragging and its prevention in the College Campus by organizingtalks/ programmes etc.</li><li> To address complaints about ragging as per the Govt. and University procedures.</li><li>To maintain records of the cases investigated and submit the same to the IQAC Committee.</li>"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+
+
+
+  constructor(private activeRoute: ActivatedRoute) {
+    // console.log(function show("hello"))
+  }
+
+  ngOnInit(): void {
+    this.activeRoute.params.subscribe
+      ((params: any) => {
+        const page = params.scpages;
+        const pageIndex = this.pages.findIndex
+          (pg => pg.pageName === page)
+        this.currentPageIndex = pageIndex
+        console.log(this.currentPageIndex, "currentpageinsed checking")
+        console.log("index bro", pageIndex)
+        if (pageIndex == 0) {
+          this.supportdata = true;
+          this.wdcdata = false;
+          this.workshopData = false;
+          this.gvtdata = false;
+          this.antiraggingData= false;
+        }
+        else if (pageIndex == 1) {
+          this.wdcdata = true;
+          this.supportdata = false;
+          this.workshopData = false;
+          this.antiraggingData = false
+          this.gvtdata = false;
+        }
+        else if (pageIndex == 2) {
+          this.wdcdata = false;
+          this.supportdata = false;
+          this.gvtdata = true;
+          this.workshopData = false;
+          this.antiraggingData = false
+        }
+        else if (pageIndex == 3) {
+          this.wdcdata = false;
+          this.supportdata = false;
+          this.gvtdata = false;
+          this.workshopData = true;
+          this.antiraggingData = false
+        }
+        else if (pageIndex == 4) {
+          this.wdcdata = false;
+          this.supportdata = false;
+          this.gvtdata = false;
+          this.workshopData = false;
+          this.antiraggingData = true;
+        }
+      })
+
+
+  }
+
+}
+
+
+/* {
       pageName: 'gvt',
       component: [
         {
@@ -269,41 +718,4 @@ export class StudentSupportComponent implements OnInit {
         }
       ]
     },
-  ]
-
-
-
-  constructor(private activeRoute: ActivatedRoute) {
-    // console.log(function show("hello"))
-  }
-
-  ngOnInit(): void {
-    this.activeRoute.params.subscribe
-      ((params: any) => {
-        const page = params.scpages;
-        const pageIndex = this.pages.findIndex
-          (pg => pg.pageName === page)
-        this.currentPageIndex = pageIndex
-        console.log(this.currentPageIndex, "currentpageinsed checking")
-        console.log("index bro", pageIndex)
-        if (pageIndex == 0) {
-          this.supportdata = true;
-          this.wdcdata = false;
-          this.gvtdata = false;
-        }
-        else if (pageIndex == 1) {
-          this.wdcdata = true;
-          this.supportdata = false;
-          this.gvtdata = false;
-        }
-        else if (pageIndex == 2) {
-          this.wdcdata = false;
-          this.supportdata = false;
-          this.gvtdata = true;
-        }
-      })
-
-
-  }
-
-}
+  */

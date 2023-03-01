@@ -94,7 +94,7 @@ export interface IDropDown {
   AccordianData: IAccordianData[]
 }
 /* Accordian Component */
-export interface IAccordianData {
+export interface  IAccordianData {
   Title: string;
   SubTitles: IsubTitleData[]
 }
@@ -129,15 +129,15 @@ export interface ITestimonialCardData {
 /* =================================== Card Carousel ============================= */
 export interface ICardCarosuel {
   // id: string,
-  title:string,
+  title: string,
   slides: ICardCarosuelData[]
 }
 export interface ICardCarosuelData {
-    url: string,
-    alt: string,
-    routeLink: string
-    cardHeading: string,
-    description: string
+  url: string,
+  alt: string,
+  routeLink: string
+  cardHeading: string,
+  description: string
 
 }
 
@@ -211,15 +211,15 @@ export interface IcourseDetail {
   alt: string;
   text11: string;
   text12: string;
-  table:aboutCouse[];
-  table2:aboutCouse[];
+  table: aboutCouse[];
+  table2: aboutCouse[];
 }
 
 
-export interface aboutCouse{
-  id:string
-  category:string,
-  criteria:string
+export interface aboutCouse {
+  id: string
+  category: string,
+  criteria: string
 }
 
 // export interface Idatas{
@@ -296,7 +296,7 @@ export interface INoticeInfo {
 export interface IModalData {
   noticename: string,
   noticeDate: string,
-  title:string,
+  title: string,
   modalInfo: IModalInfo[],
   date: string,
   name: string,
@@ -337,13 +337,33 @@ text:string,
 
 /* Card-Container */
 
-export interface IcardData{
-  url:string
-  alt:string
-  post:string
-  facultyName:string
-} 
+export interface IcardData {
+  url: string
+  alt: string
+  post: string
+  facultyName: string
+}
 
-export interface ICardGroupData{
-  cardConfig:IcardData[]
+export interface ICardGroupData {
+  cardConfig: IcardData[]
+}
+
+export interface ITableComp {
+  thead: ITableHead[]
+  data: ITableData[]
+}
+
+export interface ITableHead {
+  tablehead: ItableHeadData[]
+}
+export interface ItableHeadData{
+  thdata:string
+}
+
+export interface ITableData {
+  trdata: ItableIterable[]
+}
+
+export interface ItableIterable {
+  tdData: string
 }

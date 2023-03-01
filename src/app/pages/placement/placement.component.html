@@ -12,8 +12,8 @@
   <app-text-cmp1 [datas]="data.metadata.traningData" *ngIf="data.compId === 3"></app-text-cmp1>
 
   <app-button-cmp1 [Text]="data.metadata.alumini" *ngIf="data.compId === 4"></app-button-cmp1>
-  <app-place-table *ngIf="data.compId === 4"></app-place-table>
+  <app-place-table [tableData]="data.metadata" *ngIf="data.compId === 5"></app-place-table>
 
-  <app-button-cmp1 [Text]="data.metadata.recuriters" *ngIf="data.compId === 5"></app-button-cmp1>
-  <app-company-pic *ngIf="data.compId === 5"></app-company-pic>
+  <app-button-cmp1 [Text]="data.metadata.recuriters" *ngIf="data.compId === 6"></app-button-cmp1>
+  <app-company-pic *ngIf="data.compId === 6"></app-company-pic>
 </div>

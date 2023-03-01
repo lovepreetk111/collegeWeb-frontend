@@ -34,7 +34,7 @@ export class PlacementComponent implements OnInit {
             {
               text: "<li>Coordinating with the companies on their internship and final Placement requirements.<br><br>  <li>            Organising Career Counselling seminars. <br><br><li>             Engagement Activities for Students.              <br><br> <li>              To place the students according to their areas of interest in organizations.  <br><br> <li>            Help students in development of soft skills through various trainings, seminars and workshops. <br><br> <li>             To bridge the gap between college and industries.    <br><br> <li>          To increase awareness amongst current students about placement opportunities in industries and various skill-sets required.",
             },
-            
+
             info5:
             {
               text: "To bring educational opportunities within the reach of the underprivileged section of the society.<br><br>  <li> To bring educational opportunities within the reach of the underprivileged section of the society.  <br><br>  <li>  To impact value-based education to the students. <br><br>  <li>  To bring educational opportunities within the reach of the under-privileged section of society. <br><br>  <li>   To generate academic environment for enabling the students to mould their personalities by imbibing moral values, professional competencies and the spirit of fair competition. <br><br>  <li>   To ensure participation of the student in co-curricular and extra-curricular activities for their balanced development.  <br><br>  <li>   To stimulate the teachers to continuously enrich their knowledge for the benefit of their students and for the well-being of society.  <br><br>  <li>  To provide infrastructural facilities for the benefit of the students and for the social development of the local community.  <br><br>  <li>   To create among the students and the students and the teaching and non-teaching staff a sense pf pride in belonging to the institution so that it channelizes their energies for the progress of the institution.  <br><br>  <li>   To ensure justice and fair play in all academic and non-academic matters affecting the students and the staff.<br><br>  <li>    To encourage the students to aspire for higher achievements and help them unleash their latent abilities and realize their cherished goals.",
@@ -120,6 +120,96 @@ export class PlacementComponent implements OnInit {
         },
         {
           compId: 5,
+          compName: "table-comp",
+          metadata: {
+            thead: [
+              {
+                tablehead: [
+                  {
+                    thdata:"Name"
+                  },
+                  {
+                    thdata:"Company"
+                  },
+                  {
+                    thdata:"Post"
+                  },
+                  {
+                    thdata:"Year"
+                  }
+                ]
+              }
+            ],
+            data:[
+              {
+                trdata:[
+                  {
+                    tdData:"Lovepreet Kaur Salgotra",
+                  },
+                  {
+                    tdData:"WebAppZab"
+                  },
+                  {
+                    tdData:"Web Developer"
+                  },
+                  {
+                    tdData:"2020-2023"
+                  }
+                ],
+              },
+              {
+                trdata:[
+                  {
+                    tdData:"Lovepreet Kaur Salgotra",
+                  },
+                  {
+                    tdData:"WebAppZab"
+                  },
+                  {
+                    tdData:"Web Developer"
+                  },
+                  {
+                    tdData:"2020-2023"
+                  }
+                ],
+              },
+              {
+                trdata:[
+                  {
+                    tdData:"Lovepreet Kaur Salgotra",
+                  },
+                  {
+                    tdData:"WebAppZab"
+                  },
+                  {
+                    tdData:"Web Developer"
+                  },
+                  {
+                    tdData:"2020-2023"
+                  }
+                ],
+              },
+              {
+                trdata:[
+                  {
+                    tdData:"Lovepreet Kaur Salgotra",
+                  },
+                  {
+                    tdData:"WebAppZab"
+                  },
+                  {
+                    tdData:"Web Developer"
+                  },
+                  {
+                    tdData:"2020-2023"
+                  }
+                ],
+              },
+            ]
+          }
+        },
+        {
+          compId: 6,
           compName: "Recutiers",
           metadata: {
             recuriters:
