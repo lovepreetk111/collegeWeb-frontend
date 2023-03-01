@@ -30,7 +30,7 @@
         <app-text-cmp1 [datas]="data.metadata.dataText" *ngIf="data.compId===2"></app-text-cmp1>
         <app-button-cmp1 [Text]="data.metadata.buttonData2" *ngIf="data.compId === 2"></app-button-cmp1>
         <app-text-cmp1 [datas]="data.metadata.dataText2" *ngIf="data.compId===2"></app-text-cmp1>
-       <app-button-cmp1 [Text]="data.metadata.teamHeader" *ngIf="data.compId===3"></app-button-cmp1>
+        <app-button-cmp1 [Text]="data.metadata.teamHeader" *ngIf="data.compId===3"></app-button-cmp1>
         <app-infocard [cardGroup]="data.metadata" *ngIf="data.compId === 3"></app-infocard>
 
     </div>
@@ -54,5 +54,26 @@
 
         <app-button-cmp1 [Text]="data.metadata.buttonData4" *ngIf="data.compId === 3"></app-button-cmp1>
         <app-text-cmp1 [datas]="data.metadata.dataText4" *ngIf="data.compId===3"></app-text-cmp1>
+    </div>
+</div>
+
+<div *ngIf="workshopData">
+    <div class="workshop" *ngFor="let data of pages[3]?.component">
+        <app-button-cmp1 [Text]="data.metadata" *ngIf="data.compId === 1"></app-button-cmp1>
+        <app-place-table [tableData]="data.metadata" *ngIf="data.compId === 2"></app-place-table>
+        <app-button-cmp1 [Text]="data.metadata.header" *ngIf="data.compId===3"></app-button-cmp1>
+        <app-place-table [tableData]="data.metadata.table" *ngIf="data.compId ===3"></app-place-table>
+        <app-button-cmp1 [Text]="data.metadata.header" *ngIf="data.compId===4"></app-button-cmp1>
+        <app-place-table [tableData]="data.metadata.table" *ngIf="data.compId===4"></app-place-table>
+        <app-button-cmp1 [Text]="data.metadata.header" *ngIf="data.compId ===5"></app-button-cmp1>
+        <app-text-cmp1 [datas]="data.metadata.text" *ngIf="data.compId === 5"></app-text-cmp1>
+    </div>
+</div>
+
+<div *ngIf="antiraggingData">
+    <div class="anti-ragging" *ngFor="let data of pages[4]?.component">
+        <app-button-cmp1 [Text]="data.metadata.header" *ngIf="data.compId===1"></app-button-cmp1>
+        <app-text-cmp1 [datas]="data.metadata.text" *ngIf="data.compId===1"></app-text-cmp1>
+        <app-accordian-dropdwn [DropDownData]="data.metadata" *ngIf="data.compId===2"></app-accordian-dropdwn>
     </div>
 </div>

@@ -68,7 +68,7 @@ export class AppComponent {
                         },
                         {
                           subchild: 'COMMERCE',
-                          routeLink: 'course/commerce+',
+                          routeLink: 'course/commerce',
                         },
                         {
                           subchild: 'MCVC',
@@ -235,11 +235,11 @@ export class AppComponent {
                     },
                     {
                       dropdown: "Anti-Ragging",
-                      url: '/anti-ragging'
+                      url: 'sc/anti-ragging'
                     },
                     {
                       dropdown: "Workshop/Seminar",
-                      url: '/workshop'
+                      url: 'sc/workshop'
                     },
                     {
                       dropdown: "WDC",
