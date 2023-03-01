@@ -60,7 +60,7 @@ export class CourseComponent implements OnInit {
                   imgUrl:"../../../assets/images/ARTS.svg",
                   imgAlt:"Arts Icon",
                   header:"ARTS",
-                  btnLink:"course/arts",
+                  btnLink:"arts",
                   btnTxt:"Read More"
                 },
                 {
@@ -68,7 +68,7 @@ export class CourseComponent implements OnInit {
                   imgUrl:"../../../assets/images/COM.svg",
                   imgAlt:"commerce Icon",
                   header:"COMMERCE",
-                  btnLink:"course/commerce",
+                  btnLink:"commerce",
                   btnTxt:"Read More"
                 },
                 {
@@ -76,7 +76,7 @@ export class CourseComponent implements OnInit {
                   imgUrl:"../../../assets/images/MCVC.svg",
                   imgAlt:"MCVC Icon",
                   header:"MCVC",
-                  btnLink:"course/mcvc",
+                  btnLink:"mcvc",
                   btnTxt:"Read More"
                 }
               ],
@@ -87,7 +87,7 @@ export class CourseComponent implements OnInit {
                   imgUrl:"../../../assets/images/BOArts.svg",
                   imgAlt:"BACHELOR OF ARTS",
                   header:"BACHELOR OF ARTS",
-                  btnLink:"course/BOArts",
+                  btnLink:"BA",
                   btnTxt:"Read More"
                 },
                 {
@@ -95,7 +95,7 @@ export class CourseComponent implements OnInit {
                   imgUrl:"../../../assets/images/ARTS.svg",
                   imgAlt:"Arts Icon",
                   header:"BACHELOR OF COMMERCE",
-                  btnLink:"course/arts",
+                  btnLink:"bcom",
                   btnTxt:"Read More"
                 }
               ],
@@ -105,7 +105,7 @@ export class CourseComponent implements OnInit {
                   imgUrl:"../../../assets/images/BMS.svg",
                   imgAlt:"BMS Icon",
                   header:"(BMS) Bachelor of Management Studies",
-                  btnLink:"course/bms",
+                  btnLink:"bms",
                   btnTxt:"Read More"
                 },
                 {
@@ -113,7 +113,7 @@ export class CourseComponent implements OnInit {
                   imgUrl:"../../../assets/images/BAF.svg",
                   imgAlt:"BAF Icon",
                   header:"(BAF) Bachelor of Accounting and Finance",
-                  btnLink:"course/baf",
+                  btnLink:"baf",
                   btnTxt:"Read More"
                 },
                 {
@@ -121,7 +121,7 @@ export class CourseComponent implements OnInit {
                   imgUrl:"../../../assets/images/BAMMC.svg",
                   imgAlt:"BAMMC Icon",
                   header:"(B.A.M.M.C) (Bachelor of Science in Information & Technology)",
-                  btnLink:"course/bammc",
+                  btnLink:"bammc",
                   btnTxt:"Read More"
                 },
                 {
@@ -139,17 +139,10 @@ export class CourseComponent implements OnInit {
                   imgUrl:"../../../assets/images/PG.svg",
                   imgAlt:"PG Icon",
                   header:"POST GRADUATE (MASTER OF COMMERCE)",
-                  btnLink:"course/arts",
+                  btnLink:"mcom",
                   btnTxt:"Read More"
                 },
-                {
-                  id:2,
-                  imgUrl:"../../../assets/images/PG.svg",
-                  imgAlt:"PG Icon",
-                  header:"POST GRADUATE (MASTER OF COMMERCE)",
-                  btnLink:"course/arts",
-                  btnTxt:"Read More"
-                }
+                
               ],
               value4:[
                 {
@@ -157,7 +150,7 @@ export class CourseComponent implements OnInit {
                   imgUrl:"../../../assets/images/ResearchCentre.svg",
                   imgAlt:"Arts Icon",
                   header:"RESEARCH CENTRE (PH.D. IN  COMMERCE)",
-                  btnLink:"course/arts",
+                  btnLink:"phn",
                   btnTxt:"Read More"
                 }
               ],
@@ -167,7 +160,7 @@ export class CourseComponent implements OnInit {
                   imgUrl:"../../../assets/images/UG.svg",
                   imgAlt:"Arts Icon",
                   header:"Y.C.M.O.U.",
-                  btnLink:"course/arts",
+                  btnLink:"/",
                   btnTxt:"Read More"
                 },
               ]
