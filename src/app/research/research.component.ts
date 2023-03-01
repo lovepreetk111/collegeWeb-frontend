@@ -71,7 +71,17 @@ export class ResearchComponent implements OnInit {
               data:"Conference proceeding"
             }
           }
+        },
+        {
+          compId:7,
+          compname:"card",
+          metadata:{
+            info:{
+              data:"Conference proceeding"
+            }
+          }
         }
+
 
 
       ]
