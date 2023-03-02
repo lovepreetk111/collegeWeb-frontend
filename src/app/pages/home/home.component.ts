@@ -288,7 +288,7 @@ export class HomeComponent implements OnInit {
             }
           ],
         },
-        {
+      /*   {
           compId: 6,
           compName: "cardcarosuel",
           metadata: 
@@ -320,7 +320,7 @@ export class HomeComponent implements OnInit {
             }
 
           
-        },
+        }, */
         {
           compId: 7,
           compName: 'testimonials',
