@@ -330,25 +330,25 @@ export class HomeComponent implements OnInit {
             description: "my name is ghazala.Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit.",
             cardsData: [
               {
-                comment: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit.",
-                name: "Ghazala",
-                designation: "student",
-                companyName: "chetana",
-                profileUrl: "assets/img/ghazala.svg"
+                comment: "This place have given me unforgettable three years of my life. It has a positive atmosphere, and in every step, you get an opportunity to knowledge something new. My college taught me corporate life which happened to be my key success.",
+                name: "Shirsat Sneha",
+                designation: "Student",
+                companyName: "Chetana",
+                profileUrl: "assets/image/testimonital1.jpg"
               },
               {
-                comment: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
-                name: "Lappi",
-                designation: "ncc candidate",
-                companyName: "Gareeb chetana",
-                profileUrl: "assets/img/lappi.svg"
+                comment: "The three years spent here were splendid and has helped me to grow better professionally and personally. I would like to thank CSFC & all the faculties and staff for making me a Better Person",
+                name: "Suhas Hanumanta Jadhav",
+                designation: "Sr. Video Editor",
+                companyName: "",
+                profileUrl: "assets/image/testimonital2.jpg"
               },
               {
-                comment: "It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
-                name: "vandita",
-                designation: "pgl",
-                companyName: "BscIT",
-                profileUrl: "assets/img/vandita.svg"
+                comment: "The students and faculties have an amiable relationship, and the faculty members are always there to help whenever we need them. I have built time management and leadership skills, and it has also helped me to face any situation with confidence.",
+                name: "Vidhi Vinod Jain",
+                designation: "",
+                companyName: "",
+                profileUrl: "assets/image/testimonital3.jpg"
               }
             ]
           }
