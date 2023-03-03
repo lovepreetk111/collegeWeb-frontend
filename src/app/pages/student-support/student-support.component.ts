@@ -20,6 +20,18 @@ export class StudentSupportComponent implements OnInit {
       pageName: 'support',
       component: [
         {
+          compId: 0,
+          compName: "image-comp1",
+          metadata: [
+            {
+              url: '../../../assets/images/Chetana Building.jpeg',
+              alt: "koi toh imaage",
+              text: "STUDENT SUPPORT"
+            }
+
+          ]
+        },
+        {
           compId: 1,
           compName: "student support",
           metadata: {
@@ -225,6 +237,18 @@ export class StudentSupportComponent implements OnInit {
       pageName: 'workshop',
       component: [
         {
+          compId: 0,
+          compName: "image-comp1",
+          metadata: [
+            {
+              url: '../../../assets/images/Chetana Building.jpeg',
+              alt: "koi toh imaage",
+              text: "WORKSHOP/SEMINAR"
+            }
+
+          ]
+        },
+        {
           compId: 1,
           compName: "button",
           metadata: {
@@ -279,61 +303,41 @@ export class StudentSupportComponent implements OnInit {
               {
                 trdata: [
                   {
-                    tdData: "1",
+                    tdData: "2",
                   },
                   {
-                    tdData: "12/02/2923"
+                    tdData: "18-12-2019"
                   },
                   {
-                    tdData: "Research Methodology"
+                    tdData: "Research Paper Writing"
                   },
                   {
-                    tdData: "Dr.Nishikant Jha (M.Com, ICWA, PGDM, PhD, D.Litt, Research Guide)"
+                    tdData: "Prof. Shivali Thakar (Alumni and Visiting Faculty)"
                   },
                   {
-                    tdData: "TYBMS(Finance), TYBAF and M. Com"
+                    tdData: "All SY"
                   }
                 ],
               },
               {
                 trdata: [
                   {
-                    tdData: "1",
+                    tdData: "3",
                   },
                   {
-                    tdData: "12/02/2923"
+                    tdData: "01-09-2020"
                   },
                   {
-                    tdData: "Research Methodology"
+                    tdData: "Research Methodology Workshop"
                   },
                   {
-                    tdData: "Dr.Nishikant Jha (M.Com, ICWA, PGDM, PhD, D.Litt, Research Guide)"
+                    tdData: "Dr.Aruna Deshpande (Associate Professor- ADMIS and Research Guide)"
                   },
                   {
-                    tdData: "TYBMS(Finance), TYBAF and M. Com"
+                    tdData: "TYBMS HR and MARKETING"
                   }
                 ],
               },
-              {
-                trdata: [
-                  {
-                    tdData: "1",
-                  },
-                  {
-                    tdData: "12/02/2923"
-                  },
-                  {
-                    tdData: "Research Methodology"
-                  },
-                  {
-                    tdData: "Dr.Nishikant Jha (M.Com, ICWA, PGDM, PhD, D.Litt, Research Guide)"
-                  },
-                  {
-                    tdData: "TYBMS(Finance), TYBAF and M. Com"
-                  }
-                ],
-              },
-
             ]
           }
         },
@@ -373,77 +377,210 @@ export class StudentSupportComponent implements OnInit {
                       tdData: "1",
                     },
                     {
-                      tdData: "12/02/2923"
+                      tdData: "27-8-2019"
                     },
                     {
-                      tdData: "Research Methodology"
+                      tdData: "PR and Marketing in Entertainment Industry"
                     },
                     {
-                      tdData: "Dr.Nishikant Jha (M.Com, ICWA, PGDM, PhD, D.Litt, Research Guide)"
+                      tdData: "Abhik Bhanu (Filmaker and Author)"
                     },
                     {
-                      tdData: "TYBMS(Finance), TYBAF and M. Com"
+                      tdData: "SYBMS and TYBMS Marketing, BMM"
                     }
                   ],
                 },
                 {
                   trdata: [
                     {
-                      tdData: "1",
+                      tdData: "2",
                     },
                     {
-                      tdData: "12/02/2923"
+                      tdData: "29-8-2019"
                     },
                     {
-                      tdData: "Research Methodology"
+                      tdData: "Talent Management and Succession Planning"
                     },
                     {
-                      tdData: "Dr.Nishikant Jha (M.Com, ICWA, PGDM, PhD, D.Litt, Research Guide)"
+                      tdData: "Tejas Bandivadekar (HR Executive, Reliance Industries)"
                     },
                     {
-                      tdData: "TYBMS(Finance), TYBAF and M. Com"
+                      tdData: "SYBMS Marketing, SYBMS HR and TYBMS HR"
                     }
                   ],
                 },
                 {
                   trdata: [
                     {
-                      tdData: "1",
+                      tdData: "3",
                     },
                     {
-                      tdData: "12/02/2923"
+                      tdData: "24-12-2018"
                     },
                     {
-                      tdData: "Research Methodology"
+                      tdData: "Role of make Up in Creating Characters"
                     },
                     {
-                      tdData: "Dr.Nishikant Jha (M.Com, ICWA, PGDM, PhD, D.Litt, Research Guide)"
+                      tdData: "Rajesh Parab (Senior Make-Up Artist)"
                     },
                     {
-                      tdData: "TYBMS(Finance), TYBAF and M. Com"
+                      tdData: "BMM and Theatre Club"
                     }
                   ],
                 },
                 {
                   trdata: [
                     {
-                      tdData: "1",
+                      tdData: "4",
                     },
                     {
-                      tdData: "12/02/2923"
+                      tdData: "20-9-2019"
                     },
                     {
-                      tdData: "Research Methodology"
+                      tdData: "Caricature a Means of Communication"
                     },
                     {
-                      tdData: "Dr.Nishikant Jha (M.Com, ICWA, PGDM, PhD, D.Litt, Research Guide)"
+                      tdData: "Austin Coutinho (Senior Caricature Artist)"
                     },
                     {
-                      tdData: "TYBMS(Finance), TYBAF and M. Com"
+                      tdData: "BMM"
                     }
                   ],
                 },
-
+                {
+                  trdata: [
+                    {
+                      tdData: "5",
+                    },
+                    {
+                      tdData: "26-9-2019"
+                    },
+                    {
+                      tdData: "Addiction and Recovery"
+                    },
+                    {
+                      tdData: "True Wings Foundation"
+                    },
+                    {
+                      tdData: "All FY"
+                    }
+                  ],
+                },
+                {
+                  trdata: [
+                    {
+                      tdData: "6",
+                    },
+                    {
+                      tdData: "22-11-19"
+                    },
+                    {
+                      tdData: "Passion and Life Skills"
+                    },
+                    {
+                      tdData: "Sameer Narad (Motivational Speaker)"
+                    },
+                    {
+                      tdData: "FYBMS"
+                    }
+                  ],
+                },
+                {
+                  trdata: [
+                    {
+                      tdData: "7",
+                    },
+                    {
+                      tdData: "23-11-19"
+                    },
+                    {
+                      tdData: "Dynamics of Equity Markets"
+                    },
+                    {
+                      tdData: "Jigam Gandhi"
+                    },
+                    {
+                      tdData: "SYBAF and SYBMS (Finance)"
+                    }
+                  ],
+                },
+                {
+                  trdata: [
+                    {
+                      tdData: "8",
+                    },
+                    {
+                      tdData: "18-12-2019"
+                    },
+                    {
+                      tdData: "Goal Setting and Motivation using Mandala Drawings"
+                    },
+                    {
+                      tdData: "Sachita Sethi"
+                    },
+                    {
+                      tdData: "SYBMM"
+                    }
+                  ],
+                },
+                {
+                  trdata: [
+                    {
+                      tdData: "9",
+                    },
+                    {
+                      tdData: "21-12-2019"
+                    },
+                    {
+                      tdData: "Mental Health and Wellness"
+                    },
+                    {
+                      tdData: "Banu Ismail (Psychotherapist and Psychoanalyst)"
+                    },
+                    {
+                      tdData: "FYBAF and FYBSCIT"
+                    }
+                  ],
+                },
+                {
+                  trdata: [
+                    {
+                      tdData: "10",
+                    },
+                    {
+                      tdData: "02-08-2020"
+                    },
+                    {
+                      tdData: "Overview of Finance and Accounting with regards to Tax"
+                    },
+                    {
+                      tdData: "CA Ashok Jain"
+                    },
+                    {
+                      tdData: "TYBAF"
+                    }
+                  ],
+                },
+                {
+                  trdata: [
+                    {
+                      tdData: "11",
+                    },
+                    {
+                      tdData: "3-3-2020"
+                    },
+                    {
+                      tdData: "Union Budget Analysis"
+                    },
+                    {
+                      tdData: "Prof. Meera Suryanarayanan"
+                    },
+                    {
+                      tdData: "FYBMM & TYBMM"
+                    }
+                  ],
+                },
+                
               ]
             }
           }
@@ -466,13 +603,13 @@ export class StudentSupportComponent implements OnInit {
                       thdata: "Date"
                     },
                     {
-                      thdata: "Title"
+                      thdata: "Topic"
                     },
                     {
                       thdata: "Speaker"
                     },
                     {
-                      thdata: "Course"
+                      thdata: "Batch"
                     }
                   ]
                 }
@@ -484,77 +621,114 @@ export class StudentSupportComponent implements OnInit {
                       tdData: "1",
                     },
                     {
-                      tdData: "12/02/2923"
+                      tdData: "22-08-2019"
                     },
                     {
-                      tdData: "Research Methodology"
+                      tdData: "Sports Journalism"
                     },
                     {
-                      tdData: "Dr.Nishikant Jha (M.Com, ICWA, PGDM, PhD, D.Litt, Research Guide)"
+                      tdData: "Rushikesh Bamne (Sports Correspondent- Loksatta)"
                     },
                     {
-                      tdData: "TYBMS(Finance), TYBAF and M. Com"
+                      tdData: "BMM (2012-15)"
                     }
                   ],
                 },
                 {
                   trdata: [
                     {
-                      tdData: "1",
+                      tdData: "2",
                     },
                     {
-                      tdData: "12/02/2923"
+                      tdData: "21-09-2019"
                     },
                     {
-                      tdData: "Research Methodology"
+                      tdData: "Careers after BAF"
                     },
                     {
-                      tdData: "Dr.Nishikant Jha (M.Com, ICWA, PGDM, PhD, D.Litt, Research Guide)"
+                      tdData: "CA Deepak Dayanand"
                     },
                     {
-                      tdData: "TYBMS(Finance), TYBAF and M. Com"
+                      tdData: "BAF(2009-12)"
                     }
                   ],
                 },
                 {
                   trdata: [
                     {
-                      tdData: "1",
+                      tdData: "3",
                     },
                     {
-                      tdData: "12/02/2923"
+                      tdData: "20-12-2019"
                     },
                     {
-                      tdData: "Research Methodology"
+                      tdData: "Careers in Banking"
                     },
                     {
-                      tdData: "Dr.Nishikant Jha (M.Com, ICWA, PGDM, PhD, D.Litt, Research Guide)"
+                      tdData: "Olvy Fernandes (Head of Operations-Noor Bank)"
                     },
                     {
-                      tdData: "TYBMS(Finance), TYBAF and M. Com"
+                      tdData: "B.Com Alumni"
                     }
                   ],
                 },
                 {
                   trdata: [
                     {
-                      tdData: "1",
+                      tdData: "4",
                     },
                     {
-                      tdData: "12/02/2923"
+                      tdData: "01-02-2020"
                     },
                     {
-                      tdData: "Research Methodology"
+                      tdData: "Careers in Marketing"
                     },
                     {
-                      tdData: "Dr.Nishikant Jha (M.Com, ICWA, PGDM, PhD, D.Litt, Research Guide)"
+                      tdData: "Jayesh Shinde (Marketing and Brand Consultant)"
                     },
                     {
-                      tdData: "TYBMS(Finance), TYBAF and M. Com"
+                      tdData: "BMS (2004-07)"
                     }
                   ],
                 },
-
+                {
+                  trdata: [
+                    {
+                      tdData: "5",
+                    },
+                    {
+                      tdData: "01-02-2020"
+                    },
+                    {
+                      tdData: "Careers in Finance"
+                    },
+                    {
+                      tdData: "Gaurav Pandey (Finance Professional- CapGemini)"
+                    },
+                    {
+                      tdData: "BMS (2009-11)"
+                    }
+                  ],
+                },
+                {
+                  trdata: [
+                    {
+                      tdData: "6",
+                    },
+                    {
+                      tdData: "01-02-2020"
+                    },
+                    {
+                      tdData: "Careers in Human Resources"
+                    },
+                    {
+                      tdData: "Sanskruti Adivarekar (Industrial Relations Officer- Mahindra and Mahindra)"
+                    },
+                    {
+                      tdData: "BMS (2009-12)"
+                    }
+                  ],
+                },
               ]
             }
           }
@@ -578,6 +752,18 @@ export class StudentSupportComponent implements OnInit {
     {
       pageName:"anti-ragging",
       component:[
+        {
+          compId: 0,
+          compName: "image-comp1",
+          metadata: [
+            {
+              url: '../../../assets/images/Chetana Building.jpeg',
+              alt: "koi toh imaage",
+              text: "ANTI-RAGGING CELL"
+            }
+
+          ]
+        },
         {
           compId:1, 
           compName:"button and text",

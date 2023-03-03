@@ -1,7 +1,7 @@
 <div *ngFor="let data of pages[0]?.component">
    <app-image-cmp1 [AboutBanner]="data.metadata" *ngIf="data.compId===1"></app-image-cmp1>
-   <app-button-cmp1 [Text]="data.metadata.info" *ngIf="data.compId===2"></app-button-cmp1>
 
+   <app-button-cmp1 [Text]="data.metadata.info" *ngIf="data.compId===2"></app-button-cmp1>
    <div class="table-responsive" *ngIf="data.compId===3">
       <table class="table">
          <thead>
@@ -63,9 +63,8 @@
       </table>
 
    </div>
+
    <app-button-cmp1 [Text]="data.metadata.info" *ngIf="data.compId===4"></app-button-cmp1>
-
-
    <div class="accordion" *ngIf="data.compId===5" id="accordionExample">
       <div class="accordion-item">
          <h2 class="accordion-header" id="headingOne">
@@ -93,6 +92,15 @@
       </div>
    </div>
 
-
    <app-button-cmp1 [Text]="data.metadata.info" *ngIf="data.compId===6"></app-button-cmp1>
+
+   <div class="conferenceproceeding" *ngIf="data.compId===6">
+      <div class="c1">
+         <img src="assets/image/Research-Conference.png" alt="">
+         <div class="buttons">
+            <button>Broucher</button>
+            <button>Register</button>
+         </div>
+      </div>
+   </div>
 </div>
