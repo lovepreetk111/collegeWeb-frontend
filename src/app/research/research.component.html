@@ -93,14 +93,35 @@
    </div>
 
    <app-button-cmp1 [Text]="data.metadata.info" *ngIf="data.compId===6"></app-button-cmp1>
-
-   <div class="conferenceproceeding" *ngIf="data.compId===6">
-      <div class="c1">
-         <img src="assets/image/Research-Conference.png" alt="">
-         <div class="buttons">
-            <button>Broucher</button>
-            <button>Register</button>
+   <div class="container">
+   <div class="row" *ngIf="data.compId===7">
+      <div class="card col-md-5 col-sm-12  col-xs-12" >
+         <div class="img-container">
+            <img src="./assets/images/image 2.svg" alt="">
+            
          </div>
+       <div class="card-actiond d-flex justify-content-between">
+         <button class="btn-confrence">Broucher</button>
+         <button class="btn-confrence">Register</button>
+
+       </div>
+       
       </div>
+      <div class="col-md-2 d-sm-none d-md-block "></div>
+
+      <div class="card col-md-5 col-sm-12 col-xs-12" >
+         <div class="img-container">
+            <img src="./assets/images/image 2.svg" alt="">
+            
+         </div>
+       <div class="card-actiond d-flex justify-content-between">
+         <button class="btn-confrence">Broucher</button>
+         <button class="btn-confrence">Register</button>
+
+       </div>
+
+      </div>
+
    </div>
+</div>
 </div>
