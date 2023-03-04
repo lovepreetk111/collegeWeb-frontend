@@ -85,8 +85,8 @@ export class CourseSub1Component implements OnInit {
             {
 
               text: "Arts",
-              text1: "The B.Sc. IT programme of the University of Mumbai is designed to provide basic inputs for abroad understanding of information technology and its interfaces. The focus is on information technology and IT Management. Today smart, successful businesses use IT to give them an extra-edge to stay ahead of the competition. IT is soon becoming s ‘driver’ rather than an ‘enabler’ of business. It is used for processes like office Automation, Management information",
-              text2: "<li>Program Outcome : To apply the IT skills and knowledge acquired in managing and solving real world problems within their work domain.<br> <li> Program Specific Outcome : To recognize the need for and have the preparation and ability to engage and enhance the skills onto the next level of computing.<br> <li> Course Outcome : Enabling and equipping the students with technological skills as per the industry expectation.<br> <li> Student Vision : To prepare a workforce of professionals who exhibit leadership by creating a platform of opportunities which will help them shape themselves as future entrepreneurs. ",
+              text1: "Arts subjects include Economics, History, Political Science, Geography, Sociology, Philosophy, Psychology, Computer Science, Hindi, Regional Language, etc. There are plenty of careers after Arts stream, which range from Journalism and Literary Studies to Law and Hotel Management.",
+              // text2: "<li>Program Outcome : To apply the IT skills and knowledge acquired in managing and solving real world problems within their work domain.<br> <li> Program Specific Outcome : To recognize the need for and have the preparation and ability to engage and enhance the skills onto the next level of computing.<br> <li> Course Outcome : Enabling and equipping the students with technological skills as per the industry expectation.<br> <li> Student Vision : To prepare a workforce of professionals who exhibit leadership by creating a platform of opportunities which will help them shape themselves as future entrepreneurs. ",
               text3: "Eligibility Criteria",
               text4: "<li> A candidate for being eligible for admission to the degree Course of Bachelor of Science Information Technology shall have passed XII Standard Examination of the Maharashtra board of Higher Secondary Education or its equivalent with Mathematic and Statistics as one of the subject and one should not have secured less than 35% marks in aggregate for open category and Reserved category candidates.<br> <li> Candidate who have passed Diploma (Three years after S.S.C.- Xth Std.) in Information Technology /Computer technology/ Computer Engineering/ Computer Science / Electrical, electronics and video Engineering and allied branches/ Mechanical and ALLIED Branches/ Civil and Allied Branches are eligible for direct admission to the second year of the B.Sc.(I.T) degree Education course. However, the Diploma should have recognized by the Board of Technical Education or any other recognized Government Body. Minimum marks required 35% aggregate for open reserved category candidates<br>",
               text5: "OR",
@@ -94,12 +94,34 @@ export class CourseSub1Component implements OnInit {
               text7: "<li> FYBScIT_First Year_Sem 1and 2_2016_17<br> <li> SYBScIT_Second Year__Sem 3and 4_2017_18<br> <li> TYBScIT_Third Year_Sem 5and 6_2018_19<br>",
               text8: "Duration of the programme and related information:",
               text9: "<li> The programme is full time, consisting of six semester spread over three years.<br> <li> The course consists of 30 modules comprising 30 theory papers and 01 project.<br> <li> As per the University guidelines, degree will be conferred under “Choice Based Credit System” with 20 Credit Points per Semester and 10 Point Grading System<br> <li> A total number of lectures per course (subject) shall be a minimum of 50 and a maximum of 60, each of 50 minutes duration.<br>",
-              text10: "BScIT SYLLABUS MUMBAI UNIVERSITY",
+              text10: "ARTS SYLLABUS MUMBAI UNIVERSITY",
               link: "https://mu.ac.in/wp-content/uploads/2021/10/B.Sc.I.T-Syllabus-FY-SY-TY.pdf",
               url: "assets/images/FACULTY.svg",
               alt: "don",
               text11: "MR. SARAVANAN REDDY",
-              text12: "HOD,Arts"
+              text12: "HOD,Arts",
+              table: [
+                {
+                  id: 1,
+                  category: "Eligible for admission",
+                  criteria: "X Passed",
+                },
+                {
+                  id: 2,
+                  category: "Board",
+                  criteria: "SSC or equivalent exam with English as one of the subjects.",
+                },
+                {
+                  id: 3,
+                  category: "Marks",
+                  criteria: "Not less than 35%",
+                },
+                {
+                  id: 4,
+                  category: "Category",
+                  criteria: "Open and Reserved",
+                }
+              ],
             }
           },
         },
@@ -180,8 +202,8 @@ export class CourseSub1Component implements OnInit {
             {
 
               text: "Commerce",
-              text1: "The B.Sc. IT programme of the University of Mumbai is designed to provide basic inputs for abroad understanding of information technology and its interfaces. The focus is on information technology and IT Management. Today smart, successful businesses use IT to give them an extra-edge to stay ahead of the competition. IT is soon becoming s ‘driver’ rather than an ‘enabler’ of business. It is used for processes like office Automation, Management information",
-              text2: "<li>Program Outcome : To apply the IT skills and knowledge acquired in managing and solving real world problems within their work domain.<br> <li> Program Specific Outcome : To recognize the need for and have the preparation and ability to engage and enhance the skills onto the next level of computing.<br> <li> Course Outcome : Enabling and equipping the students with technological skills as per the industry expectation.<br> <li> Student Vision : To prepare a workforce of professionals who exhibit leadership by creating a platform of opportunities which will help them shape themselves as future entrepreneurs. ",
+              text1: "Commerce stream is great for those students who are serious about pursuing a career in finance, accounts, chartered accountancy, economics, banking, business and management. Commerce course covers basically accounting, economics and related subjects relevant to trade and business.",
+              // text2: "<li>Program Outcome : To apply the IT skills and knowledge acquired in managing and solving real world problems within their work domain.<br> <li> Program Specific Outcome : To recognize the need for and have the preparation and ability to engage and enhance the skills onto the next level of computing.<br> <li> Course Outcome : Enabling and equipping the students with technological skills as per the industry expectation.<br> <li> Student Vision : To prepare a workforce of professionals who exhibit leadership by creating a platform of opportunities which will help them shape themselves as future entrepreneurs. ",
               text3: "Eligibility Criteria",
               text4: "<li> A candidate for being eligible for admission to the degree Course of Bachelor of Science Information Technology shall have passed XII Standard Examination of the Maharashtra board of Higher Secondary Education or its equivalent with Mathematic and Statistics as one of the subject and one should not have secured less than 35% marks in aggregate for open category and Reserved category candidates.<br> <li> Candidate who have passed Diploma (Three years after S.S.C.- Xth Std.) in Information Technology /Computer technology/ Computer Engineering/ Computer Science / Electrical, electronics and video Engineering and allied branches/ Mechanical and ALLIED Branches/ Civil and Allied Branches are eligible for direct admission to the second year of the B.Sc.(I.T) degree Education course. However, the Diploma should have recognized by the Board of Technical Education or any other recognized Government Body. Minimum marks required 35% aggregate for open reserved category candidates<br>",
               text5: "OR",
@@ -189,12 +211,34 @@ export class CourseSub1Component implements OnInit {
               text7: "<li> FYBScIT_First Year_Sem 1and 2_2016_17<br> <li> SYBScIT_Second Year__Sem 3and 4_2017_18<br> <li> TYBScIT_Third Year_Sem 5and 6_2018_19<br>",
               text8: "Duration of the programme and related information:",
               text9: "<li> The programme is full time, consisting of six semester spread over three years.<br> <li> The course consists of 30 modules comprising 30 theory papers and 01 project.<br> <li> As per the University guidelines, degree will be conferred under “Choice Based Credit System” with 20 Credit Points per Semester and 10 Point Grading System<br> <li> A total number of lectures per course (subject) shall be a minimum of 50 and a maximum of 60, each of 50 minutes duration.<br>",
-              text10: "BScIT SYLLABUS MUMBAI UNIVERSITY",
+              text10: "COMMERCR SYLLABUS MUMBAI UNIVERSITY",
               link: "https://mu.ac.in/wp-content/uploads/2021/10/B.Sc.I.T-Syllabus-FY-SY-TY.pdf",
               url: "assets/images/FACULTY.svg",
               alt: "don",
               text11: "MR. SARAVANAN REDDY",
-              text12: "HOD,Commerce"
+              text12: "HOD,Commerce",
+              table: [
+                {
+                  id: 1,
+                  category: "Eligible for admission",
+                  criteria: "X Passed",
+                },
+                {
+                  id: 2,
+                  category: "Board",
+                  criteria: "SSC or equivalent exam with English as one of the subjects.",
+                },
+                {
+                  id: 3,
+                  category: "Marks",
+                  criteria: "Not less than 35%",
+                },
+                {
+                  id: 4,
+                  category: "Category",
+                  criteria: "Open and Reserved",
+                }
+              ],
             }
           },
         },
@@ -275,8 +319,8 @@ export class CourseSub1Component implements OnInit {
             {
 
               text: "M.C.V.C",
-              text1: "The B.Sc. IT programme of the University of Mumbai is designed to provide basic inputs for abroad understanding of information technology and its interfaces. The focus is on information technology and IT Management. Today smart, successful businesses use IT to give them an extra-edge to stay ahead of the competition. IT is soon becoming s ‘driver’ rather than an ‘enabler’ of business. It is used for processes like office Automation, Management information",
-              text2: "<li>Program Outcome : To apply the IT skills and knowledge acquired in managing and solving real world problems within their work domain.<br> <li> Program Specific Outcome : To recognize the need for and have the preparation and ability to engage and enhance the skills onto the next level of computing.<br> <li> Course Outcome : Enabling and equipping the students with technological skills as per the industry expectation.<br> <li> Student Vision : To prepare a workforce of professionals who exhibit leadership by creating a platform of opportunities which will help them shape themselves as future entrepreneurs. ",
+              text1: "Minimum Competency andVocational Courses (MCVC). The student after passing 10th standard, instead of going for traditional courses of Arts/Commerce/Science can seek admission for these Job-oriented courses.These courses are of two years duration i.e. of 10+2 pattern. ",
+              // text2: "<li>Program Outcome : To apply the IT skills and knowledge acquired in managing and solving real world problems within their work domain.<br> <li> Program Specific Outcome : To recognize the need for and have the preparation and ability to engage and enhance the skills onto the next level of computing.<br> <li> Course Outcome : Enabling and equipping the students with technological skills as per the industry expectation.<br> <li> Student Vision : To prepare a workforce of professionals who exhibit leadership by creating a platform of opportunities which will help them shape themselves as future entrepreneurs. ",
               text3: "Eligibility Criteria",
               text4: "<li> A candidate for being eligible for admission to the degree Course of Bachelor of Science Information Technology shall have passed XII Standard Examination of the Maharashtra board of Higher Secondary Education or its equivalent with Mathematic and Statistics as one of the subject and one should not have secured less than 35% marks in aggregate for open category and Reserved category candidates.<br> <li> Candidate who have passed Diploma (Three years after S.S.C.- Xth Std.) in Information Technology /Computer technology/ Computer Engineering/ Computer Science / Electrical, electronics and video Engineering and allied branches/ Mechanical and ALLIED Branches/ Civil and Allied Branches are eligible for direct admission to the second year of the B.Sc.(I.T) degree Education course. However, the Diploma should have recognized by the Board of Technical Education or any other recognized Government Body. Minimum marks required 35% aggregate for open reserved category candidates<br>",
               text5: "OR",
@@ -284,12 +328,34 @@ export class CourseSub1Component implements OnInit {
               text7: "<li> FYBScIT_First Year_Sem 1and 2_2016_17<br> <li> SYBScIT_Second Year__Sem 3and 4_2017_18<br> <li> TYBScIT_Third Year_Sem 5and 6_2018_19<br>",
               text8: "Duration of the programme and related information:",
               text9: "<li> The programme is full time, consisting of six semester spread over three years.<br> <li> The course consists of 30 modules comprising 30 theory papers and 01 project.<br> <li> As per the University guidelines, degree will be conferred under “Choice Based Credit System” with 20 Credit Points per Semester and 10 Point Grading System<br> <li> A total number of lectures per course (subject) shall be a minimum of 50 and a maximum of 60, each of 50 minutes duration.<br>",
-              text10: "BScIT SYLLABUS MUMBAI UNIVERSITY",
+              text10: "M.C.V.C SYLLABUS MUMBAI UNIVERSITY",
               link: "https://mu.ac.in/wp-content/uploads/2021/10/B.Sc.I.T-Syllabus-FY-SY-TY.pdf",
               url: "assets/images/FACULTY.svg",
               alt: "don",
               text11: "MR. SARAVANAN REDDY",
-              text12: "HOD,M.C.V.C"
+              text12: "HOD,M.C.V.C",
+              table: [
+                {
+                  id: 1,
+                  category: "Eligible for admission",
+                  criteria: "X Passed",
+                },
+                {
+                  id: 2,
+                  category: "Board",
+                  criteria: "SSC or equivalent exam with English as one of the subjects.",
+                },
+                {
+                  id: 3,
+                  category: "Marks",
+                  criteria: "Not less than 35%",
+                },
+                {
+                  id: 4,
+                  category: "Category",
+                  criteria: "Open and Reserved",
+                }
+              ],
             }
           },
         },

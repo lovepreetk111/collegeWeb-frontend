@@ -1,5 +1,7 @@
 <div *ngIf="supportdata">
     <div class="gapping" *ngFor="let data of pages[0].component">
+        <app-image-cmp1 [AboutBanner]="data.metadata" *ngIf="data.compId===0"></app-image-cmp1>
+
         <app-button-cmp1 [Text]="data.metadata.antiHeader" *ngIf="data.compId === 1"></app-button-cmp1>
         <app-right-txt-left-img1 [details]="data.metadata.antiData" *ngIf="data.compId === 1"></app-right-txt-left-img1>
 
@@ -59,6 +61,7 @@
 
 <div *ngIf="workshopData">
     <div class="workshop" *ngFor="let data of pages[3]?.component">
+        <app-image-cmp1 [AboutBanner]="data.metadata" *ngIf="data.compId===0"></app-image-cmp1>
         <app-button-cmp1 [Text]="data.metadata" *ngIf="data.compId === 1"></app-button-cmp1>
         <app-place-table [tableData]="data.metadata" *ngIf="data.compId === 2"></app-place-table>
         <app-button-cmp1 [Text]="data.metadata.header" *ngIf="data.compId===3"></app-button-cmp1>
@@ -72,6 +75,7 @@
 
 <div *ngIf="antiraggingData">
     <div class="anti-ragging" *ngFor="let data of pages[4]?.component">
+        <app-image-cmp1 [AboutBanner]="data.metadata" *ngIf="data.compId===0"></app-image-cmp1>
         <app-button-cmp1 [Text]="data.metadata.header" *ngIf="data.compId===1"></app-button-cmp1>
         <app-text-cmp1 [datas]="data.metadata.text" *ngIf="data.compId===1"></app-text-cmp1>
         <app-accordian-dropdwn [DropDownData]="data.metadata" *ngIf="data.compId===2"></app-accordian-dropdwn>
