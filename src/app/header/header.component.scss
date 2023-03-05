@@ -72,6 +72,7 @@ header {
                             text-decoration: none;
                         color: black;
                         &:hover{
+                            font-size: medium;
                             color: blue;
                         }
                     }
@@ -98,6 +99,9 @@ header {
                 .p-element{
                         background-color: white !important;
                     margin-left: 30%;
+                }
+                .active{
+                    color: blue;
                 }
             }
         }
