@@ -76,8 +76,14 @@
 <div *ngIf="antiraggingData">
     <div class="anti-ragging" *ngFor="let data of pages[4]?.component">
         <app-image-cmp1 [AboutBanner]="data.metadata" *ngIf="data.compId===0"></app-image-cmp1>
+        
         <app-button-cmp1 [Text]="data.metadata.header" *ngIf="data.compId===1"></app-button-cmp1>
         <app-text-cmp1 [datas]="data.metadata.text" *ngIf="data.compId===1"></app-text-cmp1>
+
         <app-accordian-dropdwn [DropDownData]="data.metadata" *ngIf="data.compId===2"></app-accordian-dropdwn>
+
+        <app-accordian-dropdwn [DropDownData]="data.metadata" *ngIf="data.compId===3"></app-accordian-dropdwn>
+
+        <app-accordian-dropdwn [DropDownData]="data.metadata" *ngIf="data.compId===4"></app-accordian-dropdwn>
     </div>
 </div>

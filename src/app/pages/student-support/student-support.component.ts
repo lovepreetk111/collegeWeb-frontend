@@ -749,6 +749,9 @@ export class StudentSupportComponent implements OnInit {
 
       ]
     },
+
+
+
     {
       pageName:"anti-ragging",
       component:[
@@ -777,21 +780,95 @@ export class StudentSupportComponent implements OnInit {
           }
         },
         {
-          compId:2,
-          compName:"accordian",
-          metadata:{
-            AccordianData:[
-              {
-                Title:"Duties",
-                SubTitles:[
-                  {
-                    title:"<li>To ensure overall disciplined environment in the College.</li><li>To initiate timely action against erring students.</li><li>To sensitise students about the evils of ragging and its prevention in the College Campus by organizingtalks/ programmes etc.</li><li> To address complaints about ragging as per the Govt. and University procedures.</li><li>To maintain records of the cases investigated and submit the same to the IQAC Committee.</li>"
-                  }
-                ]
-              }
-            ]
-          }
-        }
+          compId:2, 
+          compName:"button and text",
+          metadata:[
+            {
+              AccordianData: [
+                {
+                  Title: 'Anti-Ragging Cell Incharge',
+                  SubTitles:[
+                    {
+                      id:1,
+                      title:"Arts",
+                      link:"course/arts"
+                    },
+                    {
+                      id:2,
+                      title:"Commerce",
+                      link:"course/comm"
+                    },
+                    {
+                      id:3,
+                      title:"MCVC",
+                      link:"course/mcvc"
+                    }
+                  ]
+                },
+              ]
+            }
+          ]
+        },
+        {
+          compId:3, 
+          compName:"button and text",
+          metadata:[
+            {
+              AccordianData: [
+                {
+                  Title: 'Duties',
+                  SubTitles:[
+                    {
+                      id:1,
+                      title:"Arts",
+                      link:"course/arts"
+                    },
+                    {
+                      id:2,
+                      title:"Commerce",
+                      link:"course/comm"
+                    },
+                    {
+                      id:3,
+                      title:"MCVC",
+                      link:"course/mcvc"
+                    }
+                  ]
+                },
+              ]
+            }
+          ]
+        },
+        {
+          compId:4, 
+          compName:"button and text",
+          metadata:[
+            {
+              AccordianData: [
+                {
+                  Title: 'Anti-Ragging Helpine',
+                  SubTitles:[
+                    {
+                      id:1,
+                      title:"Arts",
+                      link:"course/arts"
+                    },
+                    {
+                      id:2,
+                      title:"Commerce",
+                      link:"course/comm"
+                    },
+                    {
+                      id:3,
+                      title:"MCVC",
+                      link:"course/mcvc"
+                    }
+                  ]
+                },
+              ]
+            }
+          ]
+        },
       ]
     }
   ]
