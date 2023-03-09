@@ -684,10 +684,38 @@ export class CourseSub1Component implements OnInit {
               text9: "<li> The programme is full time, consisting of six semesters spread over three years<br> <li> The course consists of 40 modules comprising 39 theory papers and 01 projects<br> <li> A total number of lectures per course (subject) shall be a minimum of 50 and a maximum of 60, each of 50 minutes duration.",
               text10: "B.M.S. SYLLABUS MUMBAI UNIVERSITY",
               link: "https://archive.mu.ac.in/ug144.pdf",
-              url: "assets/images/TQ.png",
-              alt: "don",
-              text11: "MS. TAQDEES SHAIKH",
-              text12: "ASST.CHIEF CO-ORDINATOR , HOD Bachelor Of Management Studies",
+              facultyData: [
+                {
+                  url: "assets/images/FACULTY.svg",
+                  alt: "don",
+                  facultyName: "MS. TAQDEES SHAIKH",
+                  facultyDetails: "ASST.CHIEF CO-ORDINATOR ,<br> HOD Bachelor Of Management Studies"
+                },
+                {
+                  url: "assets/images/FACULTY.svg",
+                  alt: "don",
+                  facultyName: "Prof.Amisha Merchant",
+                  facultyDetails: "Department of Bms and bscIT"
+                },
+                {
+                  url: "assets/images/FACULTY.svg",
+                  alt: "don",
+                  facultyName: "Prof.Shubham Shinde",
+                  facultyDetails: "Depratment of Bmm and bms"
+                },
+                {
+                  url: "assets/images/FACULTY.svg",
+                  alt: "don",
+                  facultyName: "Prof.Praglab Jha",
+                  facultyDetails: "Department of BMM , bms and baf"
+                },
+                {
+                  url: "assets/images/FACULTY.svg",
+                  alt: "don",
+                  facultyName: "Prof.Pranali Chandanshiv",
+                  facultyDetails: "Department of bmm , bms and baf"
+                }
+              ],
               table: [
                 {
                   id: 1,
@@ -802,10 +830,26 @@ export class CourseSub1Component implements OnInit {
               text9: "<li> The programme is full time, consisting of six semester spread over three years.<br> <li> The course consists of 40 modules comprising 39 theory papers and 01 projects.<br> <li> As per the University guidelines, degree will be conferred under “Choice  Based Credit System” with 20 Credit Points per Semester and 10 Point Grading System.<br> <li> A total number of lectures per course (subject) shall be a minimum of 50 and a maximum of 60, each of 50 minutes duration.<br>",
               text10: "B.A.F. SYLLABUS MUMBAI UNIVERSITY",
               link: "https://old.mu.ac.in/wp-content/uploads/2016/06/4.77-B.Com-Accounting-and-Finance-Semester-I-and-II-Syllabus-with-Course-Structure.pdf",
-              url: "assets/images/FACULTY.svg",
-              alt: "don",
-              text11: "MS. DEBJANI SINGHA",
-              text12: "HOD,B.COM In ACCOUNTING & FINANCE"
+              facultyData: [
+                {
+                  url: "assets/images/FACULTY.svg",
+                  alt: "don",
+                  facultyName: "MS. DEBJANI SINGHA",
+                  facultyDetails: "HOD,B.COM In ACCOUNTING & FINANCE"
+                },
+                {
+                  url: "assets/images/FACULTY.svg",
+                  alt: "don",
+                  facultyName: "Prof.Praglab Jha",
+                  facultyDetails: "Department of BMM , bms and baf"
+                },
+                {
+                  url: "assets/images/FACULTY.svg",
+                  alt: "don",
+                  facultyName: "Prof.Pranali Chandanshiv",
+                  facultyDetails: "Department of bmm , bms and baf"
+                }
+              ],
             }
           },
         },
@@ -895,11 +939,33 @@ export class CourseSub1Component implements OnInit {
               text8: "Duration of the programme and related information:",
               text9: "<li> The programme is full time, consisting of six semester spread over three years.<br> <li> The course consists of 36 module<br> <li> As per the University guidelines, degree will be conferred under “Choice Based Credit System” with 20 Credit Points per Semester and 10 Point Grading System<br> <li>A total number of lectures per course (subject) shall be a minimum of 50 and a maximum of 60, each of 50 minutes duration.",
               text10: "B.A.M.M.C. SYLLABUS MUMBAI UNIVERSITY",
-              link: "https://mu.ac.in/wp-content/uploads/2020/01/4.8-AND-4.9BAMMC-SYLLABUS-Sem-3-4-5-6-July-25-2019.pdf",
-              url: "assets/images/FACULTY.svg",
-              alt: "don",
-              text11: "?",
-              text12: "HOD,Bachelor Of Arts In Multimedia And Mass Communication",
+              link: "https://mu.ac.in/wp-content/uploads/2020/01/4.8-AND-4.9BAMMC-SYLLABUS-Sem-3-4-5-6-July-25-2019.pdf",              
+              facultyData: [
+                {
+                  url: "assets/images/FACULTY.svg",
+                  alt: "don",
+                  facultyName: "Prof. Sabir Mujhavar",
+                  facultyDetails: "HOD,Bachelor Of Arts In Multimedia And Mass Communication"
+                },
+                {
+                  url: "assets/images/FACULTY.svg",
+                  alt: "don",
+                  facultyName: "Prof.Shubham Shinde",
+                  facultyDetails: "Depratment of Bmm and bms"
+                },
+                {
+                  url: "assets/images/FACULTY.svg",
+                  alt: "don",
+                  facultyName: "Prof.Praglab Jha",
+                  facultyDetails: "Department of BMM , bms and baf"
+                },
+                {
+                  url: "assets/images/FACULTY.svg",
+                  alt: "don",
+                  facultyName: "Prof.Pranali Chandanshiv",
+                  facultyDetails: "Department of bmm , bms and baf"
+                }
+              ],
               table: [
                 {
                   id: 1,
@@ -1020,10 +1086,22 @@ export class CourseSub1Component implements OnInit {
                */
               text10: "BScIT SYLLABUS MUMBAI UNIVERSITY",
               link: "https://mu.ac.in/wp-content/uploads/2021/10/B.Sc.I.T-Syllabus-FY-SY-TY.pdf",
-              url: "assets/images/FACULTY.svg",
-              alt: "don",
-              text11: "MR. SARAVANAN REDDY",
-              text12: "HOD,B.Sc In Information Technology",
+              facultyData: [
+                {
+                  url: "assets/images/FACULTY.svg",
+                  alt: "don",
+                  facultyName: "Dr. SARAVANAN REDDY",
+                  facultyDetails: "HOD,B.Sc In Information Technology"
+                },
+                {
+                  url: "assets/images/FACULTY.svg",
+                  alt: "don",
+                  facultyName: "Prof.Amisha Merchant",
+                  facultyDetails: "Department of Bms and bscIT"
+                }
+              ],
+              
+              
               table: [
                 {
                   id: 1,
