@@ -83,7 +83,6 @@ export class CourseSub1Component implements OnInit {
             },
             courseDetails:
             {
-
               text: "Arts",
               text1: "Arts subjects include Economics, History, Political Science, Geography, Sociology, Philosophy, Psychology, Computer Science, Hindi, Regional Language, etc. There are plenty of careers after Arts stream, which range from Journalism and Literary Studies to Law and Hotel Management.",
               // text2: "<li>Program Outcome : To apply the IT skills and knowledge acquired in managing and solving real world problems within their work domain.<br> <li> Program Specific Outcome : To recognize the need for and have the preparation and ability to engage and enhance the skills onto the next level of computing.<br> <li> Course Outcome : Enabling and equipping the students with technological skills as per the industry expectation.<br> <li> Student Vision : To prepare a workforce of professionals who exhibit leadership by creating a platform of opportunities which will help them shape themselves as future entrepreneurs. ",
@@ -96,10 +95,14 @@ export class CourseSub1Component implements OnInit {
               text9: "<li> The programme is full time, consisting of six semester spread over three years.<br> <li> The course consists of 30 modules comprising 30 theory papers and 01 project.<br> <li> As per the University guidelines, degree will be conferred under “Choice Based Credit System” with 20 Credit Points per Semester and 10 Point Grading System<br> <li> A total number of lectures per course (subject) shall be a minimum of 50 and a maximum of 60, each of 50 minutes duration.<br>",
               text10: "ARTS SYLLABUS MUMBAI UNIVERSITY",
               link: "https://mu.ac.in/wp-content/uploads/2021/10/B.Sc.I.T-Syllabus-FY-SY-TY.pdf",
-              url: "assets/images/FACULTY.svg",
-              alt: "don",
-              text11: "MR. SARAVANAN REDDY",
-              text12: "HOD,Arts",
+              facultyData: [
+                {
+                  url: "assets/images/FACULTY.svg",
+                  alt: "don",
+                  facultyName: "Reddy sir",
+                  facultyDetails: ""
+                }
+              ],
               table: [
                 {
                   id: 1,
@@ -213,10 +216,14 @@ export class CourseSub1Component implements OnInit {
               text9: "<li> The programme is full time, consisting of six semester spread over three years.<br> <li> The course consists of 30 modules comprising 30 theory papers and 01 project.<br> <li> As per the University guidelines, degree will be conferred under “Choice Based Credit System” with 20 Credit Points per Semester and 10 Point Grading System<br> <li> A total number of lectures per course (subject) shall be a minimum of 50 and a maximum of 60, each of 50 minutes duration.<br>",
               text10: "COMMERCR SYLLABUS MUMBAI UNIVERSITY",
               link: "https://mu.ac.in/wp-content/uploads/2021/10/B.Sc.I.T-Syllabus-FY-SY-TY.pdf",
-              url: "assets/images/FACULTY.svg",
-              alt: "don",
-              text11: "MR. SARAVANAN REDDY",
-              text12: "HOD,Commerce",
+              facultyData: [
+                {
+                  url: "assets/images/FACULTY.svg",
+                  alt: "don",
+                  facultyName: "Reddy sir",
+                  facultyDetails: ""
+                }
+              ],
               table: [
                 {
                   id: 1,
@@ -330,10 +337,14 @@ export class CourseSub1Component implements OnInit {
               text9: "<li> The programme is full time, consisting of six semester spread over three years.<br> <li> The course consists of 30 modules comprising 30 theory papers and 01 project.<br> <li> As per the University guidelines, degree will be conferred under “Choice Based Credit System” with 20 Credit Points per Semester and 10 Point Grading System<br> <li> A total number of lectures per course (subject) shall be a minimum of 50 and a maximum of 60, each of 50 minutes duration.<br>",
               text10: "M.C.V.C SYLLABUS MUMBAI UNIVERSITY",
               link: "https://mu.ac.in/wp-content/uploads/2021/10/B.Sc.I.T-Syllabus-FY-SY-TY.pdf",
-              url: "assets/images/FACULTY.svg",
-              alt: "don",
-              text11: "MR. SARAVANAN REDDY",
-              text12: "HOD,M.C.V.C",
+              facultyData: [
+                {
+                  url: "assets/images/FACULTY.svg",
+                  alt: "don",
+                  facultyName: "Reddy sir",
+                  facultyDetails: ""
+                }
+              ],
               table: [
                 {
                   id: 1,
@@ -1004,7 +1015,7 @@ export class CourseSub1Component implements OnInit {
                */
               /*               text7: "<li> FYBScIT_First Year_Sem 1and 2_2016_17<br> <li> SYBScIT_Second Year__Sem 3and 4_2017_18<br> <li> TYBScIT_Third Year_Sem 5and 6_2018_19<br>",
  *//*               text8: "Duration of the programme and related information:",
-                                                                               */
+                                                                                            */
               /* text9: "<li> The programme is full time, consisting of six semester spread over three years.<br> <li> The course consists of 30 modules comprising 30 theory papers and 01 project.<br> <li> As per the University guidelines, degree will be conferred under “Choice Based Credit System” with 20 Credit Points per Semester and 10 Point Grading System<br> <li> A total number of lectures per course (subject) shall be a minimum of 50 and a maximum of 60, each of 50 minutes duration.<br>",
                */
               text10: "BScIT SYLLABUS MUMBAI UNIVERSITY",
@@ -1160,7 +1171,7 @@ export class CourseSub1Component implements OnInit {
               alt: "don",
               text11: "MR. SARAVANAN REDDY",
               text12: "HOD,M.COm",
-                
+
             }
           },
         },
@@ -1265,15 +1276,15 @@ export class CourseSub1Component implements OnInit {
   constructor(private activeRouter: ActivatedRoute) { }
   ngOnInit(): void {
     this.activeRouter.params.subscribe
-    ((params: any) => {
-      // this.pages = new this.pages;
-      console.log(params)
-      const page = params.coursename;
-      const pageIndex = this.pages.findIndex
-      (pg => pg.pageName === page)
-      console.log(this.pages)
-      this.currentPageIndex = pageIndex;
-    })
+      ((params: any) => {
+        // this.pages = new this.pages;
+        console.log(params)
+        const page = params.coursename;
+        const pageIndex = this.pages.findIndex
+          (pg => pg.pageName === page)
+        console.log(this.pages)
+        this.currentPageIndex = pageIndex;
+      })
   }
 
 }

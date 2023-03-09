@@ -65,14 +65,12 @@
     </li>
     <li [ngbNavItem]="4">
       <a ngbNavLink>FACULTY</a>
-      <ng-template ngbNavContent>
+      <ng-template ngbNavContent *ngFor="let data of details.facultyData">
         <div class="facultyinfo container">
-          <img [src]="details.url" [alt]="details.alt" class="facultyimage">
+          <img [src]="data.url" [alt]="data.alt" class="facultyimage">
           <div class="facultyname">
-            <h2>{{details.text11}}</h2>
-            <p>{{details.text12}}</p>
-            <p>{{details.text12}}</p>
-            <p>{{details.text12}}</p>
+            <h2>{{data.facultyName}}</h2>
+            <p [innerHTML]="data.facultyDetails"></p>
           </div>
         </div>
       </ng-template>
