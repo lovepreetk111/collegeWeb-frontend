@@ -54,6 +54,7 @@ import {TableModule} from 'primeng/table';
 import { ResearchComponent } from './research/research.component';
 import { ExaminationComponent } from './pages/examination/examination.component';
 import { LeftTxtRightTextComponent } from './component/left-txt-right-text/left-txt-right-text.component';
+import { LoaderComponent } from './component/loader/loader.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -99,6 +100,7 @@ import { LeftTxtRightTextComponent } from './component/left-txt-right-text/left-
     ResearchComponent,
     ExaminationComponent,
     LeftTxtRightTextComponent,
+    LoaderComponent,
   
   ],
   imports: [
