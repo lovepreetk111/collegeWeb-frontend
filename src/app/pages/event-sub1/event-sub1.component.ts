@@ -270,7 +270,6 @@ export class EventSub1Component implements OnInit {
           compId: 6,
           compName: 'tab-view',
           metadata: [
-            // courseDetails:
             {
               text: "Arts",
               text1: "The B.Sc. IT programme of the University of Mumbai is designed to provide basic inputs for abroad understanding of information technology and its interfaces. The focus is on information technology and IT Management. Today smart, successful businesses use IT to give them an extra-edge to stay ahead of the competition. IT is soon becoming s ‘driver’ rather than an ‘enabler’ of business. It is used for processes like office Automation, Management information",
@@ -291,8 +290,6 @@ export class EventSub1Component implements OnInit {
             }
           ]
         },
-
-
       ],
 
     },

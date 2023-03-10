@@ -207,14 +207,16 @@ export interface IcourseDetail {
   text9: string;
   text10: string;
   link: string;
-  url: string;
-  alt: string;
-  text11: string;
-  text12: string;
+  facultyData:IFaculty[]
   table: aboutCouse[];
   table2: aboutCouse[];
 }
-
+export interface IFaculty{
+  url: string;
+  alt: string;
+  facultyName:string
+  facultyDetails:string
+}
 
 export interface aboutCouse {
   id: string

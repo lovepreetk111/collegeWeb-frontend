@@ -64,7 +64,7 @@
                         <p-button type="button" (click)="visibleSidebar1 = true" icon="pi pi-align-justify"
                             class="btn align-items-end"></p-button>
                         <p-sidebar [(visible)]="visibleSidebar1"
-                            [style]="{mwidth:'12em', borderTopRightRadius:'18px', borderBottomRightRadius:'18px', background:'skyblue'}"
+                            [style]="{mwidth:'12em', borderTopRightRadius:'18px', borderBottomRightRadius:'18px'}"
                             [baseZIndex]="1000">
 
                             <div class="collapse navbar-collapse navlinks" id="navbarNavDropdown1">
@@ -114,8 +114,8 @@
                     <!-- Level 0 : Navbar -->
                     <ul class="navbar-nav" *ngFor="let content of datas.navbar">
                         <li class="nav-item dropdown" *ngIf="content.child">
-                            <a class="nav-link dropdown-toggle" [routerLink]="content.link" id="navbarDropdownMenuLink"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> {{content.nav}} </a>
+                            <a class="nav-link dropdown-toggle " [routerLink]="content.link" id="navbarDropdownMenuLink"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" [routerLinkActive]="['active']"> {{content.nav}} </a>
                             <!-- Level 1 : Dropdown -->
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                 <div *ngFor="let child of content.child">

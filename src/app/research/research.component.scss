@@ -1,34 +1,76 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
 
-.table{
+.table {
     margin: 0 auto;
     margin-top: 10px;
     width: 80%;
     border: 1px solid #003399;
-    th{
-    background: linear-gradient(180deg, #03359A 0%, #4D70B8 100%);
-    color: #FFFFFF;
-    font-family: 'Ubuntu';
-    border: 1px solid #003399;
 
-    tbody{
-        tr{
-            border: 1px solid #003399;
-        td{
-            border: 1px solid #003399;
-          }
+    th {
+        background: linear-gradient(180deg, #03359A 0%, #4D70B8 100%);
+        color: #FFFFFF;
+        font-family: 'Ubuntu';
+        border: 1px solid #003399;
+
+        tbody {
+            tr {
+                border: 1px solid #003399;
+
+                td {
+                    border: 1px solid #003399;
+                }
+            }
         }
-}
-}
-     
+    }
+
 }
 
-.accordion{
+.accordion {
+    width: 80%;
     margin-top: 10px;
-    .accordion-button{
-    background: linear-gradient(180deg, #03359A 0%, #4D70B8 100%);
-    color: #FFFFFF;
-    font-family: 'Ubuntu';
-}
+
+    .accordion-button {
+        background: linear-gradient(180deg, #03359A 0%, #4D70B8 100%);
+        color: #FFFFFF;
+        font-family: 'Ubuntu';
+    }
 }
 
+.conferenceproceeding {
+    img {
+        width: 300px;
+    }
+
+    button {
+        width: 200px;
+        height: 50px;
+        border: none;
+        border-radius: 20px;
+        font-size: medium;
+        font-weight: 500;
+        background-color: #003399;
+        color: white;
+        margin-right: 10px;
+    }
+}
+
+.card {
+
+    margin-top: 20px;
+    border: 0;
+}
+
+.btn-confrence {
+    width: 110px;
+    background: linear-gradient(180deg, #03359A 0%, #4D70B8 100%);
+    border: 1px solid #003399;
+    border-radius: 10px;
+    color: #FFFFFF;
+    margin-top: 30px;
+    font-size: 15px;
+}
+
+
+.img-container img {
+    width: 100%;
+}
