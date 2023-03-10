@@ -15,8 +15,6 @@ import { PlacementComponent } from './pages/placement/placement.component';
 import { ResearchComponent } from './research/research.component';
 
 import { StudentSupportComponent } from './pages/student-support/student-support.component';
-import { PlaceTableComponent } from './component/place-table/place-table.component';
-import { InfocardComponent } from './component/infocard/infocard.component';
 
 
 const routes: Routes = [

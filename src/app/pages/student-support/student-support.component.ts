@@ -749,9 +749,6 @@ export class StudentSupportComponent implements OnInit {
 
       ]
     },
-
-
-
     {
       pageName:"anti-ragging",
       component:[
