@@ -100,7 +100,8 @@ header {
 
                 .dropdown-submenu {
                     position: relative;
-                    a{
+
+                    a {
                         color: gray;
                     }
                 }
@@ -109,14 +110,15 @@ header {
                     top: 0;
                     left: 100%;
                     margin-top: -6px;
-                    a{
-                        color:gray
+
+                    a {
+                        color: gray
                     }
                 }
 
-                .dropdown-submenu .dropdown-menu .dropdown-item{
-                    &:hover{
-                        color:black
+                .dropdown-submenu .dropdown-menu .dropdown-item {
+                    &:hover {
+                        color: black
                     }
                 }
 
@@ -131,13 +133,14 @@ header {
                 margin-left: 30%;
             }
 
-            .active {
-                color: blue;
-            }
+
         }
+
     }
 
-
+    .active {
+        color: blue;
+    }
 }
 
 

@@ -64,6 +64,7 @@
       </ng-template>
     </li>
     <li [ngbNavItem]="4">
+      {{details.facultyData|json}}
       <a ngbNavLink>FACULTY</a>
       <ng-template ngbNavContent *ngFor="let data of details.facultyData">
         <div class="facultyinfo container">

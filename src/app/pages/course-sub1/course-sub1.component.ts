@@ -1015,7 +1015,7 @@ export class CourseSub1Component implements OnInit {
                */
               /*               text7: "<li> FYBScIT_First Year_Sem 1and 2_2016_17<br> <li> SYBScIT_Second Year__Sem 3and 4_2017_18<br> <li> TYBScIT_Third Year_Sem 5and 6_2018_19<br>",
  *//*               text8: "Duration of the programme and related information:",
-                                                                                            */
+                                                                                                                      */
               /* text9: "<li> The programme is full time, consisting of six semester spread over three years.<br> <li> The course consists of 30 modules comprising 30 theory papers and 01 project.<br> <li> As per the University guidelines, degree will be conferred under “Choice Based Credit System” with 20 Credit Points per Semester and 10 Point Grading System<br> <li> A total number of lectures per course (subject) shall be a minimum of 50 and a maximum of 60, each of 50 minutes duration.<br>",
                */
               text10: "BScIT SYLLABUS MUMBAI UNIVERSITY",

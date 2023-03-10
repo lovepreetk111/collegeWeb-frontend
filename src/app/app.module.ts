@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -54,6 +53,7 @@ import {TableModule} from 'primeng/table';
 import { ResearchComponent } from './research/research.component';
 import { ExaminationComponent } from './pages/examination/examination.component';
 import { LeftTxtRightTextComponent } from './component/left-txt-right-text/left-txt-right-text.component';
+import { ModalComponent } from './component/modal/modal.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -99,6 +99,7 @@ import { LeftTxtRightTextComponent } from './component/left-txt-right-text/left-
     ResearchComponent,
     ExaminationComponent,
     LeftTxtRightTextComponent,
+    ModalComponent,
   
   ],
   imports: [
