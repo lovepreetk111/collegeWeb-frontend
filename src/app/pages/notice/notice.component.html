@@ -1,10 +1,6 @@
 <div class="containers" *ngFor="let data of pages[0].component">
     <app-button-cmp1 [Text]="data.metadata.buttonData" *ngIf="data.compId === 1"></app-button-cmp1>
-   <!-- <app-modal></app-modal> -->
-    <app-modal [NoticeDetails]="data.metadata.NoticeDetails" *ngIf="data.compId === 1"></app-modal>
-</div>
-
-<div *ngFor="let data of pages[currentPageIndex].component">
-    <app-button-cmp1 *ngIf="data.compId === 2"  [Text]="data.metadata.buttonData" ></app-button-cmp1>
-    <app-modal *ngIf="data.compId === 2" [NoticeDetails]="data.metadata.NoticeDetails"></app-modal>
+    <app-modal [NoticeDetails]="data.metadata.data" *ngIf="data.compId === 1"></app-modal>
+    <app-button-cmp1 [Text]="data.metadata.buttonData" *ngIf="data.compId === 2"></app-button-cmp1>
+    <app-modal [NoticeDetails]="data.metadata.newData" *ngIf="data.compId === 2"></app-modal>
 </div>

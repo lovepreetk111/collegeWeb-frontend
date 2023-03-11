@@ -284,6 +284,7 @@ export interface Istudentsupport {
 
 /* Notice Data */
 export interface INoticeDetails {
+  header:IModalType
   currentId: string,
   noticeHeader: String,
   noticeContentName: string
@@ -297,10 +298,8 @@ export interface IModalData {
   driveLink: string,
 }
 
-export interface IModalInfo {
-  imageUrl: string,
-  imageAlt: string,
-  text: string,
+export interface IModalType {
+ dataType:string
 }
 
 export interface IcardData {

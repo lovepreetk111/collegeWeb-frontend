@@ -1,4 +1,229 @@
-  <div class="popupModule">
+<div class="main-container">
+    <div class="notice-container">
+        <div class="heading">New Notice</div>
+        
+    <div class="info-container">
+        <div class="popupModule" *ngFor="let data of NoticeDetails">
+            <button type="button" class="btn module-button" data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop2">
+                <div class="notice-heading">
+                    <p>{{data.noticeHeader}}</p>
+                    <p>{{data.createdAt}}</p>
+                </div>
+                <div class="details">
+                    <p>{{data.noticeContentName}}</p>
+                </div>
+            </button>
+
+            <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false"
+                tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog" >
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="staticBackdropLabel">{{data.noticeContentName}}</h1>
+                            <button type="button" class="btn-close " data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body" *ngIf="data.modalData">
+                          
+                            <iframe [src]="data.modalData.driveLink"  allow="autoplay"></iframe>
+                        </div>
+                        <div class="modal-footer">
+                            <div class="UplodeDate">
+                                <p>{{data.createdAt}}</p>
+                            </div>
+                            <div class="EditorsDetails">
+                                <p>{{data.createdBy}}</p>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="popupModule" >
+            <!-- Button trigger modal -->
+            <button type="button" class="btn module-button" data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop2">
+                <div class="notice-heading">
+                    <p>EXAM</p>
+                    <p>12 Jan 2022</p>
+                </div>
+                <div class="details">
+                    <p>For FY/SY internals</p>
+                </div>
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false"
+                tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                            <button type="button" class="btn-close " data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="assets/images/ChetanaDC.jpeg" onError="this.style.display = 'none';"
+                                alt="" />
+                            <p></p>
+                        </div>
+                        <div class="modal-footer">
+                            <div class="UplodeDate">
+                                <p>11/12/2022</p>
+                            </div>
+                            <div class="EditorsDetails">
+                                <p>Shubham Todankar</p>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="popupModule" >
+            <!-- Button trigger modal -->
+            <button type="button" class="btn module-button" data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop2">
+                <div class="notice-heading">
+                    <p>EXAM</p>
+                    <p>12 Jan 2022</p>
+                </div>
+                <div class="details">
+                    <p>For FY/SY internals</p>
+                </div>
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false"
+                tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                            <button type="button" class="btn-close " data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="assets/images/ChetanaDC.jpeg" onError="this.style.display = 'none';"
+                                alt="" />
+                            <p></p>
+                        </div>
+                        <div class="modal-footer">
+                            <div class="UplodeDate">
+                                <p>11/12/2022</p>
+                            </div>
+                            <div class="EditorsDetails">
+                                <p>Shubham Todankar</p>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="popupModule" >
+            <!-- Button trigger modal -->
+            <button type="button" class="btn module-button" data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop2">
+                <div class="notice-heading">
+                    <p>EXAM</p>
+                    <p>12 Jan 2022</p>
+                </div>
+                <div class="details">
+                    <p>For FY/SY internals</p>
+                </div>
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false"
+                tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                            <button type="button" class="btn-close " data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="assets/images/ChetanaDC.jpeg" onError="this.style.display = 'none';"
+                                alt="" />
+                            <p></p>
+                        </div>
+                        <div class="modal-footer">
+                            <div class="UplodeDate">
+                                <p>11/12/2022</p>
+                            </div>
+                            <div class="EditorsDetails">
+                                <p>Shubham Todankar</p>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="popupModule" >
+            <!-- Button trigger modal -->
+            <button type="button" class="btn module-button" data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop5">
+                <div class="notice-heading">
+                    <p>EXAM</p>
+                    <p>12 Jan 2022</p>
+                </div>
+                <div class="details">
+                    <p>For FY/SY internals</p>
+                </div>
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop5" data-bs-backdrop="static" data-bs-keyboard="false"
+                tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                            <button type="button" class="btn-close " data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="assets/images/ChetanaDC.jpeg" onError="this.style.display = 'none';"
+                                alt="" />
+                            <p></p>
+                        </div>
+                        <div class="modal-footer">
+                            <div class="UplodeDate">
+                                <p>11/12/2022</p>
+                            </div>
+                            <div class="EditorsDetails">
+                                <p>Shubham Todankar5555</p>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+    </div>
+    </div>
+
+    <div class="notice-container">
+        <div class="heading"> Old Notice</div>
+
+        <div class="info-container">
+
+            <div class="popupModule" >
                 <!-- Button trigger modal -->
                 <button type="button" class="btn module-button" data-bs-toggle="modal"
                     data-bs-target="#staticBackdrop2">
@@ -22,7 +247,8 @@
                                     aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                                <img src="assets/images/ChetanaDC.jpeg" onError="this.style.display = 'none';" alt="" />
+                                <img src="assets/images/ChetanaDC.jpeg" onError="this.style.display = 'none';"
+                                    alt="" />
                                 <p></p>
                             </div>
                             <div class="modal-footer">
@@ -40,7 +266,7 @@
 
             </div>
 
-            <div class="popupModule">
+            <div class="popupModule" >
                 <!-- Button trigger modal -->
                 <button type="button" class="btn module-button" data-bs-toggle="modal"
                     data-bs-target="#staticBackdrop2">
@@ -64,7 +290,8 @@
                                     aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                                <img src="assets/images/ChetanaDC.jpeg" onError="this.style.display = 'none';" alt="" />
+                                <img src="assets/images/ChetanaDC.jpeg" onError="this.style.display = 'none';"
+                                    alt="" />
                                 <p></p>
                             </div>
                             <div class="modal-footer">
@@ -82,7 +309,7 @@
 
             </div>
 
-            <div class="popupModule">
+            <div class="popupModule" >
                 <!-- Button trigger modal -->
                 <button type="button" class="btn module-button" data-bs-toggle="modal"
                     data-bs-target="#staticBackdrop2">
@@ -106,7 +333,8 @@
                                     aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                                <img src="assets/images/ChetanaDC.jpeg" onError="this.style.display = 'none';" alt="" />
+                                <img src="assets/images/ChetanaDC.jpeg" onError="this.style.display = 'none';"
+                                    alt="" />
                                 <p></p>
                             </div>
                             <div class="modal-footer">
@@ -124,10 +352,10 @@
 
             </div>
 
-            <div class="popupModule">
+            <div class="popupModule" >
                 <!-- Button trigger modal -->
                 <button type="button" class="btn module-button" data-bs-toggle="modal"
-                    data-bs-target="#staticBackdrop5">
+                    data-bs-target="#staticBackdrop2">
                     <div class="notice-heading">
                         <p>EXAM</p>
                         <p>12 Jan 2022</p>
@@ -138,7 +366,7 @@
                 </button>
 
                 <!-- Modal -->
-                <div class="modal fade" id="staticBackdrop5" data-bs-backdrop="static" data-bs-keyboard="false"
+                <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false"
                     tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
@@ -148,7 +376,8 @@
                                     aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                                <img src="assets/images/ChetanaDC.jpeg" onError="this.style.display = 'none';" alt="" />
+                                <img src="assets/images/ChetanaDC.jpeg" onError="this.style.display = 'none';"
+                                    alt="" />
                                 <p></p>
                             </div>
                             <div class="modal-footer">
@@ -156,7 +385,7 @@
                                     <p>11/12/2022</p>
                                 </div>
                                 <div class="EditorsDetails">
-                                    <p>Shubham Todankar5555</p>
+                                    <p>Shubham Todankar</p>
                                     <p></p>
                                 </div>
                             </div>
@@ -165,3 +394,50 @@
                 </div>
 
             </div>
+
+            <div class="popupModule" >
+                <!-- Button trigger modal -->
+                <button type="button" class="btn module-button" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop2">
+                    <div class="notice-heading">
+                        <p>EXAM</p>
+                        <p>12 Jan 2022</p>
+                    </div>
+                    <div class="details">
+                        <p>For FY/SY internals</p>
+                    </div>
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false"
+                    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                                <button type="button" class="btn-close " data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="assets/images/ChetanaDC.jpeg" onError="this.style.display = 'none';"alt="" />
+                                <p></p>
+                            </div>
+                            <div class="modal-footer">
+                                <div class="UplodeDate">
+                                    <p>11/12/2022</p>
+                                </div>
+                                <div class="EditorsDetails">
+                                    <p>Shubham Todankar</p>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
