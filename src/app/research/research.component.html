@@ -1,6 +1,5 @@
 <div *ngFor="let data of pages[0]?.component">
    <app-image-cmp1 [AboutBanner]="data.metadata" *ngIf="data.compId===1"></app-image-cmp1>
-
    <app-button-cmp1 [Text]="data.metadata.info" *ngIf="data.compId===2"></app-button-cmp1>
    <div class="table-responsive" *ngIf="data.compId===3">
       <table class="table">
