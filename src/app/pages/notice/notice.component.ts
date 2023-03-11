@@ -23,15 +23,15 @@ export class NoticeComponent implements OnInit {
       pageName: "Notice",
       component: [
         {
-          compId:1,
+          compId: 1,
           compname: "ButtonComp & ModalCmp",
           metadata: {
             buttonData: {
               data: "New Notices"
             },
-            NoticeDetails:[
+            data: [
               {
-                currentId:"1",
+                currentId: "3",
                 noticeHeader: "Exam",
                 noticeContentName: "TY TimeTable",
                 createdAt: "12/12/2023",
@@ -39,19 +39,25 @@ export class NoticeComponent implements OnInit {
                 modalData: {
                   driveLink: "I Frame ki aarati"
                 }
+              },
+              {
+                currentId: "4",
+                noticeHeader: "DataBase",
+              },
+              {
+                noticeHeader: "Another"
               }
             ]
-
           }
         },
         {
-          compId:2,
-          compName:"cmp and ModalCmp",
-          metadata:{
+          compId: 2,
+          compName: "cmp and ModalCmp",
+          metadata: {
             buttonData: {
               data: "Old Notices"
             },
-            noticeDetails:[
+            newData: [
               {
                 noticeHeader: "Exam",
                 noticeContentName: "TY TimeTable",
@@ -60,6 +66,13 @@ export class NoticeComponent implements OnInit {
                 modalData: {
                   driveLink: "I Frame ki aarati"
                 }
+              },
+              {
+                currentId: "4",
+                noticeHeader: "DataBase",
+              },
+              {
+                noticeHeader: "Another"
               }
             ]
           }
