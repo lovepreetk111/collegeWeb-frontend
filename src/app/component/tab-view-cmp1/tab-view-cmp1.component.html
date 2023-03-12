@@ -64,10 +64,10 @@
       </ng-template>
     </li>
     <li [ngbNavItem]="4">
-      {{details.facultyData|json}}
       <a ngbNavLink>FACULTY</a>
-      <ng-template ngbNavContent *ngFor="let data of details.facultyData">
-        <div class="facultyinfo container">
+      <ng-template ngbNavContent >
+        <div class="facultyinfo container" *ngFor="let data of details.facultyData">
+          <!-- {{details.facultyData|json}} -->
           <img [src]="data.url" [alt]="data.alt" class="facultyimage">
           <div class="facultyname">
             <h2>{{data.facultyName}}</h2>
