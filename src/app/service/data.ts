@@ -291,7 +291,7 @@ export interface INoticeDetails {
   // noticeDetails:INoticeData
   createdAt: string
   createdBy: string
-  modalData: IModalData
+  modalData: IModalData[]
 }
 
 export interface IModalData {
