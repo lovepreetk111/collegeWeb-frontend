@@ -4,7 +4,7 @@
 
         <div class="info-container">
             {{NoticeDetails | json}}
-            <div class="popupModule">
+            <div class="popupModule" *ngFor="let data of NoticeDetails">
                 <button *ngFor="let data of NoticeDetails" type="button" class="btn module-button"
                     data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
                     <div class="notice-heading">
@@ -18,16 +18,16 @@
 
                 <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false"
                     tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                    <div class="modal-dialog" *ngFor="let data of NoticeDetails">
+                    <div class="modal-dialog" *ngIf="data.modalData">
                         <div class="modal-content">
                             <div class="modal-header">
                                 <h1 class="modal-title fs-5" id="staticBackdropLabel">{{data.noticeContentName}}</h1>
                                 <button type="button" class="btn-close " data-bs-dismiss="modal"
                                     aria-label="Close"></button>
                             </div>
-                            <div class="modal-body" *ngIf="data.modalData">
+                            <div class="modal-body" *ngFor="let info of data.modalData">
 
-                                <iframe [src]="data.modalData.driveLink" allow="autoplay"></iframe>
+                                <iframe [src]="info.driveLink" allow="autoplay"></iframe>
                             </div>
                             <div class="modal-footer">
                                 <div class="UplodeDate">
