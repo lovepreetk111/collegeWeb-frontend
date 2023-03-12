@@ -37,8 +37,7 @@ import { EventSub1Component } from './pages/event-sub1/event-sub1.component';
 import {ButtonModule} from 'primeng/button';
 import { RightTxtLeftImg1Component } from './component/right-txt-left-img1/right-txt-left-img1.component';
 import { StudentSupportComponent } from './pages/student-support/student-support.component';
-
-// import {ButtonModule} from 'primeng/button';
+import {DialogModule} from 'primeng/dialog';
 import { SpeakersComponent } from './component/speakers/speakers.component';
 import { NoticeComponent } from './pages/notice/notice.component';
 import { PlacementComponent } from './pages/placement/placement.component';
@@ -110,7 +109,8 @@ import { ModalComponent } from './component/modal/modal.component';
     ButtonModule,
     SidebarModule,
     BrowserAnimationsModule,
-    TableModule
+    TableModule,
+    DialogModule
     
   ],
   providers: [],

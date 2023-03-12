@@ -33,6 +33,46 @@
             margin-bottom: 70px;
             align-items: center;
             padding-top: 57px;
+            ::ng-deep {
+                .mainbutton{
+                    background-color: #003399;
+                    width: 80rem;
+                    height: 7rem;
+                    border-radius: 20px;
+                    button{
+                    background-color: #003399;
+                    width: 80rem;
+                    height: 7rem;
+                    border-radius: 20px;
+                    display: flex;
+                    flex-direction: column;
+
+                    }
+                    .upper{
+                        height: 50%;
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                    }
+                    .lower{
+                        height: 50%;
+                        width: 100%;
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                    }
+                }
+                .p-dialog{
+                    margin: 0;
+                    width: 90vw;
+                    height: 90vh;
+                    overflow-y: scroll;
+                    iframe{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
 
             p {
                 margin: 0;
@@ -40,71 +80,11 @@
                 font-family: 'Ubuntu';
                 display: flex;
                 align-items: center;
-                color: #FFFFFF;
-
-            }
-
-            .popupModule {
-                margin: 6px 0;
-                width: 100%;
-                height: 5vh;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                margin-top: 3%;
-
-                .btn {
-                    width: 80%;
-                    background: #003298;
-                    border-radius: 20px;
-
-                    .notice-heading {
-                        width: 100%;
-                        display: flex;
-                        justify-content: space-between;
-
-                        p {
-                            font-size: 1.3rem;
-                            color: white;
-                        }
-                    }
-                }
-            }
-
-            .modal-dialog {
-                margin: 0;
-                padding: 0;
-
-                .modal-content {
-                    margin: 5% 35%;
-                    width: 80vw;
-
-                    p {
-                        margin: 0;
-                        font-size: 16px;
-                        font-family: 'Ubuntu';
-                        display: flex;
-                        align-items: center;
-                        color: black;
-                    }
-
-                    .modal-body {
-                        height: 75vh;
-                        overflow-y: scroll;
-
-                        p {
-                            color: black;
-                        }
-                        iframe{
-                            width: 100%;
-                            height: 100%;
-                        }
-                    }
-                }
             }
         }
     }
 }
+
 
 @media screen and (max-width:550px) {
     .main-container {
