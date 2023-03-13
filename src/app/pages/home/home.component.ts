@@ -62,7 +62,7 @@ export class HomeComponent implements OnInit {
             {
               id: 1,
               innerData: {
-                header: 'Techkriti 6.0',
+                header: 'Best College Award',
                 text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. ',
                 buttonText: 'readMore',
               },

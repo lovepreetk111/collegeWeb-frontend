@@ -1094,11 +1094,11 @@ export class CourseSub1Component implements OnInit {
                   facultyDetails: "HOD,B.Sc In Information Technology"
                 },
                 {
-                  url: "assets/images/FACULTY.svg",
+                  url: "assets/image/amisha.jpeg",
                   alt: "don",
                   facultyName: "Prof.Amisha Merchant",
                   facultyDetails: "Department of Bms and bscIT"
-                }
+                },
               ],
               
               

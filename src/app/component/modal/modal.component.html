@@ -12,10 +12,11 @@
                     Short Desctiption of notice
                 </div>
             </p-button>
-            <p-dialog header="Godfather I" [(visible)]="displayMaximizable" [modal]="true" [style]="{width: '50vw'}"
+            <p-dialog header="Notice Name" [(visible)]="displayMaximizable" [modal]="true" [style]="{width: '50vw'}"
                 [maximizable]="true" [baseZIndex]="10000" [draggable]="false" [resizable]="false">
                 <iframe src="https://drive.google.com/file/d/1OrGlV8cKLruZgN-SF09aNFMBcW7zyDUU/preview"  allow="autoplay"></iframe> 
                 <ng-template pTemplate="footer">
+                    <p>12/03/2023</p>
                     <p-button icon="pi pi-check" (click)="displayMaximizable=false" label="Yes"
                         class="p-button-text"></p-button>
                     <p-button icon="pi pi-times" (click)="displayMaximizable=false" label="No"></p-button>
