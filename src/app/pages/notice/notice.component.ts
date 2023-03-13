@@ -37,7 +37,7 @@ export class NoticeComponent implements OnInit {
                 createdAt: "12/12/2023",
                 createdBy: "Lovepreet Kaur",
                 modalData: {
-                  driveLink: "I Frame ki aarati"
+                  driveLink: "https://drive.google.com/file/d/1OrGlV8cKLruZgN-SF09aNFMBcW7zyDUU/view"
                 }
               },
               {

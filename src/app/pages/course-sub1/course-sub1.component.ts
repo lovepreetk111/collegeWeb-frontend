@@ -692,25 +692,25 @@ export class CourseSub1Component implements OnInit {
                   facultyDetails: "ASST.CHIEF CO-ORDINATOR ,<br> HOD Bachelor Of Management Studies"
                 },
                 {
-                  url: "assets/images/FACULTY.svg",
+                  url: "assets/image/amisha.jpeg",
                   alt: "don",
                   facultyName: "Prof.Amisha Merchant",
                   facultyDetails: "Department of Bms and bscIT"
                 },
                 {
-                  url: "assets/images/FACULTY.svg",
+                  url: "assets/image/shubham.jpeg",
                   alt: "don",
                   facultyName: "Prof.Shubham Shinde",
                   facultyDetails: "Depratment of Bmm and bms"
                 },
                 {
-                  url: "assets/images/FACULTY.svg",
+                  url: "assets/image/praglab.JPG",
                   alt: "don",
                   facultyName: "Prof.Praglab Jha",
                   facultyDetails: "Department of BMM , bms and baf"
                 },
                 {
-                  url: "assets/images/FACULTY.svg",
+                  url: "assets/image/pranali.jpeg",
                   alt: "don",
                   facultyName: "Prof.Pranali Chandanshiv",
                   facultyDetails: "Department of bmm , bms and baf"
@@ -838,13 +838,13 @@ export class CourseSub1Component implements OnInit {
                   facultyDetails: "HOD,B.COM In ACCOUNTING & FINANCE"
                 },
                 {
-                  url: "assets/images/FACULTY.svg",
+                  url: "assets/image/praglab.JPG",
                   alt: "don",
                   facultyName: "Prof.Praglab Jha",
                   facultyDetails: "Department of BMM , bms and baf"
                 },
                 {
-                  url: "assets/images/FACULTY.svg",
+                  url: "assets/image/pranali.jpeg",
                   alt: "don",
                   facultyName: "Prof.Pranali Chandanshiv",
                   facultyDetails: "Department of bmm , bms and baf"
@@ -942,25 +942,25 @@ export class CourseSub1Component implements OnInit {
               link: "https://mu.ac.in/wp-content/uploads/2020/01/4.8-AND-4.9BAMMC-SYLLABUS-Sem-3-4-5-6-July-25-2019.pdf",              
               facultyData: [
                 {
-                  url: "assets/images/FACULTY.svg",
+                  url: "assets/image/sabir.jpeg",
                   alt: "don",
                   facultyName: "Prof. Sabir Mujhavar",
                   facultyDetails: "HOD,Bachelor Of Arts In Multimedia And Mass Communication"
                 },
                 {
-                  url: "assets/images/FACULTY.svg",
+                  url: "assets/image/shubham.jpeg",
                   alt: "don",
                   facultyName: "Prof.Shubham Shinde",
                   facultyDetails: "Depratment of Bmm and bms"
                 },
                 {
-                  url: "assets/images/FACULTY.svg",
+                  url: "assets/image/praglab.JPG",
                   alt: "don",
                   facultyName: "Prof.Praglab Jha",
                   facultyDetails: "Department of BMM , bms and baf"
                 },
                 {
-                  url: "assets/images/FACULTY.svg",
+                  url: "assets/image/pranali.jpeg",
                   alt: "don",
                   facultyName: "Prof.Pranali Chandanshiv",
                   facultyDetails: "Department of bmm , bms and baf"
@@ -1094,11 +1094,11 @@ export class CourseSub1Component implements OnInit {
                   facultyDetails: "HOD,B.Sc In Information Technology"
                 },
                 {
-                  url: "assets/images/FACULTY.svg",
+                  url: "assets/image/amisha.jpeg",
                   alt: "don",
                   facultyName: "Prof.Amisha Merchant",
                   facultyDetails: "Department of Bms and bscIT"
-                }
+                },
               ],
               
               

@@ -1,48 +1,27 @@
 <div class="main-container">
-    <div class="notice-container" >
+    <div class="notice-container">
         <!-- <div class="heading" >{{data.header.dataType}}</div> -->
 
         <div class="info-container">
-            {{NoticeDetails | json}}
-            <div class="popupModule" *ngFor="let data of NoticeDetails">
-                <button *ngFor="let data of NoticeDetails" type="button" class="btn module-button"
-                    data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
-                    <div class="notice-heading">
-                        <p>{{data.noticeHeader}}</p>
-                        <p>{{data.createdAt}}</p>
-                    </div>
-                    <div class="details">
-                        <p>{{data.noticeContentName}}</p>
-                    </div>
-                </button>
-
-                <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false"
-                    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                    <div class="modal-dialog" *ngIf="data.modalData">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h1 class="modal-title fs-5" id="staticBackdropLabel">{{data.noticeContentName}}</h1>
-                                <button type="button" class="btn-close " data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body" *ngFor="let info of data.modalData">
-
-                                <iframe [src]="info.driveLink" allow="autoplay"></iframe>
-                            </div>
-                            <div class="modal-footer">
-                                <div class="UplodeDate">
-                                    <p>{{data.createdAt}}</p>
-                                </div>
-                                <div class="EditorsDetails">
-                                    <p>{{data.createdBy}}</p>
-                                    <p></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <p-button (click)="showMaximizableDialog()" class="mainbutton">
+                <div class="upper">
+                    <h3 class="noticename">Notice Name</h3>
+                    <p class="Date">12/03/2023</p>
                 </div>
-
-            </div>
+                <div class="lower">
+                    Short Desctiption of notice
+                </div>
+            </p-button>
+            <p-dialog header="Notice Name" [(visible)]="displayMaximizable" [modal]="true" [style]="{width: '50vw'}"
+                [maximizable]="true" [baseZIndex]="10000" [draggable]="false" [resizable]="false">
+                <iframe src="https://drive.google.com/file/d/1OrGlV8cKLruZgN-SF09aNFMBcW7zyDUU/preview"  allow="autoplay"></iframe> 
+                <ng-template pTemplate="footer">
+                    <p>12/03/2023</p>
+                    <p-button icon="pi pi-check" (click)="displayMaximizable=false" label="Yes"
+                        class="p-button-text"></p-button>
+                    <p-button icon="pi pi-times" (click)="displayMaximizable=false" label="No"></p-button>
+                </ng-template>
+            </p-dialog>
         </div>
     </div>
 

@@ -129,21 +129,17 @@
     }
 } */
 .main {
-    .eventdetails {
-        display: flex;
-        
-        width: 100%;
-
-        .left-sec {
+        height: 50vh;
+        app-tab-view-cmp1{
             display: flex;
             width: 75%;
             border:2px solid green;
         }
 
-        .right-sec {
+        app-details-card2{
             width: 25%;
             height: 100vh;
             overflow-y: scroll;
+            float: right;
         }
     }
-}

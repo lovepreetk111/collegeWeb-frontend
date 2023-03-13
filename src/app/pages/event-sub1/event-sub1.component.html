@@ -36,14 +36,7 @@
 
 
 <div class="main" *ngFor="let data of pages[currentPageIndex].component">
-    <app-image-cmp1 [AboutBanner]="data.metadata" *ngIf="data.compId===1"></app-image-cmp1>
-    <div class="eventdetails">
-        <div class="left-sec">
-            <!-- <app-tab-view-cmp1 [details]="data.metadata" *ngIf="data.compId === 6"></app-tab-view-cmp1> -->
-            
-        </div>
-        <div class="right-sec">
-            <app-details-card2 [cardData]="data.metadata" *ngIf="data.compId===2"></app-details-card2>
-        </div>
-    </div>
+        <app-image-cmp1 [AboutBanner]="data.metadata" *ngIf="data.compId===1"></app-image-cmp1>
+        <!-- <app-tab-view-cmp1 [details]="data.metadata" *ngIf="data.compId === 2"></app-tab-view-cmp1> -->
+        <app-details-card2 [cardData]="data.metadata" *ngIf="data.compId===3"></app-details-card2>    
 </div>
