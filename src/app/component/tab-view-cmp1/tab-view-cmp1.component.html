@@ -20,7 +20,7 @@
       <a ngbNavLink>Eligibility Criteria</a>
       <ng-template ngbNavContent>
         <div class="details">
-          <div class="table-responsive">
+          <div class="table-responsive" *ngIf="details && details.table">
             <table class="table">
               <thead>
                 <tr>
@@ -40,8 +40,8 @@
               </tbody>
             </table>
           </div><br> <br>
-          <h2 class="text-center">OR</h2> <br><br>
-          <div class="table-responsive">
+          <h2 class="text-center" *ngIf="details && details.table2">OR</h2> <br><br>
+          <div class="table-responsive" *ngIf="details && details.table2">
             <table class="table">
               <thead>
                 <tr>
