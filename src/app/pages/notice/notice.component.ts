@@ -29,7 +29,7 @@ export class NoticeComponent implements OnInit {
             buttonData: {
               data: "New Notices"
             },
-            data: [
+            /* data: [
               {
                 currentId: "3",
                 noticeHeader: "Exam",
@@ -46,6 +46,22 @@ export class NoticeComponent implements OnInit {
               },
               {
                 noticeHeader: "Another"
+              }
+            ] */
+            data:[
+              {
+                noticeHeader:"Exam",
+                noticeContentName:"TY-TimeTable",
+                createdBy:"John Deo",
+                createdAt:"12/03/2023",
+                driveLink:"https://drive.google.com/file/d/1OrGlV8cKLruZgN-SF09aNFMBcW7zyDUU/preview"
+              },
+              {
+                noticeHeader:"Events",
+                noticeContentName:"TY-TimeTable",
+                createdBy:"John Deo",
+                createdAt:"12/03/2023",
+                driveLink:"https://drive.google.com/file/d/1OrGlV8cKLruZgN-SF09aNFMBcW7zyDUU/preview"
               }
             ]
           }

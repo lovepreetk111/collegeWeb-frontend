@@ -12,16 +12,18 @@ export class ModalComponent implements OnInit {
   displayMaximizable!: boolean;
 
   constructor() { }
-  displayBasic2!: boolean;
+  displayBasic!: boolean;
 
   ngOnInit(): void {
+    // this.displayMaximizable = true
   }
   showBasicDialog() {
-    this.displayBasic2 = true;
+    this.displayBasic = true;
   }
 
   showMaximizableDialog() {
     this.displayMaximizable = true;
+    console.log("Got the hit")
   }
 
 }
