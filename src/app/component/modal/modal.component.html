@@ -1,0 +1,29 @@
+<div class="main-container">
+    <div class="notice-container">
+        <!-- <div class="heading" >{{data.header.dataType}}</div> -->
+
+        <div class="info-container">
+            <p-button (click)="showMaximizableDialog()" class="mainbutton">
+                <div class="upper">
+                    <h3 class="noticename">Notice Name</h3>
+                    <p class="Date">12/03/2023</p>
+                </div>
+                <div class="lower">
+                    Short Desctiption of notice
+                </div>
+            </p-button>
+            <p-dialog header="Notice Name" [(visible)]="displayMaximizable" [modal]="true" [style]="{width: '50vw'}"
+                [maximizable]="true" [baseZIndex]="10000" [draggable]="false" [resizable]="false">
+                <iframe src="https://drive.google.com/file/d/1OrGlV8cKLruZgN-SF09aNFMBcW7zyDUU/preview"  allow="autoplay"></iframe> 
+                <ng-template pTemplate="footer">
+                    <p>12/03/2023</p>
+                    <p-button icon="pi pi-check" (click)="displayMaximizable=false" label="Yes"
+                        class="p-button-text"></p-button>
+                    <p-button icon="pi pi-times" (click)="displayMaximizable=false" label="No"></p-button>
+                </ng-template>
+            </p-dialog>
+        </div>
+    </div>
+
+
+</div>

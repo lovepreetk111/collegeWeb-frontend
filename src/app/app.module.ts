@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -38,8 +37,7 @@ import { EventSub1Component } from './pages/event-sub1/event-sub1.component';
 import {ButtonModule} from 'primeng/button';
 import { RightTxtLeftImg1Component } from './component/right-txt-left-img1/right-txt-left-img1.component';
 import { StudentSupportComponent } from './pages/student-support/student-support.component';
-
-// import {ButtonModule} from 'primeng/button';
+import {DialogModule} from 'primeng/dialog';
 import { SpeakersComponent } from './component/speakers/speakers.component';
 import { NoticeComponent } from './pages/notice/notice.component';
 import { PlacementComponent } from './pages/placement/placement.component';
@@ -55,6 +53,7 @@ import { ResearchComponent } from './research/research.component';
 import { ExaminationComponent } from './pages/examination/examination.component';
 import { LeftTxtRightTextComponent } from './component/left-txt-right-text/left-txt-right-text.component';
 import { LoaderComponent } from './component/loader/loader.component';
+import { ModalComponent } from './component/modal/modal.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -100,7 +99,7 @@ import { LoaderComponent } from './component/loader/loader.component';
     ResearchComponent,
     ExaminationComponent,
     LeftTxtRightTextComponent,
-    LoaderComponent,
+    ModalComponent,
   
   ],
   imports: [
@@ -111,7 +110,8 @@ import { LoaderComponent } from './component/loader/loader.component';
     ButtonModule,
     SidebarModule,
     BrowserAnimationsModule,
-    TableModule
+    TableModule,
+    DialogModule
     
   ],
   providers: [],

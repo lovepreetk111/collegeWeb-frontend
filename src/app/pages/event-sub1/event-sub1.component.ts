@@ -189,7 +189,7 @@ export class EventSub1Component implements OnInit {
 
         },
         {
-          compId: 2,
+          compId: 3,
           compName: 'detail',
           metadata:
             [
@@ -267,7 +267,7 @@ export class EventSub1Component implements OnInit {
             ]
         },
         {
-          compId: 6,
+          compId: 2,
           compName: 'tab-view',
           metadata: [
             {

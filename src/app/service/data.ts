@@ -94,7 +94,7 @@ export interface IDropDown {
   AccordianData: IAccordianData[]
 }
 /* Accordian Component */
-export interface  IAccordianData {
+export interface IAccordianData {
   Title: string;
   SubTitles: IsubTitleData[]
 }
@@ -207,15 +207,15 @@ export interface IcourseDetail {
   text9: string;
   text10: string;
   link: string;
-  facultyData:IFaculty[]
+  facultyData: IFaculty[]
   table: aboutCouse[];
   table2: aboutCouse[];
 }
-export interface IFaculty{
+export interface IFaculty {
   url: string;
   alt: string;
-  facultyName:string
-  facultyDetails:string
+  facultyName: string
+  facultyDetails: string
 }
 
 export interface aboutCouse {
@@ -284,60 +284,23 @@ export interface Istudentsupport {
 
 /* Notice Data */
 export interface INoticeDetails {
-  Month: string,
-  NoticeInfo: INoticeInfo[],
-  ModalData: IModalData[]
-}
-
-export interface INoticeInfo {
-  noticename: string,
-  noticeDate: string,
-  noticeLink: string
+  header:IModalType
+  currentId: string,
+  noticeHeader: String,
+  noticeContentName: string
+  // noticeDetails:INoticeData
+  createdAt: string
+  createdBy: string
+  modalData: IModalData[]
 }
 
 export interface IModalData {
-  noticename: string,
-  noticeDate: string,
-  title: string,
-  modalInfo: IModalInfo[],
-  date: string,
-  name: string,
-  designation: string,
+  driveLink: string,
 }
 
-export interface IModalInfo {
-  imageUrl: string,
-  imageAlt: string,
-  text: string,
+export interface IModalType {
+ dataType:string
 }
-
-/* mainApi{
-id:string,
-Month:string,
-NoticeInto:Interface[],
-modalData:Interface2[],
-}
-
-Interface:{
-noticename:string,
-noticeDate:string,
-},
-
-Interface2{
-title:string,
-modalData:Interface3[],
-date:string,
-name:string,
-designation:string,
-}
-
-Interface3:{
-imageUrl:string,
-imageAlt:string,
-text:string,
-} */
-
-/* Card-Container */
 
 export interface IcardData {
   url: string
@@ -358,8 +321,8 @@ export interface ITableComp {
 export interface ITableHead {
   tablehead: ItableHeadData[]
 }
-export interface ItableHeadData{
-  thdata:string
+export interface ItableHeadData {
+  thdata: string
 }
 
 export interface ITableData {
