@@ -72,7 +72,7 @@ import { BmsComponent } from './dashboard-page/pages/courses/CSFC/bms/bms.compon
 import { BmmcComponent } from './dashboard-page/pages/courses/CSFC/bmmc/bmmc.component';
 import { StudentscornerComponent } from './dashboard-page/pages/studentscorner/studentscorner.component';
 import { HttpClientModule } from '@angular/common/http';
-import {BreadcrumbModule} from 'angular-crumbs';
+
 import { LoginFormComponent } from './dashboard-page/Auth/login-form/login-form.component';
 import { RegistrationFormComponent } from './dashboard-page/Auth/registration-form/registration-form.component';
 import { AdminloginComponent } from './dashboard-page/Auth/adminlogin/adminlogin.component';
@@ -83,7 +83,7 @@ import { DAcademicsComponent } from './dashboard-page/dashboard/DashboardHome/d-
 import { DCampusComponent } from './dashboard-page/dashboard/DashboardHome/d-campus/d-campus.component';
 import { DCarouselComponent } from './dashboard-page/dashboard/DashboardHome/d-carousel/d-carousel.component';
 import { DTestimonialsComponent } from './dashboard-page/dashboard/DashboardHome/d-testimonials/d-testimonials.component';
-
+import {BreadcrumbModule} from 'angular-crumbs';
 
 
 @NgModule({
@@ -174,7 +174,8 @@ import { DTestimonialsComponent } from './dashboard-page/dashboard/DashboardHome
     HttpClientModule,
     ReactiveFormsModule,
     FormsModule,
-    ConfirmDialogModule
+    ConfirmDialogModule,
+    BreadcrumbModule
 
     
   ],

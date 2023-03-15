@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
+import { filter, map } from 'rxjs';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,7 +9,33 @@ import { Component } from '@angular/core';
 export class AppComponent {
 
   title = 'CollegeWebsite-New';
-  show: boolean = true;
+show: boolean = true;
+
+currentRoute: string = '';
+
+constructor(private router: Router) {
+  this.router.events.subscribe((event) => {
+    if (event instanceof NavigationEnd) {
+      let currentRoute = this.router.routerState.snapshot.root;
+      while (currentRoute.firstChild) {
+        currentRoute = currentRoute.firstChild;
+      }
+      const admindashboardSegment = currentRoute.pathFromRoot.find(segment => segment.routeConfig?.path === 'admindashboard');
+      if (admindashboardSegment) {
+        currentRoute = admindashboardSegment;
+      }
+      this.currentRoute = currentRoute?.routeConfig?.path ?? '';
+    }
+    
+  });
+
+  
+}
+
+
+
+
+  
   
 
   onActivate(event: any) {
