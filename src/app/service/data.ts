@@ -284,13 +284,11 @@ export interface Istudentsupport {
 
 /* Notice Data */
 export interface INoticeDetails {
-  header:IModalType
-  currentId: string,
   noticeHeader: String,
   noticeContentName: string
-  // noticeDetails:INoticeData
   createdAt: string
   createdBy: string
+  driveLink:string
   modalData: IModalData[]
 }
 
