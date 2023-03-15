@@ -5,7 +5,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+
   title = 'CollegeWebsite-New';
+  show: boolean = true;
+  
+
   onActivate(event: any) {
     window.scroll(0, 0)
   }

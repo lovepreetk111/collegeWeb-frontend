@@ -1,0 +1,387 @@
+<!-- <breadcrumb #parent>
+    <ol class="breadcrumb">
+     <ng-template ngFor let-route [ngForOf]="parent.breadcrumbs">
+        <li *ngIf="!route.terminal" class="breadcrumb-item">
+<a href="" [routerLink]="[route.url]">{{route.displayName}}</a>
+        </li>
+        <li *ngIf="route.terminal" class="breadcrumb-item active">{{route.displayName}}</li>
+
+     </ng-template>
+    </ol>
+</breadcrumb> -->
+<p-confirmDialog [style]="{width: '35vw'}"></p-confirmDialog>
+<div class="Header">
+    <div class="PageName">
+        <p>Notices</p>
+    </div>
+    <div class="AddFunction">
+        <div class="popupModule">
+            <!-- Button trigger modal -->
+            <button (click)="AddFlag('add')" type="button" class="btn module-button" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
+                Add Notice
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false"
+                tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="staticBackdropLabel" *ngIf="AddData">Add Carousel</h1>
+                            <h1 class="modal-title fs-5" id="staticBackdropLabel" *ngIf="EditData">Edit Carousel</h1>
+                            <button id="cancel" type="button" class="btn-close" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <!-- Image if there is in notice -->
+                            <form action="" [formGroup]="formValue">
+                                <div formGroupName="dashboardInfo">
+                                    <ng-container formArrayName="0">
+                                        <label for="CarouselHeader">Name to display on Dashboard</label>
+                                        <input type="text" formControlName="displayName" class="CarouselHeader"
+                                            placeholder="Enter name">
+                                    </ng-container>
+                                </div>
+                                <div>
+                                    <ng-container>
+                                        <label for="CarouselHeader">Notice Title or Heading</label>
+                                        <input type="text" formControlName="noticeTitle" class="CarouselHeader"
+                                            placeholder="Enter name">
+                                    </ng-container>
+                                </div>
+                                <div>
+                                    <ng-container>
+                                        <label for="CarouselHeader">Date of the Notice</label>
+                                        <input type="text" formControlName="noticeDate" class="CarouselHeader"
+                                            placeholder="Enter name">
+                                    </ng-container>
+                                </div>
+                                <div>
+                                    <ng-container>
+                                        <label for="CarouselHeader">A short information of Notice</label>
+                                        <input type="text" formControlName="noticeName" class="CarouselHeader"
+                                            placeholder="Enter name">
+                                    </ng-container>
+                                </div>
+                                <div formGroupName="innerNoticeData">
+                                    <ng-container formArrayName="0">
+                                        <label for="CarouselHeader">Information in Image if there any</label>
+                                        <input type="text" formControlName="img" class="CarouselHeader"
+                                            placeholder="Enter name">
+                                    </ng-container>
+                                </div>
+                                <div formGroupName="innerNoticeData">
+                                    <ng-container formArrayName="0">
+                                        <label for="CarouselHeader">Detailed Information of Notice in Text</label>
+                                        <input type="text" formControlName="noticeInfoText" class="CarouselHeader"
+                                            placeholder="Enter description">
+                                    </ng-container>
+                                </div>
+                                
+                            </form>
+                        </div>
+                        <div class="modal-footer" *ngIf="AddData">
+                            <button type="button" (click)="postNoticeData()" class="btn btn-secondary" data-bs-dismiss="modal">Submit</button>
+                        </div>
+                        <div class="modal-footer" *ngIf="EditData">
+                            <button (click)="update()">Update</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="DataTable">
+    
+    <!-- <table>
+       <thead class="head">
+           <tr class="TableHeader">
+               <th>IMAGE</th>
+               <th>NAME</th>
+               <th>CREATED ON</th>
+               <th>CREATED BY</th>
+               <th>MODIFIED ON</th>
+               <th>MODIFIED BY</th>
+               <th>ACTION</th>
+           </tr>
+       </thead>
+       <tr *ngFor="let item of allNoticeDatas" let i = "index">
+           <td *ngIf="item.image">
+               <img [src]="item.image[0].url" [alt]="item.image[0].alt">
+           </td>
+          
+           <td>{{item.carouselDetails[0].name}}</td>
+           <td>{{item.createdAt | date:"dd/MM/yyyy"}}</td>
+           <td></td>
+           <td>{{item.updatedAt | date:"dd/MM/yyyy"}}</td>
+           <td></td>
+           <td>
+               <div class="actions">
+                   <button (click)="AddFlag('edit')" (click)="editBanData(item)" data-bs-toggle="modal"
+                   data-bs-target="#staticBackdrop2"  class="btn module-button">
+                   <img src="assets/images/Edit.svg" alt="">
+               </button>
+                   <div class="Delete">
+                       <div class="AddFunction">
+                           <div class="popupModule">
+                              
+                               <button type="button" class="btn module-button" data-bs-toggle="modal"
+                                   data-bs-target="#staticBackdrop">
+                                   <img src="assets/images/Delete.svg" alt="">
+                               </button>   
+
+                             
+                               <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
+                               data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                               aria-hidden="true">
+                               <div class="modal-dialog">
+                                   <div class="modal-content">
+                                       <div class="modal-header">
+                                           <h1 class="modal-title fs-5" id="staticBackdropLabel">Warning!</h1>
+                                           <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                               aria-label="Close"></button>
+                                       </div>
+                                       <div class="modal-body">
+                                           <p>Are you shure you want to Delete this?</p>
+                                       </div>
+                                       <div class="modal-footer">
+                                           <button type="button" class="btn btn-primary"
+                                               data-bs-dismiss="modal" (click)="deleteBanData(item._id)">YES</button>
+                                           <button type="button" class="btn btn-danger"
+                                               data-bs-dismiss="modal" id="donotdelte">NO</button>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
+                           </div>
+                       </div>
+                   </div>
+
+                   <input type="checkbox" data-bs-toggle="tooltip" data-bs-placement="top"
+                       title="To Display Content on Frontend">
+               </div>
+           </td>
+       </tr>
+   </table>  -->
+
+
+
+  
+   <p-table #dt1 responsiveLayout="stack"   [value]="allNoticeDatas" dataKey="id" [rows]="5"
+   [showCurrentPageReport]="true" selectionMode="multiple" [rowsPerPageOptions]="[5,10,15]"  [rowHover]="true"
+   styleClass="p-datatable-customers p-datatable-gridlines" [paginator]="true"
+   currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries">
+  
+   <ng-template pTemplate="caption" >
+       
+   </ng-template>
+
+   <ng-template pTemplate="header">
+       <tr>
+               <th>NAME</th>
+               <th>CREATED ON</th>
+               <th>CREATED BY</th>
+               <th>MODIFIED ON</th>
+               <th>MODIFIED BY</th>
+               <th>ACTION</th>
+               <th style="width: 4rem">
+                   <input class="form-check-input" type="checkbox" 
+                   [(ngModel)]="parentSelector"
+                   [value]="-1"
+                   (change)="onChangeCheckBox($event)"
+                   style="transform: scale(1.5); height: 1em; width: 1em;">
+               </th>
+       </tr>
+   </ng-template>
+   <ng-template pTemplate="body" let-allNoticeDatas>
+      
+       <tr>
+           <!-- <td *ngIf="allNoticeDatas.image">
+               <img [src]="allNoticeDatas.image[0].url" [alt]="allNoticeDatas.image[0].alt">
+           </td> -->
+          
+           <!-- <td>{{allNoticeDatas.noticeDetails[0].name}}</td> -->
+           <td></td>
+           <td>{{allNoticeDatas.createdAt | date:"dd/MM/yyyy"}}</td>
+           <td></td>
+           <td>{{allNoticeDatas.updatedAt | date:"dd/MM/yyyy"}}</td>
+           <td></td>
+           <td><span class="p-column-title">Options</span>
+               <div class="editGrp">
+
+
+                   <div class="modal fade" id="staticBackdrop" >
+                   <div class="modal-dialog">
+                       <div class="modal-content">
+                           <div class="modal-header">
+                               <h1 class="modal-title fs-5" id="staticBackdropLabel">Warning!</h1>
+                               <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                   aria-label="Close"></button>
+                           </div>
+                           <div class="modal-body">
+                               <p>Are you shure you want to Delete this?</p>
+                           </div>
+                           <div class="modal-footer">
+                               <button type="button" class="btn btn-primary"
+                                   data-bs-dismiss="modal" >YES</button>
+                               <button type="button" class="btn btn-danger"
+                                   data-bs-dismiss="modal" id="donotdelte">NO</button>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+
+
+
+
+
+     
+
+
+
+              
+
+                   
+
+                   
+
+               
+     
+                   <div class="delete">
+                       <button pButton pRipple type="button" m-4rem class="btn module-button"  label="Delete" (click)="deleteNoticeData(allNoticeDatas._id)"  class="p-button-danger"></button>
+                       &nbsp;  &nbsp;                       <button  pButton pRipple type="button" data-bs-toggle="modal"
+                       data-bs-target="#staticBackdrop2" icon="pi pi-pencil" id="edit" (click)="AddFlag('edit')" (click)="editNoticeData(allNoticeDatas)" ></button>
+                   </div>
+                   
+               </div>
+           </td>
+          <td>
+           <input class="form-check-input" type="checkbox" 
+           [checked]="allNoticeDatas.Active"
+           [value]="allNoticeDatas._id.toString()"
+           (change)="onChangeCheckBox($event)"
+           style="transform: scale(1.5); height: 1em; width: 1em;">
+       </td>
+       </tr>
+   </ng-template>
+   <ng-template pTemplate="emptymessage">
+       <tr>
+           <td colspan="7">No customers found.</td>
+       </tr>
+   </ng-template>
+      </p-table>
+
+
+
+
+
+   <!-- <div class="pagination">
+       <nav aria-label="Page navigation example">
+           <ul class="pagination">
+               <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+               <li class="page-item"><a class="page-link" href="#">1</a></li>
+               <li class="page-item"><a class="page-link" href="#">2</a></li>
+               <li class="page-item"><a class="page-link" href="#">3</a></li>
+               <li class="page-item"><a class="page-link" href="#">Next</a></li>
+           </ul>
+       </nav>
+   </div> -->
+</div>
+
+
+
+<!-- <div class="DataTable">
+
+    <table>
+        <thead class="head">
+            <tr class="TableHeader">
+
+                <th>NAME</th>
+                <th>CREATED ON</th>
+                <th>CREATED BY</th>
+                <th>MODIFIED ON</th>
+                <th>MODIFIED BY</th>
+                <th>ACTION</th>
+            </tr>
+        </thead>
+       
+        
+
+        <tr *ngFor="let item of allNoticeDatas">
+
+            
+            
+
+            <td>{{item.dashboardInfo[0].displayName}}</td>
+            <td>{{item.createdAt | date:"dd/MM/yyyy"}}</td>
+            <td>created by</td>
+            <td>{{item.updatedAt | date:"dd/MM/yyyy"}}</td>
+            <td>modified by</td>
+            <td>
+                <div class="actions">
+                    <button (click)="AddFlag('edit')" (click)="editNoticeData(item)" data-bs-toggle="modal" data-bs-target="#staticBackdrop2"
+                        class="btn module-button">
+                        <img src="assets/images/Edit.svg" alt="">
+                    </button>
+                    <div class="Delete">
+                        <div class="AddFunction">
+                            <div class="popupModule">
+                                
+                                
+
+                                <button type="button" class="btn module-button" data-bs-toggle="modal"
+                                    data-bs-target="#staticBackdrop">
+                                    <img src="assets/images/Delete.svg" alt="">
+                                </button>
+
+                                
+                                
+                                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
+                                    data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h1 class="modal-title fs-5" id="staticBackdropLabel">Warning!</h1>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p>Are you shure you want to Delete this?</p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-primary" data-bs-dismiss="modal"
+                                                    (click)="deleteNoticeData(item)">YES</button>
+                                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal"
+                                                    id="donotdelte">NO</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <input type="checkbox" data-bs-toggle="tooltip" data-bs-placement="top"
+                        title="To Display Content on Frontend">
+                </div>
+            </td>
+        </tr>
+    </table>
+    <div class="pagination">
+        <nav aria-label="Page navigation example">
+            <ul class="pagination">
+                <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
+        </nav>
+    </div>
+</div> -->
