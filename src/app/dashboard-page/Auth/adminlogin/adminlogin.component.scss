@@ -1,10 +1,83 @@
-.superadmintable{
-    padding: 10px;
-}
-.temp{
-    display: flex;
-    justify-content: space-between;
-}
-.p-button-danger{
-    border-radius: 35px;
-}
+
+.container {
+    position: absolute;
+    margin-top: 5rem;
+    width: 21rem;
+    padding: 20px;
+    left: calc(50% - 10.6rem);
+    border-radius: 15px;
+    box-shadow: 0px 8px 35px 5px rgba(0, 0, 0, 0.32);
+      .logo {
+          padding: 10px;
+  
+          img {
+              width: 100%;
+          }
+      }
+  
+      .form {
+          max-width: 350px;
+          margin: 0 auto 50px;
+          .login-form{
+              margin-top: 3rem;
+          
+          input {
+              width: 100%;
+              border: 0;
+              margin: 0 0 15px;
+              padding: 15px;
+              outline: 0;
+              font-size: 15px;
+              box-sizing: border-box;
+              background-color: rgb(197, 197, 255);
+              border-radius: 3px;
+          }
+      }
+      }
+  
+      button {
+          background-color: blue;
+          outline: none;
+          border: none;
+          border-radius: 100px;
+          padding: 10px;
+          width: 50%;
+          color: white;
+          margin-top: 15px;
+      }
+      .btn:hover{
+          background-color: black;
+      }
+      
+      p{
+         margin-top: 10px;
+          text-align: center;
+          
+          a{
+              cursor: pointer;
+              color: blue;
+          }
+      }
+      .pass{
+          color: red;
+          text-align: left;
+          width: 100%;
+      }
+  }
+  
+  input.ng-valid{
+      border: 1px solid green;
+      border-right: 5px solid green;
+      box-shadow: 0 0 0 0.2rem rgba(0, 137, 10, 25);
+  }
+  input.ng-Invalid.ng-touched{
+      border: 1px solid red;
+      border-right: 5px solid darkred;
+      box-shadow: 0 0 0 0.2rem rgba(255,43,27,25);
+  }
+  
+  input.ng-pending{
+      border: 1px solid #ff9415;
+      border-right: 5px solid #ff9415;
+      box-shadow: 0 0 0 0.2rem rgba(255,127,2,.25);
+  }

@@ -1,71 +1,35 @@
-<p-confirmDialog [style]="{width: '35vw'}"></p-confirmDialog>
-                    <div class="superadmintable">
-                    <p-table #dt1 responsiveLayout="stack" [value]="allRegisterData" dataKey="id" [rows]="5"
-                    [showCurrentPageReport]="true" [rowsPerPageOptions]="[5,10,15]"
-                    styleClass="p-datatable-customers p-datatable-gridlines" [paginator]="true"
-                    currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries">
-                   
-                    <ng-template pTemplate="caption" >
-                        <div class="temp">
-                        <div class="admintitlebtn">
-                        <h2>Admin List</h2>
-                    </div>
-                    <div class="adminbtn">
-                       <a href="/admindashboard"><button pButton type="button">LogOut</button></a>
-                    </div>
-                </div>
-                    </ng-template>
-                
-                    <ng-template pTemplate="header">
-                        <tr>
-                           <th>Name</th>
-                           <th>Designation</th>
-                           <th>Email</th>
-                           <th>option</th>
-                           <th style="width: 4rem">
-                            <input class="form-check-input" type="checkbox" 
-                            [(ngModel)]="parentSelector"
-                            [value]="-1"
-                            (change)="onChangeCheckBox($event)"
-                            style="transform: scale(1.5); height: 1em; width: 1em;">
-                        </th>
-                        </tr>
-                    </ng-template>
-                    <ng-template pTemplate="body" let-allRegisterData>
-                       
-                        <tr>
-                            <td>
 
-                                {{allRegisterData.name}}
-                            </td>
-                            <td>{{allRegisterData.designation}}</td>
-                            <td>{{allRegisterData.email}}</td>
+<div class="container">
+    <div class="logo">
+        <img src="../../../assets/images/Chetana-Logo.svg" alt="">
+    </div>
+    <div class="form">
+      <form [formGroup]="form" (ngSubmit)="loginSubmit()">
 
-                            <td><span class="p-column-title">Options</span>
-                                <div class="editGrp">
-                                    <!-- <div class="edit">
-                                        <button (click)="recoverClass(classData)">Edit</button>
-                                    </div> -->
-                                    <div class="delete">
-                                        <!-- <button >Delete</button> -->
-                                        <button pButton pRipple type="button" label="Delete" (click)="deleteClass(allRegisterData._id)" class="p-button-danger"></button>
-                                        <!-- <button  pButton type="button" class="p-button-raised p-button-rounded"></button> -->
-                                    </div>
-                                </div>
-                            </td>
-                            <td>
-                                <input class="form-check-input" type="checkbox" 
-                                [checked]="allRegisterData.Active"
-                                [value]="allRegisterData._id.toString()"
-                                (change)="onChangeCheckBox($event)"
-                                style="transform: scale(1.5); height: 1em; width: 1em;">
-                            </td>
-                        </tr>
-                    </ng-template>
-                    <ng-template pTemplate="emptymessage">
-                        <tr>
-                            <td colspan="7">No customers found.</td>
-                        </tr>
-                    </ng-template>
-                </p-table>
+        <div class="form-group">
+            <label>Email</label>
+            <input type="text" formControlName="email" id="email" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.email.errors }" />
+            <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+                <div *ngIf="f.email.errors.required">Email is required</div>
+                <div *ngIf="f.email.errors.email">Email must be a valid email address</div>
+            </div>
         </div>
+        <div class="form-group">
+            <label>Password</label>
+            <input type="password" formControlName="password" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.password.errors }" />
+            <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+                <div *ngIf="f.password.errors.required">Password is required</div>
+                <div *ngIf="f.password.errors.minlength">Password must be at least 6 characters</div>
+            </div>
+        </div>
+        <div class="form-group col-md-50 soffset-md-0">
+            <button class="btn btn-primary">Login</button>
+            
+        </div>
+        
+    </form>
+      <!-- <p class="message">Don't have account ?<a routerLink="/register" (click)="registerpage()">Register now</a></p> -->
+    </div>
+    
+  </div>
+
