@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { ConfirmationService } from 'primeng/api';
-import { Iregistration } from '../../service/data.interface';
+import { FormGroup,Validators ,FormControl, FormBuilder} from '@angular/forms';
+import { Router } from '@angular/router';
 import { DataService } from '../../service/data.service';
+
 
 @Component({
   selector: 'app-adminlogin',
@@ -9,85 +10,56 @@ import { DataService } from '../../service/data.service';
   styleUrls: ['./adminlogin.component.scss']
 })
 export class AdminloginComponent implements OnInit {
-  allRegisterData: Iregistration[] = []
-  parentSelector:boolean = false
-  // dar: any;
-  constructor(private data:DataService,private confirmationService: ConfirmationService) { }
+
+  
+  form:any = FormGroup;
+  submitted = false;
+  constructor( private auth : DataService, private fb:FormBuilder,private router: Router) { 
+    
+  }
+  
+  
 
   ngOnInit(): void {
-   this.getRegister();
-
-  }
-  getRegister() {
-    this.data.getRegister().subscribe(res => {
-      this.allRegisterData = res;
-      // const data = res;
-      console.log(this.allRegisterData)
+    this.form= this.fb.group({
+      email : new FormControl('',[Validators.required, Validators.email]),
+      password : new FormControl('',[Validators.required]),
     })
   }
 
-  deleteClass(_id:string){
-    this.confirmationService.confirm({
-        message: 'Are you sure that you want to perform this action?',
-        accept: () => {
-            //Actual logic to perform a confirmation
-            const datadelete = this.allRegisterData.length;
-            if(datadelete === 1){
-              alert("You Can't delete this User atleast 1 User should be present")
-            }else
-            this.data.deleteRegisterData(_id).subscribe((res)=>{
-              console.log(res,'delete')
-              this.getRegister();
-            })
-        }
-    });
-}
-
-  // deleteClass(_id:string){
-  // this.data.deleteRegisterData(_id).subscribe((res)=>{
-  //   console.log(res,'delete')
-  //   this.getRegister();
-  // })
+  get f() { return this.form.controls; }
+  
+  // registerpage(){
+  //   this.router.navigate(['auth/admin/register']);
   // }
+  loginSubmit(){
+    this.submitted = true;
+    if (this.form.invalid) {
+        return;
+    }
+    this.Submitlogin();
 
-  onChangeCheckBox($event: any) {
-    const id = $event.target.value;
-    const isChecked = $event.target.checked;
-  
-    console.log('id:', id);
-    console.log('isChecked:', isChecked);
-  
-    console.log('allRegisterData:', this.allRegisterData);
-  
-    this.allRegisterData = this.allRegisterData.map((d) => {
-      console.log('_id:', d._id);
-      if (d._id === id) {
-        d.Active = isChecked;
-        this.parentSelector = false;
-        return d;
-      }
-  
-      if (id === '-1') {
-        d.Active = this.parentSelector;
-        return d;
-      }
-  
-      return d;
-    });
-  
-    console.log('modified allRegisterData:', this.allRegisterData);
-  
-    this.data.saveRegisterData( this.allRegisterData ).subscribe(
-      (res) => {
-        console.log(res);
-      },
-      (error) => {
-        console.log(error);
-      }
-    );
+
   }
+  Submitlogin(){
+   
+      this.auth.postlogin(this.form.value).subscribe((res:any)=>{
+        localStorage.setItem('Token', res.Token);
+        console.log(res.Token);
+          alert('Login successful');
+        this.form.reset();
+        this.router.navigate(['/auth/superadmin']);
+      },
+      (error: any) => {
+        alert('** Please check email or password is correct!');
+        this.form.reset();
+      }
+      );
+      
+    }
+    
   
-
+  
 }
 
 

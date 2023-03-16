@@ -37,6 +37,7 @@ import { DAcademicsComponent } from './dashboard-page/dashboard/DashboardHome/d-
 import { DCampusComponent } from './dashboard-page/dashboard/DashboardHome/d-campus/d-campus.component';
 import { DTestimonialsComponent } from './dashboard-page/dashboard/DashboardHome/d-testimonials/d-testimonials.component';
 import { DashnoticeComponent } from './dashboard-page/dashnotice/dashnotice.component';
+import { SuperadminComponent } from './dashboard-page/Auth/superadmin/superadmin.component';
 
 
 const routes: Routes = [
@@ -227,8 +228,16 @@ const routes: Routes = [
         data:{breadcrumb:'page/courses/distancelearning/ycmou'}
 
       },
+     
       {
         path:'auth/superadminlogin',component:AdminloginComponent ,
+        
+        children: [
+          {
+            path:'superadmin',component:SuperadminComponent ,
+           
+          },
+        ]
        
       },
       ]

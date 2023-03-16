@@ -154,16 +154,23 @@
                 box-shadow: none;
                 margin-right: 2%;
             }
+            
             ul{
                 width: 200px;
                 background-color: #003298;
                 color: white;
                 font-size: larger;
                 font-weight: 500;
+
                 li{
                     width: 100%;
                     padding-left: 5%;
                     border-bottom: 1px solid white;
+
+                    a{
+                        color: #F3F4F7;
+                        text-decoration: none;
+                    }
                 }
             }
         }

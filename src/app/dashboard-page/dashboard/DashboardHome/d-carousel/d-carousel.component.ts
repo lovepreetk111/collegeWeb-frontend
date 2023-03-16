@@ -149,6 +149,7 @@ export class DCarouselComponent implements OnInit {
     this.data.updateBanData(id, this.formValue.value).subscribe((result: any) => {
       this.allBanDatas = result
       console.log(result, "result")
+      this.getBanData()
     })
     let ref = document.getElementById('cancel')
     ref?.click();
