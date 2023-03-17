@@ -48,7 +48,7 @@ export class AdminloginComponent implements OnInit {
         console.log(res.Token);
           alert('Login successful');
         this.form.reset();
-        this.router.navigate(['/auth/superadmin']);
+        this.router.navigate(['/superadmin']);
       },
       (error: any) => {
         alert('** Please check email or password is correct!');

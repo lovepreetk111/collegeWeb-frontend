@@ -3,9 +3,11 @@
     <div class="logo">
         <img src="../../../assets/images/Chetana-Logo.svg" alt="">
     </div>
+    <hr>
     <div class="form">
       <form [formGroup]="form" (ngSubmit)="loginSubmit()">
-
+        <h3>SuperAdmin Login</h3>
+        <hr>
         <div class="form-group">
             <label>Email</label>
             <input type="text" formControlName="email" id="email" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.email.errors }" />
