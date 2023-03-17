@@ -106,3 +106,13 @@ export interface Iregistration{
     password:string;
     Active: boolean
 }
+
+
+
+export interface IAdminData{
+    _id:string
+    name:string;
+    designation:string;
+    email:string;
+    password:string;
+}

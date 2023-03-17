@@ -241,7 +241,7 @@ const routes: Routes = [
       {
         path: 'superadmin',
         component: SuperadminComponent,
-        //canActivate: [AuthGuard]
+        canActivate: [AuthGuard]
       }
     ]
   }

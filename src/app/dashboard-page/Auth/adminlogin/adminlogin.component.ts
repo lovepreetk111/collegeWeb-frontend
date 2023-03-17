@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup,Validators ,FormControl, FormBuilder} from '@angular/forms';
 import { Router } from '@angular/router';
+import { IAdminData } from '../../service/data.interface';
 import { DataService } from '../../service/data.service';
 
 
@@ -11,9 +12,10 @@ import { DataService } from '../../service/data.service';
 })
 export class AdminloginComponent implements OnInit {
 
-  
+  allAdminData: IAdminData[] = []
   form:any = FormGroup;
   submitted = false;
+  loginFailed = false;
   constructor( private auth : DataService, private fb:FormBuilder,private router: Router) { 
     
   }
@@ -29,9 +31,6 @@ export class AdminloginComponent implements OnInit {
 
   get f() { return this.form.controls; }
   
-  // registerpage(){
-  //   this.router.navigate(['auth/admin/register']);
-  // }
   loginSubmit(){
     this.submitted = true;
     if (this.form.invalid) {
@@ -43,21 +42,26 @@ export class AdminloginComponent implements OnInit {
   }
   Submitlogin(){
    
-      this.auth.postlogin(this.form.value).subscribe((res:any)=>{
-        localStorage.setItem('Token', res.Token);
-        console.log(res.Token);
-          alert('Login successful');
-        this.form.reset();
-        this.router.navigate(['/superadmin']);
-      },
-      (error: any) => {
-        alert('** Please check email or password is correct!');
-        this.form.reset();
-      }
-      );
       
+      const email = this.form.controls['email'].value;
+      const password = this.form.controls['password'].value;
+      
+      
+      this.auth.getAdminLogin().subscribe(res =>{
+        this.allAdminData = res;
+       if(email === 'admin@gmail.com' && password === '123456'){
+        alert('login success');
+        this.router.navigate(['/superadmin'])
+       }
+       else{
+        this.loginFailed = true;
+       }
+      })
     }
-    
+
+
+
+
   
   
 }

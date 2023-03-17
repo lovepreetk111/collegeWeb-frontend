@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
-import { Ibackground, IBannerCarosuelComponent, Iloginuser, INoticeConfig, IPlacementComponent, Iregistration, IResearchComponent } from './data.interface';
+import { IAdminData, Ibackground, IBannerCarosuelComponent, Iloginuser, INoticeConfig, IPlacementComponent, Iregistration, IResearchComponent } from './data.interface';
 
 @Injectable({
   providedIn: 'root'
@@ -183,6 +183,14 @@ postregister(data: Iregistration): Observable<Iregistration> {
 
 
 
+getAdminLogin(){
+  return this.http.get<IAdminData[]>(`${this.apiUrl}adminlogin/adminregister`).pipe(
+    map((res:any) => {
+      console.log(res);
+      return res;
+    })
+  );
+}
 
 
 
