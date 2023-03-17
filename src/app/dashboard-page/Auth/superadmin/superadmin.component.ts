@@ -54,6 +54,8 @@ export class SuperadminComponent implements OnInit {
   // })
   // }
 
+  // adminlogin/adminregister
+
   onChangeCheckBox($event: any) {
     const id = $event.target.value;
     const isChecked = $event.target.checked;

@@ -1,5 +1,5 @@
 import { Component, NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { ExtraOptions, RouterModule, Routes } from '@angular/router';
 import { placements } from '@popperjs/core';
 import { AboutComponent } from './pages/about/about.component';
 import { ContactUsComponent } from './pages/contact-us/contact-us.component';
@@ -88,6 +88,7 @@ const routes: Routes = [
     path: 'examination',
     component: ExaminationComponent
   },
+ 
   {
     path:'auth/admin/register',component:RegistrationFormComponent ,
     
@@ -107,6 +108,7 @@ const routes: Routes = [
       //   path:'home',component:DCarouselComponent,
       //   data:{breadcrumb:'Home'}
       // },
+     
       {
         path:'home/carousel',component:DCarouselComponent ,
         data:{breadcrumb:'Home/carousel'}
@@ -228,22 +230,31 @@ const routes: Routes = [
         data:{breadcrumb:'page/courses/distancelearning/ycmou'}
 
       },
-     
-      {
-        path:'auth/superadminlogin',component:AdminloginComponent ,
-        
-        children: [
-          {
-            path:'superadmin',component:SuperadminComponent ,
-           
-          },
-        ]
-       
-      },
+      
       ]
+      
   },
+  {
+    path: 'superadminlogin',
+    component: AdminloginComponent,
+    children: [
+      {
+        path: 'superadmin',
+        component: SuperadminComponent,
+        //canActivate: [AuthGuard]
+      }
+    ]
+  }
+  
+  
 
 ];
+
+
+
+
+
+  
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
