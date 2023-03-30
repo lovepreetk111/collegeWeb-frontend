@@ -1,0 +1,35 @@
+table , .noticePage{
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    padding: 1rem;
+    
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    // text-align: left;
+    padding: 8px;
+    border: 1px solid black;
+  }
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+  .head{
+    background-color: rgba(0, 51, 153, 1);
+    color: #dddddd;
+    text-align: center;
+    font-size: larger;
+  }
+  tfoot th{
+    border: none;
+  }
+  button{
+    cursor: pointer;
+    width: 5.5rem;
+    height: 2rem;
+    border-radius: 0.6rem;
+    border: none;
+    background-color: #999898;
+    font-weight: 600;
+  }
