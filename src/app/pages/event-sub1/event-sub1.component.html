@@ -38,5 +38,56 @@
 <div class="main" *ngFor="let data of pages[currentPageIndex].component">
         <app-image-cmp1 [AboutBanner]="data.metadata" *ngIf="data.compId===1"></app-image-cmp1>
         <!-- <app-tab-view-cmp1 [details]="data.metadata" *ngIf="data.compId === 2"></app-tab-view-cmp1> -->
+        <!-- <app-details-card2 [cardData]="data.metadata" *ngIf="data.compId===3"></app-details-card2>     -->
+</div>
+
+
+<div class="main-container">
+    <div class="event-details">
+        <div>
+            <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-tabs">
+              <li [ngbNavItem]="1">
+                <a ngbNavLink><b>EVENT DETAILS</b></a>
+                <ng-template ngbNavContent>
+                <div class="Ifo-details">
+                    <h1>Iskra.Tech 7.0</h1>
+                    <p>Iskra.Tech is an inter-collegiate I.T. event organized by Bachelor of Science in Information Technology (B.Sc-I.T.) students on December 15th, 2018. Iskra.Tech focuses on a variety of technological competitions.<br> These events are incredibly innovative and provide a unique alternative to the various college events held in Mumbai.
+                        <br>
+                        This event aims to showcase the student's talent, and we provide them with a platform to do so.
+                        To cultivate higher-order thinking abilities such as problem-solving, decision-making, critical thinking, and planning.
+                        More than 150 students from Mumbai participate.
+                        <br>
+                        In Iskra.tech 7.0, there were eight different types of competition.
+                        Like DIGI-STER (creating digital posters), FRONTEND WIZARD (creating static websites), LOGOTVLING (creating digital logos), OPTICODE.JS, CODE-TECH, TREASURE HUNT, and BLINDTYPING ,TECHNIZIA.
+                        "TECHNIZIA" was introduce this year and main focus of our attention this year.
+                        <br>
+                        Technizia is primarily for TYBScIT students; in TY, students must complete a project, either software or hardware related.
+                        So we kept the competition going so that they could bring their projects and exhibit them in front of other students and judges.
+                        The images clearly show the student's energy and enthusiasm.
+                        <br>
+                        The event was attended by shri shri Dutta Haldankar sir, president of the Chetana Trust, who praised the students and encouraged them.</p>
+                </div>
+                </ng-template>
+              </li>
+              <li [ngbNavItem]="2">
+                <a ngbNavLink><b>EVENT GALLERY</b></a>
+                <ng-template ngbNavContent>
+                 <div class="img">
+                    <img src="../../../assets/images/event/DSCN9433.JPG" alt="">
+                    <img src="../../../assets/images/event/DSCN9696.JPG" alt="">
+                    <img src="../../../assets/images/event/DSCN9714.JPG" alt="">
+                    <img src="../../../assets/images/event/DSCN9770.JPG" alt="">
+                    <img src="../../../assets/images/event/DSCN9772.JPG" alt="">
+                    <img src="../../../assets/images/event/DSCN9777.JPG" alt="">
+                 </div>
+                </ng-template>
+              </li>
+            </ul>
+            <div [ngbNavOutlet]="nav" class="mt-2"></div>
+          </div>
+    </div>
+    <div class="event" *ngFor="let data of pages[currentPageIndex].component">
         <app-details-card2 [cardData]="data.metadata" *ngIf="data.compId===3"></app-details-card2>    
+
+    </div>
 </div>
