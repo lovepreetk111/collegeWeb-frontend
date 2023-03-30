@@ -100,6 +100,7 @@ import { ModalComponent } from './component/modal/modal.component';
     ExaminationComponent,
     LeftTxtRightTextComponent,
     ModalComponent,
+    LoaderComponent
   
   ],
   imports: [
