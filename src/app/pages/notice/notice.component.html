@@ -17,7 +17,7 @@
             <tbody >
                 <!-- {{data | json}} -->
                 <tr *ngFor="let data of noticeData">
-                    <td><a [href]="data.noticeLink">{{data.noticeName}}</a></td>
+                    <td><a [href]="data.noticeLink" target="_blank">{{data.noticeName}}</a></td>
                     <td>{{data.noticeDate}}</td>
                 </tr>
              

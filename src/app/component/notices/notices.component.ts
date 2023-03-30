@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Inotice } from 'src/app/service/data';
+import { Inotice, INoticeConfig } from 'src/app/service/data';
+import { DataServiceService } from 'src/app/service/data-service.service';
 
 @Component({
   selector: 'app-notices',
@@ -8,9 +9,16 @@ import { Inotice } from 'src/app/service/data';
 })
 export class NoticesComponent implements OnInit {
   @Input() InputData:Inotice[]=[]
-  constructor() { }
+  @Input() noticeData: INoticeConfig[] = []
+  constructor(  private noticeDatas:DataServiceService) { }
 
   ngOnInit(): void {
+    this.noticeDatas.getNoticeData().subscribe(
+      data =>{
+        console.log(data);
+        this.noticeData = data;
+      }
+    )
   }
 
 }
