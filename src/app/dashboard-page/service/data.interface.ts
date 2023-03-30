@@ -36,24 +36,12 @@ export interface IcarouselInfo{
 
 export interface INoticeConfig {
     _id:string
-    noticeTitle: string
+    noticeLink: string
     noticeDate: string
     noticeName: string
-    updatedAt:string
-    createdAt:string
     Active: boolean
-    innerNoticeData: IInnerNoticeData[]
-    dashboardInfo: IDashboardInfo[]
 }
   
-export interface IInnerNoticeData {
-    img: string
-    noticeInfoText: string
-}
-
-export interface IDashboardInfo {
-    displayName: string,
-}
 
 // ========================================= Research =========================================================
 
