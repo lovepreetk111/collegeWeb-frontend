@@ -27,9 +27,9 @@ export class DashnoticeComponent implements OnInit {
         noticeName: new FormControl(''), 
         noticeLink: new FormControl(''),
         noticeDate: new FormControl(''),
-        modifiedBy: new FormControl(''),
-        createdAt: new FormControl(''),
-        updatedAt: new FormControl(''),
+        // modifiedBy: new FormControl(''),
+        // createdAt: new FormControl(''),
+        // updatedAt: new FormControl(''),
       }
 
     )
