@@ -10,11 +10,16 @@ import { IBannerCarosuelComponent } from 'src/app/service/data';
 export class BannerCarouselComponent implements OnInit {
   @ViewChild(NgbCarousel) ngbCarousal!: NgbCarousel;
   @Input() carousel2: IBannerCarosuelComponent[] = []
-  constructor() { }
+  constructor() { 
+    
+    console.log()
+  }
+  
+  
+
   i:any ='index';
   currentPosition = 0;
   isCarousalVisible!: boolean;
-
   pauseOnIndicator = false;
   pauseOnHover = true;
   pauseOnFocus = true;
