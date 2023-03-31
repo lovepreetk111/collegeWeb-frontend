@@ -114,13 +114,83 @@
 }
 
 
-@media screen and (max-width:550px) {
+@media screen and (max-width:400px) {
     .container-fluid {
-        height: 38vh;
+        height: 41vh;
 
         .main {
             width: 100%;
-            height: 32vh;
+            height: 35vh;
+
+            .info {
+                .caption {
+                    width: 38%;
+                    text-align: left;
+
+                    h1 {
+                        font-size: 0.89rem;
+                    }
+
+                    .row {
+                        p {
+                            font-size: 0.5rem;
+                        }
+                    }
+
+                    button {
+                        font-size: 0.5rem;
+                        padding: 4px 4px;
+                    }
+                }
+
+                .picsum-img-wrapper {
+                    width: 55%;
+                    height: 75%;
+
+                    img {
+                        width: 80%;
+                        height: 100%;
+                        margin-left: 20px;
+                    }
+                }
+            }
+        }
+
+        .buttons {
+            .slider-indicator {
+                gap: 8px;
+
+                span {
+                    width: 14px;
+                    height: 14px;
+
+                    &.active {
+                        background-color: rgba(0, 51, 153, 1);
+                    }
+                }
+            }
+
+            .navigation-buttons {
+                button {
+                    border: none;
+                    background: none;
+
+                    img {
+                        width: 40%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:400px) and (max-width:550px) {
+    .container-fluid {
+        height: 43vh;
+
+        .main {
+            width: 100%;
+            height: 36vh;
 
             .info {
                 .caption {
@@ -154,12 +224,6 @@
                     }
                 }
             }
-
-            .background{
-                
-            }
-
-
         }
 
         .buttons {
@@ -191,11 +255,11 @@
 
 @media (min-width:550px) and (max-width:810px) {
     .container-fluid {
-        height: 42vh;
+        height: 45vh;
 
         .main {
             width: 100%;
-            height: 38vh;
+            height: 39vh;
 
             .info {
                 .caption {
@@ -262,7 +326,7 @@
 
 @media (min-width:810px) and (max-width:1100px) {
     .container-fluid {
-        height: 50vh;
+        height: 53vh;
 
         .main {
             width: 100%;
