@@ -54,6 +54,7 @@ import { ExaminationComponent } from './pages/examination/examination.component'
 import { LeftTxtRightTextComponent } from './component/left-txt-right-text/left-txt-right-text.component';
 import { LoaderComponent } from './component/loader/loader.component';
 import { ModalComponent } from './component/modal/modal.component';
+import { AlumniComponent } from './pages/alumni/alumni.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -100,7 +101,8 @@ import { ModalComponent } from './component/modal/modal.component';
     ExaminationComponent,
     LeftTxtRightTextComponent,
     ModalComponent,
-    LoaderComponent
+    LoaderComponent,
+    AlumniComponent
   
   ],
   imports: [
