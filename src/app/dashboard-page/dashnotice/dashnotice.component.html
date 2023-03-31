@@ -35,28 +35,28 @@
                         <div class="modal-body">
                             <!-- Image if there is in notice -->
                             <form action="" [formGroup]="formValue">
-                                <div formGroupName="dashboardInfo">
-                                    <ng-container formArrayName="0">
-                                        <label for="CarouselHeader">Name to display on Dashboard</label>
-                                        <input type="text" formControlName="displayName" class="CarouselHeader"
+                                <div>
+                                    <ng-container>
+                                        <label for="CarouselHeader">Notice Name</label>
+                                        <input type="text" formControlName="noticeName" class="CarouselHeader"
                                             placeholder="Enter name">
                                     </ng-container>
                                 </div>
                                 <div>
                                     <ng-container>
-                                        <label for="CarouselHeader">Notice Title or Heading</label>
-                                        <input type="text" formControlName="noticeTitle" class="CarouselHeader"
-                                            placeholder="Enter name">
+                                        <label for="CarouselHeader">Notice Drive Link</label>
+                                        <input type="text" formControlName="noticeLink" class="CarouselHeader"
+                                            placeholder="Enter Notice name">
                                     </ng-container>
                                 </div>
                                 <div>
                                     <ng-container>
-                                        <label for="CarouselHeader">Date of the Notice</label>
-                                        <input type="text" formControlName="noticeDate" class="CarouselHeader"
-                                            placeholder="Enter name">
+                                        <label for="CarouselHeader">Last Date Notice</label>
+                                        <input type="date" formControlName="noticeDate" class="CarouselHeader"
+                                            placeholder="Enter Notice Drive's Link">
                                     </ng-container>
                                 </div>
-                                <div>
+                                <!-- <div>
                                     <ng-container>
                                         <label for="CarouselHeader">A short information of Notice</label>
                                         <input type="text" formControlName="noticeName" class="CarouselHeader"
@@ -76,7 +76,7 @@
                                         <input type="text" formControlName="noticeInfoText" class="CarouselHeader"
                                             placeholder="Enter description">
                                     </ng-container>
-                                </div>
+                                </div> -->
                                 
                             </form>
                         </div>
@@ -206,7 +206,7 @@
            </td> -->
           
            <!-- <td>{{allNoticeDatas.noticeDetails[0].name}}</td> -->
-           <td></td>
+           <td>{{allNoticeDatas.noticeName}}</td>
            <td>{{allNoticeDatas.createdAt | date:"dd/MM/yyyy"}}</td>
            <td></td>
            <td>{{allNoticeDatas.updatedAt | date:"dd/MM/yyyy"}}</td>

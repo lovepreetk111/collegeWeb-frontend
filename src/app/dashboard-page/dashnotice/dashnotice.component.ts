@@ -24,35 +24,13 @@ export class DashnoticeComponent implements OnInit {
     this.getNoticeData();
     this.formValue = this.formbuilder.group(
       {
-        noticeTitle: new FormControl(''),
-        noticeData: new FormControl(''),
         noticeName: new FormControl(''), 
-        createdAt: new FormControl(''),
-        updatedAt: new FormControl(''),
-        innerNoticeData: this.formbuilder.array([
-          this.formbuilder.group(
-            {
-              img: new FormControl(''),
-              noticeInfoText: new FormControl('')
-            }
-          )
-        ]),
-        noticeDetails: this.formbuilder.array([
-          this.formbuilder.group(
-            {
-              name: new FormControl(''),
-              createdBy: new FormControl(''),
-              modifiedBy: new FormControl(''),
-              description: new FormControl('')
-            }
-          )
-        ]),
-        dashboardInfo: this.formbuilder.array([
-          this.formbuilder.group({
-            displayName: new FormControl('')
-          })
-        ])
-      },
+        noticeLink: new FormControl(''),
+        noticeDate: new FormControl(''),
+        // modifiedBy: new FormControl(''),
+        // createdAt: new FormControl(''),
+        // updatedAt: new FormControl(''),
+      }
 
     )
   }
@@ -167,17 +145,21 @@ export class DashnoticeComponent implements OnInit {
   
     console.log('modified allNoticeDatas:', this.allNoticeDatas);
   
-    this.noticeservice.saveNoticeData( this.allNoticeDatas ).subscribe(
-      (res) => {
-        console.log(res);
-      },
-      (error) => {
-        console.log(error);
-      }
-    );
+    // this.noticeservice.saveNoticeData( this.allNoticeDatas ).subscribe(
+    //   (res) => {
+    //     console.log(res);
+    //   },
+    //   (error) => {
+    //     console.log(error);
+    //   }
+    // );
+
+    this.noticeservice.saveNoticeData(this.allNoticeDatas).subscribe((res:any)=>{
+console.log(res)
+    })
   }
 
 
 
 
-}
+  }

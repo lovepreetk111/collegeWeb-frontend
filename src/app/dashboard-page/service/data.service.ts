@@ -58,13 +58,22 @@ postBanData(data:IBannerCarosuelComponent):Observable<any>{
 return this.http.post<IBannerCarosuelComponent>((`${this.apiUrl}bannerData`),data)
 } 
 
+
 saveBannerData(bannerData: IBannerCarosuelComponent[] ): Observable<IBannerCarosuelComponent[]> {
   const url = `${this.apiUrl}bannerData/data`;
   return this.http.post<IBannerCarosuelComponent[]>(url, bannerData);
 }
 
+postNoticeData(data:INoticeConfig):Observable<any>{
+  return this.http.post<INoticeConfig>((`${this.apiUrl}notice-config`),data)
+  }
+// saveNoticeData(noticeData: INoticeConfig[] ): Observable<INoticeConfig[]> {
+//   const url = `${this.apiUrl}noticeData/data`;
+//   return this.http.post<INoticeConfig[]>(url, noticeData);
+// }
+
 saveNoticeData(noticeData: INoticeConfig[] ): Observable<INoticeConfig[]> {
-  const url = `${this.apiUrl}noticeData/data`;
+  const url = `${this.apiUrl}notice-config/data`;
   return this.http.post<INoticeConfig[]>(url, noticeData);
 }
 
@@ -73,9 +82,7 @@ saveRegisterData(registerData: Iregistration[] ): Observable<Iregistration[]> {
   return this.http.post<Iregistration[]>(url, registerData);
 }
 
-postNoticeData(data:IBannerCarosuelComponent):Observable<any>{
-  return this.http.post<IBannerCarosuelComponent>((`${this.apiUrl}notice-config`),data)
-  }
+
 
 
 postResearchData(data:IResearchComponent):Observable<any> {

@@ -332,6 +332,17 @@ export interface ItableIterable {
 }
 
 
+//////////////////////////////////////////////
+
+
+export interface INoticeConfig {
+  _id:string
+  noticeLink: string
+  noticeDate: string
+  noticeName: string
+}
+
+
 
 
 
