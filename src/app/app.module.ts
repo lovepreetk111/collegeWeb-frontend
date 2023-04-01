@@ -52,7 +52,11 @@ import {TableModule} from 'primeng/table';
 import { ResearchComponent } from './research/research.component';
 import { ExaminationComponent } from './pages/examination/examination.component';
 import { LeftTxtRightTextComponent } from './component/left-txt-right-text/left-txt-right-text.component';
+import { LoaderComponent } from './component/loader/loader.component';
 import { ModalComponent } from './component/modal/modal.component';
+
+import { AlumniComponent } from './pages/alumni/alumni.component';
+
 import { DashboardPageComponent } from './dashboard-page/dashboard-page.component';
 import { DashboardComponent } from './dashboard-page/dashboard/dashboard.component';
 import { DashdataTableComponent } from './dashboard-page/dashdata-table/dashdata-table.component';
@@ -84,7 +88,6 @@ import { DCampusComponent } from './dashboard-page/dashboard/DashboardHome/d-cam
 import { DCarouselComponent } from './dashboard-page/dashboard/DashboardHome/d-carousel/d-carousel.component';
 import { DTestimonialsComponent } from './dashboard-page/dashboard/DashboardHome/d-testimonials/d-testimonials.component';
 import { SuperadminComponent } from './dashboard-page/Auth/superadmin/superadmin.component';
-
 
 @NgModule({
   declarations: [
@@ -132,6 +135,8 @@ import { SuperadminComponent } from './dashboard-page/Auth/superadmin/superadmin
     ExaminationComponent,
     LeftTxtRightTextComponent,
     ModalComponent,
+    LoaderComponent,
+    AlumniComponent
     DashboardPageComponent,
     DashboardComponent,
     DashdataTableComponent,
@@ -159,8 +164,6 @@ import { SuperadminComponent } from './dashboard-page/Auth/superadmin/superadmin
     DCarouselComponent,
     DTestimonialsComponent,
     SuperadminComponent
-    
-  
   ],
   imports: [
     BrowserModule,

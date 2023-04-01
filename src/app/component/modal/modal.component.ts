@@ -9,7 +9,7 @@ import { INoticeDetails } from 'src/app/service/data';
 })
 export class ModalComponent implements OnInit {
   @Input() NoticeDetails: INoticeDetails[] = [];
-  displayMaximizable!: boolean;
+  displayMaximizable: boolean = false;
 
   constructor() { }
   displayBasic!: boolean;
@@ -18,7 +18,8 @@ export class ModalComponent implements OnInit {
     // this.displayMaximizable = true
   }
   showBasicDialog() {
-    this.displayBasic = true;
+    // this.displayBasic = true;
+    this.displayMaximizable = !this.displayMaximizable;
   }
 
   showMaximizableDialog() {

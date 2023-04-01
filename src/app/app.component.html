@@ -1,7 +1,16 @@
 
+<!-- <div *ngFor="let data of pages[0].component">
+    <app-header class="header" *ngIf="data.compId === 1" [headerData]="data.metadata"></app-header>
+    <router-outlet (activate)="onActivate($event)"></router-outlet>
+    <app-footer *ngIf="data.compId===8" [footerData]="data.metadata"></app-footer>
+</div>
+ -->
+
+ <app-alumni></app-alumni>
+
 <div *ngFor="let data of pages[0].component">
     <app-header class="header" *ngIf="data.compId === 1 && currentRoute !== 'admindashboard' && currentRoute !== 'auth/admin/register' && currentRoute !== 'auth/admin/login'  && currentRoute !== 'superadmin' && currentRoute !=='superadminlogin' "  [headerData]="data.metadata"></app-header>
     <router-outlet  (activate)="onActivate($event)"></router-outlet>
     <app-footer *ngIf="data.compId === 8 && currentRoute !== 'admindashboard' && currentRoute !== 'auth/admin/register' && currentRoute !== 'auth/admin/login'  && currentRoute !== 'superadmin' && currentRoute !=='superadminlogin'" [footerData]="data.metadata"></app-footer>
   </div>
-  
+

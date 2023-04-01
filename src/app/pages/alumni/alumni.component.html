@@ -1,0 +1,23 @@
+<div class="alumni"  *ngFor="let data of pages[0].component">
+<app-image-cmp1 [AboutBanner]="data.metadata" *ngIf="data.compId===0"></app-image-cmp1>
+
+<app-button-cmp1 [Text]="data.metadata.buttonData" *ngIf="data.compId === 3"></app-button-cmp1>
+<app-text-cmp1 [datas]="data.metadata.dataText" *ngIf="data.compId===3"></app-text-cmp1>
+
+<app-button-cmp1 [Text]="data.metadata.buttonData2" *ngIf="data.compId === 3"></app-button-cmp1>
+<app-text-cmp1 [datas]="data.metadata.dataText2" *ngIf="data.compId===3"></app-text-cmp1>
+
+<app-button-cmp1 [Text]="data.metadata.buttonData3" *ngIf="data.compId === 3"></app-button-cmp1>
+<app-text-cmp1 [datas]="data.metadata.dataText3" *ngIf="data.compId===3"></app-text-cmp1>
+
+<app-image-cmp1 [AboutBanner]="data.metadata" *ngIf="data.compId===2"></app-image-cmp1>
+
+<app-button-cmp1 [Text]="data.metadata.buttonData3" *ngIf="data.compId === 3"></app-button-cmp1>
+<app-text-cmp1 [datas]="data.metadata.dataText3" *ngIf="data.compId===3"></app-text-cmp1>
+
+<app-button-cmp1 [Text]="data.metadata" *ngIf="data.compId === 1"></app-button-cmp1>
+<app-place-table [tableData]="data.metadata" *ngIf="data.compId === 2"></app-place-table>
+
+<app-button-cmp1 [Text]="data.metadata.buttonData3" *ngIf="data.compId === 3"></app-button-cmp1>
+<app-text-cmp1 [datas]="data.metadata.dataText3" *ngIf="data.compId===3"></app-text-cmp1>
+</div>
