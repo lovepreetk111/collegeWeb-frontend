@@ -83,7 +83,6 @@ import { DAcademicsComponent } from './dashboard-page/dashboard/DashboardHome/d-
 import { DCampusComponent } from './dashboard-page/dashboard/DashboardHome/d-campus/d-campus.component';
 import { DCarouselComponent } from './dashboard-page/dashboard/DashboardHome/d-carousel/d-carousel.component';
 import { DTestimonialsComponent } from './dashboard-page/dashboard/DashboardHome/d-testimonials/d-testimonials.component';
-import {BreadcrumbModule} from 'angular-crumbs';
 import { SuperadminComponent } from './dashboard-page/Auth/superadmin/superadmin.component';
 
 
@@ -177,7 +176,6 @@ import { SuperadminComponent } from './dashboard-page/Auth/superadmin/superadmin
     ReactiveFormsModule,
     FormsModule,
     ConfirmDialogModule,
-    BreadcrumbModule
 
     
   ],
