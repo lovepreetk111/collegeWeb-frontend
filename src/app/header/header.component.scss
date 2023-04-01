@@ -18,9 +18,10 @@ header {
 
         ul {
             list-style: none;
+            padding-top: 7px;
 
-            // padding:0 10px;
             li {
+                cursor: pointer;
                 font-weight: 700;
                 font-size: 1rem;
             }
@@ -145,6 +146,15 @@ header {
 
 
 @media screen and (max-width:766px) {
+    header {
+        .top {
+            ul{
+                li{
+                    font-size: 0.7rem;
+                }
+            }
+        }
+    }
 
     #navbarNavDropdown {
         display: none;
@@ -170,11 +180,6 @@ header {
             border: none;
         }
     }
-
-
-
-
-
 }
 
 
@@ -190,16 +195,3 @@ header {
     }
 
 }
-
-//   p-sidebar p-sidebar-content {
-//     padding: 1rem 1rem;
-//     background: red;
-// }
-
-// p-sidebar{
-//     background-color: aqua;
-// }
-
-// .ng-trigger .ng-trigger-panelState .ng-tns-c141-0 .p-sidebar .p-sidebar-active .p-sidebar-left .ng-star-inserted{
-//     background-color: aqua;
-// }

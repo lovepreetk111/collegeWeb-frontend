@@ -330,3 +330,19 @@ export interface ITableData {
 export interface ItableIterable {
   tdData: string
 }
+
+
+//////////////////////////////////////////////
+
+
+export interface INoticeConfig {
+  _id:string
+  noticeLink: string
+  noticeDate: string
+  noticeName: string
+}
+
+
+
+
+

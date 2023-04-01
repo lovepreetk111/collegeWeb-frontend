@@ -1,0 +1,178 @@
+
+.dashboard{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    .left{
+        width: 20%;
+        height: 100%;
+        .sidebar{
+            width: 100%;
+            height: 135vh;
+            background: linear-gradient(180deg, #F3F4F7 5%, #003399 25%, #003399 80%);
+            box-shadow: 4px 0px 4px rgba(0, 0, 0, 0.25);
+            overflow-y:  scroll;
+            overflow-x: hidden;
+            .logo{
+                img{
+                width: 98%;
+                margin-top: 12%;
+                margin-left: 2%;
+                }
+            }
+            .menu{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                padding-top: 40%;
+                margin-left: 7px;
+
+                #np{
+                    margin-left: -7px;
+                }
+
+                .img-b{
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+
+                    img{
+                        width: 25px;
+                        height: 28px;
+                    }
+                }
+                
+                button{
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    font-size: 20px;
+                    font-weight: 500;
+                    background: none;
+                    outline: none;
+                    border: none;
+                    box-shadow: none;
+                    padding: 10px;
+                    margin-left: 9.5px;
+                    a{
+                        color: white;
+                        text-decoration: none;
+                    }
+                }
+                ul{
+                    width: 200px;
+                    background-color: #003298;
+                    
+                    li{
+                        width: 100%;
+                        padding-left: 5%;
+                        border-bottom: 1px solid white;
+                    }
+                    a{
+                        text-decoration: none;
+                        color: white;
+                        font-size: larger;
+                        font-weight: 500;
+                    }
+
+                }
+            }
+
+            .accordion-item{
+                background-color: #003298;
+
+                .img-a{
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    margin-left: 12px;
+
+                    img{
+                        width: 25px;
+                        height: 28px;
+
+                       
+                    
+                        .sp{
+                            color: #F3F4F7;
+                        }
+                    }
+                }
+
+            .accordion-header{
+                a{
+                    color: white;
+                    text-decoration: none;
+                }
+                
+                button{
+                    color: #F3F4F7;
+                    background-color: #003298;
+                    font-size: 20px;
+                        font-weight: 500;
+                }
+                
+            }
+            ul{
+                width: 100%;
+                background-color: #003298;
+                color: #F3F4F7;
+                text-decoration: none; 
+                list-style: none;
+                
+                li{
+                    width: 100%;
+                    margin-bottom: 2px;
+                }
+                a{
+                    text-decoration: none;
+                    color: white;
+                    font-size: larger;
+                    font-weight: 400;
+                }
+
+            }
+            }
+           
+        }
+    }
+    .right{
+        width: 80%;
+        height: 100%;
+        header{
+            width: 100%;
+            height: 10%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding-right: 2%;
+            box-shadow: 4px 0px 4px rgba(0, 0, 0, 0.25);
+            button{
+                background: none;
+                outline: none;
+                border: none;
+                box-shadow: none;
+                margin-right: 2%;
+            }
+            
+            ul{
+                width: 200px;
+                background-color: #003298;
+                color: white;
+                font-size: larger;
+                font-weight: 500;
+
+                li{
+                    width: 100%;
+                    padding-left: 5%;
+                    border-bottom: 1px solid white;
+
+                    a{
+                        color: #F3F4F7;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}

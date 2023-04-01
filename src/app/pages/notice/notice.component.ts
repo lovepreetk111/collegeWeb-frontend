@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { INoticeDetails } from 'src/app/service/data';
+import { INoticeConfig, INoticeDetails } from 'src/app/service/data';
+import { DataServiceService } from 'src/app/service/data-service.service';
 
 @Component({
   selector: 'app-notice',
@@ -7,7 +8,8 @@ import { INoticeDetails } from 'src/app/service/data';
   styleUrls: ['./notice.component.scss']
 })
 export class NoticeComponent implements OnInit {
-  constructor() { }
+  @Input() noticeData: INoticeConfig[] = []
+  constructor( private noticeDatas:DataServiceService) { }
 
   ngOnInit(): void {
 
@@ -16,6 +18,19 @@ export class NoticeComponent implements OnInit {
       image.style.visibility ="hidden";
       return true;
     } */
+
+    // this.banData.getBannerData().subscribe(
+    //   data => {
+    //     console.log(data)
+    //    this.carousel2 = data
+    //   }
+    // )
+    this.noticeDatas.getNoticeData().subscribe(
+      data =>{
+        console.log(data);
+        this.noticeData = data;
+      }
+    )
   }
   currentPageIndex = 0;
   pages: any = [

@@ -22,7 +22,7 @@ import { BannerCarouselComponent } from './component/banner-carousel/banner-caro
 import { ImageCmp1Component } from './component/image-cmp1/image-cmp1.component'
 import { TextCmp1Component } from './component/text-cmp1/text-cmp1.component';
 import { CircleImgLeftTxt1Component } from './component/circle-img-left-txt1/circle-img-left-txt1.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FormComponent1Component } from './component/form-component1/form-component1.component';
 import { CourseComponent } from './pages/course/course.component';
 import{ LeftImg2Component } from './component/left-img2/left-img2.component';
@@ -54,7 +54,41 @@ import { ExaminationComponent } from './pages/examination/examination.component'
 import { LeftTxtRightTextComponent } from './component/left-txt-right-text/left-txt-right-text.component';
 import { LoaderComponent } from './component/loader/loader.component';
 import { ModalComponent } from './component/modal/modal.component';
+
 import { AlumniComponent } from './pages/alumni/alumni.component';
+
+import { DashboardPageComponent } from './dashboard-page/dashboard-page.component';
+import { DashboardComponent } from './dashboard-page/dashboard/dashboard.component';
+import { DashdataTableComponent } from './dashboard-page/dashdata-table/dashdata-table.component';
+import { DashdisplayComponent } from './dashboard-page/dashdisplay/dashdisplay.component';
+import { DashnoticeComponent } from './dashboard-page/dashnotice/dashnotice.component';
+import { CoursesComponent } from './dashboard-page/pages/courses/courses.component';
+import { BaComponent } from './dashboard-page/pages/courses/Degree college/ba/ba.component';
+import { BcomComponent } from './dashboard-page/pages/courses/Degree college/bcom/bcom.component';
+import { YcmouComponent } from './dashboard-page/pages/courses/Distances learning/ycmou/ycmou.component';
+import { PhdComComponent } from './dashboard-page/pages/courses/Doctoral programme/phd-com/phd-com.component';
+import { FYJCComponent } from './dashboard-page/pages/courses/Junior college/fyjc/fyjc.component';
+import { SYJCComponent } from './dashboard-page/pages/courses/Junior college/syjc/syjc.component';
+import { McomComponent } from './dashboard-page/pages/courses/PG/mcom/mcom.component';
+import { BscitComponent } from './dashboard-page/pages/courses/CSFC/bscit/bscit.component';
+import { BafComponent } from './dashboard-page/pages/courses/CSFC/baf/baf.component';
+import { BmsComponent } from './dashboard-page/pages/courses/CSFC/bms/bms.component';
+import { BmmcComponent } from './dashboard-page/pages/courses/CSFC/bmmc/bmmc.component';
+import { StudentscornerComponent } from './dashboard-page/pages/studentscorner/studentscorner.component';
+import { HttpClientModule } from '@angular/common/http';
+
+import { LoginFormComponent } from './dashboard-page/Auth/login-form/login-form.component';
+import { RegistrationFormComponent } from './dashboard-page/Auth/registration-form/registration-form.component';
+import { AdminloginComponent } from './dashboard-page/Auth/adminlogin/adminlogin.component';
+import {ConfirmDialogModule} from 'primeng/confirmdialog';
+import { ConfirmationService } from 'primeng/api';
+import { DAboutchetanaComponent } from './dashboard-page/dashboard/DashboardHome/d-aboutchetana/d-aboutchetana.component';
+import { DAcademicsComponent } from './dashboard-page/dashboard/DashboardHome/d-academics/d-academics.component';
+import { DCampusComponent } from './dashboard-page/dashboard/DashboardHome/d-campus/d-campus.component';
+import { DCarouselComponent } from './dashboard-page/dashboard/DashboardHome/d-carousel/d-carousel.component';
+import { DTestimonialsComponent } from './dashboard-page/dashboard/DashboardHome/d-testimonials/d-testimonials.component';
+import { SuperadminComponent } from './dashboard-page/Auth/superadmin/superadmin.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -103,7 +137,33 @@ import { AlumniComponent } from './pages/alumni/alumni.component';
     ModalComponent,
     LoaderComponent,
     AlumniComponent
-  
+    DashboardPageComponent,
+    DashboardComponent,
+    DashdataTableComponent,
+    DashdisplayComponent,
+    DashnoticeComponent,
+    CoursesComponent,
+    BaComponent,
+    BcomComponent,
+    YcmouComponent,
+    PhdComComponent,
+    FYJCComponent,
+    SYJCComponent,
+    McomComponent,
+    BscitComponent,
+    BafComponent,
+    BmsComponent,
+    BmmcComponent,
+    StudentscornerComponent,
+    LoginFormComponent,
+    RegistrationFormComponent,
+    AdminloginComponent,
+    DAboutchetanaComponent,
+    DAcademicsComponent,
+    DCampusComponent,
+    DCarouselComponent,
+    DTestimonialsComponent,
+    SuperadminComponent
   ],
   imports: [
     BrowserModule,
@@ -114,10 +174,15 @@ import { AlumniComponent } from './pages/alumni/alumni.component';
     SidebarModule,
     BrowserAnimationsModule,
     TableModule,
-    DialogModule
+    DialogModule,
+    HttpClientModule,
+    ReactiveFormsModule,
+    FormsModule,
+    ConfirmDialogModule,
+
     
   ],
-  providers: [],
+  providers: [ConfirmationService,],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

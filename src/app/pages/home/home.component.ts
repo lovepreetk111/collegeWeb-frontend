@@ -66,15 +66,19 @@ export class HomeComponent implements OnInit {
                 text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. ',
                 buttonText: 'readMore',
               },
-              background: {
-                url: '../../../assets/image/ChetanaDC.jpeg',
-                alt: 'yeh bhi hai kych',
-              },
               image: {
                 url: '../../../assets/image/BestCollegeCertificate.jpeg',
                 alt: 'IDK'
               },
               routeLink: 'route karo and ghar bhejo',
+            },
+            {
+              id: 7,
+              image: {
+                url: '../../../assets/image/ISO Certificate.jpg',
+                alt: 'yeh bhi hai kych',
+              },
+              /*  */
             },
             {
               id: 2,
@@ -83,10 +87,6 @@ export class HomeComponent implements OnInit {
                 text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. ',
                 buttonText: 'readMore',
               },
-              background: {
-                url: '../../../assets/image/ChetanaDC.jpeg',
-                alt: 'yeh bhi hai kych',
-              },
               image: {
                 url: '../../../assets/image/idbicertificate.jpg',
                 alt: 'IDK'
@@ -94,15 +94,11 @@ export class HomeComponent implements OnInit {
               routeLink: 'route karo and ghar bhejo',
             },
             {
-              id: 1,
+              id: 3,
               innerData: {
-                header: 'Techkriti 6.0',
+                header: 'Chakraview',
                 text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. ',
                 buttonText: 'readMore',
-              },
-              background: {
-                url: '../../../assets/image/ChetanaDC.jpeg',
-                alt: 'yeh bhi hai kych',
               },
               image: {
                 url: '../../../assets/image/ISO Certificate.jpg',
@@ -111,15 +107,11 @@ export class HomeComponent implements OnInit {
               routeLink: 'route karo and ghar bhejo',
             },
             {
-              id: 3,
+              id: 4,
               innerData: {
-                header: 'Techkriti 6.0',
+                header: 'Iskra.Tech',
                 text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. ',
                 buttonText: 'readMore',
-              },
-              background: {
-                url: '../../../assets/images/ChetanaJC.svg',
-                alt: 'yeh bhi hai kych',
               },
               image: {
                 url: '../../../assets/images/ChetanaJC.svg',
@@ -127,6 +119,34 @@ export class HomeComponent implements OnInit {
               },
               routeLink: 'route karo and ghar bhejo',
             },
+            {
+              id: 5,
+              image: {
+                url: '../../../assets/image/BestCollegeCertificate.jpeg',
+                alt: 'yeh bhi hai kych',
+              },
+            },
+            {
+              id: 6,
+              innerData: {
+                header: 'Sanviti',
+                text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. ',
+                buttonText: 'readMore',
+              },
+              image: {
+                url: '../../../assets/image/ISO Certificate.jpg',
+                alt: 'IDK'
+              },
+              routeLink: 'route karo and ghar bhejo',
+            },
+            {
+              id:8,
+              image: {
+                url: '../../../assets/image/ISO Certificate.jpg',
+                alt: 'IDK'
+              },
+              /* ../../../assets/image/ISO Certificate.jpg */
+            }
           ]
         },
         {
@@ -192,135 +212,135 @@ export class HomeComponent implements OnInit {
               AccordianData: [
                 {
                   Title: 'JUNIOR COLLEGE',
-                  SubTitles:[
+                  SubTitles: [
                     {
-                      id:1,
-                      title:"Arts",
-                      link:"course/arts"
+                      id: 1,
+                      title: "Arts",
+                      link: "course/arts"
                     },
                     {
-                      id:2,
-                      title:"Commerce",
-                      link:"course/comm"
+                      id: 2,
+                      title: "Commerce",
+                      link: "course/comm"
                     },
                     {
-                      id:3,
-                      title:"MCVC",
-                      link:"course/mcvc"
+                      id: 3,
+                      title: "MCVC",
+                      link: "course/mcvc"
                     }
                   ]
                 },
                 {
                   Title: 'DEGREE COLLEGE',
-                  SubTitles:[
+                  SubTitles: [
                     {
-                      id:1,
-                      title:"BA",
-                      link:"course/ba"
+                      id: 1,
+                      title: "BA",
+                      link: "course/ba"
                     },
                     {
-                      id:2,
-                      title:"BCOM",
-                      link:"course/bcom"
+                      id: 2,
+                      title: "BCOM",
+                      link: "course/bcom"
                     },
-                    
+
                   ]
                 },
                 {
                   Title: 'SELF FINANCING COURSES',
-                  SubTitles:[
+                  SubTitles: [
                     {
-                      id:1,
-                      title:"BMS",
-                      link:"course/bms"
+                      id: 1,
+                      title: "BMS",
+                      link: "course/bms"
                     },
                     {
-                      id:2,
-                      title:"BAF",
-                      link:"course/baf"
+                      id: 2,
+                      title: "BAF",
+                      link: "course/baf"
                     },
                     {
-                      id:3,
-                      title:"BAMMC",
-                      link:"course/bammc"
+                      id: 3,
+                      title: "BAMMC",
+                      link: "course/bammc"
                     },
                     {
-                      id:4,
-                      title:"B.Sc.IT",
-                      link:"course/bscit"
+                      id: 4,
+                      title: "B.Sc.IT",
+                      link: "course/bscit"
                     }
                   ]
                 },
                 {
                   Title: 'POST GRADUATE PROGRAMME',
-                  SubTitles:[
+                  SubTitles: [
                     {
-                      id:1,
-                      title:"MASTER OF COMMERCE",
-                      link:"course/mcom"
+                      id: 1,
+                      title: "MASTER OF COMMERCE",
+                      link: "course/mcom"
                     },
-                    
+
                   ]
                 },
                 {
                   Title: 'DOCTORAL Programme',
-                  SubTitles:[
+                  SubTitles: [
                     {
-                      id:1,
-                      title:"PH. D. In Commerce",
-                      link:"course/arts"
+                      id: 1,
+                      title: "PH. D. In Commerce",
+                      link: "course/arts"
                     },
-                    
+
                   ]
                 },
                 {
                   Title: 'DISTANCE LEARNING',
-                  SubTitles:[
+                  SubTitles: [
                     {
-                      id:1,
-                      title:"Y.C.M.O.U",
-                      link:"course/yomuc"
+                      id: 1,
+                      title: "Y.C.M.O.U",
+                      link: "course/yomuc"
                     },
-                    
+
                   ]
                 }
               ]
             }
           ],
         },
-      /*   {
-          compId: 6,
-          compName: "cardcarosuel",
-          metadata: 
-            {
-              title:"Our Campus",
-              slides: [
-                {
-                    url: "assets/images/bg.png",
-                    alt: "image",
-                    routeLink:'ground/kuch-toh',
-                    cardHeading:"Ground",
-                    description:"Lorem ki maa ki chudiya"
-                  },
+        /*   {
+            compId: 6,
+            compName: "cardcarosuel",
+            metadata: 
+              {
+                title:"Our Campus",
+                slides: [
                   {
-                    url: "assets/images/bg2.png",
-                    alt: "image",
-                    routeLink:'ground/kuch-toh',
-                    cardHeading:"Ground",
-                    description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-                  },
-                {
-                    url: "assets/images/bg1.png",
-                    alt: "image",
-                    routeLink:'ground/kuch-toh',
-                    cardHeading:"Ground",
-                    description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-                  }
-              ]
-            }
-
-          
-        }, */
+                      url: "assets/images/bg.png",
+                      alt: "image",
+                      routeLink:'ground/kuch-toh',
+                      cardHeading:"Ground",
+                      description:"Lorem ki maa ki chudiya"
+                    },
+                    {
+                      url: "assets/images/bg2.png",
+                      alt: "image",
+                      routeLink:'ground/kuch-toh',
+                      cardHeading:"Ground",
+                      description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                    },
+                  {
+                      url: "assets/images/bg1.png",
+                      alt: "image",
+                      routeLink:'ground/kuch-toh',
+                      cardHeading:"Ground",
+                      description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                    }
+                ]
+              }
+  
+            
+          }, */
         {
           compId: 7,
           compName: 'testimonials',
@@ -353,33 +373,33 @@ export class HomeComponent implements OnInit {
             ]
           }
         },
-      {  
+        {
           compId: 8,
           compName: 'detailcard2',
           metadata:
           {
-            image:'../../../assets/images/EventPhoto.jpg',
-            alt:'Pankaj',
-            date:'20TH NOV',
-            eventName:'TECHKRITI 6.0',
-            time:'9:00 to 11:00',
-            venu:'CHETANA COLLEGE'
+            image: '../../../assets/images/EventPhoto.jpg',
+            alt: 'Pankaj',
+            date: '20TH NOV',
+            eventName: 'TECHKRITI 6.0',
+            time: '9:00 to 11:00',
+            venu: 'CHETANA COLLEGE'
           }
-        } ,
-        
-        {  
+        },
+
+        {
           compId: 9,
           compName: 'speaker',
           metadata:
-          [
-          {
-            image:'/assets/images/FACULTY.svg',
-            alt:'Reddy',
-            name:'Saravanan Reddy',
-            role:'Course Co-ordinator'
-          }
-        ]
-        } 
+            [
+              {
+                image: '/assets/images/FACULTY.svg',
+                alt: 'Reddy',
+                name: 'Saravanan Reddy',
+                role: 'Course Co-ordinator'
+              }
+            ]
+        }
 
       ]
     }

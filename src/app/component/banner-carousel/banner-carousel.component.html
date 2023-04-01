@@ -2,21 +2,24 @@
 	<ngb-carousel #ngCarousal [interval]="10000" *ngIf="carousel2" [showNavigationArrows]="false"
 		[showNavigationIndicators]="false">
 		<ng-template ngbSlide *ngFor="let data of carousel2">
-			<div class="main">
+			<div *ngIf="data.innerData" class="main">
 				<div class="info">
 					<div class="caption">
 						<h1 class="default" [title]="data.innerData.header">{{data.innerData.header}}</h1>
 						<div class="row">
-						<p>{{data.innerData.text}}</p>
+							<p>{{data.innerData.text}}</p>
 						</div>
 						<button>{{data.innerData.buttonText}}</button>
 					</div>
-					<div class="picsum-img-wrapper" >
+					<div class="picsum-img-wrapper">
 						<img [src]="data.image.url" [alt]="data.image.alt" />
 					</div>
 				</div>
+			</div>
+			<div *ngIf="!data.innerData" class="main">
+				<!-- <div class="background" [ngStyle]="{backgroundImage:'url('+data.image.url+')'}"> -->
 				<div class="background">
-					<!-- <img [src]="data.background.url" [alt]="data.background.alt" /> -->
+					<img [src]="data.image.url" [alt]="data.image.alt" />
 				</div>
 			</div>
 		</ng-template>

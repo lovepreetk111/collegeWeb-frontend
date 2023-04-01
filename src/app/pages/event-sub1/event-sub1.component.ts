@@ -7,7 +7,7 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./event-sub1.component.scss']
 })
 export class EventSub1Component implements OnInit {
-
+  active=1
 
   currentPageIndex = 0;
   // pages: any = [

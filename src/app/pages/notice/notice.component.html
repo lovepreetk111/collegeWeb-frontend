@@ -1,6 +1,29 @@
-<div class="containers" *ngFor="let data of pages[0].component">
-    <app-button-cmp1 [Text]="data.metadata.buttonData" *ngIf="data.compId === 1"></app-button-cmp1>
-    <app-modal [NoticeDetails]="data.metadata.data" *ngIf="data.compId === 1"></app-modal>
-    <app-button-cmp1 [Text]="data.metadata.buttonData" *ngIf="data.compId === 2"></app-button-cmp1>
-    <app-modal [NoticeDetails]="data.metadata.newData" *ngIf="data.compId === 2"></app-modal>
+<div class="noticePage">
+    <table>
+        <thead class="head">
+            <tr>
+                <th>Notices</th>
+                <th>Date</th>
+
+            </tr>
+        </thead>
+            <tbody >
+                <!-- {{data | json}} -->
+                <tr *ngFor="let data of noticeData">
+                    <td><a [href]="data.noticeLink" target="_blank">{{data.noticeName}}</a></td>
+                    <td>{{data.noticeDate}}</td>
+                </tr> 
+            </tbody>
+            <!-- <tfoot>
+                <tr>
+                    <th><button onclick="previous()">Previous</button></th>
+                    <th><span>Page no.</span><span id="num" value="1">1</span></th>
+                    <th><button onclick="next()">Next</button></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                     </tr>
+            </tfoot> -->
+    </table>
 </div>
