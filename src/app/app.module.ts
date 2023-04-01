@@ -88,7 +88,7 @@ import { DCampusComponent } from './dashboard-page/dashboard/DashboardHome/d-cam
 import { DCarouselComponent } from './dashboard-page/dashboard/DashboardHome/d-carousel/d-carousel.component';
 import { DTestimonialsComponent } from './dashboard-page/dashboard/DashboardHome/d-testimonials/d-testimonials.component';
 import { SuperadminComponent } from './dashboard-page/Auth/superadmin/superadmin.component';
-
+import { BreadcrumbModule } from 'angular-crumbs';
 @NgModule({
   declarations: [
     AppComponent,
@@ -136,7 +136,7 @@ import { SuperadminComponent } from './dashboard-page/Auth/superadmin/superadmin
     LeftTxtRightTextComponent,
     ModalComponent,
     LoaderComponent,
-    AlumniComponent
+    AlumniComponent,
     DashboardPageComponent,
     DashboardComponent,
     DashdataTableComponent,
@@ -179,6 +179,7 @@ import { SuperadminComponent } from './dashboard-page/Auth/superadmin/superadmin
     ReactiveFormsModule,
     FormsModule,
     ConfirmDialogModule,
+    BreadcrumbModule
 
     
   ],
