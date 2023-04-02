@@ -1,5 +1,4 @@
 <div class="about-banner" *ngFor="let data of AboutBanner">
   <img [src]="data.url" [alt]="data.alt">
-    <h1>{{data.text}}</h1>
-  </div>
-<!-- <img src="../../../assets/images/Chetana Building.jpeg" alt=""> -->
+  <h1 [innerHTML]="data.text"></h1>
+</div>

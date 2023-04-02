@@ -18,19 +18,23 @@ header {
 
         ul {
             list-style: none;
-            padding-top: 7px;
+            padding-top: 12px;
 
             li {
                 cursor: pointer;
                 font-weight: 700;
                 font-size: 1rem;
+                a {
+                    display: flex;
+                    align-items: center;
+                    margin: 1px;
+                    color: white;
+                    text-decoration: none;
+                    // list-style: none;
+                }
             }
 
-            a {
-                display: flex;
-                align-items: center;
-                margin: 1px;
-            }
+           
         }
     }
 

@@ -13,7 +13,7 @@ export interface InavLogo {
 export interface IImpLinks {
   id: string,
   impLinks: string,
-  routeslinks: string;
+  routelinks: string;
 }
 export interface INavbarData {
   id: string;

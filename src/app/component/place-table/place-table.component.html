@@ -4,50 +4,12 @@
       <tr *ngFor="let data of tableData.thead">
         <th *ngFor="let info of data.tablehead" scope="  1
           col">{{info.thdata}}</th>
-        <!-- <th scope="col">COMPANY</th>
-        <th scope="col">POST</th>
-        <th scope="col">YEAR</th> -->
       </tr>
     </thead>
     <tbody>
       <tr *ngFor="let data of tableData.data">
-        <td *ngFor="let config of data.trdata">{{config.tdData}}</td>
-        <!-- <td>WebAppZap</td>
-        <td>Web Designar</td>
-        <td>2020-2023</td> -->
+        <td *ngFor="let config of data.trdata" [innerHTML]="config.tdData"></td>
       </tr>
-
-      <!-- <tr>
-        <td>Lovepreet Kaur Salgotra</td>
-        <td>WebAppZap</td>
-        <td>Web Developer</td>
-        <td>2020-2023</td>
-      </tr>
-      <tr>
-        <td>Aashish Sharma</td>
-        <td>WebAppZap</td>
-        <td>Web Designar</td>
-        <td>2020-2023</td>
-      </tr>
-      <tr>
-        <td>Ritesh Sharma</td>
-        <td>WebAppZap</td>
-        <td>Web Developer</td>
-        <td>2020-2023</td>
-      </tr>
-      <tr>
-        <td>Ghazala Shaikh</td>
-        <td>T.Y.I.T.</td>
-        <td>Bina Kaam ki C.R.</td>
-        <td>2020-2023</td>
-      </tr>
-      <tr>
-        <td>Pankaj Vishvakarma</td>
-        <td>WebAppZap</td>
-        <td>Web Developer</td>
-        <td>2020-2023</td>
-      </tr> -->
-
     </tbody>
   </table>
 </div>

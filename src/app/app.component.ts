@@ -48,12 +48,12 @@ constructor(private router: Router) {
                 {
                   id: 1,
                   impLinks: "NAAC-IQAC",
-                  routeslinks: '/naac'
+                  routelinks: '/naac'
                 },
                 {
                   id: 2,
                   impLinks: "ALUMINI",
-                  routeslinks: "alumini"
+                  routelinks: 'alumini'
                 },
 
               ],
