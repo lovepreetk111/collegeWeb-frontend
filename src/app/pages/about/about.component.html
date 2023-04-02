@@ -2,8 +2,7 @@
     <div *ngIf="aboutpage">
         <div *ngFor="let data of pages[0].component">
             <app-image-cmp1 [AboutBanner]="data.metadata.info6" *ngIf="data.compId === 1"></app-image-cmp1>
-            <app-circle-img-left-txt1 [About]="data.metadata.aboutMain"
-                *ngIf="data.compId === 1"></app-circle-img-left-txt1>
+            <app-circle-img-left-txt1 [About]="data.metadata.aboutMain" *ngIf="data.compId === 1"></app-circle-img-left-txt1>
             <div class="about">
                 <app-button-cmp1 [Text]="data.metadata.info" *ngIf="data.compId === 1"></app-button-cmp1>
                 <app-text-cmp1 [datas]="data.metadata.info3"></app-text-cmp1>
@@ -20,19 +19,24 @@
     <div *ngIf="campus">
         <div *ngFor="let data of pages[1].component">
             <app-button-cmp1 [Text]="data.metadata.labHeader" *ngIf="data.compId === 1"></app-button-cmp1>
-            <app-right-txt-left-img1 [details]="data.metadata.labData" *ngIf="data.compId === 1"></app-right-txt-left-img1>
+            <app-right-txt-left-img1 [details]="data.metadata.labData"
+                *ngIf="data.compId === 1"></app-right-txt-left-img1>
 
             <app-button-cmp1 [Text]="data.metadata.itHeader" *ngIf="data.compId === 1"></app-button-cmp1>
-        <app-left-txt-right-text [details]="data.metadata.itData" *ngIf="data.compId === 1"></app-left-txt-right-text>
-        
-        <app-button-cmp1 [Text]="data.metadata.sportsHeader" *ngIf="data.compId === 1"></app-button-cmp1>
-        <app-right-txt-left-img1 [details]="data.metadata.sportsData" *ngIf="data.compId === 1"></app-right-txt-left-img1>
+            <app-left-txt-right-text [details]="data.metadata.itData"
+                *ngIf="data.compId === 1"></app-left-txt-right-text>
 
-        <app-button-cmp1 [Text]="data.metadata.canteenHeader" *ngIf="data.compId === 1"></app-button-cmp1>
-        <app-left-txt-right-text [details]="data.metadata.canteenData" *ngIf="data.compId === 1"></app-left-txt-right-text>
+            <app-button-cmp1 [Text]="data.metadata.sportsHeader" *ngIf="data.compId === 1"></app-button-cmp1>
+            <app-right-txt-left-img1 [details]="data.metadata.sportsData"
+                *ngIf="data.compId === 1"></app-right-txt-left-img1>
 
-        <app-button-cmp1 [Text]="data.metadata.audiHeader" *ngIf="data.compId === 1"></app-button-cmp1>
-        <app-right-txt-left-img1 [details]="data.metadata.audiData" *ngIf="data.compId === 1"></app-right-txt-left-img1>
+            <app-button-cmp1 [Text]="data.metadata.canteenHeader" *ngIf="data.compId === 1"></app-button-cmp1>
+            <app-left-txt-right-text [details]="data.metadata.canteenData"
+                *ngIf="data.compId === 1"></app-left-txt-right-text>
+
+            <app-button-cmp1 [Text]="data.metadata.audiHeader" *ngIf="data.compId === 1"></app-button-cmp1>
+            <app-right-txt-left-img1 [details]="data.metadata.audiData"
+                *ngIf="data.compId === 1"></app-right-txt-left-img1>
         </div>
     </div>
 </div>

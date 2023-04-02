@@ -27,17 +27,8 @@ constructor(private router: Router) {
       this.currentRoute = currentRoute?.routeConfig?.path ?? '';
     }
     
-  });
-
-  
+  });  
 }
-
-
-
-
-  
-  
-
   onActivate(event: any) {
     window.scroll(0, 0)
   }
@@ -57,12 +48,12 @@ constructor(private router: Router) {
                 {
                   id: 1,
                   impLinks: "NAAC-IQAC",
-                  routeLinks: '/naac'
+                  routelinks: '/naac'
                 },
                 {
                   id: 2,
                   impLinks: "ALUMINI",
-                  routeLinks: "alumini"
+                  routelinks: 'alumini'
                 },
 
               ],
