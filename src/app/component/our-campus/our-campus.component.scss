@@ -87,16 +87,20 @@
 .container-fluid {
     font-family: 'Ubuntu', sans-serif;
     width: 100%;
-    height: 73vh;
+    height: 55vh;
     margin: 0;
     padding: 0;
 
     ::ng-deep {
         .main{
             width: 100%;
-            height: 40vh;
+            height: 45vh;
             display: flex;
             justify-content: space-around;
+            padding-top: 40px;
+
+            .carousel{
+            }
         .card{
             width: 30%;
             .text{
