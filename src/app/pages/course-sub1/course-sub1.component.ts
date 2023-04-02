@@ -96,12 +96,7 @@ export class CourseSub1Component implements OnInit {
               text10: "ARTS SYLLABUS MUMBAI UNIVERSITY",
               link: "https://mu.ac.in/wp-content/uploads/2021/10/B.Sc.I.T-Syllabus-FY-SY-TY.pdf",
               facultyData: [
-                {
-                  url: "assets/images/FACULTY.svg",
-                  alt: "don",
-                  facultyName: "Reddy sir",
-                  facultyDetails: ""
-                }
+
               ],
               table: [
                 {
@@ -217,12 +212,7 @@ export class CourseSub1Component implements OnInit {
               text10: "COMMERCR SYLLABUS MUMBAI UNIVERSITY",
               link: "https://mu.ac.in/wp-content/uploads/2021/10/B.Sc.I.T-Syllabus-FY-SY-TY.pdf",
               facultyData: [
-                {
-                  url: "assets/images/FACULTY.svg",
-                  alt: "don",
-                  facultyName: "Reddy sir",
-                  facultyDetails: ""
-                }
+
               ],
               table: [
                 {
@@ -338,12 +328,7 @@ export class CourseSub1Component implements OnInit {
               text10: "M.C.V.C SYLLABUS MUMBAI UNIVERSITY",
               link: "https://mu.ac.in/wp-content/uploads/2021/10/B.Sc.I.T-Syllabus-FY-SY-TY.pdf",
               facultyData: [
-                {
-                  url: "assets/images/FACULTY.svg",
-                  alt: "don",
-                  facultyName: "Reddy sir",
-                  facultyDetails: ""
-                }
+
               ],
               table: [
                 {
@@ -687,31 +672,31 @@ export class CourseSub1Component implements OnInit {
               facultyData: [
                 {
                   url: "assets/images/FACULTY.svg",
-                  alt: "don",
+                  alt: "Taqdees Ma'am",
                   facultyName: "MS. TAQDEES SHAIKH",
                   facultyDetails: "ASST.CHIEF CO-ORDINATOR ,<br> HOD Bachelor Of Management Studies"
                 },
                 {
                   url: "assets/image/amisha.jpeg",
-                  alt: "don",
+                  alt: "Amisha Ma'am",
                   facultyName: "Prof.Amisha Merchant",
                   facultyDetails: "Department of Bms and bscIT"
                 },
                 {
                   url: "assets/image/shubham.jpeg",
-                  alt: "don",
+                  alt: "Shubham Sir",
                   facultyName: "Prof.Shubham Shinde",
                   facultyDetails: "Depratment of Bmm and bms"
                 },
                 {
                   url: "assets/image/praglab.JPG",
-                  alt: "don",
+                  alt: "Praglab Sir",
                   facultyName: "Prof.Praglab Jha",
                   facultyDetails: "Department of BMM , bms and baf"
                 },
                 {
                   url: "assets/image/pranali.jpeg",
-                  alt: "don",
+                  alt: "Pranali Ma'am",
                   facultyName: "Prof.Pranali Chandanshiv",
                   facultyDetails: "Department of bmm , bms and baf"
                 }
@@ -833,19 +818,19 @@ export class CourseSub1Component implements OnInit {
               facultyData: [
                 {
                   url: "assets/images/FACULTY.svg",
-                  alt: "don",
+                  alt: "Debjani ma'am",
                   facultyName: "MS. DEBJANI SINGHA",
                   facultyDetails: "HOD,B.COM In ACCOUNTING & FINANCE"
                 },
                 {
                   url: "assets/image/praglab.JPG",
-                  alt: "don",
+                  alt: "praglab sir",
                   facultyName: "Prof.Praglab Jha",
                   facultyDetails: "Department of BMM , bms and baf"
                 },
                 {
                   url: "assets/image/pranali.jpeg",
-                  alt: "don",
+                  alt: "pranali maam",
                   facultyName: "Prof.Pranali Chandanshiv",
                   facultyDetails: "Department of bmm , bms and baf"
                 }
@@ -939,29 +924,29 @@ export class CourseSub1Component implements OnInit {
               text8: "Duration of the programme and related information:",
               text9: "<li> The programme is full time, consisting of six semester spread over three years.<br> <li> The course consists of 36 module<br> <li> As per the University guidelines, degree will be conferred under “Choice Based Credit System” with 20 Credit Points per Semester and 10 Point Grading System<br> <li>A total number of lectures per course (subject) shall be a minimum of 50 and a maximum of 60, each of 50 minutes duration.",
               text10: "B.A.M.M.C. SYLLABUS MUMBAI UNIVERSITY",
-              link: "https://mu.ac.in/wp-content/uploads/2020/01/4.8-AND-4.9BAMMC-SYLLABUS-Sem-3-4-5-6-July-25-2019.pdf",              
+              link: "https://mu.ac.in/wp-content/uploads/2020/01/4.8-AND-4.9BAMMC-SYLLABUS-Sem-3-4-5-6-July-25-2019.pdf",
               facultyData: [
                 {
                   url: "assets/image/sabir.jpeg",
-                  alt: "don",
+                  alt: "sabir sir",
                   facultyName: "Prof. Sabir Mujhavar",
                   facultyDetails: "HOD,Bachelor Of Arts In Multimedia And Mass Communication"
                 },
                 {
                   url: "assets/image/shubham.jpeg",
-                  alt: "don",
+                  alt: "shubham sir",
                   facultyName: "Prof.Shubham Shinde",
                   facultyDetails: "Depratment of Bmm and bms"
                 },
                 {
                   url: "assets/image/praglab.JPG",
-                  alt: "don",
+                  alt: "praglab",
                   facultyName: "Prof.Praglab Jha",
                   facultyDetails: "Department of BMM , bms and baf"
                 },
                 {
                   url: "assets/image/pranali.jpeg",
-                  alt: "don",
+                  alt: "pranali",
                   facultyName: "Prof.Pranali Chandanshiv",
                   facultyDetails: "Department of bmm , bms and baf"
                 }
@@ -1073,35 +1058,24 @@ export class CourseSub1Component implements OnInit {
               text2: "<li> <b> Program Outcome :</b> To apply the IT skills and knowledge acquired in managing and solving real world problems within their work domain.<br> <li> <b> Program Specific Outcome : </b> To recognize the need for and have the preparation and ability to engage and enhance the skills onto the next level of computing.<br> <li> <b>Course Outcome :</b> Enabling and equipping the students with technological skills as per the industry expectation.<br> <li> <b>Student Vision :</b> To prepare a workforce of professionals who exhibit leadership by creating a platform of opportunities which will help them shape themselves as future entrepreneurs. ",
               text3: "Duration of the programme and related information:",
               text4: "Eligibility Criteria",
-              /*               text4: "<li> A candidate for being eligible for admission to the degree Course of Bachelor of Science Information Technology shall have passed XII Standard Examination of the Maharashtra board of Higher Secondary Education or its equivalent with Mathematic and Statistics as one of the subject and one should not have secured less than 35% marks in aggregate for open category and Reserved category candidates.<br> <li> Candidate who have passed Diploma (Three years after S.S.C.- Xth Std.) in Information Technology /Computer technology/ Computer Engineering/ Computer Science / Electrical, electronics and video Engineering and allied branches/ Mechanical and ALLIED Branches/ Civil and Allied Branches are eligible for direct admission to the second year of the B.Sc.(I.T) degree Education course. However, the Diploma should have recognized by the Board of Technical Education or any other recognized Government Body. Minimum marks required 35% aggregate for open reserved category candidates<br>",
-               */
-              /* text5: "OR",
-               */
-              /*       text6: "<li> Candidates with post HSC-Diploma in Information Technology / Computer Technology/ Computer Engineering/ Computer Science and allied branches will be eligible for direct admission to the Second year of B.Sc.(I.T) However the Diploma should be recognized by the board of Technical education or any other recognized Government body minimum marks required 35% aggregate for open category candidates and reserved category candidates.<br> <li> P/S Further candidate should note the criteria of admission procedure is as per University of Mumbai<br>",
-               */
-              /*               text7: "<li> FYBScIT_First Year_Sem 1and 2_2016_17<br> <li> SYBScIT_Second Year__Sem 3and 4_2017_18<br> <li> TYBScIT_Third Year_Sem 5and 6_2018_19<br>",
- *//*               text8: "Duration of the programme and related information:",
-                                                                                                                      */
-              /* text9: "<li> The programme is full time, consisting of six semester spread over three years.<br> <li> The course consists of 30 modules comprising 30 theory papers and 01 project.<br> <li> As per the University guidelines, degree will be conferred under “Choice Based Credit System” with 20 Credit Points per Semester and 10 Point Grading System<br> <li> A total number of lectures per course (subject) shall be a minimum of 50 and a maximum of 60, each of 50 minutes duration.<br>",
-               */
               text10: "BScIT SYLLABUS MUMBAI UNIVERSITY",
               link: "https://mu.ac.in/wp-content/uploads/2021/10/B.Sc.I.T-Syllabus-FY-SY-TY.pdf",
               facultyData: [
                 {
                   url: "assets/images/FACULTY.svg",
-                  alt: "don",
+                  alt: "Reddy sir",
                   facultyName: "Dr. SARAVANAN REDDY",
                   facultyDetails: "HOD,B.Sc In Information Technology"
                 },
                 {
                   url: "assets/image/amisha.jpeg",
-                  alt: "don",
+                  alt: "amisha",
                   facultyName: "Prof.Amisha Merchant",
                   facultyDetails: "Department of Bms and bscIT"
                 },
               ],
-              
-              
+
+
               table: [
                 {
                   id: 1,
