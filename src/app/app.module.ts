@@ -15,7 +15,7 @@ import { ProfileCardComponent } from './component/profile-card/profile-card.comp
 import { LeftImg1Component } from './component/left-img1/left-img1.component';
 import { AccordianDropdwnComponent } from './component/accordian-dropdwn/accordian-dropdwn.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { HomeComponent } from './pages/home/home.component';
+import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ContactUsComponent } from './pages/contact-us/contact-us.component';
 import { BannerCarouselComponent } from './component/banner-carousel/banner-carousel.component';
