@@ -7,7 +7,7 @@ import { CourseComponent } from './pages/course/course.component';
 import { EventSub1Component } from './pages/event-sub1/event-sub1.component';
 import { EventComponent } from './pages/event/event.component';
 import { ExaminationComponent } from './pages/examination/examination.component';
-import { HomeComponent } from './pages/home/home.component';
+import { HomeComponent } from './home/home.component';
 
 import { NoticeComponent } from './pages/notice/notice.component';
 import { PlacementComponent } from './pages/placement/placement.component';
@@ -43,223 +43,19 @@ import { AlumniComponent } from './pages/alumni/alumni.component';
 const routes: Routes = [
   { path: '', component: HomeComponent },
   {
-    path: 'alumini',
-    component: AlumniComponent
+    path: "pages", loadChildren: () => import('./pages/pages.module')
+      .then(mod => mod.PagesModule)
   },
   {
-    path: 'about/:aboutpage',
-    component: AboutComponent
-  },
-  {
-    path: 'contact',
-    component: ContactUsComponent
-  },
-  {
-    path: 'course',
-    component: CourseComponent
-  },
-  {
-    path: 'course/:coursename',
-    component: CourseSub1Component
-  },
-  {
-    path: 'event',
-    component: EventComponent
-  },
-  {
-    path: 'sc/:scpages',
-    component: StudentSupportComponent
+    path: "admin", loadChildren: () => import('./dashboard-page/dashboard-page.module')
+      .then(mod => mod.DashboardPageModule)
   },
 
-  {
-    path: 'event/:eventpage',
-    component: EventSub1Component
-  },
-  {
-    path: 'notice',
-    component: NoticeComponent
-  },
-  {
-    path: 'placement',
-    component: PlacementComponent
-  },
-  {
 
-    path: 'research',
-    component: ResearchComponent
-  },
-  {
-    path: 'examination',
-    component: ExaminationComponent
-  },
-
-  {
-    path: 'auth/admin/register', component: RegistrationFormComponent,
-
-  },
-  {
-    path: 'auth/admin/login', component: LoginFormComponent,
-
-  },
- 
-  {
-
-    path: 'admindashboard', component: DashboardComponent,
-    data: { breadcrumb: 'Dashboard' },
-    canActivate: [AuthGuard],
-
-    children: [
-      // {
-      //   path:'home',component:DCarouselComponent,
-      //   data:{breadcrumb:'Home'}
-      // },
-
-      {
-        path: 'home/carousel', component: DCarouselComponent,
-        data: { breadcrumb: 'Home/carousel' }
-
-      },
-      {
-        path: 'home/aboutchetana', component: DAboutchetanaComponent,
-        data: { breadcrumb: 'Home/About' }
-
-      },
-      {
-        path: 'home/academics', component: DAcademicsComponent,
-        data: { breadcrumb: 'Home/academics' }
-
-      },
-      {
-        path: 'home/campus', component: DCampusComponent,
-        data: { breadcrumb: 'Home/campus' }
-
-      },
-      {
-        path: 'home/testimonials', component: DTestimonialsComponent,
-        data: { breadcrumb: 'Home/testimonial' }
-
-      },
-      {
-        path: 'notice', component: DashnoticeComponent,
-        data: { breadcrumb: 'notice' }
-
-      },
-      {
-        path: 'page/courses', component: CourseComponent,
-        data: { breadcrumb: 'page/course' }
-      },
-      {
-        path: 'page/examination', component: ExaminationComponent,
-        data: { breadcrumb: 'page/examination' }
-      },
-      {
-        path: 'page/placement', component: PlacementComponent,
-        data: { breadcrumb: 'page/placement' }
-
-      },
-      {
-        path: 'page/research', component: ResearchComponent,
-        data: { breadcrumb: 'page/research' }
-
-      },
-      {
-        path: 'page/studentscorner', component: StudentSupportComponent,
-        data: { breadcrumb: 'page/studentscorner' }
-
-      },
-      // junior
-      {
-        path: 'page/courses/junior/fyjc', component: FYJCComponent,
-        data: { breadcrumb: 'page/courses/junior/fyjc' }
-
-      },
-      {
-        path: 'page/courses/junior/syjc', component: SYJCComponent,
-        data: { breadcrumb: 'page/courses/junior/syjc' }
-
-      },
-      // degree
-      {
-        path: 'page/courses/degree/ba', component: BaComponent,
-        data: { breadcrumb: 'page/courses/degree/ba' }
-
-      },
-      {
-        path: 'page/courses/degree/bcom', component: BcomComponent,
-        data: { breadcrumb: 'page/courses/degree/bcom' }
-
-      },
-
-      // sfc
-      {
-        path: 'page/courses/sfc/bscit', component: BscitComponent,
-        data: { breadcrumb: 'page/courses/sfc/bscit' }
-
-      },
-      {
-        path: 'page/courses/sfc/bms', component: BmsComponent,
-        data: { breadcrumb: 'page/courses/sfc/bms' }
-
-      },
-      {
-        path: 'page/courses/sfc/baf', component: BafComponent,
-        data: { breadcrumb: 'page/courses/sfc/baf' }
-
-      },
-      {
-        path: 'page/courses/sfc/bmmc', component: BmmcComponent,
-        data: { breadcrumb: 'page/courses/sfc/bmmc' }
-
-      },
-
-      // PG
-
-      {
-        path: 'page/courses/pg/mcom', component: McomComponent,
-        data: { breadcrumb: 'page/courses/pg/mcom' }
-
-      },
-
-      //doctoral 
-
-      {
-        path: 'page/courses/doctoralprogramme/phd', component: PhdComComponent,
-        data: { breadcrumb: 'page/courses/doctoralprogramme/phd' }
-
-      },
-
-      //distance
-
-      {
-        path: 'page/courses/distancelearning/ycmou', component: YcmouComponent,
-        data: { breadcrumb: 'page/courses/distancelearning/ycmou' }
-
-      },
-
-    ]
-
-  },
-  {
-    path: 'superadminlogin',
-    component: AdminloginComponent,
-    children: [
-      {
-        path: 'superadmin',
-        component: SuperadminComponent,
-        canActivate: [AuthGuard]
-      }
-    ]
-  }
 
 
 
 ];
-
-
-
-
-
-
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

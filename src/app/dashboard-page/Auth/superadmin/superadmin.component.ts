@@ -99,7 +99,7 @@ export class SuperadminComponent implements OnInit {
     this.http.post(`${this.apiUrl}logout`, {}).subscribe((res) => {
       console.log(res);
       localStorage.removeItem('Token');
-      this.router.navigate(['/admindashboard']);
+      this.router.navigate(['admin/admindashboard']);
     });
   
   }

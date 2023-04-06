@@ -262,10 +262,8 @@ export class EventSub1Component implements OnInit {
   ngOnInit():void {
     this.activeRouter.params.subscribe((params: any) => {
 
-      console.log(params)
       const page = params.eventpage;
       const pageIndex = this.pages.findIndex((pg: { pageName: any; }) => pg.pageName === page)
-      console.log(this.pages)
       this.currentPageIndex = pageIndex;
     })
   }
