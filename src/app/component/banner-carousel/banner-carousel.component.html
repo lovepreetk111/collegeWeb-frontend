@@ -1,6 +1,6 @@
 <div class="container-fluid">
 	<ngb-carousel #ngCarousal [interval]="10000" *ngIf="carousel2" [showNavigationArrows]="false"
-		[showNavigationIndicators]="false">
+		[showNavigationIndicators]="false" id="carouselExampleCaptions">
 		<ng-template ngbSlide *ngFor="let data of carousel2">
 			<div *ngIf="data.innerData" class="main">
 				<div class="info">
