@@ -216,17 +216,17 @@ export class HomeComponent implements OnInit {
                     {
                       id: 1,
                       title: "Arts",
-                      link: "course/arts"
+                      link: "pages/course/arts"
                     },
                     {
                       id: 2,
                       title: "Commerce",
-                      link: "course/comm"
+                      link: "pages/course/comm"
                     },
                     {
                       id: 3,
                       title: "MCVC",
-                      link: "course/mcvc"
+                      link: "pages/course/mcvc"
                     }
                   ]
                 },
@@ -236,12 +236,12 @@ export class HomeComponent implements OnInit {
                     {
                       id: 1,
                       title: "BA",
-                      link: "course/ba"
+                      link: "pages/course/ba"
                     },
                     {
                       id: 2,
                       title: "BCOM",
-                      link: "course/bcom"
+                      link: "pages/course/bcom"
                     },
 
                   ]
@@ -252,22 +252,22 @@ export class HomeComponent implements OnInit {
                     {
                       id: 1,
                       title: "BMS",
-                      link: "course/bms"
+                      link: "pages/course/bms"
                     },
                     {
                       id: 2,
                       title: "BAF",
-                      link: "course/baf"
+                      link: "pages/course/baf"
                     },
                     {
                       id: 3,
                       title: "BAMMC",
-                      link: "course/bammc"
+                      link: "pages/course/bammc"
                     },
                     {
                       id: 4,
                       title: "B.Sc.IT",
-                      link: "course/bscit"
+                      link: "pages/course/bscit"
                     }
                   ]
                 },
@@ -277,7 +277,7 @@ export class HomeComponent implements OnInit {
                     {
                       id: 1,
                       title: "MASTER OF COMMERCE",
-                      link: "course/mcom"
+                      link: "pages/course/mcom"
                     },
 
                   ]
@@ -288,7 +288,7 @@ export class HomeComponent implements OnInit {
                     {
                       id: 1,
                       title: "PH. D. In Commerce",
-                      link: "course/arts"
+                      link: "pages/course/arts"
                     },
 
                   ]

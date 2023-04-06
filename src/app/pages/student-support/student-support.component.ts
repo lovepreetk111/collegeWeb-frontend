@@ -873,7 +873,6 @@ export class StudentSupportComponent implements OnInit {
 
 
   constructor(private activeRoute: ActivatedRoute) {
-    // console.log(function show("hello"))
   }
 
   ngOnInit(): void {
@@ -883,8 +882,6 @@ export class StudentSupportComponent implements OnInit {
         const pageIndex = this.pages.findIndex
           (pg => pg.pageName === page)
         this.currentPageIndex = pageIndex
-        console.log(this.currentPageIndex, "currentpageinsed checking")
-        console.log("index bro", pageIndex)
         if (pageIndex == 0) {
           this.supportdata = true;
           this.wdcdata = false;
