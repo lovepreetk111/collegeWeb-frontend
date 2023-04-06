@@ -12,7 +12,7 @@ export class EventSub1Component implements OnInit {
   currentPageIndex = 0;
   pages: any = [
     {
-      pageName: 'techkriti',
+      pageName: 'iskratech',
       component: [
         {
           compId: 1,
@@ -21,7 +21,7 @@ export class EventSub1Component implements OnInit {
             {
               url: '../../../assets/images/event.png',
               alt: "koi toh imaage",
-              text: "Events Details"
+              text: "Iskra.Tech"
 
             },
           ]
