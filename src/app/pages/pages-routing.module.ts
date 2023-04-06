@@ -47,7 +47,7 @@ const routes: Routes = [
     component: EventSub1Component
   },
   {
-    path: 'notice',
+    path: 'notices',
     component: NoticeComponent
   },
   {
