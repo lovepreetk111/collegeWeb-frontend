@@ -4,7 +4,7 @@
     </button>
     <div class="list" *ngIf="InputData">
         <marquee behavior="" direction="" onmouseover="this.stop();" onmouseout="this.start();">
-            <a routerLink="/notice" *ngFor="let data of noticeData">{{data.noticeName}} | </a>
+            <a routerLink="pages/notice" *ngFor="let data of noticeData">{{data.noticeName}} | </a>
         </marquee>
     </div>
 </div>
