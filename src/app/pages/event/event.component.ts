@@ -45,7 +45,7 @@ export class EventComponent implements OnInit {
               time:'9:00 to 11:00',
               venu:'CHETANA  COLLEGE',
               buttonData:"Read More",
-              routeLink:'techkriti'
+              routeLink:'iskratech'
             },
             {
               image:'../../../assets/images/EventPhoto.jpg',

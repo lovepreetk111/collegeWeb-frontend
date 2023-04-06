@@ -13,21 +13,8 @@ export class NoticeComponent implements OnInit {
 
   ngOnInit(): void {
 
-    /* function Image_OnError(img){
-      image.onerror ="";
-      image.style.visibility ="hidden";
-      return true;
-    } */
-
-    // this.banData.getBannerData().subscribe(
-    //   data => {
-    //     console.log(data)
-    //    this.carousel2 = data
-    //   }
-    // )
     this.noticeDatas.getNoticeData().subscribe(
       data =>{
-        console.log(data);
         this.noticeData = data;
       }
     )

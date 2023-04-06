@@ -9,7 +9,6 @@ import { IBtnCmpData } from 'src/app/service/data';
 export class ButtonCmp1Component implements OnInit {
   @Input() Text!:IBtnCmpData
   constructor() { 
-    console.log(this.Text)
   }
 
   ngOnInit(): void {

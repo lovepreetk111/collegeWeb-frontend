@@ -15,7 +15,6 @@ export class NoticesComponent implements OnInit {
   ngOnInit(): void {
     this.noticeDatas.getNoticeData().subscribe(
       data =>{
-        console.log(data);
         this.noticeData = data;
       }
     )
