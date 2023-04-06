@@ -49,7 +49,7 @@ export class DashnoticeComponent implements OnInit {
 
   getNoticeData() {
     this.noticeservice.getNoticeData().subscribe((datas) => {
-      this.allNoticeDatas = datas;
+      this.allNoticeDatas = datas.reverse();
       console.log(datas)
     })
   }
@@ -84,7 +84,8 @@ export class DashnoticeComponent implements OnInit {
         alert("Data Added")
         let ref = document.getElementById('cancel')
         ref?.click();
-        this.getNoticeData()
+        this.allNoticeDatas.unshift(res);
+        // this.getNoticeData()
       })
   }
 
