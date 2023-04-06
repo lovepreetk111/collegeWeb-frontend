@@ -16,15 +16,8 @@ currentRoute: string = '';
 constructor(private router: Router) {
   this.router.events.subscribe((event) => {
     if (event instanceof NavigationEnd) {
-      let currentRoute = this.router.routerState.snapshot.root;
-      while (currentRoute.firstChild) {
-        currentRoute = currentRoute.firstChild;
-      }
-      const admindashboardSegment = currentRoute.pathFromRoot.find(segment => segment.routeConfig?.path === 'admindashboard');
-      if (admindashboardSegment) {
-        currentRoute = admindashboardSegment;
-      }
-      this.currentRoute = currentRoute?.routeConfig?.path ?? '';
+      const currentRoute = this.router.routerState.snapshot.url.split('?')[0];
+      this.currentRoute = currentRoute;
     }
     
   });  

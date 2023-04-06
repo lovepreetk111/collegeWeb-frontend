@@ -7,9 +7,9 @@
  -->
 
 
-<div *ngFor="let data of pages[0].component">
-    <app-header class="header" *ngIf="data.compId === 1 && currentRoute !== 'admindashboard' && currentRoute !== 'auth/admin/register' && currentRoute !== 'auth/admin/login'  && currentRoute !== 'superadmin' && currentRoute !=='superadminlogin' "  [headerData]="data.metadata"></app-header>
-    <router-outlet  (activate)="onActivate($event)"></router-outlet>
-    <app-footer *ngIf="data.compId === 8 && currentRoute !== 'admindashboard' && currentRoute !== 'auth/admin/register' && currentRoute !== 'auth/admin/login'  && currentRoute !== 'superadmin' && currentRoute !=='superadminlogin'" [footerData]="data.metadata"></app-footer>
+ <div *ngFor="let data of pages[0].component">
+    <app-header class="header" *ngIf="data.compId === 1 && currentRoute !== '/admin/admindashboard' && currentRoute !== '/admin/auth/register' && !currentRoute.startsWith('/admin/admindashboard/') && currentRoute !== '/admin/auth/login' && currentRoute !== '/superadmin' && currentRoute !== '/superadminlogin' && currentRoute.indexOf('/admin/auth/login') !== 0"  [headerData]="data.metadata"></app-header>
+    <router-outlet (activate)="onActivate($event)"></router-outlet>
+    <app-footer *ngIf="data.compId === 8 && currentRoute !== '/admin/admindashboard' && currentRoute !== '/admin/auth/register' && currentRoute !== '/admin/auth/login' && currentRoute !== '/superadmin' && currentRoute !== '/superadminlogin' && !currentRoute.startsWith('/admin/admindashboard/') && currentRoute.indexOf('/admin/auth/login') !== 0 " [footerData]="data.metadata"></app-footer>
   </div>
 
