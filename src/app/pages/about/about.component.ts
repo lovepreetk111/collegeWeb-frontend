@@ -108,7 +108,7 @@ export class AboutComponent implements OnInit {
             itData: [
               {
                 Text: 'Chetana boasts of an excellent IT infrastructure that supports its pedagogy of out-of-class learning. The computer center services the IT needs of the Institute and is equipped with state of the art networking peripherals.Chetana is also creating a state of the art information systems set-up consisting of Gigabit Ethernet Backbone and Fast Ethernet to the desktops. The center is equipped with 217 desktops, HP Servers, Printers and Scanners exclusively for students. Our drive to keep up with the changing times makes sure all our computers are equipped with the most up-to-date softwares and programs.All students are provided with laptops to facilitate unimpeded learning and the entire campus has Wireless LAN connectivity. The Institute also offers full time leased line internet accessibility of 48 mbps for all students, faculty and its office.',
-                url: "../../../assets/image/IT lab.png",
+                url: "../../../assets/image/ITlab.png",
                 alt: "image"
               }
             ],

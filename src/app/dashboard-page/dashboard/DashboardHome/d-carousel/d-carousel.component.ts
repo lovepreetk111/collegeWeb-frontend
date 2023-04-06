@@ -147,7 +147,7 @@ export class DCarouselComponent implements OnInit {
     const id = this.formValue.value._id
     console.log(id, "id")
     this.data.updateBanData(id, this.formValue.value).subscribe((result: any) => {
-      this.allBanDatas = result
+      this.allBanDatas = result;
       console.log(result, "result")
       this.getBanData()
     })
@@ -156,24 +156,21 @@ export class DCarouselComponent implements OnInit {
     this.getBanData()
   }
 
-    postBanData() {
-    this.data.postBanData(this.formValue.value)
-      .subscribe((res: any) => {
-        console.log(res)
-        this.formValue.reset()
-        alert("Data Added")
-        let ref = document.getElementById('cancel')
-        ref?.click();
-        this.getBanData()
-       
-      })
+  postBanData() {
+    this.data.postBanData(this.formValue.value).subscribe((res: any) => {
+      console.log(res);
+      this.formValue.reset();
+      alert("Data Added");
+      let ref = document.getElementById('cancel');
+      ref?.click();
+  
+      // Add new data to beginning of array
+      this.allBanDatas.unshift(res);
+    });
+  
     // this.uploadImg();
-
-
-
-    this.allBanDatas = this.formValue.value;
-    console.log(this.allBanDatas)
   }
+  
 
 
 

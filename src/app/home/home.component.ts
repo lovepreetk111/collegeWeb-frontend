@@ -347,7 +347,7 @@ export class HomeComponent implements OnInit {
           metadata:
           {
             title: "Testimonials",
-            description: "my name is ghazala.Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit.",
+            description: "",
             cardsData: [
               {
                 comment: "This place have given me unforgettable three years of my life. It has a positive atmosphere, and in every step, you get an opportunity to knowledge something new. My college taught me corporate life which happened to be my key success.",
