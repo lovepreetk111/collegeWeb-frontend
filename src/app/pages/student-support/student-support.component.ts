@@ -817,18 +817,28 @@ export class StudentSupportComponent implements OnInit {
                   SubTitles:[
                     {
                       id:1,
-                      title:"Arts",
-                      link:"course/arts"
+                      title:"To ensure overall disciplined environment in the College.",
+                      //link:"course/arts"
                     },
                     {
                       id:2,
-                      title:"Commerce",
-                      link:"course/comm"
+                      title:"To initiate timely action against erring students.",
+                      //link:"course/comm"
                     },
                     {
                       id:3,
-                      title:"MCVC",
-                      link:"course/mcvc"
+                      title:"To sensitise students about the evils of ragging and its prevention in the College Campus by organizingtalks/ programmes etc.",
+                      //link:"course/mcvc"
+                    },
+                    {
+                      id:4,
+                      title:"To address complaints about ragging as per the Govt. and University procedures.",
+                      //link:"course/mcvc"
+                    },
+                    {
+                      id:5,
+                      title:"To maintain records of the cases investigated and submit the same to the IQAC Committee.",
+                      //link:"course/mcvc"
                     }
                   ]
                 },
@@ -843,23 +853,43 @@ export class StudentSupportComponent implements OnInit {
             {
               AccordianData: [
                 {
+                  Title: 'Important Notice',
+                  SubTitles:[
+                    {
+                      id:1,
+                      title:"Anti-Ragging Notice",
+                      //link:"course/arts"
+                    },
+                    {
+                      id:2,
+                      title:"Revised Procedure for Anti Ragging Cell",
+                      //link:"course/comm"
+                    },
+                  ]
+                },
+              ]
+            }
+          ]
+        },
+        {
+          compId:5, 
+          compName:"button and text",
+          metadata:[
+            {
+              AccordianData: [
+                {
                   Title: 'Anti-Ragging Helpine',
                   SubTitles:[
                     {
                       id:1,
-                      title:"Arts",
-                      link:"course/arts"
+                      title:"College Helpline Anti Ragging Team:- 022 26422750",
+                      //link:"course/arts"
                     },
                     {
                       id:2,
-                      title:"Commerce",
-                      link:"course/comm"
+                      title:"UGC Helpline : https://www.antiragging.in/",
+                      //link:"course/comm"
                     },
-                    {
-                      id:3,
-                      title:"MCVC",
-                      link:"course/mcvc"
-                    }
                   ]
                 },
               ]
