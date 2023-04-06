@@ -170,17 +170,7 @@ const routes: Routes = [
     ]
 
   },
-  {
-    path: 'superadminlogin',
-    component: AdminloginComponent,
-    children: [
-      {
-        path: 'superadmin',
-        component: SuperadminComponent,
-        canActivate: [AuthGuard]
-      }
-    ]
-  }
+  
 ];
 
 @NgModule({
