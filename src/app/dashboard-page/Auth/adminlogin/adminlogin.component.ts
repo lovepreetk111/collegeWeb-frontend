@@ -51,7 +51,7 @@ export class AdminloginComponent implements OnInit {
         this.allAdminData = res;
        if(email === 'admin@gmail.com' && password === '123456'){
         alert('login success');
-        this.router.navigate(['admin/superadmin'])
+        this.router.navigate(['/superadmin'])
        }
        else{
         this.loginFailed = true;
