@@ -76,7 +76,7 @@ constructor(private router: Router) {
                   child: [
                     {
                       dropdown: 'JUNIOR COLLEGE',
-                      url: 'pages/course/sub1',
+                      url: 'pages/course',
                       subchild: [
                         {
                           subchild: 'ARTS',
@@ -94,7 +94,7 @@ constructor(private router: Router) {
                     },
                     {
                       dropdown: 'DEGREE COLLEGE',
-                      url: 'something',
+                      url: 'pages/course',
                       subchild: [
                         {
                           subchild: 'BA',
@@ -109,7 +109,7 @@ constructor(private router: Router) {
                     },
                     {
                       dropdown: 'SELF FINANCE COURSES',
-                      url: 'something',
+                      url: 'pages/course',
                       subchild: [
                         {
                           subchild: 'BMS',
@@ -131,7 +131,7 @@ constructor(private router: Router) {
                     },
                     {
                       dropdown: 'POST GRADUATE PROGRAMME',
-                      url: 'pages/course/pg',
+                      url: 'pages/course',
                       subchild: [
                         {
                           subchild: 'MCOM',
@@ -141,7 +141,7 @@ constructor(private router: Router) {
                     },
                     {
                       dropdown: 'DOCTORAL PROGRAMME',
-                      url: 'something',
+                      url: 'pages/course',
                       subchild: [
                         {
                           subchild: 'PH.D. IN  COMMERCE',
@@ -151,11 +151,10 @@ constructor(private router: Router) {
                     },
                     {
                       dropdown: 'DISTANCE LEARNING',
-                      url: 'ycmou',
+                      url: 'pages/course',
                       subchild: [
                         {
                           subchild: 'Y.C.M.O.U.',
-                          routeLink: 'https://www.ycmou.ac.in',
                         }
                       ]
                     }
