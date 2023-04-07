@@ -4,7 +4,7 @@
             <ul *ngFor="let data of datas.implinksdata">
                 <li>
                     <a [routerLink]="data.routelinks">{{data.impLinks}}</a>
-                    
+
                 </li>
             </ul>
         </div>
@@ -40,11 +40,10 @@
                                                     <!-- Level 2 : Dropdown -->
                                                     <ul class="dropdown-menu">
                                                         <li class="dropdown-item"
-                                                            *ngFor="let subchild of child.subchild">
-                                                            <a
-                                                                [routerLink]="subchild.routeLink">{{subchild.subchild}}</a>
-                                                        </li>
-
+                                                            *ngFor="let subchild2 of child.subchild">
+                                                            <a [routerLink]="subchild2.routeLink">{{subchild2.subchild}}
+                                                            </a>
+                                                        </li>   
                                                     </ul>
                                                 </li>
                                                 <li class="nav-item dropdown" *ngIf="!child.subchild">

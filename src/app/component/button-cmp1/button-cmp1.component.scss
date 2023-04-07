@@ -5,7 +5,6 @@
     padding-left: 8%;
 
     .heading {
-        //max-width: 35%;
         height: 3rem;
         border-radius: 10px 1px 10px 1px;
         box-shadow: 0px 0px 0px 6px white;
@@ -40,23 +39,7 @@
         }
     }
 }
-/* @media screen and (max-width:350px){
-    .top {
-        width: auto;
-        height: 9%;
 
-        .heading {
-            height: 1.8rem;
-
-            h3 {
-                font-size: 9px;
-                padding: 8px 3px;
-                font-size: 0.625;
-            }
-        }
-    }
-}
- */
 @media (min-width:350px) and (max-width:550px) {
     .top {
         width: auto;
@@ -75,12 +58,9 @@
 }
 
 
-@media screen and (max-width: 470px) {
-//    .top{
-//     padding: 14px 3px;
-//     font-size: 16px;
-//    }
-  }
+/* @media screen and (max-width: 470px) {
+
+} */
 
 @media (min-width:550px) and (max-width:810px) {
     .top {
@@ -98,6 +78,7 @@
         }
     }
 }
+
 @media (min-width:810px) and (max-width:110px) {
     .top {
         width: auto;

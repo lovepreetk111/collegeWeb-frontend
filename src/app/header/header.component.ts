@@ -7,20 +7,11 @@ import { InavbarConfig } from '../service/data';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-@Input() headerData:InavbarConfig[] = []
+  @Input() headerData: InavbarConfig[] = []
   constructor() { }
 
   ngOnInit(): void {
   }
-  
-  visibleSidebar1:any;
-  // isMenuOpen = false;
 
-  // toggleMenu() {
-  //   this.visibleSidebar1 =!this.visibleSidebar1;
-  // }
-
-  
-  
-
+  visibleSidebar1: any;
 }

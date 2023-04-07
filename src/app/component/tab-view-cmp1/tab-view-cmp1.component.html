@@ -30,7 +30,6 @@
                 </tr>
               </thead>
               <tbody>
-                <!--  <pre>{{details | json}} </pre> -->
                 <tr *ngFor="let data of details.table">
 
                   <td data-label="No" class="fit">{{data.id}}</td>
@@ -51,7 +50,6 @@
                 </tr>
               </thead>
               <tbody>
-                <!-- {{data | json}} -->
                 <tr *ngFor="let data of details.table2">
                   <td data-label="No" class="fit">{{data.id}}</td>
                   <td data-label="Categories">{{data.category}}</td>
@@ -67,7 +65,6 @@
       <a ngbNavLink>FACULTY</a>
       <ng-template ngbNavContent >
         <div class="facultyinfo container" *ngFor="let data of details.facultyData">
-          <!-- {{details.facultyData|json}} -->
           <img [src]="data.url" [alt]="data.alt" class="facultyimage">
           <div class="facultyname">
             <h2>{{data.facultyName}}</h2>
@@ -79,4 +76,3 @@
   </ul>
   <div [ngbNavOutlet]="nav" class="mt-2"></div>
 </div>
-<!-- <pre>Active: {{ active }}</pre> -->
