@@ -37,7 +37,7 @@ export class RegistrationFormComponent implements OnInit {
   get f() { return this.registerForm.controls; }
 
   loginpage(){
-    this.router.navigate(['/auth/admin/login']);
+    this.router.navigate(['admin/auth/login']);
   }
 
   registerProcess() {
@@ -71,7 +71,7 @@ export class RegistrationFormComponent implements OnInit {
 
           alert("Data Register Successfull");
           this.registerForm.reset();
-          this.router.navigate(['/auth/admin/login']);
+          this.router.navigate(['admin/auth/login']);
         })
         console.log(this.registerDatas);
       }
@@ -86,7 +86,7 @@ export class RegistrationFormComponent implements OnInit {
       alert("Data Register Successfull")
       const data = result;
       this.registerForm.reset();
-      this.router.navigate(['/']);
+      this.router.navigate(['admin']);
     })
     console.log(this.registerDatas);
     

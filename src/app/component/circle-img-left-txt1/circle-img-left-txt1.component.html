@@ -1,29 +1,13 @@
-<!-- <div class="our-insipiration" *ngIf="About">
-    <h2 [innerHTML]="About.text"></h2>
-    <div class="container chaudhary">
+<div class="our-inspiration">
+  <h2>{{About.text}}</h2>
+  <div class="containers">
+    <div class="left">
       <img [src]="About.url" [alt]="About.alt">
-      <div class="text">
-        <p>{{About.textMain}}</p>
-      </div>
+      <h3 [innerHTML]="About.text1"></h3>
+      <p [innerHTML]="About.text2"></p>
     </div>
-    <div class="late">
-      <h3>{{About.text1}}</h3>
-      <h3>{{About.text2}}</h3>
-      <p>{{About.text3}}</p>
+    <div class="right">
+      <p [innerHTML]="About.textMain"></p>
     </div>
   </div>
-
-   -->
-   <div class="our-inspiration" >
-    <h2>{{About.text}}</h2>
-    <div class="containers">
-      <div class="left">
-        <img [src]="About.url" [alt]="About.alt">
-        <h3 [innerHTML]="About.text1"></h3>
-        <p [innerHTML]="About.text2"></p>
-      </div>
-      <div class="right">
-        <p [innerHTML]="About.textMain"></p>
-      </div>
-    </div>
-   </div>
+</div>

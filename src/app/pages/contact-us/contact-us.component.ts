@@ -30,8 +30,6 @@ sendDataEmitter: EventEmitter<any> = new EventEmitter();
 
 
   constructor() {
-    // console.log(this.pages)
-    // console.log(this.newItemEvent)
    }
 
   ngOnInit(): void {

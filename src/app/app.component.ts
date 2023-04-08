@@ -16,15 +16,8 @@ currentRoute: string = '';
 constructor(private router: Router) {
   this.router.events.subscribe((event) => {
     if (event instanceof NavigationEnd) {
-      let currentRoute = this.router.routerState.snapshot.root;
-      while (currentRoute.firstChild) {
-        currentRoute = currentRoute.firstChild;
-      }
-      const admindashboardSegment = currentRoute.pathFromRoot.find(segment => segment.routeConfig?.path === 'admindashboard');
-      if (admindashboardSegment) {
-        currentRoute = admindashboardSegment;
-      }
-      this.currentRoute = currentRoute?.routeConfig?.path ?? '';
+      const currentRoute = this.router.routerState.snapshot.url.split('?')[0];
+      this.currentRoute = currentRoute;
     }
     
   });  
@@ -53,7 +46,7 @@ constructor(private router: Router) {
                 {
                   id: 2,
                   impLinks: "ALUMINI",
-                  routelinks: 'alumini'
+                  routelinks: 'pages/alumini'
                 },
 
               ],
@@ -68,22 +61,22 @@ constructor(private router: Router) {
                 {
                   id: 1,
                   nav: 'About',
-                  link: 'about/us',
+                  link: 'pages/about/us',
                   child:[
                     {
                       dropdown:"Our Campus",
-                      url:"about/campus"
+                      url:"pages/about/campus"
                     }
                   ]
                 },
                 {
                   id: 2,
                   nav: 'Course',
-                  link: '/course',
+                  link: 'pages/course',
                   child: [
                     {
                       dropdown: 'JUNIOR COLLEGE',
-                      url: 'course/sub1',
+                      url: 'pages/course',
                       subchild: [
                         {
                           subchild: 'ARTS',
@@ -91,78 +84,77 @@ constructor(private router: Router) {
                         },
                         {
                           subchild: 'COMMERCE',
-                          routeLink: 'course/commerce',
+                          routeLink: 'pages/course/commerce',
                         },
                         {
                           subchild: 'MCVC',
-                          routeLink: 'course/mcvc',
+                          routeLink: 'pages/course/mcvc',
                         }
                       ]
                     },
                     {
                       dropdown: 'DEGREE COLLEGE',
-                      url: 'something',
+                      url: 'pages/course',
                       subchild: [
                         {
                           subchild: 'BA',
-                          routeLink: 'course/BA',
+                          routeLink: 'pages/course/BA',
                         },
                         {
                           subchild: 'BCOM',
-                          routeLink: 'course/bcom',
+                          routeLink: 'pages/course/bcom',
                         },
 
                       ]
                     },
                     {
                       dropdown: 'SELF FINANCE COURSES',
-                      url: 'something',
+                      url: 'pages/course',
                       subchild: [
                         {
                           subchild: 'BMS',
-                          routeLink: 'course/bms',
+                          routeLink: 'pages/course/bms',
                         },
                         {
                           subchild: 'BAF',
-                          routeLink: 'course/baf',
+                          routeLink: 'pages/course/baf',
                         },
                         {
                           subchild: 'BAMMC',
-                          routeLink: 'course/bammc',
+                          routeLink: 'pages/course/bammc',
                         },
                         {
                           subchild: 'BScIT',
-                          routeLink: 'course/bscit',
+                          routeLink: 'pages/course/bscit',
                         }
                       ]
                     },
                     {
                       dropdown: 'POST GRADUATE PROGRAMME',
-                      url: 'course/pg',
+                      url: 'pages/course',
                       subchild: [
                         {
                           subchild: 'MCOM',
-                          routeLink: 'course/mcom',
+                          routeLink: 'pages/course/mcom',
                         }
                       ]
                     },
                     {
                       dropdown: 'DOCTORAL PROGRAMME',
-                      url: 'something',
+                      url: 'pages/course',
                       subchild: [
                         {
                           subchild: 'PH.D. IN  COMMERCE',
-                          routeLink: 'course/phd',
+                          routeLink: 'pages/course/phd',
                         }
                       ]
                     },
                     {
                       dropdown: 'DISTANCE LEARNING',
-                      url: 'ycmou',
+                      url: 'pages/course',
                       subchild: [
                         {
                           subchild: 'Y.C.M.O.U.',
-                          routeLink: 'https://www.ycmou.ac.in',
                         }
                       ]
                     }
@@ -171,23 +163,23 @@ constructor(private router: Router) {
                 {
                   id: 3,
                   nav: 'Examination',
-                  link: '/examination',
+                  link: 'pages/examination',
                   child: [
                     {
                       dropdown: "Junior College",
-                      url: '/junior'
+                      url: 'pages/examination'
                     },
                     {
                       dropdown: 'Degree College',
-                      url: '/degree'
+                      url: 'pages/examination'
                     },
                     {
                       dropdown: 'Self Financing Courses',
-                      url: 'csfc'
+                      url: 'pages/examination'
                     },
                     {
                       dropdown: 'M.COM',
-                      url: 'mcom'
+                      url: 'pages/examination'
                     },
                   ]
                 },
@@ -199,42 +191,38 @@ constructor(private router: Router) {
                 {
                   id: 5,
                   nav: 'Placement',
-                  link: '/placement',
+                  link: 'pages/placement',
                   child: [
                     {
                       dropdown: "Placement at Chetana's",
-                      url: '/placement'
+                      url: 'pages/placement'
                     },
                     {
                       dropdown: 'Tranning Programe',
-                      url: '/placement'
+                      url: 'pages/placement'
                     },
                     {
                       dropdown: 'Placement Tracker',
-                      url: '/placement'
+                      url: 'pages/placement'
                     }
                   ]
                 },
                 {
                   id: 6,
                   nav: 'Research',
-                  link: '/research',
+                  link: 'pages/research',
                   child: [
                     {
                       dropdown: "About Research College",
-                      url: '/course/phd'
+                      url: 'pages/course/phd'
                     },
                     {
                       dropdown: "Publication",
-                      url: 'something'
+                      url: 'pages/research'
                     },
-                    /* {
-                      dropdown: "Prospect-Us",
-                      url: 'something'
-                    }, */
                     {
                       dropdown: "Conference Procedings",
-                      url: 'something'
+                      url: 'pages/research'
                     },
 
                   ]
@@ -242,38 +230,38 @@ constructor(private router: Router) {
                 {
                   id: 8,
                   nav: "Student’s Corner",
-                  link: 'student-corner',
+                  link: 'pages/student-corner',
                   child: [
                     {
                       dropdown: "Student's Support",
-                      url: 'sc/support'
+                      url: 'pages/sc/support'
                     },
                     {
                       dropdown: "Events",
-                      url: '/event'
+                      url: 'pages/event'
                     },
                     {
                       dropdown: "Govt. Scholarship/Freeship",
-                      url: 'sc/gvt'
+                      url: 'pages/sc/gvt'
                     },
                     {
                       dropdown: "Anti-Ragging",
-                      url: 'sc/anti-ragging'
+                      url: 'pages/sc/anti-ragging'
                     },
                     {
                       dropdown: "Workshop/Seminar",
-                      url: 'sc/workshop'
+                      url: 'pages/sc/workshop'
                     },
                     {
                       dropdown: "WDC",
-                      url: 'sc/wdc'
+                      url: 'pages/sc/wdc'
                     },
                   ]
                 },
                 {
                   id: 8,
                   nav: 'Contact-Us',
-                  link: '/contact',
+                  link: 'pages//contact',
                 }
               ]
             }

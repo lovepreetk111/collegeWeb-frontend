@@ -1330,11 +1330,9 @@ export class CourseSub1Component implements OnInit {
     this.activeRouter.params.subscribe
       ((params: any) => {
         // this.pages = new this.pages;
-        console.log(params)
         const page = params.coursename;
         const pageIndex = this.pages.findIndex
           (pg => pg.pageName === page)
-        console.log(this.pages)
         this.currentPageIndex = pageIndex;
       })
   }

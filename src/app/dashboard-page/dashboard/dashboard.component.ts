@@ -10,7 +10,7 @@ import { DataService } from '../service/data.service';
 })
 export class DashboardComponent implements OnInit {
 
-  constructor(private http: HttpClient,private router :Router, private auth:DataService) { }
+  constructor(private http: HttpClient, private router: Router, private auth: DataService) { }
 
   ngOnInit(): void {
   }
@@ -20,13 +20,7 @@ export class DashboardComponent implements OnInit {
     this.http.post(`${this.apiUrl}logout`, {}).subscribe((res) => {
       console.log(res);
       localStorage.removeItem('Token');
-      this.router.navigate(['auth/admin/login']);
+      this.router.navigate(['admin/auth/login']);
     });
   }
-
-
-
-  // superAdmin(){
-  //   this.router.navigate(['auth/superadminlogin'])
-  // }
 }

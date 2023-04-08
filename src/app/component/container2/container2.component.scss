@@ -9,7 +9,6 @@
     flex-direction: column;
     gap: 20px;
     position: relative;
-    // margin-bottom: 200px;/* 
     margin-top: 15px; 
     
 }
@@ -36,16 +35,11 @@
     }
 
 .container-box-testimonials {
-//     display: flex;
-//     gap: 10px;
-//     width: 95%;
-//    height: 388px;
-//     margin: 0 auto;
+
 display: grid;
     height: 100%;
     grid-template-columns: repeat(auto-fit, minmax(233px, auto));
     grid-gap: 47px;
-    // background-color: #003399;
     max-width: 100%;
 }
 

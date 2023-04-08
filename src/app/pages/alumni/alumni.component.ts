@@ -191,7 +191,7 @@ export class AlumniComponent implements OnInit {
               data: "Know Our Alumini"
             },
             info2: {
-              text: "<a routerLink='#'>Alumini Association Report</a>"
+              text: "<a target='_blank' href='https://drive.google.com/file/d/1bbtIgTnwZW4AtED65g6qdMlMixGXxhdv/view'>Alumini Association Report</a>"
             },
           }
         }

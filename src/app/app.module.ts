@@ -15,7 +15,7 @@ import { ProfileCardComponent } from './component/profile-card/profile-card.comp
 import { LeftImg1Component } from './component/left-img1/left-img1.component';
 import { AccordianDropdwnComponent } from './component/accordian-dropdwn/accordian-dropdwn.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { HomeComponent } from './pages/home/home.component';
+import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ContactUsComponent } from './pages/contact-us/contact-us.component';
 import { BannerCarouselComponent } from './component/banner-carousel/banner-carousel.component';
@@ -53,7 +53,6 @@ import { ResearchComponent } from './research/research.component';
 import { ExaminationComponent } from './pages/examination/examination.component';
 import { LeftTxtRightTextComponent } from './component/left-txt-right-text/left-txt-right-text.component';
 import { LoaderComponent } from './component/loader/loader.component';
-import { ModalComponent } from './component/modal/modal.component';
 
 import { AlumniComponent } from './pages/alumni/alumni.component';
 
@@ -134,7 +133,6 @@ import { BreadcrumbModule } from 'angular-crumbs';
     ResearchComponent,
     ExaminationComponent,
     LeftTxtRightTextComponent,
-    ModalComponent,
     LoaderComponent,
     AlumniComponent,
     DashboardPageComponent,

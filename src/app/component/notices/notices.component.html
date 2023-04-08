@@ -1,10 +1,10 @@
 <div class="noticebar">
-    <button routerLink="notice"><a herf="">Notices<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABmJLR0QA/wD/AP+gvaeTAAAAeUlEQVQ4jdWUMQ5AQBBFNxKFRCnchGOoOAS32NtQuRWJXvsUJDYblf2FffXkTf5MZoyJHqABRiBTyHLg4GJSCFNg5aFTSFtHuAOVQjo70kUhLIAtuuj2rSYJ7vIVoPcilyEy7VK82YVdjDqq9vTkz+GW1sCA4n39ghOMGvAcug9n1gAAAABJRU5ErkJggg==" >
+    <button routerLink="pages/notices"><a herf="">Notices<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABmJLR0QA/wD/AP+gvaeTAAAAeUlEQVQ4jdWUMQ5AQBBFNxKFRCnchGOoOAS32NtQuRWJXvsUJDYblf2FffXkTf5MZoyJHqABRiBTyHLg4GJSCFNg5aFTSFtHuAOVQjo70kUhLIAtuuj2rSYJ7vIVoPcilyEy7VK82YVdjDqq9vTkz+GW1sCA4n39ghOMGvAcug9n1gAAAABJRU5ErkJggg==" >
     </a>
     </button>
     <div class="list" *ngIf="InputData">
         <marquee behavior="" direction="" onmouseover="this.stop();" onmouseout="this.start();">
-            <a routerLink="/notice" *ngFor="let data of noticeData">{{data.noticeName}} | </a>
+            <a routerLink="/pages/notices" *ngFor="let data of noticeData">{{data.noticeName}} | </a>
         </marquee>
     </div>
 </div>

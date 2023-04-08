@@ -1,10 +1,11 @@
 <div class="main" *ngIf="cardData">
     <img [src]="cardData.url" [alt]="cardData.alt">
-    <!-- <img src="../../../assets/images/1.jpg" alt=""> -->
     <div class="text">
         <h3><b>{{cardData.post}}</b></h3>
         <h6><b>{{cardData.facultyName}}</b></h6>
         <b><p>{{cardData.facultyName1}}</p></b>
         <!-- {{cardData.url | json}} -->
+        <h3> {{cardData.post}}</h3>
+        <p>{{cardData.facultyName}}</p>
     </div>
 </div>

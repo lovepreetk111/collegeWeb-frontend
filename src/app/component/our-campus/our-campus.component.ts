@@ -7,10 +7,20 @@ import { ICardCarosuel } from 'src/app/service/data';
   styleUrls: ['./our-campus.component.scss']
 })
 export class OurCampusComponent implements OnInit {
-  @Input() cardConfig2!:ICardCarosuel;
+  @Input() cardConfig2!: ICardCarosuel;
   constructor() { }
 
+  metadata!:{
+    
+  }
+
+
+
+
   ngOnInit(): void {
+    text: {
+      data: "Our Campus"
+    }
   }
 
 
@@ -42,8 +52,8 @@ export class OurCampusComponent implements OnInit {
   }
 
   get sliders() {
-    if(this.ngbCarousal) return [...this.ngbCarousal.slides]
-    else return  []
+    if (this.ngbCarousal) return [...this.ngbCarousal.slides]
+    else return []
   }
 
 }

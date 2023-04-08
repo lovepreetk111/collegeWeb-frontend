@@ -27,7 +27,7 @@ export class LoginFormComponent implements OnInit {
   get f() { return this.form.controls; }
   
   registerpage(){
-    this.router.navigate(['auth/admin/register']);
+    this.router.navigate(['admin/auth/register']);
   }
   loginSubmit(){
     this.submitted = true;
@@ -45,7 +45,7 @@ export class LoginFormComponent implements OnInit {
         console.log(res.Token);
           alert('Login successful');
         this.form.reset();
-        this.router.navigate(['/admindashboard']);
+        this.router.navigate(['admin/admindashboard']);
       },
       (error: any) => {
         alert('** Please check email or password is correct!');

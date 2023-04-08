@@ -98,7 +98,7 @@ export class DCarouselComponent implements OnInit {
   getBanData() {
     this.data.getBanData().subscribe(
       (datas: IBannerCarosuelComponent[]) => {
-        this.allBanDatas = datas;
+        this.allBanDatas = datas.reverse();
         console.log('allBanDatas:', this.allBanDatas);
       },
       (error) => {

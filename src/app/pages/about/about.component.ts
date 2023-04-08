@@ -7,23 +7,6 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./about.component.scss']
 })
 export class AboutComponent implements OnInit {
-  // currentPageIndex = 0;
-  // pages: any = [
-  // {
-  //   compId: 1,
-  //   compName: 'button-cmp1',
-  //    component: [
-  //    { 
-  //     compName:"button-cmp1",
-  //     metadata:[ 
-  //     {
-  //         data: "About Us",
-  //       }
-  //    ]
-  //     }
-  //    ]
-  // }
-  // ]
 
 
   aboutpage!: boolean;
@@ -156,7 +139,6 @@ export class AboutComponent implements OnInit {
   ]
 
   constructor(private activeRoute: ActivatedRoute) {
-    // console.log(function show("hello"))
   }
 
   ngOnInit(): void {
@@ -165,8 +147,6 @@ export class AboutComponent implements OnInit {
         const page = params.aboutpage;
         const pageIndex = this.pages.findIndex((pg: { pageName: any; }) => pg.pageName === page)
         this.currentPageIndex = pageIndex
-        console.log(this.currentPageIndex, "currentpageinsed checking")
-        console.log("index bro", pageIndex)
         if (pageIndex == 0) {
           this.aboutpage = true;
           this.campus = false;
