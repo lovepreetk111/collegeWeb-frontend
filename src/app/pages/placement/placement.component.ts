@@ -53,40 +53,39 @@ export class PlacementComponent implements OnInit {
             },
             cardConfig: [
               {
-                url: "../../../assets/images/1.jpg",
+                url: "../../../assets/images/rasika.jpg",
                 alt: "",
-                post: "Faculty",
-                facultyName: "Lovepreet"
+                post: "Rasika Kamble",
+                facultyName: "Meshlinks Ltd.",
+                facultyName1: "Designation : Marketing Intern"
+              },
+              {
+                url: "../../../assets/images/aditi.jpg",
+                alt: "",
+                post: "Aditi Dongarwar",
+                facultyName: "Meshlinks Ltd." ,
+                facultyName1: "Designation : Marketing Intern"
+              },
+              {
+                url: "../../../assets/images/ragini.jpg",
+                alt: "",
+                post: "Raghini Ravirala",
+                facultyName: "Meshlinks Ltd.",
+                facultyName1: "Designation : Resource Intern"
+              },
+              {
+                url: "../../../assets/images/mansi.jpg",
+                alt: "",
+                post: "Mansi Salvi",
+                facultyName: "Meshlinks Ltd.",
+                facultyName1: "Designation : Resource Intern"
               },
               {
                 url: "../../../assets/images/1.jpg",
                 alt: "",
-                post: "Faculty",
-                facultyName: "Lovepreet"
-              },
-              {
-                url: "../../../assets/images/1.jpg",
-                alt: "",
-                post: "Faculty",
-                facultyName: "Lovepreet"
-              },
-              {
-                url: "../../../assets/images/1.jpg",
-                alt: "",
-                post: "Faculty",
-                facultyName: "Lovepreet"
-              },
-              {
-                url: "../../../assets/images/1.jpg",
-                alt: "",
-                post: "Faculty",
-                facultyName: "Lovepreet"
-              },
-              {
-                url: "../../../assets/images/1.jpg",
-                alt: "",
-                post: "Faculty",
-                facultyName: "Lovepreet"
+                post: "Aashish Sharma",
+                facultyName: "TCS",
+                facultyName1: "Co-Founder"
               }
             ],
 

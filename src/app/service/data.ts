@@ -217,6 +217,7 @@ export interface IFaculty {
   alt: string;
   facultyName: string
   facultyDetails: string
+  facultyName1: string
 }
 
 export interface aboutCouse {
@@ -302,6 +303,7 @@ export interface IModalType {
 }
 
 export interface IcardData {
+facultyName1: any
   url: string
   alt: string
   post: string
