@@ -50,7 +50,7 @@ export class DashnoticeComponent implements OnInit {
   getNoticeData() {
     this.noticeservice.getNoticeData().subscribe((datas:INoticeConfig[]) => {
       this.allNoticeDatas = datas.reverse();
-      console.log(datas)
+      // console.log(datas)
     })
   }
 
@@ -145,18 +145,9 @@ export class DashnoticeComponent implements OnInit {
     });
   
     console.log('modified allNoticeDatas:', this.allNoticeDatas);
-  
-    // this.noticeservice.saveNoticeData( this.allNoticeDatas ).subscribe(
-    //   (res) => {
-    //     console.log(res);
-    //   },
-    //   (error) => {
-    //     console.log(error);
-    //   }
-    // );
 
     this.noticeservice.saveNoticeData(this.allNoticeDatas).subscribe((res:any)=>{
-console.log(res)
+    console.log(res)
     })
   }
 

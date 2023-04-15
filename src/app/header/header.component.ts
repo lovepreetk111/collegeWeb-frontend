@@ -20,7 +20,11 @@ export class HeaderComponent implements OnInit {
   //   this.visibleSidebar1 =!this.visibleSidebar1;
   // }
 
-  
+  placement(){
+    document.getElementById("placementChetana")?.scrollIntoView({behavior:"smooth"});
+    document.getElementById("tranningProgram")?.scrollIntoView({behavior:"smooth"});
+    document.getElementById("placementTracker")?.scrollIntoView({behavior:"smooth"});
+  }
   
 
 }

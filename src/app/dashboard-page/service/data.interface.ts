@@ -104,3 +104,7 @@ export interface IAdminData{
     email:string;
     password:string;
 }
+export interface IadminLogin{
+    email:string,
+    password:string;
+}

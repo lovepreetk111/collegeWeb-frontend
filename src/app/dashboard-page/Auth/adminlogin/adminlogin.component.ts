@@ -43,27 +43,36 @@ export class AdminloginComponent implements OnInit {
   Submitlogin(){
    
       
-      const email = this.form.controls['email'].value;
-      const password = this.form.controls['password'].value;
+      // const email = this.form.controls['email'].value;
+      // const password = this.form.controls['password'].value;
       
       
-      this.auth.getAdminLogin().subscribe(res =>{
-        this.allAdminData = res;
-       if(email === 'admin@gmail.com' && password === '123456'){
-        alert('login success');
-        this.router.navigate(['/superadmin'])
-       }
-       else{
-        this.loginFailed = true;
-       }
-      })
+      // this.auth.getAdminLogin().subscribe(res =>{
+      //   this.allAdminData = res;
+      //  if(email === 'admin@gmail.com' && password === '123456'){
+      //   alert('login success');
+      //   this.router.navigate(['/superadmin'])
+      //  }
+      //  else{
+      //   this.loginFailed = true;
+      //  }
+      // })
+
+      this.auth.postAdminlogin(this.form.value).subscribe((res:any)=>{
+        localStorage.setItem('AdminToken', res.Token);
+        // console.log(res.Token);
+          alert('Login successful');
+        this.form.reset();
+        this.router.navigate(['/superadmin']);
+      },
+      (error: any) => {
+        alert('** Please check email or password is correct!');
+        this.form.reset();
+      }
+      );
+      
     }
-
-
-
-
-  
-  
-}
+      
+    }
 
 
