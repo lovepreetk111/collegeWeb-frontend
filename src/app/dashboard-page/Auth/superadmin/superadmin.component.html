@@ -1,7 +1,7 @@
 
 <p-confirmDialog [style]="{width: '35vw'}"></p-confirmDialog>
                     <div class="superadmintable">
-                    <p-table #dt1 responsiveLayout="stack" [value]="allRegisterData" dataKey="id" [rows]="5"
+                    <p-table #dt1 responsiveLayout="stack" [value]="allRegisterDatas" dataKey="id" [rows]="5"
                     [showCurrentPageReport]="true" [rowsPerPageOptions]="[5,10,15]"
                     styleClass="p-datatable-customers p-datatable-gridlines" [paginator]="true"
                     currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries">
@@ -12,6 +12,7 @@
                         <h2>Admin List</h2>
                     </div>
                     <div class="adminbtn">
+                       <a routerLink="/superadminlogin"><button pButton type="button" (click)="adminLogOut()">LogOut</button></a>
                        <a routerLink="/admin/admindashboard"><button pButton type="button" (click)="onLogOut()">LogOut</button></a>
                     </div>
                 </div>
@@ -59,7 +60,8 @@
                                 [checked]="allRegisterData.Active"
                                 [value]="allRegisterData._id.toString()"
                                 (change)="onChangeCheckBox($event)"
-                                style="transform: scale(1.5); height: 1em; width: 1em;">
+                                style="transform: scale(1.5); height: 1em; width: 1em;"
+                                >
                             </td>
                         </tr>
                     </ng-template>

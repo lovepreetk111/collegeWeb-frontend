@@ -66,20 +66,20 @@
                 </a>
 
                 <div class="collapse navbar-collapse navlinks" id="navbarNavDropdown">
-                    <!-- Level 0 : Navbar -->
+
                     <ul class="navbar-nav" *ngFor="let content of datas.navbar">
                         <li class="nav-item dropdown" *ngIf="content.child">
                             <a class="nav-link dropdown-toggle " [routerLink]="content.link" id="navbarDropdownMenuLink"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
                                 [routerLinkActive]="['active']"> {{content.nav}} </a>
-                            <!-- Level 1 : Dropdown -->
+                       
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                 <div *ngFor="let child of content.child">
                                     <li class="dropdown-submenu" *ngIf="child.subchild">
                                         <a class="dropdown-item dropdown-toggle"
                                             [routerLink]="child.url">{{child.dropdown}}
                                         </a>
-                                        <!-- Level 2 : Dropdown -->
+                               
                                         <ul class="dropdown-menu">
                                             <li class="dropdown-item" *ngFor="let subchild of child.subchild">
                                                 <a [routerLink]="subchild.routeLink">{{subchild.subchild}}</a>
@@ -87,7 +87,7 @@
 
                                         </ul>
                                     </li>
-                                    <li class="nav-item dropdown" *ngIf="!child.subchild">
+                                    <li (clcik)="placement()" class="nav-item dropdown" *ngIf="!child.subchild">
                                         <a [routerLink]="child.url" (click)="false"
                                             class="nav-link">{{child.dropdown}}</a>
                                     </li>
