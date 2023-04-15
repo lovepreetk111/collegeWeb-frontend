@@ -7,23 +7,6 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./about.component.scss']
 })
 export class AboutComponent implements OnInit {
-  // currentPageIndex = 0;
-  // pages: any = [
-  // {
-  //   compId: 1,
-  //   compName: 'button-cmp1',
-  //    component: [
-  //    { 
-  //     compName:"button-cmp1",
-  //     metadata:[ 
-  //     {
-  //         data: "About Us",
-  //       }
-  //    ]
-  //     }
-  //    ]
-  // }
-  // ]
 
 
   aboutpage!: boolean;

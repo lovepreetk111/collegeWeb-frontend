@@ -13,10 +13,5 @@ export class TabViewCmp1Component implements OnInit {
   active = 1;
   ngOnInit(): void {
   }
- /*  table2 = this.details.table2
-  table1 = this.details.table
-  if(table2: null) {
-    this.data1 == false
-    this.data2 == true
-  } */
+
 }

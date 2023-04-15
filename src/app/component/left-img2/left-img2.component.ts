@@ -1,6 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Ileftimg, Ileftimg1 } from 'src/app/service/data';
-// import { Ileftimg } from 'src/app/service/data';
 
 @Component({
   selector: 'app-left-img2',
