@@ -13,7 +13,7 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
   }
   
-  visibleSidebar1:any;
+  // visibleSidebar1:any;
   // isMenuOpen = false;
 
   // toggleMenu() {
