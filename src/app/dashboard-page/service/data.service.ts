@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
-import { IAdminData, Ibackground, IBannerCarosuelComponent, Iloginuser, INoticeConfig, IPlacementComponent, Iregistration, IResearchComponent } from './data.interface';
+import { IAdminData, IadminLogin, Ibackground, IBannerCarosuelComponent, Iloginuser, INoticeConfig, IPlacementComponent, Iregistration, IResearchComponent } from './data.interface';
 
 @Injectable({
   providedIn: 'root'
@@ -28,6 +28,12 @@ export class DataService {
   
   getNoticeData(){
     return this.http.get<IBannerCarosuelComponent[]>(`${this.apiUrl}notice-config`).pipe(map((res:any)=>{
+      return res;
+    }))
+  }
+
+  getAdminData(){
+    return this.http.get<Iregistration[]>(`${this.apiUrl}active`).pipe(map((res:any)=>{
       return res;
     }))
   }
@@ -71,14 +77,18 @@ postNoticeData(data:INoticeConfig):Observable<any>{
 //   const url = `${this.apiUrl}noticeData/data`;
 //   return this.http.post<INoticeConfig[]>(url, noticeData);
 // }
-
 saveNoticeData(noticeData: INoticeConfig[] ): Observable<INoticeConfig[]> {
   const url = `${this.apiUrl}notice-config/data`;
+  console.log(url);
   return this.http.post<INoticeConfig[]>(url, noticeData);
 }
 
+postAdminData(data:Iregistration):Observable<any>{
+  return this.http.post<Iregistration>((`${this.apiUrl}adminlogin`),data)
+  }
 saveRegisterData(registerData: Iregistration[] ): Observable<Iregistration[]> {
-  const url = `${this.apiUrl}registerData/data`;
+  const url = `${this.apiUrl}data`;
+  console.log(url);
   return this.http.post<Iregistration[]>(url, registerData);
 }
 
@@ -182,7 +192,9 @@ getRegister(){
 
 
 
-
+postAdminlogin(data: IadminLogin): Observable<IadminLogin> {
+  return this.http.post<IadminLogin>(`${this.apiUrl}adminlogin/login`,data);
+}
 postregister(data: Iregistration): Observable<Iregistration> {
   return this.http.post<Iregistration>(`${this.apiUrl}register`,data);
 }
