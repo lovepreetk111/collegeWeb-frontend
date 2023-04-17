@@ -1,130 +1,62 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
-
-/* .carouselExampleControls{
-    padding:5%;
-} */
-/* .carousel{
-    width: 100%;
-    height: 50vh;
-    display: flex;
-    flex-direction: column;
-    .carousel-inner{
-        width: 100%;
-        height: 100%;
-        .carousel-item{
-            width: 100%;
-            height: 80%;
-            display: flex;
-        }
-    }
-} */
-
-
-/* .buttons{
-    position: absolute;
-    width: 90%;
-
-} */
-/* button{
-    height: 5vh;
-    width: 2vw;
-    justify-self: end;
-    align-self: end;
-    background-color: blue;
-    span{
-        color: white;
-    }
-} */
-
-/* .buttons {
-    width: 100%;
-    height: 10vh;
-    display: flex;
-    justify-content: space-between;
-    padding: 1% 1% 0% 1%;
-
-    button{
-        height: 5vh;
-        width: 2vw;
-        justify-self: end;
-        align-self: end;
-        background-color: blue;
-        span{
-            color: white;
-        }
-    }
-
-    .slider-indicator {
-        display: flex;
-        gap: 10px;
-
-        span {
-            width: 20px;
-            height: 20px;
-            border-radius: 100%;
-            background-color: grey;
-            cursor: pointer;
-
-            &.active {
-                background-color: rgba(0, 51, 153, 1);
-            }
-        }
-    }
-
-    .navigation-buttons {
-        button {
-            border: none;
-            background: none;
-
-            img {
-                width: 70%;
-            }
-        }
-    }
-} */
-
-
 .container-fluid {
     font-family: 'Ubuntu', sans-serif;
     width: 100%;
-    height: 55vh;
+    height: 65vh;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
 
-    .blue{
+    /*   .blue {
         width: 100%;
         height: 50vh;
         background-color: blue;
         z-index: -1;
         position: absolute;
         transform: rotate(5deg);
-    }
+    } */
+
     ::ng-deep {
         .main {
             width: 100%;
-            height: 45vh;
+            height: 50vh;
             display: flex;
-            justify-content: space-around;
+            justify-content: space-evenly;
+            padding-left: 90px;
+            padding-right: 90px;
             padding-top: 40px;
 
             .card {
-                width: 30%;
+                width: 22%;
+
+                // height: 50vh;
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
 
                 .text {
                     position: absolute;
-                    width: 100%;
                     height: 100%;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: center;
-                    text-align: center;
-                    color: white;
                     opacity: 0;
 
-                    p {
-                        width: 80%;
+                    a {
+                        width: 100%;
+                        height: 100%;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        text-align: center;
+                        display: flex;
+                        color: white;
+                        text-decoration: none;
+
+                        p {
+                            width: 80%;
+                            // height: 90%;
+                            text-overflow: ellipsis;
+                            overflow: hidden;
+
+                        }
                     }
 
                     &:hover {
@@ -137,13 +69,16 @@
     }
 
     .buttons {
+        padding-right: 90px;
         width: 100%;
         height: 10vh;
         display: flex;
         justify-content: flex-end;
-        padding: 1% 1% 0% 1%;
+        padding: 1% 14% 0% 1%;
 
         .navigation-buttons {
+            padding-left: 90px;
+
             button {
                 border: none;
                 background: none;

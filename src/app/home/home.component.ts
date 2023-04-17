@@ -14,8 +14,6 @@ export class HomeComponent implements OnInit {
     this.outPutData = childData.title;
   }
   constructor() {
-    // console.log(this.pages);
-    // console.log(this.outPutData)
   }
   ngOnInit(): void {
   }
@@ -140,7 +138,7 @@ export class HomeComponent implements OnInit {
               routeLink: 'route karo and ghar bhejo',
             },
             {
-              id:8,
+              id: 8,
               image: {
                 url: '../../../assets/image/ISO Certificate.jpg',
                 alt: 'IDK'
@@ -288,61 +286,39 @@ export class HomeComponent implements OnInit {
                     {
                       id: 1,
                       title: "PH. D. In Commerce",
-                      link: "pages/course/arts"
+                      link: "pages/course/phd"
                     },
 
                   ]
                 },
                 {
                   Title: 'DISTANCE LEARNING',
-                  SubTitles: [
-                    {
-                      id: 1,
-                      title: "Y.C.M.O.U",
-                      link: "course/yomuc"
-                    },
-
-                  ]
+                 
                 }
               ]
-            }
+            },
           ],
         },
-        /*   {
-            compId: 6,
-            compName: "cardcarosuel",
-            metadata: 
-              {
-                title:"Our Campus",
-                slides: [
-                  {
-                      url: "assets/images/bg.png",
-                      alt: "image",
-                      routeLink:'ground/kuch-toh',
-                      cardHeading:"Ground",
-                      description:"Lorem ki maa ki chudiya"
-                    },
-                    {
-                      url: "assets/images/bg2.png",
-                      alt: "image",
-                      routeLink:'ground/kuch-toh',
-                      cardHeading:"Ground",
-                      description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-                    },
-                  {
-                      url: "assets/images/bg1.png",
-                      alt: "image",
-                      routeLink:'ground/kuch-toh',
-                      cardHeading:"Ground",
-                      description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-                    }
-                ]
-              }
-  
-            
-          }, */
         {
-          compId: 7,
+          compID:6,
+          compName:"button-comp1",
+          metadata:{
+            info:{
+              data:"our Campus"
+            }
+          }
+        },
+        {
+          compID:7,
+          compName:"button-comp1",
+          metadata:{
+            info:{
+              data:"our Campus"
+            }
+          }
+        },
+        {
+          compId: 8,
           compName: 'testimonials',
           metadata:
           {
@@ -373,34 +349,6 @@ export class HomeComponent implements OnInit {
             ]
           }
         },
-        {
-          compId: 8,
-          compName: 'detailcard2',
-          metadata:
-          {
-            image: '../../../assets/images/EventPhoto.jpg',
-            alt: 'Pankaj',
-            date: '20TH NOV',
-            eventName: 'TECHKRITI 6.0',
-            time: '9:00 to 11:00',
-            venu: 'CHETANA COLLEGE'
-          }
-        },
-
-        {
-          compId: 9,
-          compName: 'speaker',
-          metadata:
-            [
-              {
-                image: '/assets/images/FACULTY.svg',
-                alt: 'Reddy',
-                name: 'Saravanan Reddy',
-                role: 'Course Co-ordinator'
-              }
-            ]
-        }
-
       ]
     }
   ]

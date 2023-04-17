@@ -1,117 +1,50 @@
-
-// #main-form{
-//     width: 52rem;
-//     form{
-//         width: 48rem;
-//     height: 37rem;
-//     margin: auto;
-//     background-color: rgb(146, 142, 137);
-//     }
-//     .leftSection{
-
-//     }
-//     .your-name{
-
-//     }
-//     label{
-//         position: relative;
-//         font-size: 25px;
-//         padding: 12px 0px;
-//         font-weight: 700;
-//         left: -240px;
-//     }
-//     input{
-//         width: 45rem;
-//         height: 3rem;
-//     }
-//     .text-area{
-//      height: 10rem;
-//      background-color: transparent;
-//      margin: 22px auto;
-//      textarea{
-//         width: 45rem;
-//         height: 6rem;
-//      }
-//     }
-//     button{
-//         width: 163px;
-//         /* font-size: 27px; */
-//         height: 46px;
-//         font-weight: 600;
-
-//         background-color: cornflowerblue;
-//         border-radius: 15px;
-//     }
-
-
-// }
-// .card{
-//     height: 40rem;
-//     width: 100%;
-//     background-color: skyblue;
-//     display: -webkit-inline-box;
-//     align-items: center;
-//     justify-content: center;
-//     margin: auto;
-//     .contact-form{
-//         width: 3rem;
-//         margin: 7px 7px;
-//         height: 39rem;
-//         border: 2px solid red;
-//         background-color: blue;
-//         text-align: center;
-//         .contact-card{
-//             width: 21rem;
-//     height: 28rem;
-//             background-color: brown;
-//             margin: 84px auto;
-//         }
-//     }
-    
-// }
-
-.contactform{
+.contactform {
     margin-bottom: 30px;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    img{
+
+    img {
         border-radius: 10px;
         width: 90%;
         height: 100%;
     }
 
-    form{
+    form {
         width: 100%;
-         height: 100%;
+        height: 100%;
         background: linear-gradient(109.21deg, #08348b 0%, rgba(2, 48, 141, 0.65) 100%);
         color: #ffffff;
         padding: 20px;
         border-radius: 15px;
-        h3{
+
+        h3 {
             width: 245px;
             line-height: 30px;
-           padding: 2px;
-           border-bottom: 3px solid #f7f8fa;
+            padding: 2px;
+            border-bottom: 3px solid #f7f8fa;
         }
-        .form{
+
+        .form {
             display: flex;
-        align-items: center;
-        // justify-content: space-evenly;
-        flex-direction: column;
+            align-items: center;
+            flex-direction: column;
         }
-        .common{
+
+        .common {
             width: 80%;
             display: flex;
             flex-direction: column;
             padding: 0 10px;
-            label{
+
+            label {
                 padding: 3px 0;
                 font-weight: 700;
-                font-size: 20px; 
+                font-size: 20px;
             }
-            .input{
+
+            .input {
                 padding-left: 10px;
                 width: 100%;
                 height: 35px;
@@ -119,7 +52,8 @@
                 border: none;
                 border-radius: 10px;
             }
-            .message{
+
+            .message {
                 height: 60px;
                 margin-bottom: 20px;
                 outline: none;
@@ -127,25 +61,23 @@
                 padding-left: 5px;
             }
         }
-        button{
+
+        button {
             border-radius: 10px;
             color: #003399;
             height: 10%;
             border: none;
-            background-color:#f7f8fa;
+            background-color: #f7f8fa;
             font-size: 20px;
             font-weight: 700;
             padding: 3px 10px;
-            &:hover{
+
+            &:hover {
                 border: 2px solid #ffff;
                 color: #ffff;
                 background-color: #0339a4;
             }
         }
-        
+
     }
 }
-
-
-
-

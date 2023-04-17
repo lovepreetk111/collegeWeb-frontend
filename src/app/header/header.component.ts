@@ -7,7 +7,7 @@ import { InavbarConfig } from '../service/data';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-@Input() headerData:InavbarConfig[] = []
+  @Input() headerData: InavbarConfig[] = []
   constructor() { }
 
   ngOnInit(): void {
@@ -25,6 +25,6 @@ export class HeaderComponent implements OnInit {
     document.getElementById("tranningProgram")?.scrollIntoView({behavior:"smooth"});
     document.getElementById("placementTracker")?.scrollIntoView({behavior:"smooth"});
   }
-  
 
+  visibleSidebar1: any;
 }
