@@ -47,37 +47,65 @@ export class SuperadminComponent implements OnInit {
     });
 }
 
-  onChangeCheckBox($event: any) {
-    const id = $event.target.value;
-    const isChecked = $event.target.checked;
+onChangeCheckBox($event: any) {
+  const id = $event.target.value;
+  const isChecked = $event.target.checked;
   
-    console.log('id:', id);
-    console.log('isChecked:', isChecked);
-  
-    console.log('allRegisterData:', this.allRegisterDatas);
-  
+  console.log('id:', id);
+  console.log('isChecked:', isChecked);
+
+  console.log('allRegisterData:', this.allRegisterDatas);
+
+  this.allRegisterDatas = this.allRegisterDatas.map((d) => {
+    console.log('_id:', d._id);
+    if (d._id === id) {
+      // Prevent unchecking the checkbox if there is only one checkbox checked
+      const numChecked = this.allRegisterDatas.filter(data => data.Active).length;
+      if (numChecked === 1 && d.Active && !isChecked) {
+        alert('At least one checkbox must be checked!');
+        return d;
+      }
+
+      d.Active = isChecked;
+      this.parentSelector = false;
+      return d;
+    }
+
+    if (id === '-1') {
+      d.Active = this.parentSelector;
+      return d;
+    }
+
+    return d;
+  });
+
+  console.log('modified allRegisterData:', this.allRegisterDatas);
+
+  // check if at least one checkbox is checked
+  const isAtLeastOneChecked = this.allRegisterDatas.some(d => d.Active);
+  if (!isAtLeastOneChecked) {
+    // display an error message
+    alert('At least one checkbox must be checked!');
+    // restore the previous checked state of each checkbox
     this.allRegisterDatas = this.allRegisterDatas.map((d) => {
-      console.log('_id:', d._id);
-      if (d._id === id) {
-        d.Active = isChecked;
-        this.parentSelector = false;
-        return d;
-      }
-  
-      if (id === '-1') {
-        d.Active = this.parentSelector;
-        return d;
-      }
-  
+      const prevChecked = d.Active; // retrieve the previous checked state
+      d.Active = prevChecked;
       return d;
     });
-  
-    console.log('modified allRegisterData:', this.allRegisterDatas);
-  
-    this.data.saveRegisterData(this.allRegisterDatas).subscribe((res:any)=>{
-      console.log(res);
-    })
+    return;
   }
+
+  this.data.saveRegisterData(this.allRegisterDatas).subscribe((res:any)=>{
+    console.log(res);
+  });
+}
+
+
+
+
+
+
+
 
 
   apiUrl = "http://localhost:3000/"
