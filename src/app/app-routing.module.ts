@@ -1,9 +1,10 @@
 import { Component, NgModule } from '@angular/core';
 import { ExtraOptions, RouterModule, Routes } from '@angular/router';
 import { AdminloginComponent } from './dashboard-page/Auth/adminlogin/adminlogin.component';
-import { AuthGuard } from './dashboard-page/Auth/auth.guard';
+
 import { SuperadminComponent } from './dashboard-page/Auth/superadmin/superadmin.component';
 import { HomeComponent } from './home/home.component';
+import { AdminGuard } from './dashboard-page/Auth/admin.guard';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -14,7 +15,7 @@ const routes: Routes = [
   {
     path:'superadmin',
     component:SuperadminComponent,
-    canActivate:[AuthGuard]
+    canActivate:[AdminGuard]
   },
   {
     path: "pages", loadChildren: () => import('./pages/pages.module')
