@@ -81,11 +81,46 @@ export class PlacementComponent implements OnInit {
                 facultyName1: "Designation : Resource Intern"
               },
               {
-                url: "../../../assets/images/1.jpg",
+                url: "../../../assets/images/aashish.jpg",
                 alt: "",
                 post: "Aashish Sharma",
-                facultyName: "TCS",
-                facultyName1: "Co-Founder"
+                facultyName: "WebAppZap.Ltd",
+                facultyName1: "Designation : Web Designer"
+              },
+              {
+                url: "../../../assets/images/ritesh.png",
+                alt: "",
+                post: "Ritesh Sharma",
+                facultyName: "WebAppZap.Ltd",
+                facultyName1: "Designation : Web Developer"
+              },
+              {
+                url: "../../../assets/images/lovepreet.jpg",
+                alt: "",
+                post: "Lovepreet Kaur",
+                facultyName: "WebAppZap.Ltd",
+                facultyName1: "Designation : Web Developer"
+              },
+              {
+                url: "../../../assets/images/pankaj.jpg",
+                alt: "",
+                post: "Pankaj Vishwakarma",
+                facultyName: "WebAppZap.Ltd",
+                facultyName1: "Designation : Web Developer"
+              },
+              {
+                url: "../../../assets/images/shubham.jpg",
+                alt: "",
+                post: "Shubham Todankar",
+                facultyName: "WebAppZap.Ltd",
+                facultyName1: "Designation : Web Designer"
+              },
+              {
+                url: "../../../assets/images/ghazala.jpg",
+                alt: "",
+                post: "Ghazala Shaikh",
+                facultyName: "TY.BScIT CR",
+                facultyName1: "Designation : Class Representative"
               }
             ],
 
@@ -159,7 +194,7 @@ export class PlacementComponent implements OnInit {
               {
                 trdata:[
                   {
-                    tdData:"Lovepreet Kaur Salgotra",
+                    tdData:"Ritesh Sharma",
                   },
                   {
                     tdData:"WebAppZab"
@@ -175,7 +210,7 @@ export class PlacementComponent implements OnInit {
               {
                 trdata:[
                   {
-                    tdData:"Lovepreet Kaur Salgotra",
+                    tdData:"Pankaj Vishwakarma",
                   },
                   {
                     tdData:"WebAppZab"
@@ -191,13 +226,45 @@ export class PlacementComponent implements OnInit {
               {
                 trdata:[
                   {
-                    tdData:"Lovepreet Kaur Salgotra",
+                    tdData:"Shubham Todankar",
                   },
                   {
                     tdData:"WebAppZab"
                   },
                   {
-                    tdData:"Web Developer"
+                    tdData:"Web Designer"
+                  },
+                  {
+                    tdData:"2020-2023"
+                  }
+                ],
+              },
+              {
+                trdata:[
+                  {
+                    tdData:"Ashish Sharma",
+                  },
+                  {
+                    tdData:"WebAppZab"
+                  },
+                  {
+                    tdData:"Web Designer"
+                  },
+                  {
+                    tdData:"2020-2023"
+                  }
+                ],
+              },
+              {
+                trdata:[
+                  {
+                    tdData:"Ghazala Shaikh",
+                  },
+                  {
+                    tdData:"WebAppZab"
+                  },
+                  {
+                    tdData:"Web Designer"
                   },
                   {
                     tdData:"2020-2023"
