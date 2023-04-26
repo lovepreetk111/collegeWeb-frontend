@@ -12,7 +12,7 @@ export class StudentSupportComponent implements OnInit {
   wdcdata!: boolean;
   gvtdata!: boolean;
   workshopData!: boolean;
-  antiraggingData!:boolean;
+  antiraggingData!: boolean;
 
   currentPageIndex = 0;
   pages: Array<any> = [
@@ -345,7 +345,7 @@ export class StudentSupportComponent implements OnInit {
           compId: 3,
           compName: "Button",
           metadata: {
-            header:{
+            header: {
               data: "WORKSHOP BY INDUSTRY EXPERTS"
             },
             table: {
@@ -580,7 +580,7 @@ export class StudentSupportComponent implements OnInit {
                     }
                   ],
                 },
-                
+
               ]
             }
           }
@@ -589,7 +589,7 @@ export class StudentSupportComponent implements OnInit {
           compId: 4,
           compName: "Button",
           metadata: {
-            header:{
+            header: {
               data: "WORKSHOPS CONDUCTED BY ALUMNI"
             },
             table: {
@@ -734,14 +734,14 @@ export class StudentSupportComponent implements OnInit {
           }
         },
         {
-          compId:5,
-          compName:"button and Text",
-          metadata:{
-            header:{
-              data:"CAREER GUIDANCE WORKSHOPS:"
+          compId: 5,
+          compName: "button and Text",
+          metadata: {
+            header: {
+              data: "CAREER GUIDANCE WORKSHOPS:"
             },
-            text:{
-              text:"<li>Careers and Challenges in Journalism for BMM students by Renu Nauriyal (Former Journalist)</li><li> Careers in Import-Export for SYBMS students by Dr.PP Radhakrishnan, President- Indian Institution of Export and Import Management) </li><li>Seminar on Financial Markets and Prospects as a Chartered Accountant by CA Hitesh Thakkar and ICAI for FY and TYBAF</li>"
+            text: {
+              text: "<li>Careers and Challenges in Journalism for BMM students by Renu Nauriyal (Former Journalist)</li><li> Careers in Import-Export for SYBMS students by Dr.PP Radhakrishnan, President- Indian Institution of Export and Import Management) </li><li>Seminar on Financial Markets and Prospects as a Chartered Accountant by CA Hitesh Thakkar and ICAI for FY and TYBAF</li>"
             }
           },
 
@@ -750,8 +750,8 @@ export class StudentSupportComponent implements OnInit {
       ]
     },
     {
-      pageName:"anti-ragging",
-      component:[
+      pageName: "anti-ragging",
+      component: [
         {
           compId: 0,
           compName: "image-comp1",
@@ -765,40 +765,40 @@ export class StudentSupportComponent implements OnInit {
           ]
         },
         {
-          compId:1, 
-          compName:"button and text",
-          metadata:{
-            header:{
-              data:"Anti-Ragging",
+          compId: 1,
+          compName: "button and text",
+          metadata: {
+            header: {
+              data: "Anti-Ragging",
             },
-            text:{
-              text:"Ragging means any conduct whether by words spoken or written or by an act which has the effect of teasing, treating or handling with rudeness any other student, indulging in rowdy or undisciplined activities which causes or is likely to cause annoyance, hardship or psychological harm to raise fear or apprehension thereof in a fresher or junior student or asking the students to do any act or perform something which such student will not in the ordinary course and which has the effect of causing or generating a sense of shame or embarrassment so as to adversely affect the physique or psyche of a fresher or a junior student. The student indulging in above act is liable for punishment of suspension, debarring from examination, rustication or cancellation of admission or fine etc. <br> <br> <b>UGC Regulation on Curbing the Menace of Ragging in Higher Educational Institutions 2009No: F.1-16/2007 (CPP-II) dated 13 April 2009 </b> <br> <br> Ragging in all its forms is prohibited in the College Campus, including the departments, all its premises (academic, residential, sports, canteen, restrooms etc.), within the campus or outside it and all means of transportation whether public or private. The provisions of the Act of the Central Government and the State Governments if enacted will consider ragging as a cognizable offence under the law on a par with rape and other atrocities against women and ill-treatment of persons belonging to SC/ ST. <br><br><b>You can register your complaints with the following Phone Numbers.</b>"
+            text: {
+              text: "Ragging means any conduct whether by words spoken or written or by an act which has the effect of teasing, treating or handling with rudeness any other student, indulging in rowdy or undisciplined activities which causes or is likely to cause annoyance, hardship or psychological harm to raise fear or apprehension thereof in a fresher or junior student or asking the students to do any act or perform something which such student will not in the ordinary course and which has the effect of causing or generating a sense of shame or embarrassment so as to adversely affect the physique or psyche of a fresher or a junior student. The student indulging in above act is liable for punishment of suspension, debarring from examination, rustication or cancellation of admission or fine etc. <br> <br> <b>UGC Regulation on Curbing the Menace of Ragging in Higher Educational Institutions 2009No: F.1-16/2007 (CPP-II) dated 13 April 2009 </b> <br> <br> Ragging in all its forms is prohibited in the College Campus, including the departments, all its premises (academic, residential, sports, canteen, restrooms etc.), within the campus or outside it and all means of transportation whether public or private. The provisions of the Act of the Central Government and the State Governments if enacted will consider ragging as a cognizable offence under the law on a par with rape and other atrocities against women and ill-treatment of persons belonging to SC/ ST. <br><br><b>You can register your complaints with the following Phone Numbers.</b>"
             }
           }
         },
         {
-          compId:2, 
-          compName:"button and text",
-          metadata:[
+          compId: 2,
+          compName: "button and text",
+          metadata: [
             {
               AccordianData: [
                 {
                   Title: 'Anti-Ragging Cell Incharge',
-                  SubTitles:[
+                  SubTitles: [
                     {
-                      id:1,
-                      title:"Arts",
-                      link:"course/arts"
+                      id: 1,
+                      title: "Arts",
+                      link: "course/arts"
                     },
                     {
-                      id:2,
-                      title:"Commerce",
-                      link:"course/comm"
+                      id: 2,
+                      title: "Commerce",
+                      link: "course/comm"
                     },
                     {
-                      id:3,
-                      title:"MCVC",
-                      link:"course/mcvc"
+                      id: 3,
+                      title: "MCVC",
+                      link: "course/mcvc"
                     }
                   ]
                 },
@@ -807,37 +807,37 @@ export class StudentSupportComponent implements OnInit {
           ]
         },
         {
-          compId:3, 
-          compName:"button and text",
-          metadata:[
+          compId: 3,
+          compName: "button and text",
+          metadata: [
             {
               AccordianData: [
                 {
                   Title: 'Duties',
-                  SubTitles:[
+                  SubTitles: [
                     {
-                      id:1,
-                      title:"To ensure overall disciplined environment in the College.",
+                      id: 1,
+                      title: "To ensure overall disciplined environment in the College.",
                       //link:"course/arts"
                     },
                     {
-                      id:2,
-                      title:"To initiate timely action against erring students.",
+                      id: 2,
+                      title: "To initiate timely action against erring students.",
                       //link:"course/comm"
                     },
                     {
-                      id:3,
-                      title:"To sensitise students about the evils of ragging and its prevention in the College Campus by organizingtalks/ programmes etc.",
+                      id: 3,
+                      title: "To sensitise students about the evils of ragging and its prevention in the College Campus by organizingtalks/ programmes etc.",
                       //link:"course/mcvc"
                     },
                     {
-                      id:4,
-                      title:"To address complaints about ragging as per the Govt. and University procedures.",
+                      id: 4,
+                      title: "To address complaints about ragging as per the Govt. and University procedures.",
                       //link:"course/mcvc"
                     },
                     {
-                      id:5,
-                      title:"To maintain records of the cases investigated and submit the same to the IQAC Committee.",
+                      id: 5,
+                      title: "To maintain records of the cases investigated and submit the same to the IQAC Committee.",
                       //link:"course/mcvc"
                     }
                   ]
@@ -847,22 +847,22 @@ export class StudentSupportComponent implements OnInit {
           ]
         },
         {
-          compId:4, 
-          compName:"button and text",
-          metadata:[
+          compId: 4,
+          compName: "button and text",
+          metadata: [
             {
               AccordianData: [
                 {
                   Title: 'Important Notice',
-                  SubTitles:[
+                  SubTitles: [
                     {
-                      id:1,
-                      title:"Anti-Ragging Notice",
+                      id: 1,
+                      title: "Anti-Ragging Notice",
                       //link:"course/arts"
                     },
                     {
-                      id:2,
-                      title:"Revised Procedure for Anti Ragging Cell",
+                      id: 2,
+                      title: "Revised Procedure for Anti Ragging Cell",
                       //link:"course/comm"
                     },
                   ]
@@ -872,22 +872,22 @@ export class StudentSupportComponent implements OnInit {
           ]
         },
         {
-          compId:5, 
-          compName:"button and text",
-          metadata:[
+          compId: 5,
+          compName: "button and text",
+          metadata: [
             {
               AccordianData: [
                 {
                   Title: 'Anti-Ragging Helpine',
-                  SubTitles:[
+                  SubTitles: [
                     {
-                      id:1,
-                      title:"College Helpline Anti Ragging Team:- 022 26422750",
+                      id: 1,
+                      title: "College Helpline Anti Ragging Team:- 022 26422750",
                       //link:"course/arts"
                     },
                     {
-                      id:2,
-                      title:"UGC Helpline : https://www.antiragging.in/",
+                      id: 2,
+                      title: "UGC Helpline : https://www.antiragging.in/",
                       //link:"course/comm"
                     },
                   ]
@@ -917,7 +917,7 @@ export class StudentSupportComponent implements OnInit {
           this.wdcdata = false;
           this.workshopData = false;
           this.gvtdata = false;
-          this.antiraggingData= false;
+          this.antiraggingData = false;
         }
         else if (pageIndex == 1) {
           this.wdcdata = true;
@@ -948,61 +948,6 @@ export class StudentSupportComponent implements OnInit {
           this.antiraggingData = true;
         }
       })
-
-
   }
-
 }
 
-
-/* {
-      pageName: 'gvt',
-      component: [
-        {
-          compId: 2,
-          compName: "image-comp1",
-          metadata: [
-            {
-              url: '../../../assets/images/Chetana Building.jpeg',
-              alt: "koi toh imaage",
-              text: "SCHOLARSHIP & FREESHIP"
-            }
-
-          ]
-        },
-        {
-          compId: 3,
-          compName: "button comp 1",
-          metadata: {
-            buttonData: {
-              data: "RESERVATION"
-            },
-            dataText: {
-              text: "As per the directives issued by the Government of Maharashtra, seats will be reserved for students belonging to backward classes and other category, if any. The Student who fail to process or submit the Online Scholarship or Free-Ship Form with the concerned authority will have to deposit remaining fee before the declaration of the First Term Examination Result."
-            },
-
-            buttonData2: {
-              data: "IMPORTANT NOTICE"
-            },
-            dataText2: {
-              text: "<li><a href='https://drive.google.com/file/d/1TE_GjsjHhW7sdT_-bvLuwtTzhWzwHvAQ/view' target=_blank>JUNIOR COLLEGE</a></li> <li><a href='https://drive.google.com/file/d/1TE_GjsjHhW7sdT_-bvLuwtTzhWzwHvAQ/view' target=_blank>Degree College (BA/BCOM)</a></li> <li><a href='https://drive.google.com/file/d/1TE_GjsjHhW7sdT_-bvLuwtTzhWzwHvAQ/view' target=_blank>Self Financing Courses (BMS/BAF/BAMMC/BSCIT)</a></li>"
-            },
-
-            buttonData3: {
-              data: "FORM LINK"
-            },
-            dataText3: {
-              text: "<li>FOR EXISITING STUDENTS</li> <li>FOR NEW STUDENTS​</li>"
-            },
-
-            buttonData4: {
-              data: "IMPORTANT LINK"
-            },
-            dataText4: {
-              text: "<li><a href='https://eoffice.mu.ac.in/statistical/login.php' target=_blank>University of Mumbai (Reservation)</a></li> <li><a href='https://dhemis.maharashtra.gov.in/' target=_blank>Management Information System of Higher Educational Institution</a></li> <li><a href='https://aishe.gov.in/aishe/instituteLoginPage' target=_blank>All India Survey for Higher Education (AISHE)</a></li>"
-            },
-          }
-        }
-      ]
-    },
-  */
