@@ -5,6 +5,7 @@ import { AdminloginComponent } from './dashboard-page/Auth/adminlogin/adminlogin
 import { SuperadminComponent } from './dashboard-page/Auth/superadmin/superadmin.component';
 import { HomeComponent } from './home/home.component';
 import { AdminGuard } from './dashboard-page/Auth/admin.guard';
+import { ErrorPageComponent } from './pages/error-page/error-page.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -24,6 +25,9 @@ const routes: Routes = [
   {
     path: "admin", loadChildren: () => import('./dashboard-page/dashboard-page.module')
       .then(mod => mod.DashboardPageModule)
+  },
+  {
+    path:"error404", component: ErrorPageComponent
   }
 
 ];
