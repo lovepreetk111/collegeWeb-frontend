@@ -81,7 +81,7 @@ constructor(private router: Router) {
                       subchild: [
                         {
                           subchild: 'ARTS',
-                          routeLink: 'course/arts',
+                          routeLink: 'pages/course/arts',
                         },
                         {
                           subchild: 'COMMERCE',
