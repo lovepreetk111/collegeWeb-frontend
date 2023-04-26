@@ -17,7 +17,6 @@ export class AdminloginComponent implements OnInit {
   submitted = false;
   loginFailed = false;
   constructor( private auth : DataService, private fb:FormBuilder,private router: Router) { 
-    
   }
   
   

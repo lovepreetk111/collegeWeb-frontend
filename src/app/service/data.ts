@@ -22,6 +22,7 @@ export interface INavbarData {
   child: IDropDownChild[]
 }
 export interface IDropDownChild {
+  id:string
   dropdown: string,
   url: string,
   subchild: IDropDownSubChild[]

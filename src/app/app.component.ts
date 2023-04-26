@@ -75,12 +75,13 @@ constructor(private router: Router) {
                   link: 'pages/course',
                   child: [
                     {
+                      id:"junior-btn1",
                       dropdown: 'JUNIOR COLLEGE',
-                      url: 'pages/course',
+                      url: "#",
                       subchild: [
                         {
                           subchild: 'ARTS',
-                          routeLink: 'course/arts',
+                          routeLink: 'pages/course/arts',
                         },
                         {
                           subchild: 'COMMERCE',
@@ -93,8 +94,9 @@ constructor(private router: Router) {
                       ]
                     },
                     {
+                      id:"degree-btn1",
                       dropdown: 'DEGREE COLLEGE',
-                      url: 'pages/course',
+                      url: "#",
                       subchild: [
                         {
                           subchild: 'BA',
@@ -108,8 +110,9 @@ constructor(private router: Router) {
                       ]
                     },
                     {
+                      id:"csfc-btn1",
                       dropdown: 'SELF FINANCE COURSES',
-                      url: 'pages/course',
+                      url: "#",
                       subchild: [
                         {
                           subchild: 'BMS',
@@ -130,8 +133,9 @@ constructor(private router: Router) {
                       ]
                     },
                     {
+                      id:"pg-btn1",
                       dropdown: 'POST GRADUATE PROGRAMME',
-                      url: 'pages/course',
+                      url: "#",
                       subchild: [
                         {
                           subchild: 'MCOM',
@@ -140,8 +144,9 @@ constructor(private router: Router) {
                       ]
                     },
                     {
+                      id:"soctrol-btn1",
                       dropdown: 'DOCTORAL PROGRAMME',
-                      url: 'pages/course',
+                      url: "#",
                       subchild: [
                         {
                           subchild: 'PH.D. IN  COMMERCE',
@@ -150,8 +155,9 @@ constructor(private router: Router) {
                       ]
                     },
                     {
+                      id:"distance-btn1",
                       dropdown: 'DISTANCE LEARNING',
-                      url: 'pages/course',
+                      url: "#",
                       subchild: [
                         {
                           subchild: 'Y.C.M.O.U.',
