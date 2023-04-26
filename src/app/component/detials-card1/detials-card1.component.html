@@ -1,12 +1,14 @@
-
- <div class="container">
+<div class="container">
   <div class="card-container" *ngFor="let data of detailCardConfig">
-  <div class="left">
-    <img [src]="data.imgUrl" [alt]="data.imgAlt">
-  </div>
-  <div class="right">
-    <h4>{{data.header}}</h4>
-    <button type="button" value="Read More"><a [routerLink]="data.btnLink">{{data.btnTxt}}</a></button>
+    <div class="left">
+      <img [src]="data.imgUrl" [alt]="data.imgAlt">
+    </div>
+    <div class="right">
+      <h4>{{data.header}}</h4>
+      <button type="button" value="Read More">
+        <a *ngIf="data.btnLink" [routerLink]="data.btnLink">{{data.btnTxt}}</a>
+        <a href="https://www.ycmou.ac.in/" target="_blank" *ngIf="!data.btnLink">{{data.btnTxt}}</a>
+      </button>
+    </div>
   </div>
 </div>
- </div>

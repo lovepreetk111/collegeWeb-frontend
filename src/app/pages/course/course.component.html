@@ -2,26 +2,18 @@
 <div *ngFor="let data of pages[currentPageIndex].component">
     <app-image-cmp1 [AboutBanner]="data.metadata" *ngIf="data.compId===1"></app-image-cmp1>
     <div *ngFor="let datas of data.metadata">
-        <app-button-cmp1 [Text]="datas.info" *ngIf="data.compId===2"></app-button-cmp1>
+        <app-button-cmp1 id="junior-btn1" [Text]="datas.info" *ngIf="data.compId===2"></app-button-cmp1>
         <app-detials-card1 [detailCardConfig]="datas.value"></app-detials-card1>
-        <app-button-cmp1 [Text]="datas.info2" *ngIf="data.compId===2"></app-button-cmp1>
+        <app-button-cmp1 id="degree-btn1" [Text]="datas.info2" *ngIf="data.compId===2"></app-button-cmp1>
         <app-detials-card1 [detailCardConfig]="datas.value1"></app-detials-card1>
-        <app-button-cmp1 [Text]="datas.info3" *ngIf="data.compId===2"></app-button-cmp1>
+        <app-button-cmp1 id="csfc-btn1" [Text]="datas.info3" *ngIf="data.compId===2"></app-button-cmp1>
         <app-detials-card1 [detailCardConfig]="datas.value2"></app-detials-card1>
-        <app-button-cmp1 [Text]="datas.info4" *ngIf="data.compId===2"></app-button-cmp1>
+        <app-button-cmp1 id="pg-btn1" [Text]="datas.info4" *ngIf="data.compId===2"></app-button-cmp1>
         <app-detials-card1 [detailCardConfig]="datas.value3"></app-detials-card1>
-        <app-button-cmp1 [Text]="datas.info5" *ngIf="data.compId===2"></app-button-cmp1>
+        <app-button-cmp1 id="doctrol-btn1" [Text]="datas.info5" *ngIf="data.compId===2"></app-button-cmp1>
         <app-detials-card1 [detailCardConfig]="datas.value4"></app-detials-card1>
-        <app-button-cmp1 [Text]="datas.info6" *ngIf="data.compId===2"></app-button-cmp1>
+        <app-button-cmp1 id="distance-btn1" [Text]="datas.info6" *ngIf="data.compId===2"></app-button-cmp1>
         <app-detials-card1 [detailCardConfig]="datas.value5"></app-detials-card1>
     </div>
-    <!-- <div *ngFor="let datas of data.metadata">
-        <app-button-cmp1 [Text]="datas.info2" *ngIf="data.compId===2"></app-button-cmp1>
-        <app-detials-card1 [detailCardConfig]="datas.value1"></app-detials-card1>
-    </div> -->
-   <!--  <div *ngFor="let datas of data.metadata">
-        <app-button-cmp1 [Text]="datas.info3" *ngIf="data.compId===2"></app-button-cmp1>
-        <app-detials-card1 [detailCardConfig]="datas.value2"></app-detials-card1>
-    </div>   -->
 </div>
 <app-details-card2></app-details-card2>
